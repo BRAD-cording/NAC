@@ -1,0 +1,7 @@
+{
+  "model": "models/nac_qwen1.5b_g64_nac.rkllm",
+  "task": "mmlu",
+  "num_samples": 969,
+  "fewshot_num": 0,
+  "mmlu_acc": 0.5614
+}

@@ -1,0 +1,13 @@
+I rkllm: rkllm-runtime version: 1.2.3, rknpu driver version: 0.9.8, platform: RK3576
+I rkllm: loading rkllm model from models/nacv2_qwen1.5b_g64_intzp.rkllm
+I rkllm: rkllm-toolkit version: 1.2.3, max_context_limit: 4096, npu_core_num: 2, target_platform: RK3576, model_dtype: W4A16_G64
+I rkllm: Enabled cpus: [4, 5, 6, 7]
+I rkllm: Enabled cpus num: 4
+[smoke] init 3.9s
+[smoke] '你好，请用一句话介绍你自己。'
+        tokens=34 ttft=529.62ms decode=9.79tok/s total=3900.08ms
+        text='你好，我是Qwen，由阿里云开发的超大规模语言模型，能回答各种问题、创作文字，还能表达观点，与你聊天。'
+[smoke] 'What is the capital of France?'
+        tokens=9 ttft=1089.1ms decode=7.82tok/s total=2111.94ms
+        text='The capital of France is Paris.'
+[smoke] PASS

@@ -1,0 +1,26 @@
+{
+ "nac": {
+  "n": 20471808,
+  "int_ratio": 0.001584,
+  "frac_mean": 0.25,
+  "frac_max": 0.5,
+  "zp_min": -0.063,
+  "zp_max": 15.105,
+  "scale_mean": 0.008534,
+  "err_mean": 0.002133,
+  "err_max": 0.077344,
+  "err_vs_weight_pct": 10.67
+ },
+ "gptq": {
+  "n": 20471808,
+  "int_ratio": 1.0,
+  "frac_mean": 0.0,
+  "frac_max": 0.0,
+  "zp_min": 0.0,
+  "zp_max": 15.0,
+  "scale_mean": 0.008557,
+  "err_mean": 0.0,
+  "err_max": 0.0,
+  "err_vs_weight_pct": 0.0
+ }
+}

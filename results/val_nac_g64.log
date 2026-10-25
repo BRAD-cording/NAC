@@ -1,0 +1,13 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[val] loading models/Qwen2.5-1.5B-Instruct-hf ...
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  14%|█▍        | 49/338 [00:00<00:00, 474.00it/s]Loading weights:  29%|██▊       | 97/338 [00:00<00:00, 285.11it/s]Loading weights:  38%|███▊      | 130/338 [00:00<00:00, 272.23it/s]Loading weights:  47%|████▋     | 160/338 [00:00<00:00, 245.69it/s]Loading weights:  56%|█████▌    | 190/338 [00:00<00:00, 259.06it/s]Loading weights:  64%|██████▍   | 218/338 [00:00<00:00, 243.61it/s]Loading weights:  72%|███████▏  | 245/338 [00:00<00:00, 242.94it/s]Loading weights:  82%|████████▏ | 276/338 [00:01<00:00, 258.96it/s]Loading weights:  90%|████████▉ | 303/338 [00:01<00:00, 238.33it/s]Loading weights:  98%|█████████▊| 332/338 [00:01<00:00, 251.02it/s]Loading weights: 100%|██████████| 338/338 [00:01<00:00, 262.12it/s]
+Using the latest cached version of the dataset since Salesforce/wikitext couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at /home/pi/.cache/huggingface/datasets/Salesforce___wikitext/wikitext-2-raw-v1/0.0.0/b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Tue Oct  6 19:52:06 2026).
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (299078 > 131072). Running this sequence through the model will result in indexing errors
+[val] held-out: 16 seqs x 1024 tokens
+[val] fp16   PPL = 10.627  (reused)
+    [ppl] 2/16 seqs
+    [ppl] 4/16 seqs
+    [ppl] 6/16 seqs
+    [ppl] 8/16 seqs
+    [ppl] 10/16 seqs

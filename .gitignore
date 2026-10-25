@@ -1,0 +1,10 @@
+# large artifacts (never commit)
+models/
+results/*.pt
+results/*.qparams
+results/*.qparams.*
+*.rkllm
+.venv/
+__pycache__/
+*.pyc
+data/*.cache/

@@ -1,0 +1,15 @@
+/media/pi/DATA/rknn-llm/nac_paper/scripts/probe_tiny_gdq_w4a16.py:12: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  llm = rb.RKLLMBase()
+[37mINFO: rkllm-toolkit version: 1.2.3[0m
+load ret=0
+Building model:   0%|          | 0/33 [00:00<?, ?it/s]Building model:  21%|██        | 7/33 [00:00<00:00, 68.35it/s]Building model:  42%|████▏     | 14/33 [00:00<00:00, 49.18it/s]Building model:  67%|██████▋   | 22/33 [00:00<00:00, 56.32it/s]Building model:  85%|████████▍ | 28/33 [00:00<00:00, 51.15it/s]Building model: 100%|██████████| 33/33 [00:05<00:00,  6.29it/s]
+[37mINFO: The gdq quantization algorithm finetunes the model parameters and is recommended to be used with CUDA.[0m
+[33mWARNING: gdq only supports float32, switch to float32[0m
+Processing dataset:   0%|          | 0/2 [00:00<?, ?it/s]Processing dataset:  50%|█████     | 1/2 [00:01<00:01,  1.24s/it]Processing dataset: 100%|██████████| 2/2 [00:01<00:00,  1.10it/s]Processing dataset: 100%|██████████| 2/2 [00:01<00:00,  1.04it/s]
+Optimizing model:   0%|          | 0/2 [00:00<?, ?it/s]Optimizing model:  50%|█████     | 1/2 [03:46<03:46, 226.11s/it]Optimizing model: 100%|██████████| 2/2 [07:33<00:00, 227.04s/it]Optimizing model: 100%|██████████| 2/2 [07:33<00:00, 226.91s/it]
+build ret=0
+save ret=0
+type=<class 'dict'> n=53
+  model.layers.0.input_layernorm.weight: (64,) torch.float32 range[1.0,1.0]
+DONE
+EXIT=0

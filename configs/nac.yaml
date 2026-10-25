@@ -1,0 +1,28 @@
+# NAC（NPU-Aware Calibration）超参（对应方案贡献1）
+nac:
+  group_sizes: [64, 128]     # 方案消融3：g64 vs g128
+  bits: 4                    # W4A16 → 权重 INT4, 激活 FP16
+  symmetric: false           # Rockchip W4A16 使用 zero-point（非对称）
+  # 校准数据
+  calib_dataset: data/quant_dataset.json
+  num_samples: 128
+  seqlen: 512
+  capture_samples: 8         # 进入逐层优化的序列数（8×512=4096 token）
+  # 逐层损失优化
+  objective: mse             # MSE(dequant_out, fp16_out)
+  opt: adam
+  lr_scale: 0.01             # scale 可学习初始 lr（相对 scale 均值）
+  lr_zp: 1.0e-3              # zero-point 可学习（soft，连续松弛）
+  steps_per_layer: 100
+  batch_size: 4
+  device: cpu                # 仅 CPU 端 PTQ（方案约束：无 GPU）
+  seed: 42
+
+# rkllm_toolkit 导出（export_rkllm.py；x86 端执行）
+export:
+  quantized_dtype: w4a16
+  quantized_algorithm: normal
+  optimization_level: 1
+  target_platform: rk3576
+  # NAC 产物经 extra_qparams 注入（toolkit>=1.1.0 支持 gdq.qparams）
+  use_extra_qparams: true

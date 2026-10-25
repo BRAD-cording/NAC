@@ -1,0 +1,22 @@
+/media/pi/DATA/rknn-llm/nac_paper/scripts/probe_tiny_gdq.py:17: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  llm = rb.RKLLMBase()
+[37mINFO: rkllm-toolkit version: 1.2.3[0m
+[gdq] load ret=0 (16s)
+Building model:   0%|          | 0/33 [00:00<?, ?it/s]Building model:  21%|██        | 7/33 [00:00<00:00, 47.33it/s]Building model:  36%|███▋      | 12/33 [00:00<00:00, 31.88it/s]Building model:  64%|██████▎   | 21/33 [00:00<00:00, 49.74it/s]Building model:  82%|████████▏ | 27/33 [00:00<00:00, 46.56it/s]Building model: 100%|██████████| 33/33 [00:05<00:00,  3.54it/s]Building model: 100%|██████████| 33/33 [00:05<00:00,  6.06it/s]
+[37mINFO: The gdq quantization algorithm finetunes the model parameters and is recommended to be used with CUDA.[0m
+[33mWARNING: gdq only supports float32, switch to float32[0m
+Processing dataset:   0%|          | 0/2 [00:00<?, ?it/s]Processing dataset:  50%|█████     | 1/2 [00:01<00:01,  1.22s/it]Processing dataset: 100%|██████████| 2/2 [00:01<00:00,  1.15it/s]Processing dataset: 100%|██████████| 2/2 [00:01<00:00,  1.08it/s]
+Optimizing model:   0%|          | 0/2 [00:00<?, ?it/s]Optimizing model:  50%|█████     | 1/2 [03:47<03:47, 227.74s/it]Optimizing model: 100%|██████████| 2/2 [07:33<00:00, 226.75s/it]Optimizing model: 100%|██████████| 2/2 [07:33<00:00, 226.90s/it]
+[gdq] build ret=0 (471s)
+[gdq] save_qparams ret=0
+Traceback (most recent call last):
+  File "/media/pi/DATA/rknn-llm/nac_paper/scripts/probe_tiny_gdq.py", line 30, in <module>
+    obj = torch.load(OUT, map_location="cpu")
+  File "/media/pi/DATA/rktoolkit/x86py/lib/python3.10/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+  File "/media/pi/DATA/rktoolkit/x86py/lib/python3.10/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/media/pi/DATA/rktoolkit/x86py/lib/python3.10/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+FileNotFoundError: [Errno 2] No such file or directory: 'results/tiny_gdq.qparams'
+EXIT=1

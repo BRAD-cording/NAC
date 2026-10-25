@@ -1,0 +1,7 @@
+{
+  "model": "models/nacv2_qwen1.5b_g64_intzp.rkllm",
+  "task": "gsm8k",
+  "num_samples": 200,
+  "fewshot_num": 0,
+  "gsm8k_acc": 0.005
+}

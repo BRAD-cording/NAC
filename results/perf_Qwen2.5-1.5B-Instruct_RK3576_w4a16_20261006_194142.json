@@ -1,0 +1,35 @@
+{
+  "model": "models/Qwen2.5-1.5B-Instruct_RK3576_w4a16.rkllm",
+  "max_new_tokens": 64,
+  "repeats": 3,
+  "freqs": {
+    "cpu0_mhz": 2016,
+    "cpu1_mhz": 2016,
+    "cpu2_mhz": 2016,
+    "cpu3_mhz": 2016,
+    "cpu4_mhz": 2208,
+    "cpu5_mhz": 2208,
+    "cpu6_mhz": 2208,
+    "cpu7_mhz": 2208,
+    "npu_mhz": 950000,
+    "dmc_mhz": 2736000
+  },
+  "points": [
+    {
+      "ttft_ms_median": 99.88,
+      "decode_tps_median": 11.29,
+      "total_ms_median": 5768.3,
+      "n_tokens_median": 65,
+      "prompt_len_target": 128,
+      "prompt_len_actual": 125
+    },
+    {
+      "ttft_ms_median": 144.16,
+      "decode_tps_median": 10.77,
+      "total_ms_median": 6055.99,
+      "n_tokens_median": 65,
+      "prompt_len_target": 512,
+      "prompt_len_actual": 497
+    }
+  ]
+}

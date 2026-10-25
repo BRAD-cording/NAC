@@ -1,0 +1,1602 @@
+[
+ {
+  "i": 0,
+  "pred": "156.0",
+  "gold": "52",
+  "ok": false,
+  "gen": "To find the average of the three measurements, we first need to add the three measurements together and then divide by 3.\n\nThe first measurement is 47 WPM.\nThe second measurement is 52 WPM.\nThe third ",
+  "ttft_ms": 1317.69
+ },
+ {
+  "i": 1,
+  "pred": "5.0",
+  "gold": "5",
+  "ok": true,
+  "gen": "Jordan has 2 children, and each child requires 5 diaper changes per day. So, the total number of diapers needed per day is:\n\n2 children * 5 changes per child = 10 changes per day\n\nJordan's wife change",
+  "ttft_ms": 376.35
+ },
+ {
+  "i": 2,
+  "pred": "-1245.0",
+  "gold": "83",
+  "ok": false,
+  "gen": "To determine the maximum number of boxes that can be loaded onto the truck, we first need to calculate the total weight of the truck and the driver, which is 3755 pounds.\n\nNext, we subtract the weight",
+  "ttft_ms": 595.82
+ },
+ {
+  "i": 3,
+  "pred": "6.0",
+  "gold": "10",
+  "ok": false,
+  "gen": "The total number of shoe boxes is 7 blue + 9 red = 16 shoe boxes. He uses 3 blue shoeboxes, so he has 16 - 3 = 13 shoe boxes left. He uses 1/3 of the red shoeboxes, which is 1/3 * 9 = 3 red shoeboxes.",
+  "ttft_ms": 431.73
+ },
+ {
+  "i": 4,
+  "pred": "30.0",
+  "gold": "70",
+  "ok": false,
+  "gen": "If Dominick saw half as many robots as helmets, and there were 20 helmets, then there were 20 / 2 = 10 robots.\n\nIf Dominick saw half as many robots as helmets, and there were 20 helmets, then there we",
+  "ttft_ms": 367.69
+ },
+ {
+  "i": 5,
+  "pred": "1.0",
+  "gold": "36",
+  "ok": false,
+  "gen": "The total number of seats in the auditorium is 4 rows * 18 seats = 72 seats. One-fourth of the seats were occupied by the administrators, so 72 seats * 1/4 = 18 seats were occupied by the administrato",
+  "ttft_ms": 537.92
+ },
+ {
+  "i": 6,
+  "pred": "48.0",
+  "gold": "48",
+  "ok": true,
+  "gen": "5 dogs * 4 legs = 20 legs\n2 cats * 4 legs = 8 legs\n10 birds * 2 legs = 20 legs\nTotal = 20 + 8 + 20 = 48 legs. The answer is 48.",
+  "ttft_ms": 275.94
+ },
+ {
+  "i": 7,
+  "pred": "48.0",
+  "gold": "16",
+  "ok": false,
+  "gen": "The car in the fast lane travels at 60 miles per hour, so the time it takes to travel 480 miles is 480 / 60 = 8 hours. The car in the slow lane travels at half the speed of the fast lane, so its speed",
+  "ttft_ms": 619.75
+ },
+ {
+  "i": 8,
+  "pred": "42.0",
+  "gold": "8",
+  "ok": false,
+  "gen": "The total cost of the shirt and shorts is $25 + $35 = $60. The discount is 30%, so the discount amount is $60 * 0.30 = $18. The total cost after the discount is $60 - $18 = $42. The amount of money Jo",
+  "ttft_ms": 571.18
+ },
+ {
+  "i": 9,
+  "pred": "48.0",
+  "gold": "48",
+  "ok": true,
+  "gen": "8 * 2 * 3 = 48. The answer is 48.",
+  "ttft_ms": 310.13
+ },
+ {
+  "i": 10,
+  "pred": "90.0",
+  "gold": "90",
+  "ok": true,
+  "gen": "20 + 10 = 30\n30 * 3 = 90\n\nThe answer is 90.",
+  "ttft_ms": 403.41
+ },
+ {
+  "i": 11,
+  "pred": "14.0",
+  "gold": "10",
+  "ok": false,
+  "gen": "The beanstalk was 3 inches tall after the first week. After doubling in height, it was 3 * 2 = 6 inches tall. In the second week, it grew another 4 inches, so it was 6 + 4 = 10 inches tall. After the ",
+  "ttft_ms": 462.41
+ },
+ {
+  "i": 12,
+  "pred": "12.0",
+  "gold": "2",
+  "ok": false,
+  "gen": "To determine how many good days were left in the month, we need to first calculate the total number of good days and then subtract the number of good days that have already occurred.\n\n1. Calculate the",
+  "ttft_ms": 608.26
+ },
+ {
+  "i": 13,
+  "pred": "15000.0",
+  "gold": "45000",
+  "ok": false,
+  "gen": "Valerie earns $5000 per month. Her brother earns half of that, which is $5000 / 2 = $2500 per month. Together, they earn $5000 + $2500 = $7500 per month. Their mother earns twice their combined salary",
+  "ttft_ms": 328.75
+ },
+ {
+  "i": 14,
+  "pred": "18.0",
+  "gold": "18",
+  "ok": true,
+  "gen": "15 * 1/5 = 3. The total amount Ashley should give the delivery man is 15 + 3 = 18. The answer is 18.",
+  "ttft_ms": 362.26
+ },
+ {
+  "i": 15,
+  "pred": "14.0",
+  "gold": "140",
+  "ok": false,
+  "gen": "Andy plants 90 geraniums. He plants 40 fewer petunias than geraniums, so the number of petunias is:\n\n90 - 40 = 50 petunias\n\nNow, to find the total number of flowers Andy plants, we add the number of g",
+  "ttft_ms": 272.19
+ },
+ {
+  "i": 16,
+  "pred": "4.0",
+  "gold": "17",
+  "ok": false,
+  "gen": "First, we calculate the distance James swims:\n20 miles * 60% = 12 miles\n\nNext, we calculate the time it takes to swim 12 miles at 2 miles per hour:\n12 miles / 2 miles per hour = 6 hours\n\nAfter resting",
+  "ttft_ms": 706.35
+ },
+ {
+  "i": 17,
+  "pred": "23.0",
+  "gold": "68",
+  "ok": false,
+  "gen": "To find the sum of the ages of the three girls, we need to determine the ages of Mary and Joan first.\n\n1. Jessa is 20 years old.\n2. Joan is 5 years older than Jessa, so Joan is 20 + 5 = 25 years old.\n",
+  "ttft_ms": 320.93
+ },
+ {
+  "i": 18,
+  "pred": "120.0",
+  "gold": "8",
+  "ok": false,
+  "gen": "To determine how many packs of gum Parker will need, we first calculate the total number of pieces of gum he will chew in 30 days:\n\nTotal pieces of gum = 4 pieces/day * 30 days = 120 pieces\n\nNext, we ",
+  "ttft_ms": 363.2
+ },
+ {
+  "i": 19,
+  "pred": "14.0",
+  "gold": "14",
+  "ok": true,
+  "gen": "30 - 2 = 28. Jean can fill 28 / 2 = 14 bags. The answer is 14.",
+  "ttft_ms": 425.63
+ },
+ {
+  "i": 20,
+  "pred": "9.0",
+  "gold": "50",
+  "ok": false,
+  "gen": "First, let's calculate the total time Tatiana has available for her weekend:\n\n- Saturday: 7 hours\n- Sunday: 5 hours\nTotal time = 7 + 5 = 12 hours\n\nTatiana spends 3 hours reading and 1/3 of the remaini",
+  "ttft_ms": 602.38
+ },
+ {
+  "i": 21,
+  "pred": "100.0",
+  "gold": "100",
+  "ok": true,
+  "gen": "There are 240 - 80 = 160 Chinese participants in the race. If the number of boys on the Chinese team was 60, then the number of girls would be 160 - 60 = 100. The answer is 100.",
+  "ttft_ms": 367.61
+ },
+ {
+  "i": 22,
+  "pred": "5000.0",
+  "gold": "125",
+  "ok": false,
+  "gen": "To determine which purchase plan will yield the higher profit, we need to calculate the expected value of each purchase plan based on the given market trends.\n\n1. **Jewelry Purchase:**\n   - Initial va",
+  "ttft_ms": 698.46
+ },
+ {
+  "i": 23,
+  "pred": "24.0",
+  "gold": "48",
+  "ok": false,
+  "gen": "There are 4 schools, each with 5 players and 1 coach, so each school has 6 people (5 players + 1 coach). Therefore, the total number of people sent by all the schools is 4 * 6 = 24. The answer is 24.",
+  "ttft_ms": 508.37
+ },
+ {
+  "i": 24,
+  "pred": "5.0",
+  "gold": "15400",
+  "ok": false,
+  "gen": "The normal price for the hotel is $1500 per day, so for a 3-day stay, the normal price would be $1500 * 3 = $4500. The hotel is 20% more expensive on a busy weekend, so the total cost for the hotel wo",
+  "ttft_ms": 621.65
+ },
+ {
+  "i": 25,
+  "pred": "250.0",
+  "gold": "250",
+  "ok": true,
+  "gen": "First, calculate the total earnings from renting the car:\n\n10 rentals * 3 hours per rental * $25 per hour = $750\n\nNext, subtract the car payment:\n\n$750 - $500 = $250\n\nSo, John makes a profit of $250 f",
+  "ttft_ms": 768.05
+ },
+ {
+  "i": 26,
+  "pred": "4.0",
+  "gold": "18",
+  "ok": false,
+  "gen": "Let's break down the problem step by step:\n\n1. The total order is 400 toys.\n2. The first 2 workers produce 6 toys per hour, so together they produce \\(2 \\times 6 = 12\\) toys per hour.\n3. The second 2 ",
+  "ttft_ms": 783.42
+ },
+ {
+  "i": 27,
+  "pred": "1250.0",
+  "gold": "1490",
+  "ok": false,
+  "gen": "The number of female porcupines is 3/5 * 50 = 30. Each month, 30 * 4 = 120 baby porcupines are born. In a year, 120 * 12 = 1200 baby porcupines are born. The total number of porcupines in the park is ",
+  "ttft_ms": 541.42
+ },
+ {
+  "i": 28,
+  "pred": "11.0",
+  "gold": "11",
+  "ok": true,
+  "gen": "Jasper has 4 / 2 = 2 tubes of blue paint.\nJasper has 3 * 3 = 9 tubes of yellow paint.\nJasper has 2 + 9 = 11 tubes of paint.\nThe answer is 11.",
+  "ttft_ms": 381.98
+ },
+ {
+  "i": 29,
+  "pred": "106.0",
+  "gold": "106",
+  "ok": true,
+  "gen": "The monthly interest is 2% of $100, which is 0.02 * $100 = $2. Over 3 months, the total interest is $2 * 3 = $6. Therefore, Mandy should give Benedict $100 + $6 = $106. The answer is $106.",
+  "ttft_ms": 398.71
+ },
+ {
+  "i": 30,
+  "pred": "60.0",
+  "gold": "138",
+  "ok": false,
+  "gen": "First, let's calculate the number of lines Sean has to memorize for the first scene. The first scene has twice the number of lines as the solo song, so:\n\n2 * 54 = 108 lines\n\nNext, let's calculate the ",
+  "ttft_ms": 688.91
+ },
+ {
+  "i": 31,
+  "pred": "15.0",
+  "gold": "15",
+  "ok": true,
+  "gen": "First, calculate the total number of jello cups Greg needs: 30 kids * 4 cups per kid = 120 cups.\n\nNext, calculate the total number of jello boxes needed: 120 cups / 10 cups per box = 12 boxes.\n\nFinall",
+  "ttft_ms": 693.65
+ },
+ {
+  "i": 32,
+  "pred": "4.0",
+  "gold": "4",
+  "ok": true,
+  "gen": "Josh can eat 2 slices per day, so he eats 2 * 2 = 4 slices per day. Together, Abby and Josh eat 2 + 4 = 6 slices per day. A loaf of bread has 24 slices, so it will last 24 / 6 = 4 days. The answer is ",
+  "ttft_ms": 309.0
+ },
+ {
+  "i": 33,
+  "pred": "18.0",
+  "gold": "82",
+  "ok": false,
+  "gen": "The sun will move 5 * 10 = 50 degrees from the ground. The angle of the pyramid is 32 degrees, so the sun will be 50 - 32 = 18 degrees from the ground. The answer is 18.",
+  "ttft_ms": 617.64
+ },
+ {
+  "i": 34,
+  "pred": "2.0",
+  "gold": "2",
+  "ok": true,
+  "gen": "He walks 4 miles per hour, so it takes him 4 miles / 4 miles per hour = 1 hour to reach the store. He then walks back home, which is another 4 miles, so it takes him another 4 miles / 4 miles per hour",
+  "ttft_ms": 444.96
+ },
+ {
+  "i": 35,
+  "pred": "16.0",
+  "gold": "51",
+  "ok": false,
+  "gen": "Sally Four is 8 years old. Since Sally Four is the same age as Sally Thirtytwo, Sally Thirtytwo is also 8 years old. \n\nSally Two is three years older than Granny Red, so Sally Two is 8 + 3 = 11 years ",
+  "ttft_ms": 539.87
+ },
+ {
+  "i": 36,
+  "pred": "3.0",
+  "gold": "4",
+  "ok": false,
+  "gen": "The perfume company sold 5 vanilla scents and 2 fruity scents. To find out how many more vanilla scents were sold compared to fruity scents, we subtract the number of fruity scents sold from the numbe",
+  "ttft_ms": 820.47
+ },
+ {
+  "i": 37,
+  "pred": "100.0",
+  "gold": "100",
+  "ok": true,
+  "gen": "The cost for the haircut is $30 per inch, so for the 2 inches of hair, it would be $30 * 2 = $60. Adding the cost of the color, the total cost would be $40 + $60 = $100. The answer is $100.",
+  "ttft_ms": 432.72
+ },
+ {
+  "i": 38,
+  "pred": "50.0",
+  "gold": "25",
+  "ok": false,
+  "gen": "To determine how many candles will both smell like wet dog and explode, we need to calculate the number of candles that meet both conditions:\n\n1. Marcy makes 50,000 candles.\n2. 5% of these candles wil",
+  "ttft_ms": 531.42
+ },
+ {
+  "i": 39,
+  "pred": "62.0",
+  "gold": "188",
+  "ok": false,
+  "gen": "The first book is 31 mm thick.\nThe second book is 50 mm thick.\nThe third book is 5 mm less than the second book, so it is 50 - 5 = 45 mm thick.\nThe fourth book is twice as thick as the first book, so ",
+  "ttft_ms": 538.33
+ },
+ {
+  "i": 40,
+  "pred": "30.0",
+  "gold": "30",
+  "ok": true,
+  "gen": "He eats 4 carrots each on weekdays, so for 5 weekdays, he eats 4 * 5 = 20 carrots. On weekends, he eats 5 carrots each day, so for 2 days, he eats 5 * 2 = 10 carrots. In total, he eats 20 + 10 = 30 ca",
+  "ttft_ms": 322.75
+ },
+ {
+  "i": 41,
+  "pred": "30.0",
+  "gold": "30",
+  "ok": true,
+  "gen": "10 + 2 * 10 = 30. The answer is 30.",
+  "ttft_ms": 301.23
+ },
+ {
+  "i": 42,
+  "pred": "240.0",
+  "gold": "150",
+  "ok": false,
+  "gen": "Marin and Nancy each eat 4 apples per day, so together they eat 4 + 4 = 8 apples per day. In 30 days, they will eat 8 * 30 = 240 apples. The answer is 240.",
+  "ttft_ms": 297.8
+ },
+ {
+  "i": 43,
+  "pred": "7.0",
+  "gold": "7",
+  "ok": true,
+  "gen": "20 popsicles * $0.25 = $5.00\n4 ice cream bars * $0.50 = $2.00\nTotal cost = $5.00 + $2.00 = $7.00\n\nThe answer is $7.00.",
+  "ttft_ms": 326.53
+ },
+ {
+  "i": 44,
+  "pred": "3500.0",
+  "gold": "350",
+  "ok": false,
+  "gen": "First, calculate the total expenses:\n- Rent: \\( \\frac{1}{4} \\times 6000 = 1500 \\)\n- Car fuel: \\( \\frac{1}{3} \\times 6000 = 2000 \\)\n\nTotal expenses before donation:\n- Total expenses: \\( 1500 + 2000 = 3",
+  "ttft_ms": 756.7
+ },
+ {
+  "i": 45,
+  "pred": "9.0",
+  "gold": "2",
+  "ok": false,
+  "gen": "To solve this, we first need to determine how many cups of chamomile and mint tea are in each row. Since the total number of cups is 27 and she divides them into 3 rows, each row will have 27 / 3 = 9 ",
+  "ttft_ms": 575.04
+ },
+ {
+  "i": 46,
+  "pred": "18.0",
+  "gold": "36",
+  "ok": false,
+  "gen": "To reach their goal of 100 signatures, the sisters need to collect 100 - 20 - 44 = 36 more signatures. Over the next three weeks, they need to collect 36 / 2 = 18 signatures between them. The answer i",
+  "ttft_ms": 926.37
+ },
+ {
+  "i": 47,
+  "pred": "45.0",
+  "gold": "2",
+  "ok": false,
+  "gen": "To determine how many days the teacher has before he has to recycle the chalk, we need to calculate how much chalk he uses each day and how much he has left.\n\nFirst, let's find out how much chalk the ",
+  "ttft_ms": 1077.73
+ },
+ {
+  "i": 48,
+  "pred": "8.0",
+  "gold": "14",
+  "ok": false,
+  "gen": "31 - 23 = 8. The answer is 8.",
+  "ttft_ms": 428.57
+ },
+ {
+  "i": 49,
+  "pred": "20.0",
+  "gold": "33",
+  "ok": false,
+  "gen": "13 + 7 = 20. The answer is 20.",
+  "ttft_ms": 393.64
+ },
+ {
+  "i": 50,
+  "pred": "11.0",
+  "gold": "21",
+  "ok": false,
+  "gen": "Dean spent $2 * 6 = $12 on toy cars.\nDean spent $1 * 5 = $5 on teddy bears.\nDean spent $12 + $5 = $17 in total.\nDean has $28 - $17 = $11 left.\n\nDean has $11 left.",
+  "ttft_ms": 546.12
+ },
+ {
+  "i": 51,
+  "pred": "20.0",
+  "gold": "175",
+  "ok": false,
+  "gen": "The fourth friend pressed on the doorbell 60 times. The third friend pressed on the doorbell 10 times more than the fourth friend, so the third friend pressed on the doorbell 60 + 10 = 70 times. The s",
+  "ttft_ms": 704.41
+ },
+ {
+  "i": 52,
+  "pred": "48.0",
+  "gold": "60",
+  "ok": false,
+  "gen": "Pam rode the roller coaster 2 times, so she used 2 * 6 = 12 tickets. Fred rode the roller coaster 4 times, so he used 4 * 6 = 24 tickets. Pam and Fred each rode the luge 2 times, so they used 2 * 6 = ",
+  "ttft_ms": 445.58
+ },
+ {
+  "i": 53,
+  "pred": "42.0",
+  "gold": "49",
+  "ok": false,
+  "gen": "There are 96 fourth-graders in total. Out of these, 43 are girls. Therefore, the number of boys is:\n\n96 - 43 = 53\n\nOn Friday, 5 fourth-grade girls were absent, so the number of girls present is:\n\n43 -",
+  "ttft_ms": 439.96
+ },
+ {
+  "i": 54,
+  "pred": "1050.0",
+  "gold": "1800",
+  "ok": false,
+  "gen": "The first phone costs $600. The second phone is half price, so it costs $600 / 2 = $300. The third phone is also half price, so it costs $300 / 2 = $150. \n\nSo, the total cost is $600 + $300 + $150 = $",
+  "ttft_ms": 383.93
+ },
+ {
+  "i": 55,
+  "pred": "17.0",
+  "gold": "27",
+  "ok": false,
+  "gen": "To determine how many marbles Mazie gave to Darla, we need to follow these steps:\n\n1. First, calculate how many marbles Dallas has after giving 4 to the playground.\n2. Then, subtract the number of mar",
+  "ttft_ms": 433.93
+ },
+ {
+  "i": 56,
+  "pred": "10.0",
+  "gold": "16",
+  "ok": false,
+  "gen": "First, let's calculate the total cost of the non-food items before tax:\n\n- Milk: $2\n- Eggs: $3\n- Light bulbs: $3\n- Cups: $3\n- Roach traps: $4\n\nTotal cost of non-food items = $2 + $3 + $3 + $3 + $4 = $",
+  "ttft_ms": 505.24
+ },
+ {
+  "i": 57,
+  "pred": "10.0",
+  "gold": "49",
+  "ok": false,
+  "gen": "The house's initial temperature is 40 degrees. After baking for 3 hours, the temperature increases by 5 degrees per hour, so the increase is 3 * 5 = 15 degrees. The final temperature is 40 + 15 = 55 d",
+  "ttft_ms": 697.42
+ },
+ {
+  "i": 58,
+  "pred": "6.0",
+  "gold": "6",
+  "ok": true,
+  "gen": "Let's break down the problem step by step:\n\n1. Finley started in first place.\n2. She fell back 5 spots, so she was in the 6th place.\n3. She then moved ahead 2 spots, so she was in the 8th place.\n4. Sh",
+  "ttft_ms": 608.99
+ },
+ {
+  "i": 59,
+  "pred": "2.0",
+  "gold": "32",
+  "ok": false,
+  "gen": "To find out how high the ball goes on its second bounce, we need to calculate the height it reaches after the first bounce and then use that to find the height of the second bounce.\n\n1. The ball is dr",
+  "ttft_ms": 572.69
+ },
+ {
+  "i": 60,
+  "pred": "8.0",
+  "gold": "168",
+  "ok": false,
+  "gen": "Let's break down the problem step by step:\n\n1. **Andrea's Apples:**\n   - Andrea has 8 more apples than Jamal.\n   - Jamal has 4 more bananas than apples.\n   - Jamal has 4 apples (since 4 more than 0 ap",
+  "ttft_ms": 317.57
+ },
+ {
+  "i": 61,
+  "pred": "5.0",
+  "gold": "225",
+  "ok": false,
+  "gen": "First, we need to determine how much potato salad an adult dinosaur will eat. According to the information provided, an adult dinosaur will eat 10 lbs of potato salad.\n\nNext, we need to determine how ",
+  "ttft_ms": 706.73
+ },
+ {
+  "i": 62,
+  "pred": "100.0",
+  "gold": "50",
+  "ok": false,
+  "gen": "100 guests * 15 cookies = 1500 cookies\n1500 cookies / 15 cookies per person = 100 people\n\nThe answer is 100.",
+  "ttft_ms": 692.65
+ },
+ {
+  "i": 63,
+  "pred": "30.0",
+  "gold": "45",
+  "ok": false,
+  "gen": "First, let's determine how many shrimp Emily can peel in 10 minutes. Since she can peel 6 shrimp per minute, in 10 minutes she can peel \\(6 \\times 10 = 60\\) shrimp.\n\nNext, let's calculate how many shr",
+  "ttft_ms": 310.93
+ },
+ {
+  "i": 64,
+  "pred": "24.0",
+  "gold": "7",
+  "ok": false,
+  "gen": "8 * 1 = 8\n8 * 2 = 16\n8 + 16 = 24. The answer is 24.",
+  "ttft_ms": 463.03
+ },
+ {
+  "i": 65,
+  "pred": "1.0",
+  "gold": "800",
+  "ok": false,
+  "gen": "First, we need to calculate the total calories burned by Hannah. She burns 500 calories per hour for aerobics and 600 calories per hour for running. Since she spends 2 hours doing aerobics and 1 hour ",
+  "ttft_ms": 590.66
+ },
+ {
+  "i": 66,
+  "pred": "2.0",
+  "gold": "22",
+  "ok": false,
+  "gen": "Let's denote the number of votes in favor of the new regulation as \\( F \\) and the number of votes against it as \\( A \\).\n\nAccording to the problem, the vote passed with twice as many votes in favor a",
+  "ttft_ms": 440.18
+ },
+ {
+  "i": 67,
+  "pred": "6.0",
+  "gold": "235",
+  "ok": false,
+  "gen": "First, let's calculate the total cost for one week:\n\n- Blouses: 5 blouses * $5.00/blouse = $25.00\n- Pants: 1 pair * $8.00/pair = $8.00\n- Skirt: 1 skirt * $6.00/skirt = $6.00\n\nNow, let's add these cost",
+  "ttft_ms": 631.89
+ },
+ {
+  "i": 68,
+  "pred": "5.0",
+  "gold": "3",
+  "ok": false,
+  "gen": "To determine how many weeks a 42 kg bag of rice will last, we need to calculate the total amount of rice consumed by the household in one week and then divide the total amount of rice by the weekly co",
+  "ttft_ms": 369.87
+ },
+ {
+  "i": 69,
+  "pred": "18.0",
+  "gold": "2",
+  "ok": false,
+  "gen": "First, we need to calculate the total number of cups of lemonade Millie sells in one hour. Since she sells 4 cups per hour and each pitcher holds 12 cups, she can make 12/4 = 3 pitchers per hour. Sinc",
+  "ttft_ms": 704.86
+ },
+ {
+  "i": 70,
+  "pred": "2.0",
+  "gold": "3000",
+  "ok": false,
+  "gen": "First, let's calculate the total production of ice cream in 48 hours.\n\nFor chocolate ice cream:\n100 quarts/hour * 48 hours = 4800 quarts\n\nFor vanilla ice cream:\n50 quarts/hour * 48 hours = 2400 quarts",
+  "ttft_ms": 435.79
+ },
+ {
+  "i": 71,
+  "pred": "5.0",
+  "gold": "300",
+  "ok": false,
+  "gen": "Let's break down the problem step by step:\n\n1. Mr Hezekiah had 20 trucks.\n2. Each truck carried 20 tons of fertiliser.\n3. There were 20 trucks * 20 tons = 400 tons of fertiliser in total.\n4. Two hours",
+  "ttft_ms": 788.9
+ },
+ {
+  "i": 72,
+  "pred": "150.0",
+  "gold": "20",
+  "ok": false,
+  "gen": "First, calculate the total number of eggs Chester eats in the first 30 days: 3 eggs/day * 30 days = 90 eggs.\n\nThen, calculate the total number of eggs Chester eats in the next 30 days: 5 eggs/day * 30",
+  "ttft_ms": 358.6
+ },
+ {
+  "i": 73,
+  "pred": "130.0",
+  "gold": "130",
+  "ok": true,
+  "gen": "Lloyd earns $10 per hour. For the first week, he tutored for 5 hours, so he earned 10 * 5 = $50. For the second week, he tutored for 8 hours, so he earned 10 * 8 = $80. In total, he earned $50 + $80 =",
+  "ttft_ms": 399.86
+ },
+ {
+  "i": 74,
+  "pred": "8.0",
+  "gold": "1",
+  "ok": false,
+  "gen": "First, calculate the total number of smores needed:\n- Kids: 9 kids * 2 smores each = 18 smores\n- Adults: 6 adults * 1 smore each = 6 smores\nTotal smores needed: 18 + 6 = 24 smores\n\nEach sleeve of grah",
+  "ttft_ms": 530.95
+ },
+ {
+  "i": 75,
+  "pred": "3.0",
+  "gold": "8",
+  "ok": false,
+  "gen": "First, let's calculate the total cost of the eggs Rose bought. Since she bought five dozens of eggs, and each dozen costs $2.40, the total cost is:\n\n5 dozens * $2.40/dozen = $12.00\n\nNext, let's calcul",
+  "ttft_ms": 307.0
+ },
+ {
+  "i": 76,
+  "pred": "6.0",
+  "gold": "50",
+  "ok": false,
+  "gen": "Let's break down the problem step by step:\n\n1. On Friday, the store sold 14 pairs of tennis shoes.\n2. On Saturday, they sold double that number, which is 14 * 2 = 28 pairs.\n3. On Sunday, they sold hal",
+  "ttft_ms": 696.03
+ },
+ {
+  "i": 77,
+  "pred": "1.0",
+  "gold": "3",
+  "ok": false,
+  "gen": "Let's break down the problem step by step:\n\n1. **Monday and Tuesday**: Frankie watched a 1-hour episode each night.\n   - Monday: 1 hour\n   - Tuesday: 1 hour\n   Total for Monday and Tuesday: 1 + 1 = 2 ",
+  "ttft_ms": 914.51
+ },
+ {
+  "i": 78,
+  "pred": "2.0",
+  "gold": "5",
+  "ok": false,
+  "gen": "Let's break down the problem step by step:\n\n1. Anna started with a budget of $16.\n2. She spent $4 initially.\n3. After spending $4, she has $16 - $4 = $12 left.\n4. She bought 2 books, and each book cos",
+  "ttft_ms": 548.72
+ },
+ {
+  "i": 79,
+  "pred": "1320.0",
+  "gold": "110",
+  "ok": false,
+  "gen": "To find the average cost per pair of shoes, we need to divide the total amount spent on shoes by the number of pairs purchased.\n\nTotal amount spent on shoes = $2640\nNumber of pairs purchased = 2\n\nAver",
+  "ttft_ms": 315.04
+ },
+ {
+  "i": 80,
+  "pred": "2.0",
+  "gold": "1300",
+  "ok": false,
+  "gen": "Let's break down the problem step by step:\n\n1. **Total number of books sold in the first year:**\n   - She sold 45 books in the first year.\n   - She sold twice as many books in the first year as in the",
+  "ttft_ms": 674.81
+ },
+ {
+  "i": 81,
+  "pred": "5.0",
+  "gold": "16",
+  "ok": false,
+  "gen": "Let's break down the problem step by step:\n\n1. Let's denote the number of candies George initially had as \\( G \\).\n2. According to the problem, Nick had twice as many candies as George, so Nick had \\(",
+  "ttft_ms": 273.12
+ },
+ {
+  "i": 82,
+  "pred": "100.0",
+  "gold": "80",
+  "ok": false,
+  "gen": "Let's denote the amount of money Brad gets as \\( B \\). According to the problem, Jeff gets 4 times as much as Brad, so Jeff gets \\( 4B \\).\n\nThe total amount of money they have together is 100 dollars,",
+  "ttft_ms": 357.97
+ },
+ {
+  "i": 83,
+  "pred": "25.0",
+  "gold": "45",
+  "ok": false,
+  "gen": "She collects 15 kg of milk from the first half and 10 kg from the second half. The total is 15 + 10 = 25 kg. The answer is 25.",
+  "ttft_ms": 323.62
+ },
+ {
+  "i": 84,
+  "pred": "36.0",
+  "gold": "36",
+  "ok": true,
+  "gen": "6 * 2 + 8 * 3 = 12 + 24 = 36. The answer is 36.",
+  "ttft_ms": 259.13
+ },
+ {
+  "i": 85,
+  "pred": "1.65",
+  "gold": "5",
+  "ok": false,
+  "gen": "Let's break down the problem step by step:\n\n1. **Total money spent**: $5\n2. **Money left**: 1% of $5 = $0.01 * $5 = $0.05\n3. **Money spent on chips**: $5 - $0.05 = $4.95\n4. **Cost of chips per bag**: ",
+  "ttft_ms": 447.77
+ },
+ {
+  "i": 86,
+  "pred": "7.0",
+  "gold": "9",
+  "ok": false,
+  "gen": "To find out how many more hours they need to raise the remaining $4200, we divide the remaining amount by the amount raised per hour.\n\n$4200 / $600 = 7\n\nThe answer is 7 hours.",
+  "ttft_ms": 601.48
+ },
+ {
+  "i": 87,
+  "pred": "24.0",
+  "gold": "36",
+  "ok": false,
+  "gen": "30 * 2 * 0.4 = 24. The answer is 24.",
+  "ttft_ms": 326.68
+ },
+ {
+  "i": 88,
+  "pred": "420.0",
+  "gold": "60",
+  "ok": false,
+  "gen": "To find out how many branches Felix climbed per day, we first need to determine how many branches he climbed in total during the week. \n\nGiven that he made $105 in a week and charges $0.25 per branch,",
+  "ttft_ms": 614.43
+ },
+ {
+  "i": 89,
+  "pred": "9.0",
+  "gold": "9",
+  "ok": true,
+  "gen": "In the first 20 minutes, Mike scores 4 points. In the second 20 minutes, he scores 25% more points, which is 25/100 * 4 = 1 point. So, in the second 20 minutes, he scores 4 + 1 = 5 points. Therefore, ",
+  "ttft_ms": 427.09
+ },
+ {
+  "i": 90,
+  "pred": "3.0",
+  "gold": "1",
+  "ok": false,
+  "gen": "First, let's determine the cost of the salad and yogurt:\n\n- Salad costs $6\n- Yogurt is half the price of the salad, so the yogurt costs $6 / 2 = $3\n\nNow, let's calculate the total cost of the carrots,",
+  "ttft_ms": 446.35
+ },
+ {
+  "i": 91,
+  "pred": "2.0",
+  "gold": "30",
+  "ok": false,
+  "gen": "Let's denote the number of players on the defense as \\( D \\).\n\nAccording to the problem:\n- The number of players on the offense is twice the number of players on the defense, so the number of players ",
+  "ttft_ms": 436.34
+ },
+ {
+  "i": 92,
+  "pred": "4.0",
+  "gold": "70000",
+  "ok": false,
+  "gen": "Let's break down the problem step by step:\n\n1. **Initial Value of the House**: The house initially costs $80,000.\n2. **Repairs Cost**: Josh spends $50,000 on repairs.\n3. **Total Cost**: The total cost",
+  "ttft_ms": 478.92
+ },
+ {
+  "i": 93,
+  "pred": "34.0",
+  "gold": "34",
+  "ok": true,
+  "gen": "The total earnings from the yams is 6 * $1.5 = $9. The total earnings from the sweet potatoes is 10 * $2 = $20. The total earnings from the carrots is 4 * $1.25 = $5. Adding these amounts together, Je",
+  "ttft_ms": 562.77
+ },
+ {
+  "i": 94,
+  "pred": "7.0",
+  "gold": "13",
+  "ok": false,
+  "gen": "Let's denote the age of the triplet as \\( x \\). Since one twin is 7 years older than one triplet, the age of the other twin would be \\( x + 7 \\).\n\nThe combined ages of the two sets of children is give",
+  "ttft_ms": 325.32
+ },
+ {
+  "i": 95,
+  "pred": "306.0",
+  "gold": "306",
+  "ok": true,
+  "gen": "850 / 50 = 17. The order cost $17 * 18 = $306. The answer is $306.",
+  "ttft_ms": 354.65
+ },
+ {
+  "i": 96,
+  "pred": "6.0",
+  "gold": "55",
+  "ok": false,
+  "gen": "To find out how many crates Sam was off from his target, we need to calculate the total number of crates he sold over the week and then subtract that from his target.\n\nTotal crates sold = 20 (weekend)",
+  "ttft_ms": 663.58
+ },
+ {
+  "i": 97,
+  "pred": "7.0",
+  "gold": "24",
+  "ok": false,
+  "gen": "Let's break down the problem step by step:\n\n1. Sidney ordered 3 less than ten meatball sub sandwiches.\n   - Ten meatball sub sandwiches = 10\n   - 3 less than 10 = 10 - 3 = 7\n   - Sidney ordered 7 meat",
+  "ttft_ms": 510.95
+ },
+ {
+  "i": 98,
+  "pred": "75.0",
+  "gold": "75",
+  "ok": true,
+  "gen": "10 bottle caps/day * $0.25/bottle cap = $2.50/day\n$2.50/day * 30 days = $75.00/month\n\nThe answer is $75.00.",
+  "ttft_ms": 450.0
+ },
+ {
+  "i": 99,
+  "pred": "12.0",
+  "gold": "24",
+  "ok": false,
+  "gen": "Maria gave each of her 4 friends 2 water balloons, so she gave away 4 * 2 = 8 water balloons. She also gave her mom 3 more balloons, so she had 3 more balloons. In total, she had 3 + 8 = 11 water ball",
+  "ttft_ms": 696.0
+ },
+ {
+  "i": 100,
+  "pred": "20.0",
+  "gold": "50",
+  "ok": false,
+  "gen": "To determine how much money Tyson would spend on meat and cheese to make enough sandwiches to serve 20 people, we need to follow these steps:\n\n1. **Determine the total amount of meat and cheese needed",
+  "ttft_ms": 747.06
+ },
+ {
+  "i": 101,
+  "pred": "40.0",
+  "gold": "110",
+  "ok": false,
+  "gen": "Let's denote the number of silver coins as \\( S \\). According to the problem, Gretchen has 30 more gold coins than silver coins. Since she has 70 gold coins, we can express the number of silver coins ",
+  "ttft_ms": 381.41
+ },
+ {
+  "i": 102,
+  "pred": "0.0",
+  "gold": "452",
+  "ok": false,
+  "gen": "To determine how many minutes Kim slept on that day, we need to calculate the total time she was awake and subtract the time she spent sleepwalking.\n\nFirst, let's calculate the total time she was awak",
+  "ttft_ms": 821.21
+ },
+ {
+  "i": 103,
+  "pred": "30.0",
+  "gold": "30",
+  "ok": true,
+  "gen": "First, calculate the total number of units in the building:\n15 floors * 8 units per floor = 120 units\n\nNext, calculate the number of occupied units:\n3/4 * 120 units = 90 units\n\nFinally, calculate the ",
+  "ttft_ms": 415.66
+ },
+ {
+  "i": 104,
+  "pred": "20.0",
+  "gold": "80",
+  "ok": false,
+  "gen": "Let's denote the total number of students at the grade level as \\( x \\).\n\nAccording to the problem, three-fourths of the students have a desktop computer at home. This means that the remaining one-fou",
+  "ttft_ms": 319.53
+ },
+ {
+  "i": 105,
+  "pred": "2.0",
+  "gold": "3",
+  "ok": false,
+  "gen": "Let's break down the problem step by step:\n\n1. Sally bought 2 pounds of taffy at a 1/2 off sale. The original price for 1 pound is $3, so 2 pounds at full price would be $6. Since she gets 1/2 off, sh",
+  "ttft_ms": 786.61
+ },
+ {
+  "i": 106,
+  "pred": "15.0",
+  "gold": "120",
+  "ok": false,
+  "gen": "To determine how far the turtle can crawl in 40 seconds, we first need to find the turtle's speed. Since the cat is 5 times faster than the turtle, the turtle's speed is:\n\n\\[ \\text{Turtle's speed} = \\",
+  "ttft_ms": 312.9
+ },
+ {
+  "i": 107,
+  "pred": "2.0",
+  "gold": "172",
+  "ok": false,
+  "gen": "Let's break down the problem step by step:\n\n1. Ophelia has 20 sofas.\n2. Jenna has 3 times as many chairs as Ophelia, so Jenna has \\(3 \\times 20 = 60\\) chairs.\n3. Ophelia has 2 fewer sofas than chairs,",
+  "ttft_ms": 510.63
+ },
+ {
+  "i": 108,
+  "pred": "40.0",
+  "gold": "70",
+  "ok": false,
+  "gen": "To calculate the total time Carmen spent playing these games, we need to multiply the time spent on each type of puzzle by the number of puzzles she solved and then add the results together.\n\nFor the ",
+  "ttft_ms": 434.33
+ },
+ {
+  "i": 109,
+  "pred": "11.5",
+  "gold": "13",
+  "ok": false,
+  "gen": "3.50 + 7.50 + 7.50 + 8.50 = 28.50\n\n40 - 28.50 = 11.50\n\nThe answer is 11.50.",
+  "ttft_ms": 516.94
+ },
+ {
+  "i": 110,
+  "pred": "30.0",
+  "gold": "150",
+  "ok": false,
+  "gen": "The capacity of Ali's class is 120 students. Each of John's classes has 1/8 the capacity of Ali's class, so each of John's class has 120 * 1/8 = 15 students.\n\nJohn has two classes, so the total capaci",
+  "ttft_ms": 541.2
+ },
+ {
+  "i": 111,
+  "pred": "5.0",
+  "gold": "18",
+  "ok": false,
+  "gen": "Let's break down the problem step by step.\n\n1. Erin's final score is 14 points.\n2. Erin's score is three times Sara's score, and Sara scored 8 points.\n3. Therefore, Erin's score is \\(3 \\times 8 = 24\\)",
+  "ttft_ms": 269.82
+ },
+ {
+  "i": 112,
+  "pred": "4.0",
+  "gold": "1",
+  "ok": false,
+  "gen": "Let's break down the problem step by step:\n\n1. **Cost of tickets**: \n   - Friday: $10\n   - Saturday: $10\n   - Other days: $7\n\n2. **Cost of popcorn and candy**:\n   - Popcorn: $8 per box\n   - Candy: $2 ",
+  "ttft_ms": 1062.66
+ },
+ {
+  "i": 113,
+  "pred": "250.0",
+  "gold": "250",
+  "ok": true,
+  "gen": "1000 - 15 * 30 - 300 = 1000 - 450 - 300 = 250. The answer is 250.",
+  "ttft_ms": 601.54
+ },
+ {
+  "i": 114,
+  "pred": "3.0",
+  "gold": "3",
+  "ok": true,
+  "gen": "42 / (7 + 7) = 42 / 14 = 3. The answer is 3.",
+  "ttft_ms": 367.4
+ },
+ {
+  "i": 115,
+  "pred": "15.0",
+  "gold": "15",
+  "ok": true,
+  "gen": "The total number of petals on the orchids is 5 petals/orchid * 5 orches = 25 petals.\nThe total number of petals on the daisies is 10 petals/daisy * 4 daisies = 40 petals.\nThe difference in the number ",
+  "ttft_ms": 432.09
+ },
+ {
+  "i": 116,
+  "pred": "4.0",
+  "gold": "12",
+  "ok": false,
+  "gen": "Let's denote the number of novels Regina has written this year as \\( x \\). According to the problem, the number of novels she wrote last year (9) is 3/4 of the number of novels she has written this ye",
+  "ttft_ms": 304.67
+ },
+ {
+  "i": 117,
+  "pred": "60.0",
+  "gold": "60",
+  "ok": true,
+  "gen": "100 - (5 * 8) = 100 - 40 = 60. The answer is 60.",
+  "ttft_ms": 423.65
+ },
+ {
+  "i": 118,
+  "pred": "6.0",
+  "gold": "3",
+  "ok": false,
+  "gen": "Let's break down the problem step by step:\n\n1. **Isabel's height**: 7 feet\n2. **Ned's height**: 7 - 2 = 5 feet (since Ned is two feet shorter than Isabel)\n3. **Carl's height**: 5 + 1 = 6 feet (since C",
+  "ttft_ms": 576.89
+ },
+ {
+  "i": 119,
+  "pred": "0.5",
+  "gold": "9",
+  "ok": false,
+  "gen": "First, let's calculate the earnings for each task:\n\n- Doing laundry: $3.00 per week * 1 week = $3.00\n- Cleaning the room: $1.50 per week * 1 week = $1.50\n- Taking the trash to the curb: $0.75 per week",
+  "ttft_ms": 905.05
+ },
+ {
+  "i": 120,
+  "pred": "20000.0",
+  "gold": "140000",
+  "ok": false,
+  "gen": "5000 bars/day * 2 days/week * $2/bar = $20000. The answer is $20000.",
+  "ttft_ms": 447.6
+ },
+ {
+  "i": 121,
+  "pred": "6.0",
+  "gold": "3",
+  "ok": false,
+  "gen": "54 students / 6 groups = 9 students per group. \n\nSince 12 groups are required and only 6 groups can be formed with 54 students, the number of additional groups needed is:\n\n12 groups - 6 groups = 6 mor",
+  "ttft_ms": 313.67
+ },
+ {
+  "i": 122,
+  "pred": "12.0",
+  "gold": "2400",
+  "ok": false,
+  "gen": "To find the total cost of the new square floor tiles, you need to first determine how many tiles you will need. Since each tile is 1 square foot in area and the total area of the floor is 200 square f",
+  "ttft_ms": 502.08
+ },
+ {
+  "i": 123,
+  "pred": "8.0",
+  "gold": "4",
+  "ok": false,
+  "gen": "16 * 0.5 = 8. The answer is 8.",
+  "ttft_ms": 393.32
+ },
+ {
+  "i": 124,
+  "pred": "7.0",
+  "gold": "79",
+  "ok": false,
+  "gen": "First, let's calculate the total number of petals on the flowers Rose picked:\n\n1. 3 flowers with 5 petals each: \\(3 \\times 5 = 15\\) petals\n2. 4 flowers with 6 petals each: \\(4 \\times 6 = 24\\) petals\n3",
+  "ttft_ms": 875.13
+ },
+ {
+  "i": 125,
+  "pred": "10.0",
+  "gold": "300",
+  "ok": false,
+  "gen": "To determine how many lemons Tim gets in a decade, we need to break down the problem step by step:\n\n1. **Number of trees**: Tim grows 5 trees.\n2. **Leaves per tree per year**: Each tree produces 6 lem",
+  "ttft_ms": 348.79
+ },
+ {
+  "i": 126,
+  "pred": "20.0",
+  "gold": "91",
+  "ok": false,
+  "gen": "First, let's calculate the net change in the number of trees Tom has over the 10 years:\n\n- He plants 10 trees per year, so over 10 years, he plants \\(10 \\times 10 = 100\\) trees.\n- He also chops down 2",
+  "ttft_ms": 443.89
+ },
+ {
+  "i": 127,
+  "pred": "28.0",
+  "gold": "8",
+  "ok": false,
+  "gen": "16 + 12 = 28. The answer is 28.",
+  "ttft_ms": 258.69
+ },
+ {
+  "i": 128,
+  "pred": "60.0",
+  "gold": "120",
+  "ok": false,
+  "gen": "First, let's determine how much Karen earns per hour. Since Karen earns twice what Lorie earns, and Lorie earns $10 per hour, Karen earns:\n\n\\[ 10 \\times 2 = 20 \\text{ dollars per hour} \\]\n\nNext, we ca",
+  "ttft_ms": 305.11
+ },
+ {
+  "i": 129,
+  "pred": "40.0",
+  "gold": "350",
+  "ok": false,
+  "gen": "To find the total number of pesos they have together, we need to calculate the total number of silver pesos and gold pesos separately and then add them together.\n\nAxel has 50 silver pesos and 80 gold ",
+  "ttft_ms": 381.51
+ },
+ {
+  "i": 130,
+  "pred": "1000.0",
+  "gold": "2600",
+  "ok": false,
+  "gen": "To find the total weight of Joe's bag of candy, we need to calculate the weight of the chocolate bars and the candied apples separately and then add them together.\n\nFirst, let's calculate the weight o",
+  "ttft_ms": 443.64
+ },
+ {
+  "i": 131,
+  "pred": "2.0",
+  "gold": "10",
+  "ok": false,
+  "gen": "To solve this, let's break it down step by step:\n\n1. **Determine the number of white shirts with no collars:**\n   - Total white shirts = 40\n   - Half of the white shirts have collars: \\( \\frac{40}{2} ",
+  "ttft_ms": 439.92
+ },
+ {
+  "i": 132,
+  "pred": "8.0",
+  "gold": "26",
+  "ok": false,
+  "gen": "The caterer prepared enough hotdogs for 36 guests to have 2 hotdogs each, which means he prepared 36 * 2 = 72 hotdogs. Since 40 guests showed up and everyone wanted a second hotdog, he had to prepare ",
+  "ttft_ms": 624.03
+ },
+ {
+  "i": 133,
+  "pred": "1.0",
+  "gold": "7",
+  "ok": false,
+  "gen": "First, let's calculate how many pieces of gum Jim chews during the school day:\n\n- For every 2 hours, he chews 1 piece of gum.\n- The school day lasts 8 hours, so he chews 8 / 2 = 4 pieces of gum during",
+  "ttft_ms": 712.91
+ },
+ {
+  "i": 134,
+  "pred": "25.0",
+  "gold": "31",
+  "ok": false,
+  "gen": "First, calculate the interest on the $300 loan. The interest is 2% of $300, which is $300 * 0.02 = $6.\n\nNext, calculate the total amount Stephen will pay back. This includes the $300 principal and the",
+  "ttft_ms": 567.88
+ },
+ {
+  "i": 135,
+  "pred": "675.0",
+  "gold": "975",
+  "ok": false,
+  "gen": "To calculate the total amount Brenda will have after 3 years, we need to first determine the interest she earns over that period.\n\nThe interest rate is three-quarters of the original amount, which is ",
+  "ttft_ms": 319.93
+ },
+ {
+  "i": 136,
+  "pred": "10.0",
+  "gold": "20",
+  "ok": false,
+  "gen": "First, let's calculate the total cost of the beeswax and wicks for 20 candles:\n\n- Each pound of beeswax makes 10 candles, so 20 candles require 2 pounds of beeswax.\n- The cost of 2 pounds of beeswax i",
+  "ttft_ms": 599.69
+ },
+ {
+  "i": 137,
+  "pred": "40.0",
+  "gold": "120",
+  "ok": false,
+  "gen": "Let's break down the problem step by step:\n\n1. It took Finley 30 minutes to cook rice.\n2. It took her 20 more minutes to cook pork than rice, so it took her 30 + 20 = 50 minutes to cook pork.\n3. Beans",
+  "ttft_ms": 642.88
+ },
+ {
+  "i": 138,
+  "pred": "220.0",
+  "gold": "220",
+  "ok": true,
+  "gen": "The weight of the Dachshund is 2 * 10 = 20 pounds. The weight of the Papillon is 20 / 4 = 5 pounds. The weight of the Mastiff is 44 * 5 = 220 pounds. The answer is 220.",
+  "ttft_ms": 878.71
+ },
+ {
+  "i": 139,
+  "pred": "63.0",
+  "gold": "87",
+  "ok": false,
+  "gen": "24 * 2 = 48 baby outfits\n48 + 15 = 63 baby outfits\n\nThe answer is 63.",
+  "ttft_ms": 521.52
+ },
+ {
+  "i": 140,
+  "pred": "20.0",
+  "gold": "300",
+  "ok": false,
+  "gen": "First, calculate the total earnings from selling cookies and cupcakes:\n\nCookies: 80 cookies * $1 = $80\nCupcakes: 60 cupcakes * $4 = $240\n\nTotal earnings: $80 + $240 = $320\n\nNext, calculate the total m",
+  "ttft_ms": 360.64
+ },
+ {
+  "i": 141,
+  "pred": "25.0",
+  "gold": "30",
+  "ok": false,
+  "gen": "5 * 2 = 10 minutes\n10 * 2 = 20 minutes\n10 / 2 = 5 minutes\n5 * 5 = 25 minutes\n\nThe answer is 25 minutes.",
+  "ttft_ms": 576.49
+ },
+ {
+  "i": 142,
+  "pred": "16.0",
+  "gold": "17",
+  "ok": false,
+  "gen": "Let's break down the problem step by step:\n\n1. Wayne takes 4 minutes to drive to the theater.\n2. Bernadette's drive takes four times as long as Wayne's, so Bernadette's drive takes \\(4 \\times 4 = 16\\)",
+  "ttft_ms": 856.43
+ },
+ {
+  "i": 143,
+  "pred": "16.0",
+  "gold": "16",
+  "ok": true,
+  "gen": "64 - (2 * 24) = 64 - 48 = 16. The answer is 16.",
+  "ttft_ms": 520.86
+ },
+ {
+  "i": 144,
+  "pred": "7.0",
+  "gold": "7",
+  "ok": true,
+  "gen": "27 students * 2 glue sticks = 54 glue sticks\n54 glue sticks / 8 glue sticks per pack = 6.75 packs\nSince Mr. Jackson can only buy whole packs, he will need to round up to the next whole number.\nTherefo",
+  "ttft_ms": 602.16
+ },
+ {
+  "i": 145,
+  "pred": "3.0",
+  "gold": "81",
+  "ok": false,
+  "gen": "To solve this problem, we need to understand the pattern of the phone tree. Each round, the number of families called increases by a factor of 3. Let's break it down step by step:\n\n1. **First Round**:",
+  "ttft_ms": 550.87
+ },
+ {
+  "i": 146,
+  "pred": "5.0",
+  "gold": "5",
+  "ok": true,
+  "gen": "2 * 2 + 1 = 5. The answer is 5.",
+  "ttft_ms": 358.23
+ },
+ {
+  "i": 147,
+  "pred": "7.0",
+  "gold": "9",
+  "ok": false,
+  "gen": "First, calculate the total number of cookies Jenny buys in a week:\n1 bag * 36 cookies = 36 cookies\n\nNext, calculate the number of cookies her son eats in a week:\n5 days * 1 cookie/day = 5 cookies\n\nThe",
+  "ttft_ms": 589.07
+ },
+ {
+  "i": 148,
+  "pred": "5.0",
+  "gold": "10",
+  "ok": false,
+  "gen": "15 pages * 1/3 = 5 pages. The answer is 5.",
+  "ttft_ms": 310.52
+ },
+ {
+  "i": 149,
+  "pred": "2.0",
+  "gold": "24",
+  "ok": false,
+  "gen": "Let's break down the problem step by step:\n\n1. **Determine John's age when the game came out:**\n   - John is currently 28 years old.\n   - The game came out 20 years ago.\n   - Therefore, John was 28 - ",
+  "ttft_ms": 315.64
+ },
+ {
+  "i": 150,
+  "pred": "6.0",
+  "gold": "5",
+  "ok": false,
+  "gen": "The total cost of the items is $4.20 + $9.45 + $1.35 = $14.  The change the cashier gives back is $20 - $14 = $6. The answer is $6.",
+  "ttft_ms": 383.06
+ },
+ {
+  "i": 151,
+  "pred": "50.0",
+  "gold": "50",
+  "ok": true,
+  "gen": "Let's break down the problem step by step:\n\n1. On Monday, Robert collects 20 shells.\n2. Kylie collects 5 more shells than Robert, so Kylie collects \\(20 + 5 = 25\\) shells on Monday.\n3. On Tuesday, Kyl",
+  "ttft_ms": 444.68
+ },
+ {
+  "i": 152,
+  "pred": "30.0",
+  "gold": "48",
+  "ok": false,
+  "gen": "Let's break down the problem step by step:\n\n1. **Starting value**: The number train starts with a value of 20.\n2. **First operation**: The starting value plus half the number is calculated. Half of 20",
+  "ttft_ms": 460.81
+ },
+ {
+  "i": 153,
+  "pred": "25.0",
+  "gold": "25",
+  "ok": true,
+  "gen": "2 * 15 = 30. 30 - 5 = 25. The answer is 25.",
+  "ttft_ms": 334.11
+ },
+ {
+  "i": 154,
+  "pred": "6.0",
+  "gold": "96",
+  "ok": false,
+  "gen": "Let's denote the number of strawberry cubes as \\( S \\). According to the problem, the number of blueberry cubes is \\( 5S - 4 \\). The total number of ice cubes is the sum of strawberry cubes and bluebe",
+  "ttft_ms": 529.01
+ },
+ {
+  "i": 155,
+  "pred": "2.0",
+  "gold": "25",
+  "ok": false,
+  "gen": "To solve this, we need to calculate the total volume of the watermelon and then determine how much each adult gets based on the given ratio.\n\nLet's assume the volume of the watermelon is V.\n\nEach adul",
+  "ttft_ms": 407.29
+ },
+ {
+  "i": 156,
+  "pred": "30.0",
+  "gold": "180",
+  "ok": false,
+  "gen": "Jack collected 60 dishes. Since he collected twice as many dishes as socks, Jack collected 60 / 2 = 30 socks.\n\nPeter has twice as many socks as Jack, so Peter has 2 * 30 = 60 socks.\n\nJack collected 60",
+  "ttft_ms": 701.79
+ },
+ {
+  "i": 157,
+  "pred": "21.0",
+  "gold": "21",
+  "ok": true,
+  "gen": "30 - 24 + 15 = 21. The answer is 21.",
+  "ttft_ms": 305.94
+ },
+ {
+  "i": 158,
+  "pred": "120.0",
+  "gold": "1200",
+  "ok": false,
+  "gen": "To find the total number of gallons of blood that ten sharks have, we first need to determine how much blood a single shark has. Since a shark has three times as much blood as a whale, and a whale has",
+  "ttft_ms": 436.8
+ },
+ {
+  "i": 159,
+  "pred": "300.0",
+  "gold": "255",
+  "ok": false,
+  "gen": "The total cost of the cell phones is 5 * $150 = $750. The total interest is 2% * $750 = $150. The total amount Shiela will pay is $750 + $150 = $900. The monthly payment over 3 months is $900 / 3 = $3",
+  "ttft_ms": 361.94
+ },
+ {
+  "i": 160,
+  "pred": "-0.67",
+  "gold": "4",
+  "ok": false,
+  "gen": "First, convert Adam's current height to feet: 40 inches / 12 inches/foot = 3.33 feet.\n\nNext, calculate how many inches Adam grows each year: 2 inches/year.\n\nTo determine how many years it will take fo",
+  "ttft_ms": 439.8
+ },
+ {
+  "i": 161,
+  "pred": "10.0",
+  "gold": "10",
+  "ok": true,
+  "gen": "First, Anthony gave 1/2 of his 50 pencils to Brandon, which is 50 * 1/2 = 25 pencils.\n\nThen, he gave 3/5 of the remaining 25 pencils to Charlie, which is 3/5 * 25 = 15 pencils.\n\nSo, the number of penc",
+  "ttft_ms": 375.48
+ },
+ {
+  "i": 162,
+  "pred": "700.0",
+  "gold": "700",
+  "ok": true,
+  "gen": "Farmer Smith's farm is 200 acres * 2 = 400 acres. Then, Farmer Smith's farm is 400 acres + 100 acres = 500 acres. Together, the two farms have 200 acres + 500 acres = 700 acres. The answer is 700.",
+  "ttft_ms": 384.2
+ },
+ {
+  "i": 163,
+  "pred": "38.0",
+  "gold": "38",
+  "ok": true,
+  "gen": "19 + 26 - 7 = 38. The answer is 38.",
+  "ttft_ms": 527.1
+ },
+ {
+  "i": 164,
+  "pred": "32.0",
+  "gold": "32",
+  "ok": true,
+  "gen": "3 * 7 = 21\n2 * 4 = 8\n1 * 3 = 3\n21 + 8 + 3 = 32. The answer is 32.",
+  "ttft_ms": 412.82
+ },
+ {
+  "i": 165,
+  "pred": "28.0",
+  "gold": "30",
+  "ok": false,
+  "gen": "Nani's brother is 8 * 2 = 16 years old.\nNani's sister is 16 * 0.25 = 4 years younger.\nSo, the total age of all three of the family members is 8 + 16 + 4 = 28 years old. The answer is 28.",
+  "ttft_ms": 325.97
+ },
+ {
+  "i": 166,
+  "pred": "16.0",
+  "gold": "16",
+  "ok": true,
+  "gen": "The tank's water depth on Tuesday is 17 + 7 = 24 feet. On Wednesday, the depth is two thirds of Tuesday's depth, so it is 24 * 2/3 = 16 feet. The answer is 16.",
+  "ttft_ms": 438.3
+ },
+ {
+  "i": 167,
+  "pred": "7.0",
+  "gold": "40",
+  "ok": false,
+  "gen": "First, let's calculate how much money John earned:\n\n- John worked twice as long as Jill on Saturday, so he worked 2 * 2 = 4 hours.\n- John worked three times as long as Jill on Sunday, so he worked 3 *",
+  "ttft_ms": 617.27
+ },
+ {
+  "i": 168,
+  "pred": "288.0",
+  "gold": "288",
+  "ok": true,
+  "gen": "They used 10 packs * 30 balloons/pack = 300 balloons. They threw 300 balloons - 12 balloons = 288 balloons. The answer is 288.",
+  "ttft_ms": 573.09
+ },
+ {
+  "i": 169,
+  "pred": "50.0",
+  "gold": "1100",
+  "ok": false,
+  "gen": "First, let's calculate the total cost of the 3 packs of old magic cards:\n3 packs * $1800/pack = $5400\n\nNext, let's calculate the total value of the cards Mark bought:\n1 card worth $4000 + 1 card worth",
+  "ttft_ms": 607.55
+ },
+ {
+  "i": 170,
+  "pred": "4.0",
+  "gold": "20",
+  "ok": false,
+  "gen": "To determine how many pounds of feed Dexter has left after a week, we need to follow these steps:\n\n1. Calculate the total feed consumption per pig per day.\n2. Calculate the total feed consumption per ",
+  "ttft_ms": 346.04
+ },
+ {
+  "i": 171,
+  "pred": "60.0",
+  "gold": "2",
+  "ok": false,
+  "gen": "To solve this, we need to understand that the phone charges at a rate of 1 percentage-point every 3 minutes. \n\nFirst, we calculate how many percentage-points the phone has gained in the initial 2 hour",
+  "ttft_ms": 364.76
+ },
+ {
+  "i": 172,
+  "pred": "4000.0",
+  "gold": "2880000",
+  "ok": false,
+  "gen": "The company hires 20 new employees every month, so over three months, they hire 20 * 3 = 60 new employees. The initial number of employees is 200, so after three months, the total number of employees ",
+  "ttft_ms": 534.4
+ },
+ {
+  "i": 173,
+  "pred": "6.0",
+  "gold": "9",
+  "ok": false,
+  "gen": "To determine how many rows of flowers Jackson will plant, we need to calculate the number of rows for both the red and blue tulips separately and then sum them up.\n\nFor the red tulips:\n- Each row can ",
+  "ttft_ms": 429.81
+ },
+ {
+  "i": 174,
+  "pred": "132.0",
+  "gold": "132",
+  "ok": true,
+  "gen": "To determine how much Ella would earn after 12 hours, we first need to find her hourly wage. \n\nElla earned $33 for 3 hours, so her hourly wage is $33 / 3 hours = $11 per hour.\n\nNow, to find out how mu",
+  "ttft_ms": 309.73
+ },
+ {
+  "i": 175,
+  "pred": "120.0",
+  "gold": "93",
+  "ok": false,
+  "gen": "3 * 2^5 = 120. The answer is 120.",
+  "ttft_ms": 617.43
+ },
+ {
+  "i": 176,
+  "pred": "6.0",
+  "gold": "4",
+  "ok": false,
+  "gen": "Clara has 20 books. Since Clara has two times as many books as Steven, we can find out how many books Steven has by dividing Clara's number of books by 2:\n\n20 books / 2 = 10 books\n\nNow, we know that A",
+  "ttft_ms": 309.87
+ },
+ {
+  "i": 177,
+  "pred": "40.0",
+  "gold": "85",
+  "ok": false,
+  "gen": "Maggie spent 1/4 of her money, which is 1/4 * $60 = $15. Maggie has $60 - $15 = $45 left.\n\nRiza spent 1/3 of her money, which is 1/3 * $60 = $20. Riza has $60 - $20 = $40 left.\n\nTogether, they have $4",
+  "ttft_ms": 312.5
+ },
+ {
+  "i": 178,
+  "pred": "6.0",
+  "gold": "33",
+  "ok": false,
+  "gen": "The total cost of the rocks is 2 * $2.50 = $5.00\nThe total cost of the coral is 3 * $2.00 = $6.00\nThe total cost of the fish is 20 * $0.50 = $10.00\nThe total cost of the fish food is $2.00\nThe total a",
+  "ttft_ms": 680.12
+ },
+ {
+  "i": 179,
+  "pred": "7.0",
+  "gold": "12",
+  "ok": false,
+  "gen": "20 - 5 - 8 = 7. The answer is 7.",
+  "ttft_ms": 421.17
+ },
+ {
+  "i": 180,
+  "pred": "12.0",
+  "gold": "7200",
+  "ok": false,
+  "gen": "To determine how much money Derrick makes in June, we need to follow these steps:\n\n1. Calculate the total number of doughnuts made in one day.\n2. Determine the total number of doughnuts made in June.\n",
+  "ttft_ms": 374.13
+ },
+ {
+  "i": 181,
+  "pred": "6.0",
+  "gold": "60",
+  "ok": false,
+  "gen": "Paul initially has 52 marbles. His friend gives him 28 more, so he now has 52 + 28 = 80 marbles. Then, he loses 1/4 of his marbles, which means he loses 80 * 1/4 = 20 marbles. So, the number of marble",
+  "ttft_ms": 409.95
+ },
+ {
+  "i": 182,
+  "pred": "2.0",
+  "gold": "44",
+  "ok": false,
+  "gen": "The normal brand of coffee costs $5 per pound. The more expensive brand is 20% more expensive, so it costs $5 + ($5 * 20%) = $5 + $1 = $6 per pound. Roger buys a week's worth of coffee, which is 7 pou",
+  "ttft_ms": 687.54
+ },
+ {
+  "i": 183,
+  "pred": "20.0",
+  "gold": "113",
+  "ok": false,
+  "gen": "First, let's calculate the total cost of the merchandise Sheila initially charged:\n\nInitial charge: $85.00\n\nSubtract the cost of the returned item:\n$85.00 - $15.00 = $70.00\n\nNow, let's calculate the t",
+  "ttft_ms": 890.64
+ },
+ {
+  "i": 184,
+  "pred": "2.0",
+  "gold": "43500",
+  "ok": false,
+  "gen": "The base price of the truck is $30,000. The king cab upgrade is an extra $7,500. The cost of the leather seats is one-third the cost of the king cab upgrade, which is $7,500 / 3 = $2,500. The running ",
+  "ttft_ms": 1007.19
+ },
+ {
+  "i": 185,
+  "pred": "600.0",
+  "gold": "720",
+  "ok": false,
+  "gen": "4 car washes * $15 per car wash * 12 months = $600. The answer is 600.",
+  "ttft_ms": 265.03
+ },
+ {
+  "i": 186,
+  "pred": "3.0",
+  "gold": "50",
+  "ok": false,
+  "gen": "Let's break down the problem step by step.\n\n1. **Cost of buying the bags**: The trader buys the bags at $20 per bag. Let's denote the number of bags bought as \\( x \\). The total cost for the bags is \\",
+  "ttft_ms": 612.56
+ },
+ {
+  "i": 187,
+  "pred": "24.0",
+  "gold": "24",
+  "ok": true,
+  "gen": "4 teachers * 2 lessons per day = 8 lessons per day\n8 lessons per day * 3 times per lesson = 24 times per day\n\nThe answer is 24.",
+  "ttft_ms": 571.49
+ },
+ {
+  "i": 188,
+  "pred": "49.0",
+  "gold": "43",
+  "ok": false,
+  "gen": "Let's break down the problem step by step:\n\n1. Gunther initially has 48 bananas.\n2. Arnold steals half of the bananas, so he steals 48 / 2 = 24 bananas.\n3. After Arnold steals, Gunther adds 25 more ba",
+  "ttft_ms": 861.96
+ },
+ {
+  "i": 189,
+  "pred": "8.0",
+  "gold": "30",
+  "ok": false,
+  "gen": "The first player ate a 6-ounce steak. The second player ate 8 beef tips, each 1 ounce, so they ate 8 * 1 = 8 ounces. The third player ate a one-pound steak, which is 16 ounces. The fourth and fifth pl",
+  "ttft_ms": 621.19
+ },
+ {
+  "i": 190,
+  "pred": "2.0",
+  "gold": "23",
+  "ok": false,
+  "gen": "First, let's calculate the total number of cookies Randy initially has:\n\n- Oatmeal cookies: 9\n- Chocolate chip cookies: 4\n- Sugar cookies: 5\n\nTotal initial cookies = 9 + 4 + 5 = 18\n\nNext, let's accoun",
+  "ttft_ms": 810.59
+ },
+ {
+  "i": 191,
+  "pred": "41.0",
+  "gold": "251",
+  "ok": false,
+  "gen": "First, we need to determine the total number of guests. Kayla invited 25 classmates and 7 girls from her dance class, which totals 32 guests. Adding her 13 family members gives us 45 guests in total. ",
+  "ttft_ms": 632.52
+ },
+ {
+  "i": 192,
+  "pred": "10.0",
+  "gold": "35",
+  "ok": false,
+  "gen": "To calculate the total time John spends taking care of dogs each week, we need to consider the time spent on each dog and then multiply by the number of dogs.\n\nEach dog takes 0.5 hours a day to walk a",
+  "ttft_ms": 327.68
+ },
+ {
+  "i": 193,
+  "pred": "75.0",
+  "gold": "50",
+  "ok": false,
+  "gen": "The total cost of the CDs before the discount is 10 * $15 = $150. The discount is 40%, so he gets a discount of 150 * 0.40 = $60. The total cost after the discount is 150 - 60 = $90. The total cost of",
+  "ttft_ms": 455.32
+ },
+ {
+  "i": 194,
+  "pred": "82.0",
+  "gold": "82",
+  "ok": true,
+  "gen": "Dylan bought 38 chicken sausages. He also bought 6 more fish sausages than chicken sausages, so he bought 38 + 6 = 44 fish sausages.\n\nTo find the total number of sausages Dylan bought, we add the chic",
+  "ttft_ms": 520.28
+ },
+ {
+  "i": 195,
+  "pred": "2.0",
+  "gold": "2100",
+  "ok": false,
+  "gen": "Let's break down the problem step by step.\n\n1. **First Month Sales:**\n   - Ariadne sold red hats for $400.\n   - The sales from green hats were half of the total sales from red hats.\n   - Total sales f",
+  "ttft_ms": 635.22
+ },
+ {
+  "i": 196,
+  "pred": "5.0",
+  "gold": "3",
+  "ok": false,
+  "gen": "First, let's calculate how much Jamaar has spent on the peaches, pears, kiwis, and apples:\n\n- Peaches: 3 peaches * $0.50 = $1.50\n- Pears: 4 pears * $0.50 = $2.00\n- Kiwis: 2 kiwis * $1.00 = $2.00\n- App",
+  "ttft_ms": 833.79
+ },
+ {
+  "i": 197,
+  "pred": "12.0",
+  "gold": "12",
+  "ok": true,
+  "gen": "Tyrion changes his face mask 2 times each time he goes out, and he goes out 3 times a day. So, he changes his mask 2 * 3 = 6 times a day. Over 2 days, he changes his mask 6 * 2 = 12 times. The answer ",
+  "ttft_ms": 373.2
+ },
+ {
+  "i": 198,
+  "pred": "2.0",
+  "gold": "11",
+  "ok": false,
+  "gen": "First, let's calculate the total time available for the concert, including the intermission.\n\nThe concert is 2 hours long, which is 2 * 60 = 120 minutes.\n\nThe intermission is 10 minutes, so the total ",
+  "ttft_ms": 615.2
+ },
+ {
+  "i": 199,
+  "pred": "32.0",
+  "gold": "12",
+  "ok": false,
+  "gen": "To find out how many tomatoes Freda used, we need to follow these steps:\n\n1. Determine the total volume of tomatoes used in the sauce.\n2. Calculate how many tomatoes were used based on the volume of t",
+  "ttft_ms": 481.63
+ }
+]

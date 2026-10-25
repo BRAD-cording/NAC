@@ -1,0 +1,21 @@
+{
+  "model": "models/Qwen2.5-1.5B-Instruct-hf",
+  "method": "gptq",
+  "group_size": 128,
+  "bits": 4,
+  "asym": true,
+  "act_order": false,
+  "sequential": "block (layer-parallel within block)",
+  "percdamp": 0.01,
+  "maxshrink": 0.8,
+  "grid": 100,
+  "calib": {
+    "dataset": "data/quant_dataset.json",
+    "num_samples": 128,
+    "capture_samples": 8,
+    "seqlen": 512
+  },
+  "blocks_calibrated": 28,
+  "device": "cpu",
+  "seconds": 6096.8
+}

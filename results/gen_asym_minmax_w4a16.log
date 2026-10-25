@@ -1,0 +1,31 @@
+[asym] layer 0/27 done
+[asym] layer 1/27 done
+[asym] layer 2/27 done
+[asym] layer 3/27 done
+[asym] layer 4/27 done
+[asym] layer 5/27 done
+[asym] layer 6/27 done
+[asym] layer 7/27 done
+[asym] layer 8/27 done
+[asym] layer 9/27 done
+[asym] layer 10/27 done
+[asym] layer 11/27 done
+[asym] layer 12/27 done
+[asym] layer 13/27 done
+[asym] layer 14/27 done
+[asym] layer 15/27 done
+[asym] layer 16/27 done
+[asym] layer 17/27 done
+[asym] layer 18/27 done
+[asym] layer 19/27 done
+[asym] layer 20/27 done
+[asym] layer 21/27 done
+[asym] layer 22/27 done
+[asym] layer 23/27 done
+[asym] layer 24/27 done
+[asym] layer 25/27 done
+[asym] layer 26/27 done
+[asym] layer 27/27 done
+[asym] saved 729 keys -> /media/pi/DATA/rknn-llm/nac_paper/results/asym_minmax_w4a16.qparams (1316 MB)
+[asym] weight int4 range [-8, 7]
+EXIT=0

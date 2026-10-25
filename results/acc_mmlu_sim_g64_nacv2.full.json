@@ -1,0 +1,25 @@
+{
+  "model": "models/Qwen2.5-1.5B-Instruct-hf",
+  "group_size": 64,
+  "num_samples": 1000,
+  "max_new_tokens": 32,
+  "protocol": "zero-shot generative(32tok)+firsttok, batched sim fp32",
+  "configs": {
+    "nacv2": {
+      "num_evaluated": 969,
+      "acc_gen": 0.4469,
+      "acc_gen_ci95": [
+        0.4169,
+        0.4788
+      ],
+      "acc_ftok": 0.4469,
+      "acc_ftok_ci95": [
+        0.4159,
+        0.4788
+      ],
+      "none_gen_rate": 0.0052,
+      "none_ftok_rate": 0.0062,
+      "elapsed_s": 41106.5
+    }
+  }
+}

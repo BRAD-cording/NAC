@@ -1,0 +1,3 @@
+[queue] 2026-10-09 13:51:41 ==> 等待 g64 build 完成
+[queue] 2026-10-09 14:51:52 FAIL: g64 build 未成功结束（看 results/build_g64_nac.log）
+[queue] 2026-10-09 14:51:52 FAIL: g64 build 未成功结束（看 results/build_g64_nac.log）

@@ -1,0 +1,194 @@
+[
+ {
+  "i": 0,
+  "pred": "None",
+  "gold": "A",
+  "ok": false,
+  "gen": "To solve the equation \\( \\frac{z}{7.74} = 6.73 \\), we need to isolate \\( z \\). We",
+  "ttft_ms": 1414.45
+ },
+ {
+  "i": 1,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Decrease the money supply; run a federal budget deficit.",
+  "ttft_ms": 639.21
+ },
+ {
+  "i": 2,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. Silk Road",
+  "ttft_ms": 436.87
+ },
+ {
+  "i": 3,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. inheritance of both \"fit\" and \"unfit\" genes",
+  "ttft_ms": 582.63
+ },
+ {
+  "i": 4,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To answer these questions, let's break down the information and analyze each statement:\n\n1. **Which organelle produces ATP?**\n   - The correct answer",
+  "ttft_ms": 860.88
+ },
+ {
+  "i": 5,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. increasing awareness and importance of individual identity",
+  "ttft_ms": 524.45
+ },
+ {
+  "i": 6,
+  "pred": "D",
+  "gold": "B",
+  "ok": false,
+  "gen": "D. confusion stage",
+  "ttft_ms": 312.6
+ },
+ {
+  "i": 7,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Cannot be digested in the human gut",
+  "ttft_ms": 491.33
+ },
+ {
+  "i": 8,
+  "pred": "None",
+  "gold": "A",
+  "ok": false,
+  "gen": "To determine the range of firing angle control for the given single-phase one pulse controlled circuit, we need to analyze the circuit and the relationship between the source voltage,",
+  "ttft_ms": 798.54
+ },
+ {
+  "i": 9,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. HClO < H2SeO3 < HBrO < H2SO3",
+  "ttft_ms": 779.42
+ },
+ {
+  "i": 10,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. incomplete dominance",
+  "ttft_ms": 712.42
+ },
+ {
+  "i": 11,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "To answer these questions, let's break down the information provided:\n\n1. **Which organelle produces ATP?**\n   - The correct answer is B.",
+  "ttft_ms": 706.71
+ },
+ {
+  "i": 12,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "To solve this problem, we need to understand the relationship between the numbers on the faces of the cube and the numbers on the vertices. Each vertex is the product",
+  "ttft_ms": 711.49
+ },
+ {
+  "i": 13,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "To determine the minimum value of the function \\( f(x) = e^x - cx \\), we need to find the critical points by taking the derivative of",
+  "ttft_ms": 505.55
+ },
+ {
+  "i": 14,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "The correct answer is B. 34%. According to the latest data from the World Bank, as of 2017, 34%",
+  "ttft_ms": 393.97
+ },
+ {
+  "i": 15,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Informal relationships, owner and family member influence on the organisation, lack of organisational resources",
+  "ttft_ms": 759.02
+ },
+ {
+  "i": 16,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Women's power increasingly fell within the private sphere.\n\nThis question refers to the following information.\n\"Let a woman retire late to bed, but rise early",
+  "ttft_ms": 2579.07
+ },
+ {
+  "i": 17,
+  "pred": "None",
+  "gold": "A",
+  "ok": false,
+  "gen": "To determine the validity of the argument using indirect truth tables, we need to analyze the logical structure of the argument step by step.\n\nThe argument is:\n1.",
+  "ttft_ms": 977.49
+ },
+ {
+  "i": 18,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Correlation-it would be unethical to purposefully expose middle school students to bullying behaviors, so Professor Ek should examine variables that correlate with existing instances of online",
+  "ttft_ms": 1360.92
+ },
+ {
+  "i": 19,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To determine the maximum average instruction execution time that allows the microcomputer to keep up with the input-output data rates, we need to consider the time it takes to",
+  "ttft_ms": 1455.67
+ },
+ {
+  "i": 20,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Stratified sample\n\nA stratified sample is recommended in this scenario because it allows for the study of different groups (honors, regular, and below",
+  "ttft_ms": 602.62
+ },
+ {
+  "i": 21,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D. none of the above",
+  "ttft_ms": 680.46
+ },
+ {
+  "i": 22,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. codified",
+  "ttft_ms": 259.68
+ },
+ {
+  "i": 23,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A.",
+  "ttft_ms": 2189.64
+ }
+]

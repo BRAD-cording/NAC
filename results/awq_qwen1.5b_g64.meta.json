@@ -1,0 +1,26 @@
+{
+  "model": "models/Qwen2.5-1.5B-Instruct-hf",
+  "method": "awq",
+  "group_size": 64,
+  "bits": 4,
+  "asym": true,
+  "int_zp": true,
+  "alpha_grid": {
+    "step": 0.05,
+    "n": 21
+  },
+  "clip": {
+    "maxshrink": 0.8,
+    "grid": 20
+  },
+  "fold_format": "scale vectors {s_attn, s_o(kv-row), s_mlp, s_down}; rebuild via src.nac.awq.apply_fold",
+  "calib": {
+    "dataset": "data/quant_dataset.json",
+    "num_samples": 128,
+    "capture_samples": 8,
+    "seqlen": 512
+  },
+  "blocks_calibrated": 28,
+  "device": "cpu",
+  "seconds": 1511.1
+}

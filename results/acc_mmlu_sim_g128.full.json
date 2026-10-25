@@ -1,0 +1,63 @@
+{
+  "model": "models/Qwen2.5-1.5B-Instruct-hf",
+  "group_size": 128,
+  "num_samples": 1000,
+  "max_new_tokens": 32,
+  "protocol": "zero-shot generative(32tok)+firsttok, batched sim fp32",
+  "configs": {
+    "minmax": {
+      "num_evaluated": 969,
+      "acc_gen": 0.3622,
+      "acc_gen_ci95": [
+        0.3323,
+        0.3922
+      ],
+      "acc_ftok": 0.3602,
+      "acc_ftok_ci95": [
+        0.3302,
+        0.3901
+      ],
+      "none_gen_rate": 0.0578,
+      "none_ftok_rate": 0.0619,
+      "elapsed_s": 41037.2
+    },
+    "nac": {
+      "num_evaluated": 969,
+      "acc_gen": 0.4293,
+      "acc_gen_ci95": [
+        0.3983,
+        0.4603
+      ],
+      "acc_ftok": 0.4241,
+      "acc_ftok_ci95": [
+        0.3932,
+        0.4561
+      ],
+      "none_gen_rate": 0.0268,
+      "none_ftok_rate": 0.0268,
+      "elapsed_s": 41556.1
+    },
+    "gptq": {
+      "num_evaluated": 969,
+      "acc_gen": 0.4871,
+      "acc_gen_ci95": [
+        0.4561,
+        0.5181
+      ],
+      "acc_ftok": 0.4892,
+      "acc_ftok_ci95": [
+        0.4582,
+        0.5222
+      ],
+      "none_gen_rate": 0.0279,
+      "none_ftok_rate": 0.0341,
+      "elapsed_s": 41457.8
+    }
+  },
+  "paired_nac_vs_minmax": {
+    "n": 969,
+    "acc_diff_pp": 6.71,
+    "mcnemar_b_minmax_only": 29,
+    "mcnemar_c_nac_only": 94
+  }
+}

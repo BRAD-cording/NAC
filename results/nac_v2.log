@@ -1,0 +1,633 @@
+=== nacv2 watcher start 2026-10-17 23:20:09 ===
+=== queue done -> nacv2 window open 2026-10-20 11:15:18 ===
+[nacv2] loading models/Qwen2.5-1.5B-Instruct-hf (fp32) ...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:03<17:41,  3.15s/it]Loading weights:  39%|███▉      | 133/338 [00:03<00:03, 57.57it/s]Loading weights:  62%|██████▏   | 211/338 [00:04<00:02, 60.72it/s]Loading weights:  76%|███████▌  | 257/338 [00:05<00:01, 57.79it/s]Loading weights:  85%|████████▍ | 287/338 [00:05<00:00, 59.29it/s]Loading weights:  91%|█████████▏| 309/338 [00:06<00:00, 57.19it/s]Loading weights:  96%|█████████▌| 325/338 [00:06<00:00, 59.52it/s]Loading weights: 100%|██████████| 338/338 [00:06<00:00, 50.63it/s]
+[nacv2] calib seqs=8 seqlen=512 group=64 int_zp=True
+[nacv2] captured 28 block inputs
+NAC-v2 blocks:   0%|          | 0/28 [00:00<?, ?it/s]NAC-v2 blocks:   0%|          | 0/28 [02:30<?, ?it/s, sec=151]NAC-v2 blocks:   4%|▎         | 1/28 [02:30<1:07:53, 150.87s/it, sec=151]NAC-v2 blocks:   4%|▎         | 1/28 [05:01<1:07:53, 150.87s/it, sec=302]NAC-v2 blocks:   7%|▋         | 2/28 [05:01<1:05:23, 150.90s/it, sec=302]NAC-v2 blocks:   7%|▋         | 2/28 [07:32<1:05:23, 150.90s/it, sec=453]NAC-v2 blocks:  11%|█         | 3/28 [07:32<1:02:53, 150.93s/it, sec=453]NAC-v2 blocks:  11%|█         | 3/28 [10:04<1:02:53, 150.93s/it, sec=604]NAC-v2 blocks:  14%|█▍        | 4/28 [10:04<1:00:26, 151.11s/it, sec=604]NAC-v2 blocks:  14%|█▍        | 4/28 [12:34<1:00:26, 151.11s/it, sec=755]NAC-v2 blocks:  18%|█▊        | 5/28 [12:34<57:52, 150.99s/it, sec=755]  NAC-v2 blocks:  18%|█▊        | 5/28 [15:08<57:52, 150.99s/it, sec=908]NAC-v2 blocks:  21%|██▏       | 6/28 [15:08<55:37, 151.72s/it, sec=908]NAC-v2 blocks:  21%|██▏       | 6/28 [17:41<55:37, 151.72s/it, sec=1061.0]NAC-v2 blocks:  25%|██▌       | 7/28 [17:41<53:16, 152.21s/it, sec=1061.0]NAC-v2 blocks:  25%|██▌       | 7/28 [20:14<53:16, 152.21s/it, sec=1214.0]NAC-v2 blocks:  29%|██▊       | 8/28 [20:14<50:47, 152.39s/it, sec=1214.0]NAC-v2 blocks:  29%|██▊       | 8/28 [22:47<50:47, 152.39s/it, sec=1367.0]NAC-v2 blocks:  32%|███▏      | 9/28 [22:47<48:20, 152.65s/it, sec=1367.0]NAC-v2 blocks:  32%|███▏      | 9/28 [25:19<48:20, 152.65s/it, sec=1520.0]NAC-v2 blocks:  36%|███▌      | 10/28 [25:19<45:48, 152.68s/it, sec=1520.0]NAC-v2 blocks:  36%|███▌      | 10/28 [27:53<45:48, 152.68s/it, sec=1674.0]NAC-v2 blocks:  39%|███▉      | 11/28 [27:53<43:19, 152.93s/it, sec=1674.0]NAC-v2 blocks:  39%|███▉      | 11/28 [30:26<43:19, 152.93s/it, sec=1826.0]NAC-v2 blocks:  43%|████▎     | 12/28 [30:26<40:46, 152.89s/it, sec=1826.0]NAC-v2 blocks:  43%|████▎     | 12/28 [32:59<40:46, 152.89s/it, sec=1980.0]NAC-v2 blocks:  46%|████▋     | 13/28 [32:59<38:15, 153.04s/it, sec=1980.0]NAC-v2 blocks:  46%|████▋     | 13/28 [35:33<38:15, 153.04s/it, sec=2133.0]NAC-v2 blocks:  50%|█████     | 14/28 [35:33<35:43, 153.13s/it, sec=2133.0]NAC-v2 blocks:  50%|█████     | 14/28 [38:05<35:43, 153.13s/it, sec=2286.0]NAC-v2 blocks:  54%|█████▎    | 15/28 [38:05<33:08, 152.95s/it, sec=2286.0]NAC-v2 blocks:  54%|█████▎    | 15/28 [40:37<33:08, 152.95s/it, sec=2438.0]NAC-v2 blocks:  57%|█████▋    | 16/28 [40:37<30:32, 152.67s/it, sec=2438.0]NAC-v2 blocks:  57%|█████▋    | 16/28 [43:11<30:32, 152.67s/it, sec=2591.0]NAC-v2 blocks:  61%|██████    | 17/28 [43:11<28:02, 152.92s/it, sec=2591.0]NAC-v2 blocks:  61%|██████    | 17/28 [45:43<28:02, 152.92s/it, sec=2744.0]NAC-v2 blocks:  64%|██████▍   | 18/28 [45:43<25:29, 152.92s/it, sec=2744.0]NAC-v2 blocks:  64%|██████▍   | 18/28 [48:16<25:29, 152.92s/it, sec=2896.0]NAC-v2 blocks:  68%|██████▊   | 19/28 [48:16<22:55, 152.78s/it, sec=2896.0]NAC-v2 blocks:  68%|██████▊   | 19/28 [50:49<22:55, 152.78s/it, sec=3050.0]NAC-v2 blocks:  71%|███████▏  | 20/28 [50:49<20:22, 152.86s/it, sec=3050.0]NAC-v2 blocks:  71%|███████▏  | 20/28 [53:22<20:22, 152.86s/it, sec=3203.0]NAC-v2 blocks:  75%|███████▌  | 21/28 [53:22<17:50, 152.99s/it, sec=3203.0]NAC-v2 blocks:  75%|███████▌  | 21/28 [55:55<17:50, 152.99s/it, sec=3356.0]NAC-v2 blocks:  79%|███████▊  | 22/28 [55:55<15:17, 153.00s/it, sec=3356.0]NAC-v2 blocks:  79%|███████▊  | 22/28 [58:28<15:17, 153.00s/it, sec=3508.0]NAC-v2 blocks:  82%|████████▏ | 23/28 [58:28<12:44, 152.89s/it, sec=3508.0]NAC-v2 blocks:  82%|████████▏ | 23/28 [1:01:01<12:44, 152.89s/it, sec=3661.0]NAC-v2 blocks:  86%|████████▌ | 24/28 [1:01:01<10:11, 152.87s/it, sec=3661.0]NAC-v2 blocks:  86%|████████▌ | 24/28 [1:03:34<10:11, 152.87s/it, sec=3814.0]NAC-v2 blocks:  89%|████████▉ | 25/28 [1:03:34<07:38, 152.96s/it, sec=3814.0]NAC-v2 blocks:  89%|████████▉ | 25/28 [1:06:07<07:38, 152.96s/it, sec=3967.0]NAC-v2 blocks:  93%|█████████▎| 26/28 [1:06:07<05:05, 152.85s/it, sec=3967.0]NAC-v2 blocks:  93%|█████████▎| 26/28 [1:08:40<05:05, 152.85s/it, sec=4120.0]NAC-v2 blocks:  96%|█████████▋| 27/28 [1:08:40<02:33, 153.03s/it, sec=4120.0]NAC-v2 blocks:  96%|█████████▋| 27/28 [1:10:58<02:33, 153.03s/it, sec=4259.0]NAC-v2 blocks: 100%|██████████| 28/28 [1:10:58<00:00, 148.60s/it, sec=4259.0]NAC-v2 blocks: 100%|██████████| 28/28 [1:10:58<00:00, 152.10s/it, sec=4259.0]
+[nacv2] done in 4259.4s -> results/nacv2_qwen1.5b_g64.qparams.pt
+=== nacv2 calib OK 2026-10-20 12:34:57 ===
+[sim-gsm8k] loading models/Qwen2.5-1.5B-Instruct-hf (fp32) ...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:01<06:43,  1.20s/it]Loading weights:  40%|████      | 136/338 [00:01<00:01, 144.10it/s]Loading weights:  63%|██████▎   | 213/338 [00:01<00:00, 140.72it/s]Loading weights:  78%|███████▊  | 262/338 [00:02<00:00, 158.29it/s]Loading weights:  89%|████████▉ | 301/338 [00:02<00:00, 178.48it/s]Loading weights:  99%|█████████▉| 336/338 [00:02<00:00, 187.87it/s]Loading weights: 100%|██████████| 338/338 [00:02<00:00, 142.69it/s]
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 1s [Retry 1/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 2s [Retry 2/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 4s [Retry 3/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 8s [Retry 4/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 8s [Retry 5/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Using the latest cached version of the dataset since openai/gsm8k couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'main' at /home/pi/.cache/huggingface/datasets/openai___gsm8k/main/0.0.0/740312add88f781978c0658806c59bc2815b9866 (last modified on Tue Oct  6 20:10:10 2026).
+[sim-gsm8k] 200 questions (board-protocol, 2-shot CoT) gs=64 bs=16
+[sim-gsm8k] ===== config: nacv2 =====
+[sim-gsm8k] 16/200 acc=0.2500 (172.35s/q, ETA 8.8h)
+[sim-gsm8k] 32/200 acc=0.2500 (179.11s/q, ETA 8.4h)
+[sim-gsm8k] 48/200 acc=0.1875 (184.0s/q, ETA 7.8h)
+[sim-gsm8k] 64/200 acc=0.1406 (184.48s/q, ETA 7.0h)
+[sim-gsm8k] 80/200 acc=0.1500 (186.06s/q, ETA 6.2h)
+[sim-gsm8k] 96/200 acc=0.1458 (185.22s/q, ETA 5.4h)
+[sim-gsm8k] 112/200 acc=0.1429 (186.14s/q, ETA 4.6h)
+[sim-gsm8k] 128/200 acc=0.1484 (187.11s/q, ETA 3.7h)
+[sim-gsm8k] 144/200 acc=0.1319 (187.8s/q, ETA 2.9h)
+[sim-gsm8k] 160/200 acc=0.1250 (187.39s/q, ETA 2.1h)
+[sim-gsm8k] 176/200 acc=0.1307 (187.07s/q, ETA 1.2h)
+[sim-gsm8k] 192/200 acc=0.1458 (188.03s/q, ETA 0.4h)
+[sim-gsm8k] 200/200 acc=0.1500 (191.49s/q, ETA 0.0h)
+[sim-gsm8k] nacv2: {"num_evaluated": 200, "acc": 0.15, "acc_ci95": [0.1, 0.2], "none_rate": 0.0, "elapsed_s": 38297.1}
+[sim-gsm8k] -> results/acc_gsm8k_sim_g64_nacv2.full.json
+=== nacv2 gsm8k sim done 2026-10-20 23:21:07 ===
+[sim-mmlu] loading models/Qwen2.5-1.5B-Instruct-hf (fp32) ...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:01<11:03,  1.97s/it]Loading weights:  33%|███▎      | 111/338 [00:02<00:03, 71.08it/s]Loading weights:  44%|████▍     | 148/338 [00:02<00:02, 67.39it/s]Loading weights:  51%|█████     | 171/338 [00:03<00:02, 69.73it/s]Loading weights:  57%|█████▋    | 193/338 [00:03<00:01, 82.80it/s]Loading weights:  63%|██████▎   | 212/338 [00:03<00:01, 67.88it/s]Loading weights:  67%|██████▋   | 226/338 [00:03<00:01, 67.07it/s]Loading weights:  70%|███████   | 238/338 [00:04<00:01, 63.02it/s]Loading weights:  73%|███████▎  | 248/338 [00:04<00:01, 59.29it/s]Loading weights:  76%|███████▌  | 256/338 [00:04<00:01, 54.84it/s]Loading weights:  79%|███████▉  | 267/338 [00:04<00:01, 51.57it/s]Loading weights:  83%|████████▎ | 279/338 [00:04<00:01, 57.25it/s]Loading weights:  85%|████████▍ | 286/338 [00:04<00:00, 58.63it/s]Loading weights:  87%|████████▋ | 293/338 [00:05<00:00, 53.90it/s]Loading weights:  90%|████████▉ | 303/338 [00:05<00:00, 51.38it/s]Loading weights:  93%|█████████▎| 315/338 [00:05<00:00, 49.17it/s]Loading weights:  97%|█████████▋| 327/338 [00:05<00:00, 54.03it/s]Loading weights: 100%|██████████| 338/338 [00:05<00:00, 57.93it/s]
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 1s [Retry 1/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 2s [Retry 2/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 4s [Retry 3/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 8s [Retry 4/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 8s [Retry 5/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Using the latest cached version of the dataset since cais/mmlu couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'all' at /home/pi/.cache/huggingface/datasets/cais___mmlu/all/0.0.0/c30699e8356da336a370243923dbaf21066bb9fe (last modified on Tue Oct  6 19:55:51 2026).
+[sim-mmlu] 969 questions (board-protocol aligned, zs) gs=64 bs=16 configs=nacv2=results/nacv2_qwen1.5b_g64.qparams.pt
+[sim-mmlu] ===== config: nacv2 =====
+[sim-mmlu] 16/969 acc_gen=0.7500 acc_ftok=0.7500 (35.33s/q, ETA 9.4h)
+[sim-mmlu] 32/969 acc_gen=0.6250 acc_ftok=0.6250 (37.08s/q, ETA 9.7h)
+[sim-mmlu] 48/969 acc_gen=0.6042 acc_ftok=0.6042 (30.78s/q, ETA 7.9h)
+[sim-mmlu] 64/969 acc_gen=0.6719 acc_ftok=0.6719 (39.49s/q, ETA 9.9h)
+[sim-mmlu] 80/969 acc_gen=0.6375 acc_ftok=0.6250 (37.92s/q, ETA 9.4h)
+[sim-mmlu] 96/969 acc_gen=0.5729 acc_ftok=0.5625 (38.17s/q, ETA 9.3h)
+[sim-mmlu] 112/969 acc_gen=0.5536 acc_ftok=0.5446 (36.67s/q, ETA 8.7h)
+[sim-mmlu] 128/969 acc_gen=0.5156 acc_ftok=0.5078 (35.76s/q, ETA 8.4h)
+[sim-mmlu] 144/969 acc_gen=0.5000 acc_ftok=0.4931 (44.46s/q, ETA 10.2h)
+[sim-mmlu] 160/969 acc_gen=0.4625 acc_ftok=0.4562 (46.22s/q, ETA 10.4h)
+[sim-mmlu] 176/969 acc_gen=0.4659 acc_ftok=0.4602 (47.01s/q, ETA 10.4h)
+[sim-mmlu] 192/969 acc_gen=0.4740 acc_ftok=0.4688 (45.38s/q, ETA 9.8h)
+[sim-mmlu] 208/969 acc_gen=0.4567 acc_ftok=0.4519 (43.77s/q, ETA 9.3h)
+[sim-mmlu] 224/969 acc_gen=0.4509 acc_ftok=0.4464 (43.39s/q, ETA 9.0h)
+[sim-mmlu] 240/969 acc_gen=0.4542 acc_ftok=0.4500 (42.27s/q, ETA 8.6h)
+[sim-mmlu] 256/969 acc_gen=0.4531 acc_ftok=0.4492 (42.26s/q, ETA 8.4h)
+[sim-mmlu] 272/969 acc_gen=0.4559 acc_ftok=0.4522 (41.24s/q, ETA 8.0h)
+[sim-mmlu] 288/969 acc_gen=0.4514 acc_ftok=0.4479 (40.2s/q, ETA 7.6h)
+[sim-mmlu] 304/969 acc_gen=0.4572 acc_ftok=0.4539 (40.12s/q, ETA 7.4h)
+[sim-mmlu] 320/969 acc_gen=0.4531 acc_ftok=0.4500 (39.36s/q, ETA 7.1h)
+[sim-mmlu] 336/969 acc_gen=0.4524 acc_ftok=0.4494 (40.4s/q, ETA 7.1h)
+[sim-mmlu] 352/969 acc_gen=0.4517 acc_ftok=0.4489 (40.2s/q, ETA 6.9h)
+[sim-mmlu] 368/969 acc_gen=0.4457 acc_ftok=0.4457 (40.59s/q, ETA 6.8h)
+[sim-mmlu] 384/969 acc_gen=0.4505 acc_ftok=0.4505 (40.88s/q, ETA 6.6h)
+[sim-mmlu] 400/969 acc_gen=0.4525 acc_ftok=0.4525 (40.67s/q, ETA 6.4h)
+[sim-mmlu] 416/969 acc_gen=0.4471 acc_ftok=0.4471 (41.54s/q, ETA 6.4h)
+[sim-mmlu] 432/969 acc_gen=0.4444 acc_ftok=0.4444 (41.29s/q, ETA 6.2h)
+[sim-mmlu] 448/969 acc_gen=0.4531 acc_ftok=0.4531 (42.44s/q, ETA 6.1h)
+[sim-mmlu] 464/969 acc_gen=0.4461 acc_ftok=0.4461 (42.15s/q, ETA 5.9h)
+[sim-mmlu] 480/969 acc_gen=0.4479 acc_ftok=0.4479 (41.95s/q, ETA 5.7h)
+[sim-mmlu] 496/969 acc_gen=0.4496 acc_ftok=0.4496 (42.82s/q, ETA 5.6h)
+[sim-mmlu] 512/969 acc_gen=0.4512 acc_ftok=0.4512 (42.41s/q, ETA 5.4h)
+[sim-mmlu] 528/969 acc_gen=0.4489 acc_ftok=0.4489 (42.36s/q, ETA 5.2h)
+[sim-mmlu] 544/969 acc_gen=0.4504 acc_ftok=0.4504 (41.81s/q, ETA 4.9h)
+[sim-mmlu] 560/969 acc_gen=0.4536 acc_ftok=0.4536 (41.68s/q, ETA 4.7h)
+[sim-mmlu] 576/969 acc_gen=0.4566 acc_ftok=0.4566 (41.57s/q, ETA 4.5h)
+[sim-mmlu] 592/969 acc_gen=0.4578 acc_ftok=0.4578 (41.16s/q, ETA 4.3h)
+[sim-mmlu] 608/969 acc_gen=0.4556 acc_ftok=0.4556 (41.02s/q, ETA 4.1h)
+[sim-mmlu] 624/969 acc_gen=0.4503 acc_ftok=0.4503 (41.0s/q, ETA 3.9h)
+[sim-mmlu] 640/969 acc_gen=0.4500 acc_ftok=0.4500 (41.43s/q, ETA 3.8h)
+[sim-mmlu] 656/969 acc_gen=0.4482 acc_ftok=0.4482 (41.25s/q, ETA 3.6h)
+[sim-mmlu] 672/969 acc_gen=0.4464 acc_ftok=0.4464 (41.51s/q, ETA 3.4h)
+[sim-mmlu] 688/969 acc_gen=0.4462 acc_ftok=0.4462 (41.47s/q, ETA 3.2h)
+[sim-mmlu] 704/969 acc_gen=0.4474 acc_ftok=0.4474 (41.29s/q, ETA 3.0h)
+[sim-mmlu] 720/969 acc_gen=0.4458 acc_ftok=0.4458 (41.07s/q, ETA 2.8h)
+[sim-mmlu] 736/969 acc_gen=0.4416 acc_ftok=0.4416 (41.32s/q, ETA 2.7h)
+[sim-mmlu] 752/969 acc_gen=0.4428 acc_ftok=0.4428 (41.5s/q, ETA 2.5h)
+[sim-mmlu] 768/969 acc_gen=0.4453 acc_ftok=0.4453 (41.28s/q, ETA 2.3h)
+[sim-mmlu] 784/969 acc_gen=0.4426 acc_ftok=0.4426 (41.41s/q, ETA 2.1h)
+[sim-mmlu] 800/969 acc_gen=0.4437 acc_ftok=0.4437 (41.28s/q, ETA 1.9h)
+[sim-mmlu] 816/969 acc_gen=0.4436 acc_ftok=0.4436 (41.38s/q, ETA 1.8h)
+[sim-mmlu] 832/969 acc_gen=0.4423 acc_ftok=0.4423 (41.13s/q, ETA 1.6h)
+[sim-mmlu] 848/969 acc_gen=0.4434 acc_ftok=0.4434 (41.08s/q, ETA 1.4h)
+[sim-mmlu] 864/969 acc_gen=0.4456 acc_ftok=0.4456 (40.94s/q, ETA 1.2h)
+[sim-mmlu] 880/969 acc_gen=0.4443 acc_ftok=0.4443 (41.28s/q, ETA 1.0h)
+[sim-mmlu] 896/969 acc_gen=0.4431 acc_ftok=0.4431 (41.13s/q, ETA 0.8h)
+[sim-mmlu] 912/969 acc_gen=0.4452 acc_ftok=0.4452 (41.84s/q, ETA 0.7h)
+[sim-mmlu] 928/969 acc_gen=0.4461 acc_ftok=0.4461 (41.62s/q, ETA 0.5h)
+[sim-mmlu] 944/969 acc_gen=0.4481 acc_ftok=0.4481 (41.88s/q, ETA 0.3h)
+[sim-mmlu] 960/969 acc_gen=0.4469 acc_ftok=0.4469 (42.18s/q, ETA 0.1h)
+[sim-mmlu] 969/969 acc_gen=0.4469 acc_ftok=0.4469 (42.42s/q, ETA 0.0h)
+[sim-mmlu] nacv2: {"num_evaluated": 969, "acc_gen": 0.4469, "acc_gen_ci95": [0.4169, 0.4788], "acc_ftok": 0.4469, "acc_ftok_ci95": [0.4159, 0.4788], "none_gen_rate": 0.0052, "none_ftok_rate": 0.0062, "elapsed_s": 41106.5}
+[sim-mmlu] -> results/acc_mmlu_sim_g64_nacv2.full.json
+=== nacv2 ALL DONE 2026-10-21 10:54:15 ===
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:03<17:30,  3.12s/it]Loading weights:  36%|███▋      | 123/338 [00:03<00:04, 50.01it/s]Loading weights:  44%|████▍     | 150/338 [00:03<00:03, 51.62it/s]Loading weights:  49%|████▉     | 167/338 [00:04<00:03, 54.39it/s]Loading weights:  54%|█████▎    | 181/338 [00:04<00:02, 54.20it/s]Loading weights:  57%|█████▋    | 192/338 [00:04<00:02, 54.60it/s]Loading weights:  59%|█████▉    | 201/338 [00:04<00:02, 51.74it/s]Loading weights:  62%|██████▏   | 209/338 [00:04<00:02, 48.73it/s]Loading weights:  65%|██████▍   | 219/338 [00:05<00:02, 50.64it/s]Loading weights:  68%|██████▊   | 231/338 [00:05<00:02, 50.30it/s]Loading weights:  72%|███████▏  | 243/338 [00:05<00:01, 53.18it/s]Loading weights:  75%|███████▌  | 255/338 [00:05<00:01, 58.38it/s]Loading weights:  79%|███████▉  | 267/338 [00:05<00:01, 60.36it/s]Loading weights:  83%|████████▎ | 279/338 [00:06<00:00, 61.37it/s]Loading weights:  86%|████████▌ | 291/338 [00:06<00:00, 64.53it/s]Loading weights:  90%|████████▉ | 303/338 [00:06<00:00, 69.06it/s]Loading weights:  93%|█████████▎| 315/338 [00:06<00:00, 68.40it/s]Loading weights:  97%|█████████▋| 327/338 [00:06<00:00, 64.50it/s]Loading weights: 100%|██████████| 338/338 [00:06<00:00, 49.47it/s]
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext.py
+Retrying in 1s [Retry 1/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext.py
+Retrying in 2s [Retry 2/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext.py
+Retrying in 4s [Retry 3/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext.py
+Retrying in 8s [Retry 4/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext.py
+Retrying in 8s [Retry 5/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext.py
+Using the latest cached version of the dataset since Salesforce/wikitext couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at /home/pi/.cache/huggingface/datasets/Salesforce___wikitext/wikitext-2-raw-v1/0.0.0/b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Tue Oct  6 19:52:06 2026).
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (299078 > 131072). Running this sequence through the model will result in indexing errors
+[pplchk] heldout torch.Size([64, 1024])
+    [ppl] 1/64 seqs
+    [ppl] 2/64 seqs
+    [ppl] 3/64 seqs
+    [ppl] 4/64 seqs
+    [ppl] 5/64 seqs
+    [ppl] 6/64 seqs
+    [ppl] 7/64 seqs
+    [ppl] 8/64 seqs
+    [ppl] 9/64 seqs
+    [ppl] 10/64 seqs
+    [ppl] 11/64 seqs
+    [ppl] 12/64 seqs
+    [ppl] 13/64 seqs
+    [ppl] 14/64 seqs
+    [ppl] 15/64 seqs
+    [ppl] 16/64 seqs
+    [ppl] 17/64 seqs
+    [ppl] 18/64 seqs
+    [ppl] 19/64 seqs
+    [ppl] 20/64 seqs
+    [ppl] 21/64 seqs
+    [ppl] 22/64 seqs
+    [ppl] 23/64 seqs
+    [ppl] 24/64 seqs
+    [ppl] 25/64 seqs
+    [ppl] 26/64 seqs
+    [ppl] 27/64 seqs
+    [ppl] 28/64 seqs
+    [ppl] 29/64 seqs
+    [ppl] 30/64 seqs
+    [ppl] 31/64 seqs
+    [ppl] 32/64 seqs
+    [ppl] 33/64 seqs
+    [ppl] 34/64 seqs
+    [ppl] 35/64 seqs
+    [ppl] 36/64 seqs
+    [ppl] 37/64 seqs
+    [ppl] 38/64 seqs
+    [ppl] 39/64 seqs
+    [ppl] 40/64 seqs
+    [ppl] 41/64 seqs
+    [ppl] 42/64 seqs
+    [ppl] 43/64 seqs
+    [ppl] 44/64 seqs
+    [ppl] 45/64 seqs
+    [ppl] 46/64 seqs
+    [ppl] 47/64 seqs
+    [ppl] 48/64 seqs
+    [ppl] 49/64 seqs
+    [ppl] 50/64 seqs
+    [ppl] 51/64 seqs
+    [ppl] 52/64 seqs
+    [ppl] 53/64 seqs
+    [ppl] 54/64 seqs
+    [ppl] 55/64 seqs
+    [ppl] 56/64 seqs
+    [ppl] 57/64 seqs
+    [ppl] 58/64 seqs
+    [ppl] 59/64 seqs
+    [ppl] 60/64 seqs
+    [ppl] 61/64 seqs
+    [ppl] 62/64 seqs
+    [ppl] 63/64 seqs
+    [ppl] 64/64 seqs
+[pplchk] fp16: ppl=11.075 (8003s)
+    [ppl] 1/64 seqs
+    [ppl] 2/64 seqs
+    [ppl] 3/64 seqs
+    [ppl] 4/64 seqs
+    [ppl] 5/64 seqs
+    [ppl] 6/64 seqs
+    [ppl] 7/64 seqs
+    [ppl] 8/64 seqs
+    [ppl] 9/64 seqs
+    [ppl] 10/64 seqs
+    [ppl] 11/64 seqs
+    [ppl] 12/64 seqs
+    [ppl] 13/64 seqs
+    [ppl] 14/64 seqs
+    [ppl] 15/64 seqs
+    [ppl] 16/64 seqs
+    [ppl] 17/64 seqs
+    [ppl] 18/64 seqs
+    [ppl] 19/64 seqs
+    [ppl] 20/64 seqs
+    [ppl] 21/64 seqs
+    [ppl] 22/64 seqs
+    [ppl] 23/64 seqs
+    [ppl] 24/64 seqs
+    [ppl] 25/64 seqs
+    [ppl] 26/64 seqs
+    [ppl] 27/64 seqs
+    [ppl] 28/64 seqs
+    [ppl] 29/64 seqs
+    [ppl] 30/64 seqs
+    [ppl] 31/64 seqs
+    [ppl] 32/64 seqs
+    [ppl] 33/64 seqs
+    [ppl] 34/64 seqs
+    [ppl] 35/64 seqs
+    [ppl] 36/64 seqs
+    [ppl] 37/64 seqs
+    [ppl] 38/64 seqs
+    [ppl] 39/64 seqs
+    [ppl] 40/64 seqs
+    [ppl] 41/64 seqs
+    [ppl] 42/64 seqs
+    [ppl] 43/64 seqs
+    [ppl] 44/64 seqs
+    [ppl] 45/64 seqs
+    [ppl] 46/64 seqs
+    [ppl] 47/64 seqs
+    [ppl] 48/64 seqs
+    [ppl] 49/64 seqs
+    [ppl] 50/64 seqs
+    [ppl] 51/64 seqs
+    [ppl] 52/64 seqs
+    [ppl] 53/64 seqs
+    [ppl] 54/64 seqs
+    [ppl] 55/64 seqs
+    [ppl] 56/64 seqs
+    [ppl] 57/64 seqs
+    [ppl] 58/64 seqs
+    [ppl] 59/64 seqs
+    [ppl] 60/64 seqs
+    [ppl] 61/64 seqs
+    [ppl] 62/64 seqs
+    [ppl] 63/64 seqs
+    [ppl] 64/64 seqs
+[pplchk] minmax: ppl=12.225 (8251s)
+    [ppl] 1/64 seqs
+    [ppl] 2/64 seqs
+    [ppl] 3/64 seqs
+    [ppl] 4/64 seqs
+    [ppl] 5/64 seqs
+    [ppl] 6/64 seqs
+    [ppl] 7/64 seqs
+    [ppl] 8/64 seqs
+    [ppl] 9/64 seqs
+    [ppl] 10/64 seqs
+    [ppl] 11/64 seqs
+    [ppl] 12/64 seqs
+    [ppl] 13/64 seqs
+    [ppl] 14/64 seqs
+    [ppl] 15/64 seqs
+    [ppl] 16/64 seqs
+    [ppl] 17/64 seqs
+    [ppl] 18/64 seqs
+    [ppl] 19/64 seqs
+    [ppl] 20/64 seqs
+    [ppl] 21/64 seqs
+    [ppl] 22/64 seqs
+    [ppl] 23/64 seqs
+    [ppl] 24/64 seqs
+    [ppl] 25/64 seqs
+    [ppl] 26/64 seqs
+    [ppl] 27/64 seqs
+    [ppl] 28/64 seqs
+    [ppl] 29/64 seqs
+    [ppl] 30/64 seqs
+    [ppl] 31/64 seqs
+    [ppl] 32/64 seqs
+    [ppl] 33/64 seqs
+    [ppl] 34/64 seqs
+    [ppl] 35/64 seqs
+    [ppl] 36/64 seqs
+    [ppl] 37/64 seqs
+    [ppl] 38/64 seqs
+    [ppl] 39/64 seqs
+    [ppl] 40/64 seqs
+    [ppl] 41/64 seqs
+    [ppl] 42/64 seqs
+    [ppl] 43/64 seqs
+    [ppl] 44/64 seqs
+    [ppl] 45/64 seqs
+    [ppl] 46/64 seqs
+    [ppl] 47/64 seqs
+    [ppl] 48/64 seqs
+    [ppl] 49/64 seqs
+    [ppl] 50/64 seqs
+    [ppl] 51/64 seqs
+    [ppl] 52/64 seqs
+    [ppl] 53/64 seqs
+    [ppl] 54/64 seqs
+    [ppl] 55/64 seqs
+    [ppl] 56/64 seqs
+    [ppl] 57/64 seqs
+    [ppl] 58/64 seqs
+    [ppl] 59/64 seqs
+    [ppl] 60/64 seqs
+    [ppl] 61/64 seqs
+    [ppl] 62/64 seqs
+    [ppl] 63/64 seqs
+    [ppl] 64/64 seqs
+[pplchk] nac: ppl=11.893 (8076s)
+    [ppl] 1/64 seqs
+    [ppl] 2/64 seqs
+    [ppl] 3/64 seqs
+    [ppl] 4/64 seqs
+    [ppl] 5/64 seqs
+    [ppl] 6/64 seqs
+    [ppl] 7/64 seqs
+    [ppl] 8/64 seqs
+    [ppl] 9/64 seqs
+    [ppl] 10/64 seqs
+    [ppl] 11/64 seqs
+    [ppl] 12/64 seqs
+    [ppl] 13/64 seqs
+    [ppl] 14/64 seqs
+    [ppl] 15/64 seqs
+    [ppl] 16/64 seqs
+    [ppl] 17/64 seqs
+    [ppl] 18/64 seqs
+    [ppl] 19/64 seqs
+    [ppl] 20/64 seqs
+    [ppl] 21/64 seqs
+    [ppl] 22/64 seqs
+    [ppl] 23/64 seqs
+    [ppl] 24/64 seqs
+    [ppl] 25/64 seqs
+    [ppl] 26/64 seqs
+    [ppl] 27/64 seqs
+    [ppl] 28/64 seqs
+    [ppl] 29/64 seqs
+    [ppl] 30/64 seqs
+    [ppl] 31/64 seqs
+    [ppl] 32/64 seqs
+    [ppl] 33/64 seqs
+    [ppl] 34/64 seqs
+    [ppl] 35/64 seqs
+    [ppl] 36/64 seqs
+    [ppl] 37/64 seqs
+    [ppl] 38/64 seqs
+    [ppl] 39/64 seqs
+    [ppl] 40/64 seqs
+    [ppl] 41/64 seqs
+    [ppl] 42/64 seqs
+    [ppl] 43/64 seqs
+    [ppl] 44/64 seqs
+    [ppl] 45/64 seqs
+    [ppl] 46/64 seqs
+    [ppl] 47/64 seqs
+    [ppl] 48/64 seqs
+    [ppl] 49/64 seqs
+    [ppl] 50/64 seqs
+    [ppl] 51/64 seqs
+    [ppl] 52/64 seqs
+    [ppl] 53/64 seqs
+    [ppl] 54/64 seqs
+    [ppl] 55/64 seqs
+    [ppl] 56/64 seqs
+    [ppl] 57/64 seqs
+    [ppl] 58/64 seqs
+    [ppl] 59/64 seqs
+    [ppl] 60/64 seqs
+    [ppl] 61/64 seqs
+    [ppl] 62/64 seqs
+    [ppl] 63/64 seqs
+    [ppl] 64/64 seqs
+[pplchk] gptq: ppl=12.168 (8037s)
+[pplchk] -> results/ppl_g64_64seq.json
+[pplchk] DONE
+=== nacv2 ppl64 done 2026-10-21 20:01:24 ===
+[awq] loading models/Qwen2.5-1.5B-Instruct-hf (fp32) ...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:03<17:37,  3.14s/it]Loading weights:  36%|███▋      | 123/338 [00:03<00:04, 49.42it/s]Loading weights:  44%|████▍     | 149/338 [00:03<00:03, 50.73it/s]Loading weights:  49%|████▉     | 166/338 [00:04<00:03, 54.23it/s]Loading weights:  53%|█████▎    | 179/338 [00:04<00:02, 54.23it/s]Loading weights:  56%|█████▌    | 190/338 [00:04<00:02, 52.28it/s]Loading weights:  59%|█████▉    | 199/338 [00:04<00:02, 50.64it/s]Loading weights:  61%|██████    | 207/338 [00:04<00:02, 50.19it/s]Loading weights:  65%|██████▍   | 219/338 [00:05<00:02, 49.91it/s]Loading weights:  68%|██████▊   | 231/338 [00:05<00:02, 53.07it/s]Loading weights:  72%|███████▏  | 243/338 [00:05<00:01, 52.42it/s]Loading weights:  75%|███████▌  | 255/338 [00:05<00:01, 51.28it/s]Loading weights:  79%|███████▉  | 267/338 [00:06<00:01, 51.63it/s]Loading weights:  83%|████████▎ | 279/338 [00:06<00:01, 53.22it/s]Loading weights:  86%|████████▌ | 291/338 [00:06<00:00, 51.40it/s]Loading weights:  90%|████████▉ | 303/338 [00:06<00:00, 50.91it/s]Loading weights:  93%|█████████▎| 315/338 [00:06<00:00, 56.27it/s]Loading weights:  97%|█████████▋| 327/338 [00:07<00:00, 54.18it/s]Loading weights: 100%|██████████| 338/338 [00:07<00:00, 46.64it/s]
+[awq] calib seqs=8 seqlen=512 group=64
+[awq] captured 28 block inputs
+AWQ blocks:   0%|          | 0/28 [00:00<?, ?it/s]AWQ blocks:   0%|          | 0/28 [00:14<?, ?it/s]
+Traceback (most recent call last):
+  File "/media/pi/DATA/rknn-llm/nac_paper/scripts/awq_calibrate.py", line 183, in <module>
+    main()
+  File "/media/pi/DATA/rknn-llm/nac_paper/scripts/awq_calibrate.py", line 122, in main
+    x_bar["q_proj"], torch.stack([w.abs().amax(0) for w in ws_attn]).mean(0),
+    ~~~~~^^^^^^^^^^
+KeyError: 'q_proj'
+!!! awq calib FAILED 2026-10-21 20:10:17
+=== nacv2 watcher start 2026-10-22 01:15:48 ===
+=== queue done -> nacv2 window open 2026-10-22 01:15:48 ===
+=== nacv2 calib OK 2026-10-22 01:15:48 ===
+=== nacv2 gsm8k sim done 2026-10-22 01:15:48 ===
+=== nacv2 ALL DONE 2026-10-22 01:15:48 ===
+=== nacv2 ppl64 done 2026-10-22 01:15:48 ===
+[awq] loading models/Qwen2.5-1.5B-Instruct-hf (fp32) ...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  40%|███▉      | 135/338 [00:00<00:00, 1165.42it/s]Loading weights:  75%|███████▍  | 252/338 [00:00<00:00, 339.06it/s] Loading weights:  93%|█████████▎| 313/338 [00:00<00:00, 271.35it/s]Loading weights: 100%|██████████| 338/338 [00:01<00:00, 312.29it/s]
+[awq] calib seqs=8 seqlen=512 group=64
+[awq] captured 28 block inputs
+AWQ blocks:   0%|          | 0/28 [00:00<?, ?it/s]AWQ blocks:   0%|          | 0/28 [00:53<?, ?it/s, sec=54]AWQ blocks:   4%|▎         | 1/28 [00:53<24:07, 53.62s/it, sec=54]AWQ blocks:   4%|▎         | 1/28 [01:48<24:07, 53.62s/it, sec=108]AWQ blocks:   7%|▋         | 2/28 [01:48<23:27, 54.12s/it, sec=108]AWQ blocks:   7%|▋         | 2/28 [02:42<23:27, 54.12s/it, sec=163]AWQ blocks:  11%|█         | 3/28 [02:42<22:39, 54.39s/it, sec=163]AWQ blocks:  11%|█         | 3/28 [03:37<22:39, 54.39s/it, sec=217]AWQ blocks:  14%|█▍        | 4/28 [03:37<21:45, 54.38s/it, sec=217]AWQ blocks:  14%|█▍        | 4/28 [04:31<21:45, 54.38s/it, sec=272]AWQ blocks:  18%|█▊        | 5/28 [04:31<20:51, 54.42s/it, sec=272]AWQ blocks:  18%|█▊        | 5/28 [05:26<20:51, 54.42s/it, sec=327]AWQ blocks:  21%|██▏       | 6/28 [05:26<20:01, 54.60s/it, sec=327]AWQ blocks:  21%|██▏       | 6/28 [06:21<20:01, 54.60s/it, sec=381]AWQ blocks:  25%|██▌       | 7/28 [06:21<19:07, 54.66s/it, sec=381]AWQ blocks:  25%|██▌       | 7/28 [07:15<19:07, 54.66s/it, sec=436]AWQ blocks:  29%|██▊       | 8/28 [07:15<18:12, 54.62s/it, sec=436]AWQ blocks:  29%|██▊       | 8/28 [08:10<18:12, 54.62s/it, sec=491]AWQ blocks:  32%|███▏      | 9/28 [08:10<17:20, 54.75s/it, sec=491]AWQ blocks:  32%|███▏      | 9/28 [09:05<17:20, 54.75s/it, sec=546]AWQ blocks:  36%|███▌      | 10/28 [09:05<16:26, 54.78s/it, sec=546]AWQ blocks:  36%|███▌      | 10/28 [10:00<16:26, 54.78s/it, sec=601]AWQ blocks:  39%|███▉      | 11/28 [10:00<15:31, 54.77s/it, sec=601]AWQ blocks:  39%|███▉      | 11/28 [10:54<15:31, 54.77s/it, sec=654]AWQ blocks:  43%|████▎     | 12/28 [10:54<14:31, 54.49s/it, sec=654]AWQ blocks:  43%|████▎     | 12/28 [11:48<14:31, 54.49s/it, sec=709]AWQ blocks:  46%|████▋     | 13/28 [11:48<13:36, 54.46s/it, sec=709]AWQ blocks:  46%|████▋     | 13/28 [12:43<13:36, 54.46s/it, sec=764]AWQ blocks:  50%|█████     | 14/28 [12:43<12:44, 54.62s/it, sec=764]AWQ blocks:  50%|█████     | 14/28 [13:38<12:44, 54.62s/it, sec=818]AWQ blocks:  54%|█████▎    | 15/28 [13:38<11:48, 54.51s/it, sec=818]AWQ blocks:  54%|█████▎    | 15/28 [14:32<11:48, 54.51s/it, sec=872]AWQ blocks:  57%|█████▋    | 16/28 [14:32<10:53, 54.42s/it, sec=872]AWQ blocks:  57%|█████▋    | 16/28 [15:26<10:53, 54.42s/it, sec=927]AWQ blocks:  61%|██████    | 17/28 [15:26<09:59, 54.50s/it, sec=927]AWQ blocks:  61%|██████    | 17/28 [16:21<09:59, 54.50s/it, sec=981]AWQ blocks:  64%|██████▍   | 18/28 [16:21<09:04, 54.45s/it, sec=981]AWQ blocks:  64%|██████▍   | 18/28 [17:15<09:04, 54.45s/it, sec=1035.0]AWQ blocks:  68%|██████▊   | 19/28 [17:15<08:08, 54.29s/it, sec=1035.0]AWQ blocks:  68%|██████▊   | 19/28 [18:09<08:08, 54.29s/it, sec=1089.0]AWQ blocks:  71%|███████▏  | 20/28 [18:09<07:13, 54.22s/it, sec=1089.0]AWQ blocks:  71%|███████▏  | 20/28 [19:03<07:13, 54.22s/it, sec=1144.0]AWQ blocks:  75%|███████▌  | 21/28 [19:03<06:20, 54.33s/it, sec=1144.0]AWQ blocks:  75%|███████▌  | 21/28 [19:58<06:20, 54.33s/it, sec=1198.0]AWQ blocks:  79%|███████▊  | 22/28 [19:58<05:26, 54.39s/it, sec=1198.0]AWQ blocks:  79%|███████▊  | 22/28 [20:53<05:26, 54.39s/it, sec=1253.0]AWQ blocks:  82%|████████▏ | 23/28 [20:53<04:32, 54.48s/it, sec=1253.0]AWQ blocks:  82%|████████▏ | 23/28 [21:47<04:32, 54.48s/it, sec=1307.0]AWQ blocks:  86%|████████▌ | 24/28 [21:47<03:37, 54.41s/it, sec=1307.0]AWQ blocks:  86%|████████▌ | 24/28 [22:41<03:37, 54.41s/it, sec=1362.0]AWQ blocks:  89%|████████▉ | 25/28 [22:41<02:43, 54.47s/it, sec=1362.0]AWQ blocks:  89%|████████▉ | 25/28 [23:36<02:43, 54.47s/it, sec=1417.0]AWQ blocks:  93%|█████████▎| 26/28 [23:36<01:49, 54.54s/it, sec=1417.0]AWQ blocks:  93%|█████████▎| 26/28 [24:30<01:49, 54.54s/it, sec=1471.0]AWQ blocks:  96%|█████████▋| 27/28 [24:30<00:54, 54.47s/it, sec=1471.0]AWQ blocks:  96%|█████████▋| 27/28 [25:10<00:54, 54.47s/it, sec=1510.0]AWQ blocks: 100%|██████████| 28/28 [25:10<00:00, 49.98s/it, sec=1510.0]AWQ blocks: 100%|██████████| 28/28 [25:10<00:00, 53.94s/it, sec=1510.0]
+[awq] done in 1511.1s -> results/awq_qwen1.5b_g64.qparams.pt + results/awq_qwen1.5b_g64.fold.pt
+=== awq calib OK 2026-10-22 01:49:33 ===
+[sim-gsm8k] loading models/Qwen2.5-1.5B-Instruct-hf (fp32) ...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  36%|███▋      | 123/338 [00:00<00:00, 555.42it/s]Loading weights:  53%|█████▎    | 179/338 [00:00<00:00, 294.00it/s]Loading weights:  63%|██████▎   | 212/338 [00:00<00:00, 229.83it/s]Loading weights:  70%|███████   | 237/338 [00:01<00:00, 187.60it/s]Loading weights:  76%|███████▌  | 257/338 [00:01<00:00, 150.39it/s]Loading weights:  81%|████████  | 273/338 [00:01<00:00, 140.09it/s]Loading weights:  85%|████████▍ | 287/338 [00:01<00:00, 131.07it/s]Loading weights:  89%|████████▉ | 300/338 [00:01<00:00, 125.33it/s]Loading weights:  92%|█████████▏| 312/338 [00:01<00:00, 117.73it/s]Loading weights:  97%|█████████▋| 327/338 [00:01<00:00, 109.15it/s]Loading weights: 100%|██████████| 338/338 [00:01<00:00, 172.41it/s]
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 1s [Retry 1/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 2s [Retry 2/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 4s [Retry 3/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 8s [Retry 4/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 8s [Retry 5/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Using the latest cached version of the dataset since openai/gsm8k couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'main' at /home/pi/.cache/huggingface/datasets/openai___gsm8k/main/0.0.0/740312add88f781978c0658806c59bc2815b9866 (last modified on Tue Oct  6 20:10:10 2026).
+[sim-gsm8k] 200 questions (board-protocol, 2-shot CoT) gs=64 bs=16
+[sim-gsm8k] fold params loaded from results/awq_qwen1.5b_g64.fold.pt (28 blocks)
+[sim-gsm8k] ===== config: awq =====
+[sim-gsm8k] 16/200 acc=0.0000 (172.34s/q, ETA 8.8h)
+[sim-gsm8k] 32/200 acc=0.0000 (178.26s/q, ETA 8.3h)
+[sim-gsm8k] 48/200 acc=0.0000 (181.79s/q, ETA 7.7h)
+[sim-gsm8k] 64/200 acc=0.0000 (183.04s/q, ETA 6.9h)
+=== nacv2 watcher start 2026-10-22 07:23:52 ===
+=== queue done -> nacv2 window open 2026-10-22 07:23:52 ===
+=== nacv2 calib OK 2026-10-22 07:23:52 ===
+=== nacv2 gsm8k sim done 2026-10-22 07:23:52 ===
+=== nacv2 ALL DONE 2026-10-22 07:23:52 ===
+=== nacv2 ppl64 done 2026-10-22 07:23:52 ===
+=== awq calib OK 2026-10-22 07:23:52 ===
+=== awq gsm8k sim done 2026-10-22 07:23:52 ===
+[sim-mmlu] loading models/Qwen2.5-1.5B-Instruct-hf (fp32) ...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  33%|███▎      | 111/338 [00:00<00:00, 635.56it/s]Loading weights:  52%|█████▏    | 175/338 [00:00<00:00, 184.85it/s]Loading weights:  62%|██████▏   | 208/338 [00:01<00:00, 150.52it/s]Loading weights:  68%|██████▊   | 230/338 [00:01<00:00, 147.69it/s]Loading weights:  74%|███████▎  | 249/338 [00:01<00:00, 125.34it/s]Loading weights:  78%|███████▊  | 264/338 [00:01<00:00, 126.62it/s]Loading weights:  83%|████████▎ | 279/338 [00:01<00:00, 99.88it/s] Loading weights:  86%|████████▌ | 291/338 [00:02<00:00, 93.06it/s]Loading weights:  90%|████████▉ | 303/338 [00:02<00:00, 86.44it/s]Loading weights:  93%|█████████▎| 315/338 [00:02<00:00, 87.06it/s]Loading weights:  97%|█████████▋| 327/338 [00:02<00:00, 91.74it/s]Loading weights: 100%|██████████| 338/338 [00:02<00:00, 131.25it/s]
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 1s [Retry 1/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 2s [Retry 2/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 4s [Retry 3/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 8s [Retry 4/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 8s [Retry 5/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Using the latest cached version of the dataset since cais/mmlu couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'all' at /home/pi/.cache/huggingface/datasets/cais___mmlu/all/0.0.0/c30699e8356da336a370243923dbaf21066bb9fe (last modified on Tue Oct  6 19:55:51 2026).
+[sim-mmlu] 969 questions (board-protocol aligned, zs) gs=64 bs=16 configs=awq=results/awq_qwen1.5b_g64.qparams.pt
+[sim-mmlu] fold params loaded from results/awq_qwen1.5b_g64.fold.pt (28 blocks)
+[sim-mmlu] ===== config: awq =====
+[sim-mmlu] 16/969 acc_gen=0.8125 acc_ftok=0.8125 (35.06s/q, ETA 9.3h)
+[sim-mmlu] 32/969 acc_gen=0.6875 acc_ftok=0.6875 (36.85s/q, ETA 9.6h)
+[sim-mmlu] 48/969 acc_gen=0.6458 acc_ftok=0.6458 (30.65s/q, ETA 7.8h)
+[sim-mmlu] 64/969 acc_gen=0.7031 acc_ftok=0.7031 (39.49s/q, ETA 9.9h)
+[sim-mmlu] 80/969 acc_gen=0.6500 acc_ftok=0.6500 (37.87s/q, ETA 9.4h)
+[sim-mmlu] 96/969 acc_gen=0.6042 acc_ftok=0.6042 (38.15s/q, ETA 9.3h)
+[sim-mmlu] 112/969 acc_gen=0.5804 acc_ftok=0.5714 (36.68s/q, ETA 8.7h)
+[sim-mmlu] 128/969 acc_gen=0.5391 acc_ftok=0.5312 (35.77s/q, ETA 8.4h)
+[sim-mmlu] 144/969 acc_gen=0.5139 acc_ftok=0.5069 (44.58s/q, ETA 10.2h)
+[sim-mmlu] 160/969 acc_gen=0.4813 acc_ftok=0.4750 (46.39s/q, ETA 10.4h)
+[sim-mmlu] 176/969 acc_gen=0.4773 acc_ftok=0.4716 (47.09s/q, ETA 10.4h)
+[sim-mmlu] 192/969 acc_gen=0.4688 acc_ftok=0.4635 (45.46s/q, ETA 9.8h)
+[sim-mmlu] 208/969 acc_gen=0.4615 acc_ftok=0.4567 (43.83s/q, ETA 9.3h)
+[sim-mmlu] 224/969 acc_gen=0.4598 acc_ftok=0.4554 (43.43s/q, ETA 9.0h)
+[sim-mmlu] 240/969 acc_gen=0.4625 acc_ftok=0.4583 (42.32s/q, ETA 8.6h)
+[sim-mmlu] 256/969 acc_gen=0.4609 acc_ftok=0.4570 (42.27s/q, ETA 8.4h)
+[sim-mmlu] 272/969 acc_gen=0.4596 acc_ftok=0.4559 (41.26s/q, ETA 8.0h)
+[sim-mmlu] 288/969 acc_gen=0.4514 acc_ftok=0.4479 (40.22s/q, ETA 7.6h)
+[sim-mmlu] 304/969 acc_gen=0.4572 acc_ftok=0.4539 (40.09s/q, ETA 7.4h)
+[sim-mmlu] 320/969 acc_gen=0.4531 acc_ftok=0.4500 (39.32s/q, ETA 7.1h)
+[sim-mmlu] 336/969 acc_gen=0.4494 acc_ftok=0.4464 (40.25s/q, ETA 7.1h)
+[sim-mmlu] 352/969 acc_gen=0.4517 acc_ftok=0.4460 (40.06s/q, ETA 6.9h)
+[sim-mmlu] 368/969 acc_gen=0.4592 acc_ftok=0.4538 (40.41s/q, ETA 6.7h)
+[sim-mmlu] 384/969 acc_gen=0.4557 acc_ftok=0.4505 (40.68s/q, ETA 6.6h)
+[sim-mmlu] 400/969 acc_gen=0.4550 acc_ftok=0.4500 (40.47s/q, ETA 6.4h)
+[sim-mmlu] 416/969 acc_gen=0.4495 acc_ftok=0.4447 (41.26s/q, ETA 6.3h)
+[sim-mmlu] 432/969 acc_gen=0.4444 acc_ftok=0.4398 (41.01s/q, ETA 6.1h)
+[sim-mmlu] 448/969 acc_gen=0.4554 acc_ftok=0.4509 (42.22s/q, ETA 6.1h)
+[sim-mmlu] 464/969 acc_gen=0.4504 acc_ftok=0.4461 (41.93s/q, ETA 5.9h)
+[sim-mmlu] 480/969 acc_gen=0.4542 acc_ftok=0.4500 (41.72s/q, ETA 5.7h)
+[sim-mmlu] 496/969 acc_gen=0.4536 acc_ftok=0.4496 (42.55s/q, ETA 5.6h)
+[sim-mmlu] 512/969 acc_gen=0.4551 acc_ftok=0.4512 (42.14s/q, ETA 5.3h)
+[sim-mmlu] 528/969 acc_gen=0.4527 acc_ftok=0.4489 (42.1s/q, ETA 5.2h)
+[sim-mmlu] 544/969 acc_gen=0.4522 acc_ftok=0.4485 (41.57s/q, ETA 4.9h)
+[sim-mmlu] 560/969 acc_gen=0.4500 acc_ftok=0.4464 (41.44s/q, ETA 4.7h)
+[sim-mmlu] 576/969 acc_gen=0.4479 acc_ftok=0.4444 (41.32s/q, ETA 4.5h)
+[sim-mmlu] 592/969 acc_gen=0.4459 acc_ftok=0.4426 (40.91s/q, ETA 4.3h)
+[sim-mmlu] 608/969 acc_gen=0.4474 acc_ftok=0.4441 (40.77s/q, ETA 4.1h)
+[sim-mmlu] 624/969 acc_gen=0.4439 acc_ftok=0.4407 (40.74s/q, ETA 3.9h)
+[sim-mmlu] 640/969 acc_gen=0.4422 acc_ftok=0.4391 (41.15s/q, ETA 3.8h)
+[sim-mmlu] 656/969 acc_gen=0.4436 acc_ftok=0.4390 (40.96s/q, ETA 3.6h)
+[sim-mmlu] 672/969 acc_gen=0.4390 acc_ftok=0.4345 (41.25s/q, ETA 3.4h)
+[sim-mmlu] 688/969 acc_gen=0.4390 acc_ftok=0.4346 (41.23s/q, ETA 3.2h)
+[sim-mmlu] 704/969 acc_gen=0.4418 acc_ftok=0.4375 (41.04s/q, ETA 3.0h)
+[sim-mmlu] 720/969 acc_gen=0.4403 acc_ftok=0.4361 (40.81s/q, ETA 2.8h)
+[sim-mmlu] 736/969 acc_gen=0.4375 acc_ftok=0.4334 (41.06s/q, ETA 2.7h)
+[sim-mmlu] 752/969 acc_gen=0.4402 acc_ftok=0.4362 (41.23s/q, ETA 2.5h)
+[sim-mmlu] 768/969 acc_gen=0.4414 acc_ftok=0.4375 (41.01s/q, ETA 2.3h)
+[sim-mmlu] 784/969 acc_gen=0.4401 acc_ftok=0.4362 (41.14s/q, ETA 2.1h)
+[sim-mmlu] 800/969 acc_gen=0.4412 acc_ftok=0.4375 (41.02s/q, ETA 1.9h)
+[sim-mmlu] 816/969 acc_gen=0.4387 acc_ftok=0.4350 (41.13s/q, ETA 1.7h)
+[sim-mmlu] 832/969 acc_gen=0.4387 acc_ftok=0.4351 (40.89s/q, ETA 1.6h)
+[sim-mmlu] 848/969 acc_gen=0.4387 acc_ftok=0.4351 (40.83s/q, ETA 1.4h)
+[sim-mmlu] 864/969 acc_gen=0.4421 acc_ftok=0.4387 (40.68s/q, ETA 1.2h)
+[sim-mmlu] 880/969 acc_gen=0.4420 acc_ftok=0.4386 (41.03s/q, ETA 1.0h)
+[sim-mmlu] 896/969 acc_gen=0.4420 acc_ftok=0.4386 (40.87s/q, ETA 0.8h)
+[sim-mmlu] 912/969 acc_gen=0.4441 acc_ftok=0.4408 (41.59s/q, ETA 0.7h)
+[sim-mmlu] 928/969 acc_gen=0.4418 acc_ftok=0.4386 (41.37s/q, ETA 0.5h)
+[sim-mmlu] 944/969 acc_gen=0.4428 acc_ftok=0.4396 (41.63s/q, ETA 0.3h)
+[sim-mmlu] 960/969 acc_gen=0.4396 acc_ftok=0.4365 (41.94s/q, ETA 0.1h)
+[sim-mmlu] 969/969 acc_gen=0.4396 acc_ftok=0.4365 (42.17s/q, ETA 0.0h)
+[sim-mmlu] awq: {"num_evaluated": 969, "acc_gen": 0.4396, "acc_gen_ci95": [0.4087, 0.4706], "acc_ftok": 0.4365, "acc_ftok_ci95": [0.4056, 0.4685], "none_gen_rate": 0.0052, "none_ftok_rate": 0.0052, "elapsed_s": 40868.1}
+[sim-mmlu] -> results/acc_mmlu_sim_g64_awq.full.json
+=== awq ALL DONE 2026-10-22 18:53:02 ===
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:02<16:37,  2.96s/it]Loading weights:  38%|███▊      | 129/338 [00:03<00:03, 58.61it/s]Loading weights:  57%|█████▋    | 191/338 [00:03<00:02, 70.54it/s]Loading weights:  68%|██████▊   | 229/338 [00:04<00:01, 77.47it/s]Loading weights:  76%|███████▌  | 257/338 [00:04<00:01, 80.48it/s]Loading weights:  82%|████████▏ | 278/338 [00:04<00:00, 87.41it/s]Loading weights:  88%|████████▊ | 297/338 [00:04<00:00, 89.26it/s]Loading weights:  93%|█████████▎| 313/338 [00:04<00:00, 93.24it/s]Loading weights:  97%|█████████▋| 328/338 [00:05<00:00, 85.42it/s]Loading weights: 100%|██████████| 338/338 [00:05<00:00, 66.52it/s]
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext.py
+Retrying in 1s [Retry 1/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext.py
+Retrying in 2s [Retry 2/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext.py
+Retrying in 4s [Retry 3/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext.py
+Retrying in 8s [Retry 4/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext.py
+Retrying in 8s [Retry 5/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext.py
+Using the latest cached version of the dataset since Salesforce/wikitext couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at /home/pi/.cache/huggingface/datasets/Salesforce___wikitext/wikitext-2-raw-v1/0.0.0/b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Tue Oct  6 19:52:06 2026).
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (299078 > 131072). Running this sequence through the model will result in indexing errors
+[pplchk] heldout torch.Size([64, 1024])
+    [ppl] 1/64 seqs
+    [ppl] 2/64 seqs
+    [ppl] 3/64 seqs
+    [ppl] 4/64 seqs
+    [ppl] 5/64 seqs
+    [ppl] 6/64 seqs
+    [ppl] 7/64 seqs
+    [ppl] 8/64 seqs
+    [ppl] 9/64 seqs
+    [ppl] 10/64 seqs
+    [ppl] 11/64 seqs
+    [ppl] 12/64 seqs
+    [ppl] 13/64 seqs
+    [ppl] 14/64 seqs
+    [ppl] 15/64 seqs
+    [ppl] 16/64 seqs
+    [ppl] 17/64 seqs
+    [ppl] 18/64 seqs
+    [ppl] 19/64 seqs
+    [ppl] 20/64 seqs
+    [ppl] 21/64 seqs
+    [ppl] 22/64 seqs
+    [ppl] 23/64 seqs
+    [ppl] 24/64 seqs
+    [ppl] 25/64 seqs
+    [ppl] 26/64 seqs
+    [ppl] 27/64 seqs
+    [ppl] 28/64 seqs
+    [ppl] 29/64 seqs
+    [ppl] 30/64 seqs
+    [ppl] 31/64 seqs
+    [ppl] 32/64 seqs
+    [ppl] 33/64 seqs
+    [ppl] 34/64 seqs
+    [ppl] 35/64 seqs
+    [ppl] 36/64 seqs
+    [ppl] 37/64 seqs
+    [ppl] 38/64 seqs
+    [ppl] 39/64 seqs
+    [ppl] 40/64 seqs
+    [ppl] 41/64 seqs
+    [ppl] 42/64 seqs
+    [ppl] 43/64 seqs
+    [ppl] 44/64 seqs
+    [ppl] 45/64 seqs
+    [ppl] 46/64 seqs
+    [ppl] 47/64 seqs
+    [ppl] 48/64 seqs
+    [ppl] 49/64 seqs
+    [ppl] 50/64 seqs
+    [ppl] 51/64 seqs
+    [ppl] 52/64 seqs
+    [ppl] 53/64 seqs
+    [ppl] 54/64 seqs
+    [ppl] 55/64 seqs
+    [ppl] 56/64 seqs
+    [ppl] 57/64 seqs
+    [ppl] 58/64 seqs
+    [ppl] 59/64 seqs
+    [ppl] 60/64 seqs
+    [ppl] 61/64 seqs
+    [ppl] 62/64 seqs
+    [ppl] 63/64 seqs
+    [ppl] 64/64 seqs
+[pplchk] nac: ppl=11.962 (8122s)
+[pplchk] -> results/ppl_g64_64seq_nacv2.json
+[pplchk] DONE
+=== nacv2 ppl64(v2) done 2026-10-22 21:16:01 ===

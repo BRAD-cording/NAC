@@ -1,0 +1,6 @@
+[2026-10-16 23:23:18] boot resume check begin
+Failed to start transient service unit: Unit nac-queue.service was already loaded or has a fragment file.
+[2026-10-16 23:23:48] nac-queue skipped (already active/exists)
+Failed to start transient service unit: Unit mmctrl-wd.service was already loaded or has a fragment file.
+[2026-10-16 23:23:48] mmctrl-wd skipped (already active/exists)
+[2026-10-16 23:23:48] boot resume check end

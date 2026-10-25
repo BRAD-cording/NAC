@@ -1,0 +1,8 @@
+{
+  "num_seqs": 16,
+  "seqlen": 1024,
+  "ppl": {
+    "fold_only": 10.6267,
+    "awq_full": 11.2259
+  }
+}

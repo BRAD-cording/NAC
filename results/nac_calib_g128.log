@@ -1,0 +1,4 @@
+[NAC] loading models/Qwen2.5-1.5B-Instruct-hf (CPU) ...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  50%|████▉     | 168/338 [00:00<00:00, 1626.98it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 1785.95it/s]
+[NAC] calib seqs=8 seqlen=512 group=128

@@ -1,0 +1,10 @@
+/media/pi/DATA/rknn-llm/nac_paper/scripts/probe_tiny_extra.py:44: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  llm = rb.RKLLMBase()
+[37mINFO: rkllm-toolkit version: 1.2.3[0m
+[tiny] load ret=0
+[tiny] extra_qparams=results/tiny_qparams.qparams.qparams
+[37mINFO: Using extra qparams: results/tiny_qparams.qparams.qparams![0m
+Building model:   0%|          | 0/33 [00:00<?, ?it/s]Building model:  21%|██        | 7/33 [00:00<00:00, 60.45it/s]Building model:  42%|████▏     | 14/33 [00:00<00:00, 36.06it/s]Building model:  64%|██████▎   | 21/33 [00:00<00:00, 42.36it/s]Building model:  79%|███████▉  | 26/33 [00:00<00:00, 38.78it/s]Building model: 100%|██████████| 33/33 [00:05<00:00,  3.58it/s]Building model: 100%|██████████| 33/33 [00:05<00:00,  6.10it/s]
+[37mINFO: 11 extra qparams already found and loaded![0m
+[tiny] build ret=0
+[tiny] DONE

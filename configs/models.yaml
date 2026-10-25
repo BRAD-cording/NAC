@@ -1,0 +1,30 @@
+# 模型清单（对应方案 3.1 节）
+# path: HF hub id 或本地路径；load_cpu_fp16: 16GB 内存上能否跑 FP16 基线
+models:
+  qwen2.5-1.5b:
+    path: Qwen/Qwen2.5-1.5B
+    params_b: 1.5
+    fp16_cpu_baseline: true
+    max_context_len: 4096
+  qwen2.5-3b:
+    path: Qwen/Qwen2.5-3B
+    params_b: 3.0
+    fp16_cpu_baseline: true
+    max_context_len: 4096
+  qwen2.5-7b:
+    path: Qwen/Qwen2.5-7B
+    params_b: 7.0
+    fp16_cpu_baseline: false   # FP16 权重约 14.3GB，超预算
+    max_context_len: 4096
+
+# 板上运行时参数（rkllm_param）
+runtime:
+  lib_path: ../rkllm-runtime/Linux/librkllm_api/aarch64/librkllmrt.so
+  max_new_tokens: 512
+  temperature: 0.0        # 评测用贪心解码
+  top_k: 1
+  top_p: 0.9
+  repeat_penalty: 1.0
+
+# 基准 prompt 长度（perf.py 扫描点）
+prompt_lengths: [128, 512, 1024, 2048]

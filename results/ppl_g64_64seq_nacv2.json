@@ -1,0 +1,9 @@
+{
+  "model": "models/Qwen2.5-1.5B-Instruct-hf",
+  "num_seqs": 64,
+  "seqlen": 1024,
+  "group_size": 64,
+  "ppl": {
+    "nac": 11.9619
+  }
+}

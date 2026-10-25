@@ -1,0 +1,433 @@
+=== [1/3] GPTQ calib g64 (28 blocks) start 2026-10-13 11:33:54 ===
+[gptq] loading models/Qwen2.5-1.5B-Instruct-hf (fp32) ...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:01<08:44,  1.56s/it]Loading weights:  29%|██▉       | 99/338 [00:01<00:03, 74.80it/s]Loading weights:  37%|███▋      | 125/338 [00:02<00:03, 67.54it/s]Loading weights:  42%|████▏     | 142/338 [00:02<00:02, 69.06it/s]Loading weights:  46%|████▌     | 155/338 [00:02<00:02, 65.15it/s]Loading weights:  49%|████▉     | 166/338 [00:02<00:02, 60.63it/s]Loading weights:  52%|█████▏    | 175/338 [00:03<00:02, 55.65it/s]Loading weights:  54%|█████▍    | 183/338 [00:03<00:02, 53.10it/s]Loading weights:  58%|█████▊    | 195/338 [00:03<00:02, 52.27it/s]Loading weights:  61%|██████    | 207/338 [00:03<00:02, 55.20it/s]Loading weights:  65%|██████▍   | 219/338 [00:04<00:02, 53.67it/s]Loading weights:  68%|██████▊   | 231/338 [00:04<00:02, 53.15it/s]Loading weights:  72%|███████▏  | 243/338 [00:04<00:01, 52.52it/s]Loading weights:  75%|███████▌  | 255/338 [00:04<00:01, 54.23it/s]Loading weights:  79%|███████▉  | 267/338 [00:04<00:01, 53.65it/s]Loading weights:  83%|████████▎ | 279/338 [00:05<00:01, 52.23it/s]Loading weights:  86%|████████▌ | 291/338 [00:05<00:00, 50.71it/s]Loading weights:  90%|████████▉ | 303/338 [00:05<00:00, 55.89it/s]Loading weights:  93%|█████████▎| 315/338 [00:05<00:00, 57.25it/s]Loading weights:  97%|█████████▋| 327/338 [00:06<00:00, 52.78it/s]Loading weights: 100%|██████████| 338/338 [00:06<00:00, 55.38it/s]
+[gptq] calib seqs=8 seqlen=512 group=64
+[gptq] captured 28 block inputs
+GPTQ blocks:   0%|          | 0/28 [00:00<?, ?it/s]GPTQ blocks:   0%|          | 0/28 [03:52<?, ?it/s, sec=233]GPTQ blocks:   4%|▎         | 1/28 [03:52<1:44:46, 232.82s/it, sec=233]GPTQ blocks:   4%|▎         | 1/28 [07:45<1:44:46, 232.82s/it, sec=466]GPTQ blocks:   7%|▋         | 2/28 [07:45<1:40:54, 232.87s/it, sec=466]GPTQ blocks:   7%|▋         | 2/28 [11:37<1:40:54, 232.87s/it, sec=698]GPTQ blocks:  11%|█         | 3/28 [11:37<1:36:51, 232.46s/it, sec=698]GPTQ blocks:  11%|█         | 3/28 [15:30<1:36:51, 232.46s/it, sec=930]GPTQ blocks:  14%|█▍        | 4/28 [15:30<1:33:01, 232.57s/it, sec=930]GPTQ blocks:  14%|█▍        | 4/28 [19:23<1:33:01, 232.57s/it, sec=1163.0]GPTQ blocks:  18%|█▊        | 5/28 [19:23<1:29:11, 232.66s/it, sec=1163.0]GPTQ blocks:  18%|█▊        | 5/28 [23:16<1:29:11, 232.66s/it, sec=1396.0]GPTQ blocks:  21%|██▏       | 6/28 [23:16<1:25:21, 232.79s/it, sec=1396.0]GPTQ blocks:  21%|██▏       | 6/28 [27:08<1:25:21, 232.79s/it, sec=1629.0]GPTQ blocks:  25%|██▌       | 7/28 [27:08<1:21:24, 232.60s/it, sec=1629.0]GPTQ blocks:  25%|██▌       | 7/28 [31:01<1:21:24, 232.60s/it, sec=1861.0]GPTQ blocks:  29%|██▊       | 8/28 [31:01<1:17:32, 232.61s/it, sec=1861.0]GPTQ blocks:  29%|██▊       | 8/28 [34:51<1:17:32, 232.61s/it, sec=2092.0]GPTQ blocks:  32%|███▏      | 9/28 [34:51<1:13:26, 231.91s/it, sec=2092.0]GPTQ blocks:  32%|███▏      | 9/28 [38:43<1:13:26, 231.91s/it, sec=2324.0]GPTQ blocks:  36%|███▌      | 10/28 [38:43<1:09:35, 231.95s/it, sec=2324.0]GPTQ blocks:  36%|███▌      | 10/28 [42:35<1:09:35, 231.95s/it, sec=2555.0]GPTQ blocks:  39%|███▉      | 11/28 [42:35<1:05:41, 231.82s/it, sec=2555.0]GPTQ blocks:  39%|███▉      | 11/28 [46:27<1:05:41, 231.82s/it, sec=2787.0]GPTQ blocks:  43%|████▎     | 12/28 [46:27<1:01:50, 231.93s/it, sec=2787.0]GPTQ blocks:  43%|████▎     | 12/28 [50:17<1:01:50, 231.93s/it, sec=3018.0]GPTQ blocks:  46%|████▋     | 13/28 [50:17<57:53, 231.54s/it, sec=3018.0]  GPTQ blocks:  46%|████▋     | 13/28 [54:09<57:53, 231.54s/it, sec=3249.0]GPTQ blocks:  50%|█████     | 14/28 [54:09<54:01, 231.53s/it, sec=3249.0]GPTQ blocks:  50%|█████     | 14/28 [58:00<54:01, 231.53s/it, sec=3481.0]GPTQ blocks:  54%|█████▎    | 15/28 [58:00<50:08, 231.41s/it, sec=3481.0]GPTQ blocks:  54%|█████▎    | 15/28 [1:02:21<50:08, 231.41s/it, sec=3742.0]GPTQ blocks:  57%|█████▋    | 16/28 [1:02:21<48:04, 240.34s/it, sec=3742.0]GPTQ blocks:  57%|█████▋    | 16/28 [1:06:17<48:04, 240.34s/it, sec=3978.0]GPTQ blocks:  61%|██████    | 17/28 [1:06:17<43:50, 239.12s/it, sec=3978.0]GPTQ blocks:  61%|██████    | 17/28 [1:10:11<43:50, 239.12s/it, sec=4212.0]GPTQ blocks:  64%|██████▍   | 18/28 [1:10:11<39:35, 237.53s/it, sec=4212.0]GPTQ blocks:  64%|██████▍   | 18/28 [1:14:04<39:35, 237.53s/it, sec=4445.0]GPTQ blocks:  68%|██████▊   | 19/28 [1:14:04<35:25, 236.22s/it, sec=4445.0]GPTQ blocks:  68%|██████▊   | 19/28 [1:17:57<35:25, 236.22s/it, sec=4677.0]GPTQ blocks:  71%|███████▏  | 20/28 [1:17:57<31:20, 235.11s/it, sec=4677.0]GPTQ blocks:  71%|███████▏  | 20/28 [1:21:50<31:20, 235.11s/it, sec=4911.0]GPTQ blocks:  75%|███████▌  | 21/28 [1:21:50<27:21, 234.57s/it, sec=4911.0]GPTQ blocks:  75%|███████▌  | 21/28 [1:25:45<27:21, 234.57s/it, sec=5145.0]GPTQ blocks:  79%|███████▊  | 22/28 [1:25:45<23:27, 234.58s/it, sec=5145.0]GPTQ blocks:  79%|███████▊  | 22/28 [1:29:40<23:27, 234.58s/it, sec=5381.0]GPTQ blocks:  82%|████████▏ | 23/28 [1:29:40<19:34, 234.90s/it, sec=5381.0]GPTQ blocks:  82%|████████▏ | 23/28 [1:33:35<19:34, 234.90s/it, sec=5615.0]GPTQ blocks:  86%|████████▌ | 24/28 [1:33:35<15:39, 234.78s/it, sec=5615.0]GPTQ blocks:  86%|████████▌ | 24/28 [1:37:32<15:39, 234.78s/it, sec=5852.0]GPTQ blocks:  89%|████████▉ | 25/28 [1:37:32<11:45, 235.32s/it, sec=5852.0]GPTQ blocks:  89%|████████▉ | 25/28 [1:41:23<11:45, 235.32s/it, sec=6083.0]GPTQ blocks:  93%|█████████▎| 26/28 [1:41:23<07:48, 234.15s/it, sec=6083.0]GPTQ blocks:  93%|█████████▎| 26/28 [1:45:14<07:48, 234.15s/it, sec=6314.0]GPTQ blocks:  96%|█████████▋| 27/28 [1:45:14<03:53, 233.11s/it, sec=6314.0]GPTQ blocks:  96%|█████████▋| 27/28 [1:48:46<03:53, 233.11s/it, sec=6526.0]GPTQ blocks: 100%|██████████| 28/28 [1:48:46<00:00, 226.86s/it, sec=6526.0]GPTQ blocks: 100%|██████████| 28/28 [1:48:46<00:00, 233.09s/it, sec=6526.0]
+[gptq] done in 6527.1s -> results/gptq_qwen1.5b_g64.qparams.pt
+=== [2/3] PPL 门槛体检 start 2026-10-13 13:31:43 ===
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:01<09:49,  1.75s/it]Loading weights:  33%|███▎      | 111/338 [00:02<00:03, 73.92it/s]Loading weights:  40%|███▉      | 135/338 [00:02<00:02, 68.31it/s]Loading weights:  45%|████▍     | 151/338 [00:02<00:02, 67.70it/s]Loading weights:  48%|████▊     | 163/338 [00:02<00:02, 65.35it/s]Loading weights:  51%|█████     | 173/338 [00:03<00:02, 65.23it/s]Loading weights:  54%|█████▍    | 183/338 [00:03<00:02, 59.98it/s]Loading weights:  58%|█████▊    | 195/338 [00:03<00:02, 67.51it/s]Loading weights:  60%|██████    | 204/338 [00:03<00:01, 68.82it/s]Loading weights:  68%|██████▊   | 231/338 [00:03<00:01, 103.56it/s]Loading weights:  75%|███████▌  | 255/338 [00:03<00:00, 129.83it/s]Loading weights:  83%|████████▎ | 279/338 [00:03<00:00, 151.76it/s]Loading weights:  90%|████████▉ | 303/338 [00:03<00:00, 169.95it/s]Loading weights:  97%|█████████▋| 327/338 [00:04<00:00, 182.35it/s]Loading weights: 100%|██████████| 338/338 [00:04<00:00, 82.85it/s] 
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext.py
+Retrying in 1s [Retry 1/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext.py
+Retrying in 2s [Retry 2/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext.py
+Retrying in 4s [Retry 3/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext.py
+Retrying in 8s [Retry 4/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext.py
+Retrying in 8s [Retry 5/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext.py
+Using the latest cached version of the dataset since Salesforce/wikitext couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at /home/pi/.cache/huggingface/datasets/Salesforce___wikitext/wikitext-2-raw-v1/0.0.0/b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Tue Oct  6 19:52:06 2026).
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (299078 > 131072). Running this sequence through the model will result in indexing errors
+    [ppl] 1/4 seqs
+    [ppl] 2/4 seqs
+    [ppl] 3/4 seqs
+    [ppl] 4/4 seqs
+    [ppl] 1/4 seqs
+    [ppl] 2/4 seqs
+    [ppl] 3/4 seqs
+    [ppl] 4/4 seqs
+    [ppl] 1/4 seqs
+    [ppl] 2/4 seqs
+    [ppl] 3/4 seqs
+    [ppl] 4/4 seqs
+GATE 4-seq PPL: fp=14.571 minmax=16.352 gptq=15.847
+GATE PASS
+=== [3/3] MMLU sim (minmax,nac,gptq,fp16) 969q start 2026-10-13 13:52:17 ===
+[sim-mmlu] loading models/Qwen2.5-1.5B-Instruct-hf (fp32) ...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:02<14:07,  2.51s/it]Loading weights:  40%|███▉      | 135/338 [00:02<00:02, 69.14it/s]Loading weights:  52%|█████▏    | 177/338 [00:03<00:02, 71.44it/s]Loading weights:  60%|██████    | 204/338 [00:03<00:01, 70.77it/s]Loading weights:  66%|██████▌   | 223/338 [00:04<00:01, 63.55it/s]Loading weights:  70%|███████   | 237/338 [00:04<00:01, 62.21it/s]Loading weights:  73%|███████▎  | 248/338 [00:04<00:01, 61.63it/s]Loading weights:  76%|███████▋  | 258/338 [00:04<00:01, 58.53it/s]Loading weights:  79%|███████▉  | 267/338 [00:04<00:01, 53.61it/s]Loading weights:  83%|████████▎ | 279/338 [00:05<00:01, 57.71it/s]Loading weights:  85%|████████▍ | 286/338 [00:05<00:00, 59.21it/s]Loading weights:  87%|████████▋ | 293/338 [00:05<00:00, 51.92it/s]Loading weights:  90%|████████▉ | 303/338 [00:05<00:00, 52.56it/s]Loading weights:  93%|█████████▎| 315/338 [00:05<00:00, 53.78it/s]Loading weights:  97%|█████████▋| 327/338 [00:06<00:00, 53.69it/s]Loading weights: 100%|██████████| 338/338 [00:06<00:00, 55.61it/s]
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 1s [Retry 1/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 2s [Retry 2/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 4s [Retry 3/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 8s [Retry 4/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 8s [Retry 5/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Using the latest cached version of the dataset since cais/mmlu couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'all' at /home/pi/.cache/huggingface/datasets/cais___mmlu/all/0.0.0/c30699e8356da336a370243923dbaf21066bb9fe (last modified on Tue Oct  6 19:55:51 2026).
+[sim-mmlu] 969 questions (board-protocol aligned, zs) gs=64 bs=16 configs=minmax,nac,gptq=results/gptq_qwen1.5b_g64.qparams.pt,fp16
+[sim-mmlu] ===== config: minmax =====
+[sim-mmlu] 16/969 acc_gen=0.8125 acc_ftok=0.8125 (37.2s/q, ETA 9.8h)
+[sim-mmlu] 32/969 acc_gen=0.6562 acc_ftok=0.6562 (38.62s/q, ETA 10.1h)
+[sim-mmlu] 48/969 acc_gen=0.5833 acc_ftok=0.5833 (31.95s/q, ETA 8.2h)
+[sim-mmlu] 64/969 acc_gen=0.6406 acc_ftok=0.6094 (40.77s/q, ETA 10.2h)
+[sim-mmlu] 80/969 acc_gen=0.6125 acc_ftok=0.5875 (38.93s/q, ETA 9.6h)
+[sim-mmlu] 96/969 acc_gen=0.5729 acc_ftok=0.5417 (39.19s/q, ETA 9.5h)
+[sim-mmlu] 112/969 acc_gen=0.5714 acc_ftok=0.5446 (37.64s/q, ETA 9.0h)
+[sim-mmlu] 128/969 acc_gen=0.5469 acc_ftok=0.5234 (36.69s/q, ETA 8.6h)
+[sim-mmlu] 144/969 acc_gen=0.5347 acc_ftok=0.5069 (46.06s/q, ETA 10.6h)
+[sim-mmlu] 160/969 acc_gen=0.5125 acc_ftok=0.4875 (48.0s/q, ETA 10.8h)
+[sim-mmlu] 176/969 acc_gen=0.5114 acc_ftok=0.4886 (48.67s/q, ETA 10.7h)
+[sim-mmlu] 192/969 acc_gen=0.5208 acc_ftok=0.5000 (46.99s/q, ETA 10.1h)
+[sim-mmlu] 208/969 acc_gen=0.5192 acc_ftok=0.5000 (45.29s/q, ETA 9.6h)
+[sim-mmlu] 224/969 acc_gen=0.5089 acc_ftok=0.4911 (44.87s/q, ETA 9.3h)
+[sim-mmlu] 240/969 acc_gen=0.5167 acc_ftok=0.5000 (43.68s/q, ETA 8.8h)
+=== [resume] MMLU sim from breakpoint 2026-10-13-18:36:29 ===
+[sim-mmlu] loading models/Qwen2.5-1.5B-Instruct-hf (fp32) ...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:03<17:29,  3.11s/it]Loading weights:  36%|███▋      | 123/338 [00:03<00:04, 50.31it/s]Loading weights:  45%|████▍     | 151/338 [00:03<00:03, 51.56it/s]Loading weights:  50%|█████     | 169/338 [00:04<00:03, 55.54it/s]Loading weights:  54%|█████▍    | 184/338 [00:04<00:03, 49.40it/s]Loading weights:  58%|█████▊    | 195/338 [00:04<00:02, 51.14it/s]Loading weights:  61%|██████    | 207/338 [00:04<00:02, 50.82it/s]Loading weights:  65%|██████▍   | 219/338 [00:05<00:02, 53.26it/s]Loading weights:  68%|██████▊   | 231/338 [00:05<00:02, 51.84it/s]Loading weights:  72%|███████▏  | 243/338 [00:05<00:01, 54.59it/s]Loading weights:  75%|███████▌  | 255/338 [00:05<00:01, 52.30it/s]Loading weights:  79%|███████▉  | 267/338 [00:06<00:01, 54.37it/s]Loading weights:  83%|████████▎ | 279/338 [00:06<00:01, 52.24it/s]Loading weights:  86%|████████▌ | 291/338 [00:06<00:00, 53.44it/s]Loading weights:  90%|████████▉ | 303/338 [00:06<00:00, 50.49it/s]Loading weights:  93%|█████████▎| 315/338 [00:06<00:00, 57.00it/s]Loading weights:  97%|█████████▋| 327/338 [00:07<00:00, 54.43it/s]Loading weights: 100%|██████████| 338/338 [00:07<00:00, 47.01it/s]
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 1s [Retry 1/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 2s [Retry 2/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 4s [Retry 3/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 8s [Retry 4/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 8s [Retry 5/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Using the latest cached version of the dataset since cais/mmlu couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'all' at /home/pi/.cache/huggingface/datasets/cais___mmlu/all/0.0.0/c30699e8356da336a370243923dbaf21066bb9fe (last modified on Tue Oct  6 19:55:51 2026).
+[sim-mmlu] 969 questions (board-protocol aligned, zs) gs=64 bs=16 configs=minmax,nac,gptq=results/gptq_qwen1.5b_g64.qparams.pt,fp16
+[sim-mmlu] ===== config: minmax =====
+[sim-mmlu] resume minmax from #240
+[sim-mmlu] 256/969 acc_gen=0.5078 acc_ftok=0.4883 (2.55s/q, ETA 0.5h)
+[sim-mmlu] 272/969 acc_gen=0.5074 acc_ftok=0.4890 (3.84s/q, ETA 0.7h)
+[sim-mmlu] 288/969 acc_gen=0.5035 acc_ftok=0.4861 (4.84s/q, ETA 0.9h)
+[sim-mmlu] 304/969 acc_gen=0.5066 acc_ftok=0.4901 (6.6s/q, ETA 1.2h)
+[sim-mmlu] 320/969 acc_gen=0.5031 acc_ftok=0.4875 (7.49s/q, ETA 1.4h)
+[sim-mmlu] 336/969 acc_gen=0.4970 acc_ftok=0.4792 (9.98s/q, ETA 1.8h)
+[sim-mmlu] 352/969 acc_gen=0.5028 acc_ftok=0.4858 (11.19s/q, ETA 1.9h)
+[sim-mmlu] 368/969 acc_gen=0.5054 acc_ftok=0.4891 (12.85s/q, ETA 2.1h)
+[sim-mmlu] 384/969 acc_gen=0.5000 acc_ftok=0.4844 (14.33s/q, ETA 2.3h)
+[sim-mmlu] 400/969 acc_gen=0.4975 acc_ftok=0.4825 (15.21s/q, ETA 2.4h)
+[sim-mmlu] 416/969 acc_gen=0.4880 acc_ftok=0.4736 (17.09s/q, ETA 2.6h)
+[sim-mmlu] 432/969 acc_gen=0.4792 acc_ftok=0.4653 (17.75s/q, ETA 2.6h)
+[sim-mmlu] 448/969 acc_gen=0.4866 acc_ftok=0.4732 (19.86s/q, ETA 2.9h)
+[sim-mmlu] 464/969 acc_gen=0.4784 acc_ftok=0.4655 (20.35s/q, ETA 2.9h)
+[sim-mmlu] 480/969 acc_gen=0.4833 acc_ftok=0.4688 (20.85s/q, ETA 2.8h)
+[sim-mmlu] 496/969 acc_gen=0.4859 acc_ftok=0.4718 (22.42s/q, ETA 2.9h)
+[sim-mmlu] 512/969 acc_gen=0.4883 acc_ftok=0.4746 (22.65s/q, ETA 2.9h)
+[sim-mmlu] 528/969 acc_gen=0.4811 acc_ftok=0.4678 (23.24s/q, ETA 2.8h)
+[sim-mmlu] 544/969 acc_gen=0.4835 acc_ftok=0.4669 (23.29s/q, ETA 2.7h)
+[sim-mmlu] 560/969 acc_gen=0.4839 acc_ftok=0.4679 (23.71s/q, ETA 2.7h)
+[sim-mmlu] 576/969 acc_gen=0.4844 acc_ftok=0.4688 (24.1s/q, ETA 2.6h)
+[sim-mmlu] 592/969 acc_gen=0.4814 acc_ftok=0.4662 (24.18s/q, ETA 2.5h)
+[sim-mmlu] 608/969 acc_gen=0.4803 acc_ftok=0.4655 (24.51s/q, ETA 2.5h)
+[sim-mmlu] 624/969 acc_gen=0.4776 acc_ftok=0.4631 (24.94s/q, ETA 2.4h)
+[sim-mmlu] 640/969 acc_gen=0.4781 acc_ftok=0.4641 (25.77s/q, ETA 2.4h)
+[sim-mmlu] 656/969 acc_gen=0.4741 acc_ftok=0.4604 (25.96s/q, ETA 2.3h)
+[sim-mmlu] 672/969 acc_gen=0.4717 acc_ftok=0.4568 (26.62s/q, ETA 2.2h)
+[sim-mmlu] 688/969 acc_gen=0.4709 acc_ftok=0.4564 (26.95s/q, ETA 2.1h)
+[sim-mmlu] 704/969 acc_gen=0.4716 acc_ftok=0.4574 (27.11s/q, ETA 2.0h)
+[sim-mmlu] 720/969 acc_gen=0.4694 acc_ftok=0.4569 (27.21s/q, ETA 1.9h)
+[sim-mmlu] 736/969 acc_gen=0.4647 acc_ftok=0.4511 (27.79s/q, ETA 1.8h)
+[sim-mmlu] 752/969 acc_gen=0.4654 acc_ftok=0.4521 (28.27s/q, ETA 1.7h)
+[sim-mmlu] 768/969 acc_gen=0.4688 acc_ftok=0.4557 (28.35s/q, ETA 1.6h)
+[sim-mmlu] 784/969 acc_gen=0.4668 acc_ftok=0.4541 (28.77s/q, ETA 1.5h)
+[sim-mmlu] 800/969 acc_gen=0.4675 acc_ftok=0.4550 (28.92s/q, ETA 1.4h)
+[sim-mmlu] 816/969 acc_gen=0.4681 acc_ftok=0.4547 (29.28s/q, ETA 1.2h)
+[sim-mmlu] 832/969 acc_gen=0.4651 acc_ftok=0.4519 (29.27s/q, ETA 1.1h)
+[sim-mmlu] 848/969 acc_gen=0.4646 acc_ftok=0.4517 (29.45s/q, ETA 1.0h)
+[sim-mmlu] 864/969 acc_gen=0.4653 acc_ftok=0.4525 (29.54s/q, ETA 0.9h)
+[sim-mmlu] 880/969 acc_gen=0.4670 acc_ftok=0.4557 (30.12s/q, ETA 0.7h)
+[sim-mmlu] 896/969 acc_gen=0.4665 acc_ftok=0.4554 (30.18s/q, ETA 0.6h)
+[sim-mmlu] 912/969 acc_gen=0.4693 acc_ftok=0.4583 (31.11s/q, ETA 0.5h)
+[sim-mmlu] 928/969 acc_gen=0.4688 acc_ftok=0.4591 (31.09s/q, ETA 0.4h)
+[sim-mmlu] 944/969 acc_gen=0.4714 acc_ftok=0.4608 (31.57s/q, ETA 0.2h)
+[sim-mmlu] 960/969 acc_gen=0.4677 acc_ftok=0.4573 (32.08s/q, ETA 0.1h)
+[sim-mmlu] 969/969 acc_gen=0.4675 acc_ftok=0.4561 (32.42s/q, ETA 0.0h)
+[sim-mmlu] minmax: {"num_evaluated": 969, "acc_gen": 0.4675, "acc_gen_ci95": [0.4355, 0.4985], "acc_ftok": 0.4561, "acc_ftok_ci95": [0.4241, 0.4881], "none_gen_rate": 0.0072, "none_ftok_rate": 0.0103, "elapsed_s": 31419.1}
+[sim-mmlu] ===== config: nac =====
+[sim-mmlu] 16/969 acc_gen=0.7500 acc_ftok=0.7500 (38.45s/q, ETA 10.2h)
+[sim-mmlu] 32/969 acc_gen=0.5938 acc_ftok=0.5938 (39.7s/q, ETA 10.3h)
+[sim-mmlu] 48/969 acc_gen=0.5417 acc_ftok=0.5417 (32.76s/q, ETA 8.4h)
+[sim-mmlu] 64/969 acc_gen=0.5938 acc_ftok=0.5781 (41.82s/q, ETA 10.5h)
+[sim-mmlu] 80/969 acc_gen=0.5750 acc_ftok=0.5500 (39.87s/q, ETA 9.8h)
+[sim-mmlu] 96/969 acc_gen=0.5521 acc_ftok=0.5312 (40.07s/q, ETA 9.7h)
+[sim-mmlu] 112/969 acc_gen=0.5268 acc_ftok=0.5000 (38.39s/q, ETA 9.1h)
+[sim-mmlu] 128/969 acc_gen=0.4922 acc_ftok=0.4688 (37.36s/q, ETA 8.7h)
+[sim-mmlu] 144/969 acc_gen=0.4653 acc_ftok=0.4444 (46.64s/q, ETA 10.7h)
+[sim-mmlu] 160/969 acc_gen=0.4375 acc_ftok=0.4188 (48.56s/q, ETA 10.9h)
+[sim-mmlu] 176/969 acc_gen=0.4375 acc_ftok=0.4205 (49.27s/q, ETA 10.9h)
+[sim-mmlu] 192/969 acc_gen=0.4479 acc_ftok=0.4323 (47.57s/q, ETA 10.3h)
+[sim-mmlu] 208/969 acc_gen=0.4423 acc_ftok=0.4231 (45.85s/q, ETA 9.7h)
+[sim-mmlu] 224/969 acc_gen=0.4420 acc_ftok=0.4241 (45.41s/q, ETA 9.4h)
+[sim-mmlu] 240/969 acc_gen=0.4417 acc_ftok=0.4208 (44.19s/q, ETA 8.9h)
+[sim-mmlu] 256/969 acc_gen=0.4336 acc_ftok=0.4141 (44.1s/q, ETA 8.7h)
+[sim-mmlu] 272/969 acc_gen=0.4338 acc_ftok=0.4118 (43.02s/q, ETA 8.3h)
+[sim-mmlu] 288/969 acc_gen=0.4306 acc_ftok=0.4097 (41.91s/q, ETA 7.9h)
+[sim-mmlu] 304/969 acc_gen=0.4342 acc_ftok=0.4145 (41.73s/q, ETA 7.7h)
+[sim-mmlu] 320/969 acc_gen=0.4313 acc_ftok=0.4125 (40.91s/q, ETA 7.4h)
+[sim-mmlu] 336/969 acc_gen=0.4256 acc_ftok=0.4077 (41.87s/q, ETA 7.4h)
+[sim-mmlu] 352/969 acc_gen=0.4261 acc_ftok=0.4091 (41.67s/q, ETA 7.1h)
+[sim-mmlu] 368/969 acc_gen=0.4293 acc_ftok=0.4130 (42.01s/q, ETA 7.0h)
+[sim-mmlu] 384/969 acc_gen=0.4271 acc_ftok=0.4115 (42.29s/q, ETA 6.9h)
+[sim-mmlu] 400/969 acc_gen=0.4250 acc_ftok=0.4100 (42.05s/q, ETA 6.6h)
+[sim-mmlu] 416/969 acc_gen=0.4135 acc_ftok=0.3990 (42.88s/q, ETA 6.6h)
+[sim-mmlu] 432/969 acc_gen=0.4074 acc_ftok=0.3935 (42.6s/q, ETA 6.4h)
+[sim-mmlu] 448/969 acc_gen=0.4152 acc_ftok=0.4018 (43.81s/q, ETA 6.3h)
+[sim-mmlu] 464/969 acc_gen=0.4052 acc_ftok=0.3922 (43.49s/q, ETA 6.1h)
+[sim-mmlu] 480/969 acc_gen=0.4104 acc_ftok=0.3979 (43.25s/q, ETA 5.9h)
+[sim-mmlu] 496/969 acc_gen=0.4093 acc_ftok=0.3972 (44.12s/q, ETA 5.8h)
+[sim-mmlu] 512/969 acc_gen=0.4062 acc_ftok=0.3945 (43.68s/q, ETA 5.5h)
+[sim-mmlu] loading models/Qwen2.5-1.5B-Instruct-hf (fp32) ...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:03<17:33,  3.13s/it]Loading weights:  36%|███▋      | 123/338 [00:03<00:04, 49.61it/s]Loading weights:  44%|████▍     | 149/338 [00:03<00:03, 51.36it/s]Loading weights:  49%|████▉     | 166/338 [00:04<00:03, 53.98it/s]Loading weights:  53%|█████▎    | 179/338 [00:04<00:02, 54.67it/s]Loading weights:  56%|█████▌    | 190/338 [00:04<00:02, 53.49it/s]Loading weights:  59%|█████▉    | 199/338 [00:04<00:02, 51.44it/s]Loading weights:  61%|██████    | 207/338 [00:04<00:02, 51.30it/s]Loading weights:  65%|██████▍   | 219/338 [00:05<00:02, 50.70it/s]Loading weights:  68%|██████▊   | 231/338 [00:05<00:02, 51.03it/s]Loading weights:  72%|███████▏  | 243/338 [00:05<00:01, 54.46it/s]Loading weights:  75%|███████▌  | 255/338 [00:05<00:01, 53.07it/s]Loading weights:  79%|███████▉  | 267/338 [00:06<00:01, 52.81it/s]Loading weights:  83%|████████▎ | 279/338 [00:06<00:01, 54.62it/s]Loading weights:  86%|████████▌ | 291/338 [00:06<00:00, 53.49it/s]Loading weights:  90%|████████▉ | 303/338 [00:06<00:00, 56.41it/s]Loading weights:  93%|█████████▎| 315/338 [00:06<00:00, 54.09it/s]Loading weights:  97%|█████████▋| 327/338 [00:07<00:00, 53.91it/s]Loading weights: 100%|██████████| 338/338 [00:07<00:00, 47.19it/s]
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 1s [Retry 1/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 2s [Retry 2/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 4s [Retry 3/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 8s [Retry 4/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 8s [Retry 5/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Using the latest cached version of the dataset since cais/mmlu couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'all' at /home/pi/.cache/huggingface/datasets/cais___mmlu/all/0.0.0/c30699e8356da336a370243923dbaf21066bb9fe (last modified on Tue Oct  6 19:55:51 2026).
+[sim-mmlu] 969 questions (board-protocol aligned, zs) gs=64 bs=16 configs=minmax,nac,gptq=results/gptq_qwen1.5b_g64.qparams.pt,fp16
+[sim-mmlu] ===== config: minmax =====
+[sim-mmlu] resume minmax from #969
+[sim-mmlu] minmax: {"num_evaluated": 969, "acc_gen": 0.4675, "acc_gen_ci95": [0.4355, 0.4985], "acc_ftok": 0.4561, "acc_ftok_ci95": [0.4241, 0.4881], "none_gen_rate": 0.0072, "none_ftok_rate": 0.0103, "elapsed_s": 0.5}
+[sim-mmlu] ===== config: nac =====
+[sim-mmlu] resume nac from #512
+[sim-mmlu] 528/969 acc_gen=0.4015 acc_ftok=0.3902 (1.27s/q, ETA 0.2h)
+[sim-mmlu] 544/969 acc_gen=0.4026 acc_ftok=0.3915 (1.94s/q, ETA 0.2h)
+[sim-mmlu] 560/969 acc_gen=0.4036 acc_ftok=0.3929 (2.96s/q, ETA 0.3h)
+[sim-mmlu] 576/969 acc_gen=0.4045 acc_ftok=0.3941 (3.93s/q, ETA 0.4h)
+[sim-mmlu] 592/969 acc_gen=0.4037 acc_ftok=0.3936 (4.55s/q, ETA 0.5h)
+[sim-mmlu] 608/969 acc_gen=0.4013 acc_ftok=0.3914 (5.36s/q, ETA 0.5h)
+[sim-mmlu] 624/969 acc_gen=0.3958 acc_ftok=0.3862 (6.26s/q, ETA 0.6h)
+[sim-mmlu] 640/969 acc_gen=0.3969 acc_ftok=0.3875 (7.58s/q, ETA 0.7h)
+[sim-mmlu] 656/969 acc_gen=0.3933 acc_ftok=0.3841 (8.2s/q, ETA 0.7h)
+[sim-mmlu] 672/969 acc_gen=0.3884 acc_ftok=0.3795 (9.28s/q, ETA 0.8h)
+[sim-mmlu] 688/969 acc_gen=0.3924 acc_ftok=0.3837 (10.01s/q, ETA 0.8h)
+[sim-mmlu] 704/969 acc_gen=0.3920 acc_ftok=0.3835 (10.55s/q, ETA 0.8h)
+[sim-mmlu] 720/969 acc_gen=0.3931 acc_ftok=0.3847 (11.0s/q, ETA 0.8h)
+[sim-mmlu] 736/969 acc_gen=0.3899 acc_ftok=0.3818 (11.94s/q, ETA 0.8h)
+[sim-mmlu] 752/969 acc_gen=0.3936 acc_ftok=0.3856 (12.74s/q, ETA 0.8h)
+[sim-mmlu] 768/969 acc_gen=0.3958 acc_ftok=0.3880 (13.14s/q, ETA 0.7h)
+[sim-mmlu] 784/969 acc_gen=0.3954 acc_ftok=0.3878 (13.85s/q, ETA 0.7h)
+[sim-mmlu] 800/969 acc_gen=0.3975 acc_ftok=0.3900 (14.29s/q, ETA 0.7h)
+[sim-mmlu] 816/969 acc_gen=0.3958 acc_ftok=0.3885 (14.98s/q, ETA 0.6h)
+[sim-mmlu] 832/969 acc_gen=0.3942 acc_ftok=0.3870 (15.26s/q, ETA 0.6h)
+[sim-mmlu] 848/969 acc_gen=0.3927 acc_ftok=0.3856 (15.82s/q, ETA 0.5h)
+[sim-mmlu] 864/969 acc_gen=0.3935 acc_ftok=0.3866 (16.39s/q, ETA 0.5h)
+[sim-mmlu] 880/969 acc_gen=0.3955 acc_ftok=0.3886 (17.39s/q, ETA 0.4h)
+[sim-mmlu] 896/969 acc_gen=0.3940 acc_ftok=0.3873 (17.66s/q, ETA 0.4h)
+[sim-mmlu] 912/969 acc_gen=0.3947 acc_ftok=0.3882 (18.85s/q, ETA 0.3h)
+[sim-mmlu] 928/969 acc_gen=0.3933 acc_ftok=0.3869 (19.04s/q, ETA 0.2h)
+[sim-mmlu] 944/969 acc_gen=0.3951 acc_ftok=0.3888 (19.71s/q, ETA 0.1h)
+[sim-mmlu] 960/969 acc_gen=0.3937 acc_ftok=0.3875 (20.42s/q, ETA 0.1h)
+[sim-mmlu] 969/969 acc_gen=0.3932 acc_ftok=0.3870 (20.87s/q, ETA 0.0h)
+[sim-mmlu] nac: {"num_evaluated": 969, "acc_gen": 0.3932, "acc_gen_ci95": [0.3643, 0.4231], "acc_ftok": 0.387, "acc_ftok_ci95": [0.3571, 0.418], "none_gen_rate": 0.0454, "none_ftok_rate": 0.0485, "elapsed_s": 20218.8}
+[sim-mmlu] ===== config: gptq =====
+[sim-mmlu] 16/969 acc_gen=0.8750 acc_ftok=0.8750 (39.26s/q, ETA 10.4h)
+[sim-mmlu] 32/969 acc_gen=0.7500 acc_ftok=0.7500 (40.64s/q, ETA 10.6h)
+[sim-mmlu] 48/969 acc_gen=0.6875 acc_ftok=0.6875 (33.38s/q, ETA 8.5h)
+[sim-mmlu] 64/969 acc_gen=0.7188 acc_ftok=0.7188 (42.29s/q, ETA 10.6h)
+[sim-mmlu] 80/969 acc_gen=0.6375 acc_ftok=0.6375 (40.7s/q, ETA 10.1h)
+[sim-mmlu] 96/969 acc_gen=0.5833 acc_ftok=0.5833 (42.5s/q, ETA 10.3h)
+[sim-mmlu] loading models/Qwen2.5-1.5B-Instruct-hf (fp32) ...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:02<12:15,  2.18s/it]Loading weights:  40%|███▉      | 135/338 [00:02<00:02, 74.99it/s]Loading weights:  49%|████▉     | 165/338 [00:02<00:02, 74.11it/s]Loading weights:  55%|█████▍    | 185/338 [00:03<00:02, 65.87it/s]Loading weights:  59%|█████▉    | 199/338 [00:03<00:02, 60.63it/s]Loading weights:  62%|██████▏   | 210/338 [00:03<00:02, 59.31it/s]Loading weights:  65%|██████▍   | 219/338 [00:04<00:02, 51.24it/s]Loading weights:  69%|██████▊   | 232/338 [00:04<00:01, 58.92it/s]Loading weights:  71%|███████▏  | 241/338 [00:04<00:01, 57.90it/s]Loading weights:  75%|███████▌  | 255/338 [00:04<00:01, 55.38it/s]Loading weights:  79%|███████▉  | 268/338 [00:04<00:01, 64.32it/s]Loading weights:  83%|████████▎ | 279/338 [00:05<00:00, 61.14it/s]Loading weights:  86%|████████▌ | 291/338 [00:05<00:00, 57.02it/s]Loading weights:  88%|████████▊ | 298/338 [00:05<00:00, 52.51it/s]Loading weights:  90%|████████▉ | 304/338 [00:05<00:00, 48.69it/s]Loading weights:  92%|█████████▏| 311/338 [00:05<00:00, 51.58it/s]Loading weights:  94%|█████████▍| 317/338 [00:06<00:00, 26.60it/s]Loading weights:  97%|█████████▋| 329/338 [00:06<00:00, 37.64it/s]Loading weights: 100%|██████████| 338/338 [00:06<00:00, 52.27it/s]
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 1s [Retry 1/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 2s [Retry 2/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 4s [Retry 3/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 8s [Retry 4/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 8s [Retry 5/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Using the latest cached version of the dataset since cais/mmlu couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'all' at /home/pi/.cache/huggingface/datasets/cais___mmlu/all/0.0.0/c30699e8356da336a370243923dbaf21066bb9fe (last modified on Tue Oct  6 19:55:51 2026).
+[sim-mmlu] 969 questions (board-protocol aligned, zs) gs=64 bs=16 configs=minmax,nac,gptq=results/gptq_qwen1.5b_g64.qparams.pt,fp16
+[sim-mmlu] ===== config: minmax =====
+[sim-mmlu] resume minmax from #969
+[sim-mmlu] minmax: {"num_evaluated": 969, "acc_gen": 0.4675, "acc_gen_ci95": [0.4355, 0.4985], "acc_ftok": 0.4561, "acc_ftok_ci95": [0.4241, 0.4881], "none_gen_rate": 0.0072, "none_ftok_rate": 0.0103, "elapsed_s": 0.6}
+[sim-mmlu] ===== config: nac =====
+[sim-mmlu] resume nac from #969
+[sim-mmlu] nac: {"num_evaluated": 969, "acc_gen": 0.3932, "acc_gen_ci95": [0.3643, 0.4231], "acc_ftok": 0.387, "acc_ftok_ci95": [0.3571, 0.418], "none_gen_rate": 0.0454, "none_ftok_rate": 0.0485, "elapsed_s": 0.4}
+[sim-mmlu] ===== config: gptq =====
+[sim-mmlu] resume gptq from #96
+[sim-mmlu] 112/969 acc_gen=0.5625 acc_ftok=0.5625 (7.03s/q, ETA 1.7h)
+[sim-mmlu] 128/969 acc_gen=0.5234 acc_ftok=0.5234 (14.07s/q, ETA 3.3h)
+[sim-mmlu] 144/969 acc_gen=0.5139 acc_ftok=0.5139 (25.36s/q, ETA 5.8h)
+[sim-mmlu] 160/969 acc_gen=0.4875 acc_ftok=0.4875 (29.38s/q, ETA 6.6h)
+[sim-mmlu] 176/969 acc_gen=0.4943 acc_ftok=0.4943 (31.65s/q, ETA 7.0h)
+[sim-mmlu] 192/969 acc_gen=0.4948 acc_ftok=0.5000 (31.36s/q, ETA 6.8h)
+[sim-mmlu] 208/969 acc_gen=0.4808 acc_ftok=0.4856 (30.88s/q, ETA 6.5h)
+[sim-mmlu] 224/969 acc_gen=0.4821 acc_ftok=0.4866 (31.44s/q, ETA 6.5h)
+[sim-mmlu] 240/969 acc_gen=0.4875 acc_ftok=0.4917 (31.07s/q, ETA 6.3h)
+[sim-mmlu] 256/969 acc_gen=0.4805 acc_ftok=0.4844 (31.76s/q, ETA 6.3h)
+[sim-mmlu] 272/969 acc_gen=0.4816 acc_ftok=0.4853 (31.35s/q, ETA 6.1h)
+[sim-mmlu] 288/969 acc_gen=0.4722 acc_ftok=0.4757 (30.86s/q, ETA 5.8h)
+[sim-mmlu] 304/969 acc_gen=0.4803 acc_ftok=0.4836 (31.24s/q, ETA 5.8h)
+[sim-mmlu] 320/969 acc_gen=0.4844 acc_ftok=0.4875 (30.91s/q, ETA 5.6h)
+[sim-mmlu] 336/969 acc_gen=0.4821 acc_ftok=0.4881 (32.37s/q, ETA 5.7h)
+[sim-mmlu] 352/969 acc_gen=0.4801 acc_ftok=0.4858 (32.57s/q, ETA 5.6h)
+[sim-mmlu] 368/969 acc_gen=0.4837 acc_ftok=0.4891 (33.32s/q, ETA 5.6h)
+[sim-mmlu] 384/969 acc_gen=0.4792 acc_ftok=0.4844 (33.92s/q, ETA 5.5h)
+[sim-mmlu] 400/969 acc_gen=0.4800 acc_ftok=0.4850 (33.99s/q, ETA 5.4h)
+[sim-mmlu] 416/969 acc_gen=0.4760 acc_ftok=0.4784 (35.12s/q, ETA 5.4h)
+[sim-mmlu] 432/969 acc_gen=0.4676 acc_ftok=0.4699 (35.1s/q, ETA 5.2h)
+[sim-mmlu] 448/969 acc_gen=0.4732 acc_ftok=0.4754 (36.52s/q, ETA 5.3h)
+[sim-mmlu] 464/969 acc_gen=0.4677 acc_ftok=0.4698 (36.41s/q, ETA 5.1h)
+[sim-mmlu] 480/969 acc_gen=0.4604 acc_ftok=0.4625 (36.36s/q, ETA 4.9h)
+[sim-mmlu] 496/969 acc_gen=0.4597 acc_ftok=0.4617 (37.43s/q, ETA 4.9h)
+[sim-mmlu] 512/969 acc_gen=0.4570 acc_ftok=0.4590 (37.17s/q, ETA 4.7h)
+[sim-mmlu] 528/969 acc_gen=0.4527 acc_ftok=0.4545 (37.29s/q, ETA 4.6h)
+[sim-mmlu] 544/969 acc_gen=0.4540 acc_ftok=0.4559 (36.9s/q, ETA 4.4h)
+[sim-mmlu] 560/969 acc_gen=0.4536 acc_ftok=0.4554 (36.92s/q, ETA 4.2h)
+[sim-mmlu] 576/969 acc_gen=0.4566 acc_ftok=0.4583 (36.92s/q, ETA 4.0h)
+[sim-mmlu] 592/969 acc_gen=0.4595 acc_ftok=0.4611 (36.63s/q, ETA 3.8h)
+[sim-mmlu] 608/969 acc_gen=0.4589 acc_ftok=0.4605 (36.6s/q, ETA 3.7h)
+[sim-mmlu] 624/969 acc_gen=0.4551 acc_ftok=0.4567 (36.71s/q, ETA 3.5h)
+[sim-mmlu] 640/969 acc_gen=0.4578 acc_ftok=0.4594 (37.24s/q, ETA 3.4h)
+[sim-mmlu] 656/969 acc_gen=0.4573 acc_ftok=0.4588 (37.12s/q, ETA 3.2h)
+[sim-mmlu] 672/969 acc_gen=0.4568 acc_ftok=0.4583 (37.51s/q, ETA 3.1h)
+[sim-mmlu] 688/969 acc_gen=0.4549 acc_ftok=0.4564 (37.58s/q, ETA 2.9h)
+[sim-mmlu] 704/969 acc_gen=0.4574 acc_ftok=0.4588 (37.48s/q, ETA 2.8h)
+[sim-mmlu] 720/969 acc_gen=0.4542 acc_ftok=0.4556 (37.33s/q, ETA 2.6h)
+[sim-mmlu] 736/969 acc_gen=0.4497 acc_ftok=0.4511 (37.68s/q, ETA 2.4h)
+[sim-mmlu] 752/969 acc_gen=0.4521 acc_ftok=0.4535 (37.92s/q, ETA 2.3h)
+[sim-mmlu] 768/969 acc_gen=0.4557 acc_ftok=0.4570 (37.79s/q, ETA 2.1h)
+[sim-mmlu] 784/969 acc_gen=0.4528 acc_ftok=0.4541 (37.99s/q, ETA 2.0h)
+[sim-mmlu] 800/969 acc_gen=0.4537 acc_ftok=0.4537 (37.94s/q, ETA 1.8h)
+[sim-mmlu] 816/969 acc_gen=0.4534 acc_ftok=0.4534 (38.1s/q, ETA 1.6h)
+[sim-mmlu] 832/969 acc_gen=0.4531 acc_ftok=0.4519 (37.92s/q, ETA 1.4h)
+[sim-mmlu] 848/969 acc_gen=0.4505 acc_ftok=0.4493 (37.93s/q, ETA 1.3h)
+[sim-mmlu] 864/969 acc_gen=0.4525 acc_ftok=0.4502 (37.84s/q, ETA 1.1h)
+[sim-mmlu] 880/969 acc_gen=0.4523 acc_ftok=0.4500 (38.25s/q, ETA 0.9h)
+[sim-mmlu] 896/969 acc_gen=0.4531 acc_ftok=0.4509 (38.15s/q, ETA 0.8h)
+[sim-mmlu] 912/969 acc_gen=0.4539 acc_ftok=0.4518 (38.93s/q, ETA 0.6h)
+[sim-mmlu] 928/969 acc_gen=0.4537 acc_ftok=0.4515 (38.76s/q, ETA 0.4h)
+[sim-mmlu] 944/969 acc_gen=0.4555 acc_ftok=0.4534 (39.08s/q, ETA 0.3h)
+[sim-mmlu] 960/969 acc_gen=0.4521 acc_ftok=0.4500 (39.45s/q, ETA 0.1h)
+[sim-mmlu] 969/969 acc_gen=0.4520 acc_ftok=0.4499 (39.72s/q, ETA 0.0h)
+[sim-mmlu] gptq: {"num_evaluated": 969, "acc_gen": 0.452, "acc_gen_ci95": [0.42, 0.485], "acc_ftok": 0.4499, "acc_ftok_ci95": [0.4169, 0.484], "none_gen_rate": 0.0155, "none_ftok_rate": 0.0206, "elapsed_s": 38492.1}
+[sim-mmlu] ===== config: fp16 =====
+[sim-mmlu] 16/969 acc_gen=0.8125 acc_ftok=0.8125 (37.05s/q, ETA 9.8h)
+[sim-mmlu] 32/969 acc_gen=0.6875 acc_ftok=0.6875 (38.9s/q, ETA 10.1h)
+[sim-mmlu] 48/969 acc_gen=0.6250 acc_ftok=0.6250 (32.19s/q, ETA 8.2h)
+[sim-mmlu] 64/969 acc_gen=0.6875 acc_ftok=0.6875 (40.84s/q, ETA 10.3h)
+[sim-mmlu] 80/969 acc_gen=0.6375 acc_ftok=0.6375 (38.89s/q, ETA 9.6h)
+[sim-mmlu] 96/969 acc_gen=0.6042 acc_ftok=0.6042 (39.05s/q, ETA 9.5h)
+[sim-mmlu] 112/969 acc_gen=0.5893 acc_ftok=0.5893 (37.46s/q, ETA 8.9h)
+[sim-mmlu] 128/969 acc_gen=0.5469 acc_ftok=0.5469 (36.51s/q, ETA 8.5h)
+[sim-mmlu] 144/969 acc_gen=0.5208 acc_ftok=0.5208 (45.39s/q, ETA 10.4h)
+[sim-mmlu] 160/969 acc_gen=0.5000 acc_ftok=0.5000 (47.41s/q, ETA 10.7h)
+[sim-mmlu] 176/969 acc_gen=0.4943 acc_ftok=0.4943 (48.07s/q, ETA 10.6h)
+[sim-mmlu] 192/969 acc_gen=0.4948 acc_ftok=0.4948 (46.43s/q, ETA 10.0h)
+[sim-mmlu] 208/969 acc_gen=0.4856 acc_ftok=0.4808 (44.78s/q, ETA 9.5h)
+[sim-mmlu] 224/969 acc_gen=0.4777 acc_ftok=0.4732 (44.37s/q, ETA 9.2h)
+[sim-mmlu] 240/969 acc_gen=0.4875 acc_ftok=0.4833 (43.18s/q, ETA 8.7h)
+[sim-mmlu] 256/969 acc_gen=0.4844 acc_ftok=0.4805 (43.12s/q, ETA 8.5h)
+[sim-mmlu] 272/969 acc_gen=0.4779 acc_ftok=0.4743 (42.03s/q, ETA 8.1h)
+[sim-mmlu] 288/969 acc_gen=0.4653 acc_ftok=0.4618 (40.94s/q, ETA 7.7h)
+[sim-mmlu] 304/969 acc_gen=0.4737 acc_ftok=0.4704 (40.81s/q, ETA 7.5h)
+[sim-mmlu] 320/969 acc_gen=0.4688 acc_ftok=0.4656 (40.01s/q, ETA 7.2h)
+[sim-mmlu] 336/969 acc_gen=0.4732 acc_ftok=0.4702 (40.98s/q, ETA 7.2h)
+[sim-mmlu] 352/969 acc_gen=0.4744 acc_ftok=0.4716 (40.79s/q, ETA 7.0h)
+[sim-mmlu] 368/969 acc_gen=0.4755 acc_ftok=0.4728 (41.14s/q, ETA 6.9h)
+[sim-mmlu] 384/969 acc_gen=0.4740 acc_ftok=0.4740 (43.39s/q, ETA 7.1h)
+[sim-mmlu] 400/969 acc_gen=0.4725 acc_ftok=0.4725 (43.47s/q, ETA 6.9h)
+[sim-mmlu] 416/969 acc_gen=0.4663 acc_ftok=0.4663 (46.04s/q, ETA 7.1h)
+[sim-mmlu] 432/969 acc_gen=0.4630 acc_ftok=0.4630 (45.61s/q, ETA 6.8h)
+[sim-mmlu] 448/969 acc_gen=0.4732 acc_ftok=0.4732 (46.7s/q, ETA 6.8h)
+[sim-mmlu] 464/969 acc_gen=0.4655 acc_ftok=0.4655 (46.25s/q, ETA 6.5h)
+[sim-mmlu] 480/969 acc_gen=0.4646 acc_ftok=0.4646 (45.94s/q, ETA 6.2h)
+[sim-mmlu] 496/969 acc_gen=0.4677 acc_ftok=0.4677 (46.79s/q, ETA 6.1h)
+[sim-mmlu] loading models/Qwen2.5-1.5B-Instruct-hf (fp32) ...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<02:43,  2.06it/s]Loading weights:  10%|█         | 35/338 [00:00<00:04, 73.53it/s]Loading weights:  21%|██        | 70/338 [00:00<00:01, 137.45it/s]Loading weights:  32%|███▏      | 109/338 [00:00<00:01, 198.80it/s]Loading weights:  42%|████▏     | 141/338 [00:00<00:00, 230.30it/s]Loading weights:  54%|█████▍    | 182/338 [00:01<00:00, 277.19it/s]Loading weights:  70%|███████   | 237/338 [00:01<00:00, 350.77it/s]Loading weights:  82%|████████▏ | 278/338 [00:01<00:00, 213.89it/s]Loading weights:  92%|█████████▏| 310/338 [00:02<00:00, 112.04it/s]Loading weights:  99%|█████████▊| 333/338 [00:02<00:00, 93.11it/s] Loading weights: 100%|██████████| 338/338 [00:02<00:00, 132.11it/s]
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 1s [Retry 1/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 2s [Retry 2/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 4s [Retry 3/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 8s [Retry 4/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 8s [Retry 5/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Using the latest cached version of the dataset since cais/mmlu couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'all' at /home/pi/.cache/huggingface/datasets/cais___mmlu/all/0.0.0/c30699e8356da336a370243923dbaf21066bb9fe (last modified on Tue Oct  6 19:55:51 2026).
+[sim-mmlu] 969 questions (board-protocol aligned, zs) gs=64 bs=16 configs=minmax,nac,gptq=results/gptq_qwen1.5b_g64.qparams.pt,fp16
+[sim-mmlu] ===== config: minmax =====
+[sim-mmlu] resume minmax from #969
+[sim-mmlu] minmax: {"num_evaluated": 969, "acc_gen": 0.4675, "acc_gen_ci95": [0.4355, 0.4985], "acc_ftok": 0.4561, "acc_ftok_ci95": [0.4241, 0.4881], "none_gen_rate": 0.0072, "none_ftok_rate": 0.0103, "elapsed_s": 0.6}
+[sim-mmlu] ===== config: nac =====
+[sim-mmlu] resume nac from #969
+[sim-mmlu] nac: {"num_evaluated": 969, "acc_gen": 0.3932, "acc_gen_ci95": [0.3643, 0.4231], "acc_ftok": 0.387, "acc_ftok_ci95": [0.3571, 0.418], "none_gen_rate": 0.0454, "none_ftok_rate": 0.0485, "elapsed_s": 0.6}
+[sim-mmlu] ===== config: gptq =====
+[sim-mmlu] resume gptq from #969
+[sim-mmlu] gptq: {"num_evaluated": 969, "acc_gen": 0.452, "acc_gen_ci95": [0.42, 0.485], "acc_ftok": 0.4499, "acc_ftok_ci95": [0.4169, 0.484], "none_gen_rate": 0.0155, "none_ftok_rate": 0.0206, "elapsed_s": 0.5}
+[sim-mmlu] ===== config: fp16 =====
+[sim-mmlu] resume fp16 from #496
+[sim-mmlu] 512/969 acc_gen=0.4688 acc_ftok=0.4707 (0.93s/q, ETA 0.1h)
+[sim-mmlu] 528/969 acc_gen=0.4678 acc_ftok=0.4678 (2.15s/q, ETA 0.3h)
+[sim-mmlu] 544/969 acc_gen=0.4688 acc_ftok=0.4688 (2.8s/q, ETA 0.3h)
+[sim-mmlu] 560/969 acc_gen=0.4679 acc_ftok=0.4679 (3.8s/q, ETA 0.4h)
+[sim-mmlu] 576/969 acc_gen=0.4722 acc_ftok=0.4722 (4.75s/q, ETA 0.5h)
+[sim-mmlu] 592/969 acc_gen=0.4696 acc_ftok=0.4696 (5.35s/q, ETA 0.6h)
+[sim-mmlu] 608/969 acc_gen=0.4704 acc_ftok=0.4704 (6.17s/q, ETA 0.6h)
+[sim-mmlu] 624/969 acc_gen=0.4647 acc_ftok=0.4647 (7.09s/q, ETA 0.7h)
+[sim-mmlu] 640/969 acc_gen=0.4656 acc_ftok=0.4641 (8.37s/q, ETA 0.8h)
+[sim-mmlu] 656/969 acc_gen=0.4665 acc_ftok=0.4649 (8.99s/q, ETA 0.8h)
+[sim-mmlu] 672/969 acc_gen=0.4643 acc_ftok=0.4628 (10.06s/q, ETA 0.8h)
+[sim-mmlu] 688/969 acc_gen=0.4637 acc_ftok=0.4622 (10.77s/q, ETA 0.8h)
+[sim-mmlu] 704/969 acc_gen=0.4645 acc_ftok=0.4631 (11.31s/q, ETA 0.8h)
+[sim-mmlu] 720/969 acc_gen=0.4653 acc_ftok=0.4639 (11.75s/q, ETA 0.8h)
+[sim-mmlu] 736/969 acc_gen=0.4606 acc_ftok=0.4592 (12.66s/q, ETA 0.8h)
+[sim-mmlu] 752/969 acc_gen=0.4628 acc_ftok=0.4614 (13.45s/q, ETA 0.8h)
+[sim-mmlu] 768/969 acc_gen=0.4648 acc_ftok=0.4635 (13.84s/q, ETA 0.8h)
+[sim-mmlu] 784/969 acc_gen=0.4630 acc_ftok=0.4617 (14.55s/q, ETA 0.7h)
+[sim-mmlu] 800/969 acc_gen=0.4650 acc_ftok=0.4637 (14.97s/q, ETA 0.7h)
+[sim-mmlu] 816/969 acc_gen=0.4645 acc_ftok=0.4632 (15.6s/q, ETA 0.7h)
+[sim-mmlu] 832/969 acc_gen=0.4639 acc_ftok=0.4627 (15.85s/q, ETA 0.6h)
+[sim-mmlu] 848/969 acc_gen=0.4646 acc_ftok=0.4634 (16.28s/q, ETA 0.5h)
+[sim-mmlu] 864/969 acc_gen=0.4664 acc_ftok=0.4653 (16.62s/q, ETA 0.5h)
+[sim-mmlu] 880/969 acc_gen=0.4670 acc_ftok=0.4659 (17.43s/q, ETA 0.4h)
+[sim-mmlu] 896/969 acc_gen=0.4654 acc_ftok=0.4643 (17.71s/q, ETA 0.4h)
+[sim-mmlu] loading models/Qwen2.5-1.5B-Instruct-hf (fp32) ...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:03<17:26,  3.10s/it]Loading weights:  36%|███▋      | 123/338 [00:03<00:04, 53.72it/s]Loading weights:  56%|█████▌    | 188/338 [00:04<00:02, 53.24it/s]Loading weights:  67%|██████▋   | 226/338 [00:05<00:02, 53.68it/s]Loading weights:  74%|███████▍  | 251/338 [00:05<00:01, 53.69it/s]Loading weights:  80%|███████▉  | 269/338 [00:06<00:01, 50.93it/s]Loading weights:  84%|████████▎ | 283/338 [00:06<00:01, 52.59it/s]Loading weights:  87%|████████▋ | 294/338 [00:06<00:00, 51.05it/s]Loading weights:  90%|████████▉ | 303/338 [00:06<00:00, 52.90it/s]Loading weights:  93%|█████████▎| 315/338 [00:06<00:00, 52.28it/s]Loading weights:  97%|█████████▋| 327/338 [00:07<00:00, 53.54it/s]Loading weights: 100%|██████████| 338/338 [00:07<00:00, 47.38it/s]
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 1s [Retry 1/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 2s [Retry 2/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 4s [Retry 3/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 8s [Retry 4/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 8s [Retry 5/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Using the latest cached version of the dataset since cais/mmlu couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'all' at /home/pi/.cache/huggingface/datasets/cais___mmlu/all/0.0.0/c30699e8356da336a370243923dbaf21066bb9fe (last modified on Tue Oct  6 19:55:51 2026).
+[sim-mmlu] 969 questions (board-protocol aligned, zs) gs=64 bs=16 configs=minmax,nac,gptq=results/gptq_qwen1.5b_g64.qparams.pt,fp16
+[sim-mmlu] ===== config: minmax =====
+[sim-mmlu] resume minmax from #969
+[sim-mmlu] minmax: {"num_evaluated": 969, "acc_gen": 0.4675, "acc_gen_ci95": [0.4355, 0.4985], "acc_ftok": 0.4561, "acc_ftok_ci95": [0.4241, 0.4881], "none_gen_rate": 0.0072, "none_ftok_rate": 0.0103, "elapsed_s": 0.6}
+[sim-mmlu] ===== config: nac =====
+[sim-mmlu] resume nac from #969
+[sim-mmlu] nac: {"num_evaluated": 969, "acc_gen": 0.3932, "acc_gen_ci95": [0.3643, 0.4231], "acc_ftok": 0.387, "acc_ftok_ci95": [0.3571, 0.418], "none_gen_rate": 0.0454, "none_ftok_rate": 0.0485, "elapsed_s": 0.6}
+[sim-mmlu] ===== config: gptq =====
+[sim-mmlu] resume gptq from #969
+[sim-mmlu] gptq: {"num_evaluated": 969, "acc_gen": 0.452, "acc_gen_ci95": [0.42, 0.485], "acc_ftok": 0.4499, "acc_ftok_ci95": [0.4169, 0.484], "none_gen_rate": 0.0155, "none_ftok_rate": 0.0206, "elapsed_s": 0.5}
+[sim-mmlu] ===== config: fp16 =====
+[sim-mmlu] resume fp16 from #896
+[sim-mmlu] 912/969 acc_gen=0.4671 acc_ftok=0.4660 (1.39s/q, ETA 0.0h)
+[sim-mmlu] 928/969 acc_gen=0.4666 acc_ftok=0.4655 (1.85s/q, ETA 0.0h)
+[sim-mmlu] 944/969 acc_gen=0.4693 acc_ftok=0.4682 (2.76s/q, ETA 0.0h)
+[sim-mmlu] 960/969 acc_gen=0.4646 acc_ftok=0.4646 (3.71s/q, ETA 0.0h)
+[sim-mmlu] 969/969 acc_gen=0.4634 acc_ftok=0.4634 (4.3s/q, ETA 0.0h)
+[sim-mmlu] fp16: {"num_evaluated": 969, "acc_gen": 0.4634, "acc_gen_ci95": [0.4324, 0.4943], "acc_ftok": 0.4634, "acc_ftok_ci95": [0.4334, 0.4943], "none_gen_rate": 0.0, "none_ftok_rate": 0.0, "elapsed_s": 4166.5}
+[sim-mmlu] paired nac-minmax: {'n': 969, 'acc_diff_pp': -7.43, 'mcnemar_b_minmax_only': 108, 'mcnemar_c_nac_only': 36}
+[sim-mmlu] -> results/acc_mmlu_sim_g64.full.json

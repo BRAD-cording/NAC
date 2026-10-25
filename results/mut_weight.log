@@ -1,0 +1,2 @@
+[mut] model.layers.0.self_attn.q_proj.weight: +8 (clamped) -> range [0, 7]
+[mut] saved 39 keys -> results/tiny_gdq_mutw.qparams

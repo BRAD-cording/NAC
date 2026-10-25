@@ -1,0 +1,69 @@
+{
+ "model": "models/Qwen2.5-1.5B-Instruct_RK3576_w4a16.rkllm",
+ "num_samples": 57,
+ "configs": {
+  "raw2shot": {
+   "acc": 0.3333,
+   "none_pred_rate": 0.193,
+   "samples": [
+    {
+     "gold": "A",
+     "pred": "B",
+     "gen": "B. To locate live systems"
+    },
+    {
+     "gold": "B",
+     "pred": "B",
+     "gen": "B. common person appeal"
+    },
+    {
+     "gold": "D",
+     "pred": null,
+     "gen": "To determine the length of a solar day on Planet X, we need to understand the relationship between its rotation and its orbit around the sun.\n\n1. **Ro"
+    }
+   ]
+  },
+  "chat2shot": {
+   "acc": 0.3333,
+   "none_pred_rate": 0.193,
+   "samples": [
+    {
+     "gold": "A",
+     "pred": "B",
+     "gen": "B. To locate live systems"
+    },
+    {
+     "gold": "B",
+     "pred": "B",
+     "gen": "B. common person appeal"
+    },
+    {
+     "gold": "D",
+     "pred": "B",
+     "gen": "The correct answer is B. About 100 Earth days."
+    }
+   ]
+  },
+  "raw0shot": {
+   "acc": 0.3333,
+   "none_pred_rate": 0.4386,
+   "samples": [
+    {
+     "gold": "A",
+     "pred": "A",
+     "gen": "A. To identify live systems"
+    },
+    {
+     "gold": "B",
+     "pred": "B",
+     "gen": "B. common person appeal"
+    },
+    {
+     "gold": "D",
+     "pred": null,
+     "gen": "To determine the length of a solar day on Planet X, we need to understand the relationship between the orbital period and the rotation period of the p"
+    }
+   ]
+  }
+ }
+}

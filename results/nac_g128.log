@@ -1,0 +1,71 @@
+[NAC] loading models/Qwen2.5-1.5B-Instruct-hf (CPU) ...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  39%|███▉      | 132/338 [00:00<00:00, 1299.38it/s]Loading weights:  78%|███████▊  | 262/338 [00:00<00:00, 1204.75it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 1286.53it/s]
+[NAC] calib seqs=8 seqlen=512 group=128
+/home/pi/rknn-llm/nac_paper/.venv/lib/python3.11/site-packages/torch/nn/modules/linear.py:134: UserWarning: mkldnn_matmul failed, switching to BLAS gemm:mkldnn_matmul: mkldnn_matmul bf16 path needs a cpu with bf16 support
+Exception raised from mkldnn_matmul at /__w/pytorch/pytorch/aten/src/ATen/native/mkldnn/Matmul.cpp:338 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xc8 (0x7fafe0d558 in /home/pi/rknn-llm/nac_paper/.venv/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0x7fafda9dbc in /home/pi/rknn-llm/nac_paper/.venv/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #2: at::native::mkldnn_matmul(at::Tensor const&, at::Tensor const&, at::Tensor const&, float, float) + 0x8f0 (0x7fb1adc600 in /home/pi/rknn-llm/nac_paper/.venv/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: <unknown function> + 0x195c078 (0x7fb143c078 in /home/pi/rknn-llm/nac_paper/.venv/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::native::structured_addmm_out_cpu::impl(at::Tensor const&, at::Tensor const&, at::Tensor const&, c10::Scalar const&, c10::Scalar const&, at::Tensor const&) + 0x174 (0x7fb143c5c4 in /home/pi/rknn-llm/nac_paper/.venv/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: <unknown function> + 0x287316c (0x7fb235316c in /home/pi/rknn-llm/nac_paper/.venv/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: at::_ops::addmm::redispatch(c10::DispatchKeySet, at::Tensor const&, at::Tensor const&, at::Tensor const&, c10::Scalar const&, c10::Scalar const&) + 0x114 (0x7fb0e2ec04 in /home/pi/rknn-llm/nac_paper/.venv/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #7: <unknown function> + 0x136d130 (0x7fb0e4d130 in /home/pi/rknn-llm/nac_paper/.venv/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #8: <unknown function> + 0x136dfbc (0x7fb0e4dfbc in /home/pi/rknn-llm/nac_paper/.venv/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #9: at::_ops::addmm::call(at::Tensor const&, at::Tensor const&, at::Tensor const&, c10::Scalar const&, c10::Scalar const&) + 0x150 (0x7fb0e31290 in /home/pi/rknn-llm/nac_paper/.venv/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #10: <unknown function> + 0x132af98 (0x7fb0e0af98 in /home/pi/rknn-llm/nac_paper/.venv/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #11: at::native::linear(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&) + 0x488 (0x7fb0e0b858 in /home/pi/rknn-llm/nac_paper/.venv/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #12: <unknown function> + 0x1365010 (0x7fb0e45010 in /home/pi/rknn-llm/nac_paper/.venv/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #13: at::_ops::linear::call(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&) + 0x140 (0x7fb0e32930 in /home/pi/rknn-llm/nac_paper/.venv/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #14: <unknown function> + 0x5df678 (0x7fbb04f678 in /home/pi/rknn-llm/nac_paper/.venv/lib/python3.11/site-packages/torch/lib/libtorch_python.so)
+frame #15: .venv/bin/python() [0x4c951c]
+frame #16: _PyObject_MakeTpCall + 0x248 (0x493f28 in .venv/bin/python)
+frame #17: _PyEval_EvalFrameDefault + 0x8ec (0x4a9b8c in .venv/bin/python)
+frame #18: .venv/bin/python() [0x512314]
+frame #19: .venv/bin/python() [0x511368]
+frame #20: _PyEval_EvalFrameDefault + 0x49a4 (0x4adc44 in .venv/bin/python)
+frame #21: .venv/bin/python() [0x512314]
+frame #22: .venv/bin/python() [0x511368]
+frame #23: _PyEval_EvalFrameDefault + 0x49a4 (0x4adc44 in .venv/bin/python)
+frame #24: _PyObject_FastCallDictTstate + 0x1c8 (0x49ba18 in .venv/bin/python)
+frame #25: _PyObject_Call_Prepend + 0x64 (0x4edf04 in .venv/bin/python)
+frame #26: .venv/bin/python() [0x5833e4]
+frame #27: _PyObject_MakeTpCall + 0x248 (0x493f28 in .venv/bin/python)
+frame #28: _PyEval_EvalFrameDefault + 0x8ec (0x4a9b8c in .venv/bin/python)
+frame #29: .venv/bin/python() [0x512314]
+frame #30: .venv/bin/python() [0x5113e4]
+frame #31: PyObject_Call + 0xac (0x4f2ce0 in .venv/bin/python)
+frame #32: _PyEval_EvalFrameDefault + 0x49a4 (0x4adc44 in .venv/bin/python)
+frame #33: .venv/bin/python() [0x512314]
+frame #34: .venv/bin/python() [0x5113e4]
+frame #35: PyObject_Call + 0xac (0x4f2ce0 in .venv/bin/python)
+frame #36: _PyEval_EvalFrameDefault + 0x49a4 (0x4adc44 in .venv/bin/python)
+frame #37: _PyFunction_Vectorcall + 0x19c (0x4e247c in .venv/bin/python)
+frame #38: _PyObject_FastCallDictTstate + 0x2e8 (0x49bb38 in .venv/bin/python)
+frame #39: _PyObject_Call_Prepend + 0x64 (0x4edf04 in .venv/bin/python)
+frame #40: .venv/bin/python() [0x5833e4]
+frame #41: PyObject_Call + 0x214 (0x4f2e48 in .venv/bin/python)
+frame #42: _PyEval_EvalFrameDefault + 0x49a4 (0x4adc44 in .venv/bin/python)
+frame #43: .venv/bin/python() [0x512314]
+frame #44: .venv/bin/python() [0x5113e4]
+frame #45: PyObject_Call + 0xac (0x4f2ce0 in .venv/bin/python)
+frame #46: _PyEval_EvalFrameDefault + 0x49a4 (0x4adc44 in .venv/bin/python)
+frame #47: .venv/bin/python() [0x512314]
+frame #48: .venv/bin/python() [0x5113e4]
+frame #49: PyObject_Call + 0xac (0x4f2ce0 in .venv/bin/python)
+frame #50: _PyEval_EvalFrameDefault + 0x49a4 (0x4adc44 in .venv/bin/python)
+frame #51: .venv/bin/python() [0x512314]
+frame #52: .venv/bin/python() [0x5113e4]
+frame #53: PyObject_Call + 0xac (0x4f2ce0 in .venv/bin/python)
+frame #54: _PyEval_EvalFrameDefault + 0x49a4 (0x4adc44 in .venv/bin/python)
+frame #55: _PyFunction_Vectorcall + 0x19c (0x4e247c in .venv/bin/python)
+frame #56: _PyObject_FastCallDictTstate + 0x2e8 (0x49bb38 in .venv/bin/python)
+frame #57: _PyObject_Call_Prepend + 0x64 (0x4edf04 in .venv/bin/python)
+frame #58: .venv/bin/python() [0x5833e4]
+frame #59: PyObject_Call + 0x214 (0x4f2e48 in .venv/bin/python)
+frame #60: _PyEval_EvalFrameDefault + 0x49a4 (0x4adc44 in .venv/bin/python)
+frame #61: _PyFunction_Vectorcall + 0x19c (0x4e247c in .venv/bin/python)
+frame #62: PyObject_Call + 0xac (0x4f2ce0 in .venv/bin/python)
+ (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/LinearAlgebra.cpp:1523.)
+  return F.linear(input, self.weight, self.bias)

@@ -1,0 +1,2 @@
+  780       10:00 timeout 43200 env QEMU_LD_PREFIX=/media/pi/DATA/rktoolkit/sysroot taskset -c 0-3 /media/pi/DATA/rktoolkit/x86py/bin/python3 scripts/r3_plain_build.py
+  780       20:00 timeout 43200 env QEMU_LD_PREFIX=/media/pi/DATA/rktoolkit/sysroot taskset -c 0-3 /media/pi/DATA/rktoolkit/x86py/bin/python3 scripts/r3_plain_build.py

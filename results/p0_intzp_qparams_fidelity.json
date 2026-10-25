@@ -1,0 +1,11 @@
+{
+ "src": "results/nacv2_qwen1.5b_g64.qparams.pt",
+ "entries": 196,
+ "groups_total": 20471808,
+ "zp_int_ratio": 1.0,
+ "zp_below_qmin": 4,
+ "zp_above_qmax": 3,
+ "clamped_count": 7,
+ "clamped_frac": 3.42e-07,
+ "note": "整值 zp 已由 nacv2 保证；钳制仅影响 3e-7 的 group，精度影响不可测。"
+}

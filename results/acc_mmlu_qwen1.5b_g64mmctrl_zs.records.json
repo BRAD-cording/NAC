@@ -1,0 +1,7754 @@
+[
+ {
+  "i": 0,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1154.69
+ },
+ {
+  "i": 1,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1213.77
+ },
+ {
+  "i": 2,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1571.35
+ },
+ {
+  "i": 3,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1526.72
+ },
+ {
+  "i": 4,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. The responsibility to prevent.",
+  "ttft_ms": 1064.43
+ },
+ {
+  "i": 5,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1601.6
+ },
+ {
+  "i": 6,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1633.02
+ },
+ {
+  "i": 7,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1207.84
+ },
+ {
+  "i": 8,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 3746.41
+ },
+ {
+  "i": 9,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 765.57
+ },
+ {
+  "i": 10,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 929.07
+ },
+ {
+  "i": 11,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D.",
+  "ttft_ms": 791.41
+ },
+ {
+  "i": 12,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 868.23
+ },
+ {
+  "i": 13,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 753.3
+ },
+ {
+  "i": 14,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1142.47
+ },
+ {
+  "i": 15,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1560.74
+ },
+ {
+  "i": 16,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 4125.14
+ },
+ {
+  "i": 17,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1014.64
+ },
+ {
+  "i": 18,
+  "pred": "D",
+  "gold": "A",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 1418.7
+ },
+ {
+  "i": 19,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1422.1
+ },
+ {
+  "i": 20,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1439.77
+ },
+ {
+  "i": 21,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1049.29
+ },
+ {
+  "i": 22,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1276.8
+ },
+ {
+  "i": 23,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Possible effects on the entity’s financial statements.",
+  "ttft_ms": 1479.91
+ },
+ {
+  "i": 24,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 813.18
+ },
+ {
+  "i": 25,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1023.82
+ },
+ {
+  "i": 26,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1354.27
+ },
+ {
+  "i": 27,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1476.2
+ },
+ {
+  "i": 28,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C.",
+  "ttft_ms": 725.85
+ },
+ {
+  "i": 29,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 2786.37
+ },
+ {
+  "i": 30,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 847.59
+ },
+ {
+  "i": 31,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1146.31
+ },
+ {
+  "i": 32,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1120.61
+ },
+ {
+  "i": 33,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 971.91
+ },
+ {
+  "i": 34,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1366.3
+ },
+ {
+  "i": 35,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 730.14
+ },
+ {
+  "i": 36,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1047.66
+ },
+ {
+  "i": 37,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1389.39
+ },
+ {
+  "i": 38,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B.",
+  "ttft_ms": 892.24
+ },
+ {
+  "i": 39,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1047.25
+ },
+ {
+  "i": 40,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1037.47
+ },
+ {
+  "i": 41,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1080.46
+ },
+ {
+  "i": 42,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 754.93
+ },
+ {
+  "i": 43,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 1229.52
+ },
+ {
+  "i": 44,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 840.44
+ },
+ {
+  "i": 45,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 869.64
+ },
+ {
+  "i": 46,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1420.62
+ },
+ {
+  "i": 47,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 719.01
+ },
+ {
+  "i": 48,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 723.89
+ },
+ {
+  "i": 49,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1285.49
+ },
+ {
+  "i": 50,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 759.94
+ },
+ {
+  "i": 51,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1923.96
+ },
+ {
+  "i": 52,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 2788.65
+ },
+ {
+  "i": 53,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 7591.58
+ },
+ {
+  "i": 54,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. (– 2, 15)",
+  "ttft_ms": 1237.96
+ },
+ {
+  "i": 55,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 4231.7
+ },
+ {
+  "i": 56,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1432.74
+ },
+ {
+  "i": 57,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1038.99
+ },
+ {
+  "i": 58,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 4895.76
+ },
+ {
+  "i": 59,
+  "pred": "D",
+  "gold": "A",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 1315.8
+ },
+ {
+  "i": 60,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1113.23
+ },
+ {
+  "i": 61,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D.",
+  "ttft_ms": 868.07
+ },
+ {
+  "i": 62,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 827.79
+ },
+ {
+  "i": 63,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 982.53
+ },
+ {
+  "i": 64,
+  "pred": "D",
+  "gold": "A",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 1529.99
+ },
+ {
+  "i": 65,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 2137.2
+ },
+ {
+  "i": 66,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 717.06
+ },
+ {
+  "i": 67,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 1491.98
+ },
+ {
+  "i": 68,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 3107.38
+ },
+ {
+  "i": 69,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1451.27
+ },
+ {
+  "i": 70,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1829.01
+ },
+ {
+  "i": 71,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 870.88
+ },
+ {
+  "i": 72,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D.",
+  "ttft_ms": 1621.53
+ },
+ {
+  "i": 73,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1023.96
+ },
+ {
+  "i": 74,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1226.35
+ },
+ {
+  "i": 75,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 965.74
+ },
+ {
+  "i": 76,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1677.95
+ },
+ {
+  "i": 77,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 943.81
+ },
+ {
+  "i": 78,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1105.41
+ },
+ {
+  "i": 79,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 980.8
+ },
+ {
+  "i": 80,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 712.57
+ },
+ {
+  "i": 81,
+  "pred": "D",
+  "gold": "B",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 1211.57
+ },
+ {
+  "i": 82,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1027.78
+ },
+ {
+  "i": 83,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 4281.57
+ },
+ {
+  "i": 84,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 806.84
+ },
+ {
+  "i": 85,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1400.16
+ },
+ {
+  "i": 86,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1214.31
+ },
+ {
+  "i": 87,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1569.2
+ },
+ {
+  "i": 88,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1307.02
+ },
+ {
+  "i": 89,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1796.36
+ },
+ {
+  "i": 90,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 835.63
+ },
+ {
+  "i": 91,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 766.89
+ },
+ {
+  "i": 92,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 748.07
+ },
+ {
+  "i": 93,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1610.3
+ },
+ {
+  "i": 94,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1640.94
+ },
+ {
+  "i": 95,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 886.73
+ },
+ {
+  "i": 96,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1289.69
+ },
+ {
+  "i": 97,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D.",
+  "ttft_ms": 772.02
+ },
+ {
+  "i": 98,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1727.37
+ },
+ {
+  "i": 99,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 857.92
+ },
+ {
+  "i": 100,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 2150.92
+ },
+ {
+  "i": 101,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D.",
+  "ttft_ms": 779.31
+ },
+ {
+  "i": 102,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1527.61
+ },
+ {
+  "i": 103,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D.",
+  "ttft_ms": 2514.96
+ },
+ {
+  "i": 104,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1068.88
+ },
+ {
+  "i": 105,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1754.24
+ },
+ {
+  "i": 106,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 858.36
+ },
+ {
+  "i": 107,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1274.07
+ },
+ {
+  "i": 108,
+  "pred": "D",
+  "gold": "A",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 1325.07
+ },
+ {
+  "i": 109,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1763.86
+ },
+ {
+  "i": 110,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 823.29
+ },
+ {
+  "i": 111,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1505.47
+ },
+ {
+  "i": 112,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1822.57
+ },
+ {
+  "i": 113,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 863.55
+ },
+ {
+  "i": 114,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 961.34
+ },
+ {
+  "i": 115,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 860.8
+ },
+ {
+  "i": 116,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1139.39
+ },
+ {
+  "i": 117,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 2413.93
+ },
+ {
+  "i": 118,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1493.81
+ },
+ {
+  "i": 119,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 735.44
+ },
+ {
+  "i": 120,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1825.09
+ },
+ {
+  "i": 121,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 841.62
+ },
+ {
+  "i": 122,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1437.22
+ },
+ {
+  "i": 123,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 2836.21
+ },
+ {
+  "i": 124,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1615.14
+ },
+ {
+  "i": 125,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1148.97
+ },
+ {
+  "i": 126,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1355.21
+ },
+ {
+  "i": 127,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 2162.29
+ },
+ {
+  "i": 128,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 934.67
+ },
+ {
+  "i": 129,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A. The standard deviation of the population is also zero.",
+  "ttft_ms": 1143.33
+ },
+ {
+  "i": 130,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1670.97
+ },
+ {
+  "i": 131,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 2542.85
+ },
+ {
+  "i": 132,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 5997.65
+ },
+ {
+  "i": 133,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1380.06
+ },
+ {
+  "i": 134,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 873.86
+ },
+ {
+  "i": 135,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1038.4
+ },
+ {
+  "i": 136,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1530.03
+ },
+ {
+  "i": 137,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 3414.44
+ },
+ {
+  "i": 138,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1161.17
+ },
+ {
+  "i": 139,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 14213.75
+ },
+ {
+  "i": 140,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 2016.5
+ },
+ {
+  "i": 141,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 2087.14
+ },
+ {
+  "i": 142,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 739.87
+ },
+ {
+  "i": 143,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1213.79
+ },
+ {
+  "i": 144,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 887.72
+ },
+ {
+  "i": 145,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 971.31
+ },
+ {
+  "i": 146,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 2022.74
+ },
+ {
+  "i": 147,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1145.46
+ },
+ {
+  "i": 148,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1413.02
+ },
+ {
+  "i": 149,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1300.56
+ },
+ {
+  "i": 150,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A. -1/4",
+  "ttft_ms": 1548.58
+ },
+ {
+  "i": 151,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. Direct.",
+  "ttft_ms": 830.22
+ },
+ {
+  "i": 152,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 995.47
+ },
+ {
+  "i": 153,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 727.2
+ },
+ {
+  "i": 154,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1631.54
+ },
+ {
+  "i": 155,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A. 2%",
+  "ttft_ms": 873.69
+ },
+ {
+  "i": 156,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 755.27
+ },
+ {
+  "i": 157,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1726.16
+ },
+ {
+  "i": 158,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 932.41
+ },
+ {
+  "i": 159,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 7190.67
+ },
+ {
+  "i": 160,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1319.72
+ },
+ {
+  "i": 161,
+  "pred": "D",
+  "gold": "B",
+  "ok": false,
+  "gen": "D. 4f",
+  "ttft_ms": 1304.53
+ },
+ {
+  "i": 162,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1242.88
+ },
+ {
+  "i": 163,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1228.03
+ },
+ {
+  "i": 164,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 823.22
+ },
+ {
+  "i": 165,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1680.74
+ },
+ {
+  "i": 166,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1593.15
+ },
+ {
+  "i": 167,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D.",
+  "ttft_ms": 871.97
+ },
+ {
+  "i": 168,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1019.59
+ },
+ {
+  "i": 169,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 788.87
+ },
+ {
+  "i": 170,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1532.81
+ },
+ {
+  "i": 171,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1392.21
+ },
+ {
+  "i": 172,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 5989.16
+ },
+ {
+  "i": 173,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1440.07
+ },
+ {
+  "i": 174,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1125.59
+ },
+ {
+  "i": 175,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1554.34
+ },
+ {
+  "i": 176,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 883.79
+ },
+ {
+  "i": 177,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1208.29
+ },
+ {
+  "i": 178,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1369.18
+ },
+ {
+  "i": 179,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 743.44
+ },
+ {
+  "i": 180,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B.",
+  "ttft_ms": 735.25
+ },
+ {
+  "i": 181,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 2301.96
+ },
+ {
+  "i": 182,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1361.11
+ },
+ {
+  "i": 183,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 811.55
+ },
+ {
+  "i": 184,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1691.2
+ },
+ {
+  "i": 185,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 947.43
+ },
+ {
+  "i": 186,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 2636.99
+ },
+ {
+  "i": 187,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 851.62
+ },
+ {
+  "i": 188,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D.",
+  "ttft_ms": 1290.73
+ },
+ {
+  "i": 189,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 654.69
+ },
+ {
+  "i": 190,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 2450.45
+ },
+ {
+  "i": 191,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1758.6
+ },
+ {
+  "i": 192,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1223.94
+ },
+ {
+  "i": 193,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1628.28
+ },
+ {
+  "i": 194,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1304.58
+ },
+ {
+  "i": 195,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1088.27
+ },
+ {
+  "i": 196,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1933.37
+ },
+ {
+  "i": 197,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 864.74
+ },
+ {
+  "i": 198,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1867.15
+ },
+ {
+  "i": 199,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1601.46
+ },
+ {
+  "i": 200,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1879.35
+ },
+ {
+  "i": 201,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1514.61
+ },
+ {
+  "i": 202,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 849.85
+ },
+ {
+  "i": 203,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1321.11
+ },
+ {
+  "i": 204,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1349.99
+ },
+ {
+  "i": 205,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 2175.58
+ },
+ {
+  "i": 206,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 823.32
+ },
+ {
+  "i": 207,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1221.84
+ },
+ {
+  "i": 208,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1412.16
+ },
+ {
+  "i": 209,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 2086.36
+ },
+ {
+  "i": 210,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1329.28
+ },
+ {
+  "i": 211,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 3968.29
+ },
+ {
+  "i": 212,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1005.2
+ },
+ {
+  "i": 213,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B.",
+  "ttft_ms": 1080.05
+ },
+ {
+  "i": 214,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 3385.79
+ },
+ {
+  "i": 215,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 2967.22
+ },
+ {
+  "i": 216,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1652.65
+ },
+ {
+  "i": 217,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 838.69
+ },
+ {
+  "i": 218,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1111.82
+ },
+ {
+  "i": 219,
+  "pred": "D",
+  "gold": "B",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 3147.61
+ },
+ {
+  "i": 220,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1548.41
+ },
+ {
+  "i": 221,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 2605.55
+ },
+ {
+  "i": 222,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 641.63
+ },
+ {
+  "i": 223,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1090.09
+ },
+ {
+  "i": 224,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 846.66
+ },
+ {
+  "i": 225,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1369.77
+ },
+ {
+  "i": 226,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1198.68
+ },
+ {
+  "i": 227,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1897.38
+ },
+ {
+  "i": 228,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1567.49
+ },
+ {
+  "i": 229,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. By grouping together customers with similar needs, it provides a commercially viable method of serving these customers.",
+  "ttft_ms": 1135.47
+ },
+ {
+  "i": 230,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 782.91
+ },
+ {
+  "i": 231,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 845.58
+ },
+ {
+  "i": 232,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1139.61
+ },
+ {
+  "i": 233,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 2404.64
+ },
+ {
+  "i": 234,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1982.76
+ },
+ {
+  "i": 235,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 932.92
+ },
+ {
+  "i": 236,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 864.39
+ },
+ {
+  "i": 237,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1870.14
+ },
+ {
+  "i": 238,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1950.53
+ },
+ {
+  "i": 239,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 2344.93
+ },
+ {
+  "i": 240,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1849.6
+ },
+ {
+  "i": 241,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 755.38
+ },
+ {
+  "i": 242,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1423.71
+ },
+ {
+  "i": 243,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1084.87
+ },
+ {
+  "i": 244,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1310.28
+ },
+ {
+  "i": 245,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 4344.73
+ },
+ {
+  "i": 246,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1499.0
+ },
+ {
+  "i": 247,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1508.28
+ },
+ {
+  "i": 248,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1720.75
+ },
+ {
+  "i": 249,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1427.71
+ },
+ {
+  "i": 250,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 810.08
+ },
+ {
+  "i": 251,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1438.06
+ },
+ {
+  "i": 252,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 1904.43
+ },
+ {
+  "i": 253,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1396.57
+ },
+ {
+  "i": 254,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D.",
+  "ttft_ms": 3936.87
+ },
+ {
+  "i": 255,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1306.5
+ },
+ {
+  "i": 256,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1556.49
+ },
+ {
+  "i": 257,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 898.63
+ },
+ {
+  "i": 258,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 2113.64
+ },
+ {
+  "i": 259,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1091.67
+ },
+ {
+  "i": 260,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 742.96
+ },
+ {
+  "i": 261,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1046.98
+ },
+ {
+  "i": 262,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 2245.16
+ },
+ {
+  "i": 263,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 898.69
+ },
+ {
+  "i": 264,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1067.9
+ },
+ {
+  "i": 265,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1079.14
+ },
+ {
+  "i": 266,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D.",
+  "ttft_ms": 971.61
+ },
+ {
+  "i": 267,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 984.21
+ },
+ {
+  "i": 268,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1172.63
+ },
+ {
+  "i": 269,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 876.64
+ },
+ {
+  "i": 270,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1547.7
+ },
+ {
+  "i": 271,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1659.84
+ },
+ {
+  "i": 272,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C.",
+  "ttft_ms": 995.89
+ },
+ {
+  "i": 273,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1812.53
+ },
+ {
+  "i": 274,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 745.69
+ },
+ {
+  "i": 275,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 854.8
+ },
+ {
+  "i": 276,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1426.68
+ },
+ {
+  "i": 277,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 713.83
+ },
+ {
+  "i": 278,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1688.96
+ },
+ {
+  "i": 279,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. talking to a patient",
+  "ttft_ms": 812.99
+ },
+ {
+  "i": 280,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1152.34
+ },
+ {
+  "i": 281,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1461.78
+ },
+ {
+  "i": 282,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 946.41
+ },
+ {
+  "i": 283,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1318.12
+ },
+ {
+  "i": 284,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1510.55
+ },
+ {
+  "i": 285,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1018.39
+ },
+ {
+  "i": 286,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1728.09
+ },
+ {
+  "i": 287,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1212.67
+ },
+ {
+  "i": 288,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1488.53
+ },
+ {
+  "i": 289,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1185.15
+ },
+ {
+  "i": 290,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 681.04
+ },
+ {
+  "i": 291,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1143.05
+ },
+ {
+  "i": 292,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1087.7
+ },
+ {
+  "i": 293,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C.",
+  "ttft_ms": 727.92
+ },
+ {
+  "i": 294,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 740.8
+ },
+ {
+  "i": 295,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1339.32
+ },
+ {
+  "i": 296,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1137.88
+ },
+ {
+  "i": 297,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 840.86
+ },
+ {
+  "i": 298,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 1465.69
+ },
+ {
+  "i": 299,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1155.71
+ },
+ {
+  "i": 300,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 767.22
+ },
+ {
+  "i": 301,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 3079.56
+ },
+ {
+  "i": 302,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1132.05
+ },
+ {
+  "i": 303,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 3749.43
+ },
+ {
+  "i": 304,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 820.37
+ },
+ {
+  "i": 305,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 895.37
+ },
+ {
+  "i": 306,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 765.85
+ },
+ {
+  "i": 307,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 2146.67
+ },
+ {
+  "i": 308,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 803.35
+ },
+ {
+  "i": 309,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 718.82
+ },
+ {
+  "i": 310,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1057.95
+ },
+ {
+  "i": 311,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1244.8
+ },
+ {
+  "i": 312,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 856.22
+ },
+ {
+  "i": 313,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1211.32
+ },
+ {
+  "i": 314,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1258.4
+ },
+ {
+  "i": 315,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1311.29
+ },
+ {
+  "i": 316,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1291.42
+ },
+ {
+  "i": 317,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1571.23
+ },
+ {
+  "i": 318,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1038.97
+ },
+ {
+  "i": 319,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1517.92
+ },
+ {
+  "i": 320,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 842.39
+ },
+ {
+  "i": 321,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 2563.9
+ },
+ {
+  "i": 322,
+  "pred": "D",
+  "gold": "B",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 1085.67
+ },
+ {
+  "i": 323,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1769.66
+ },
+ {
+  "i": 324,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 4494.56
+ },
+ {
+  "i": 325,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 6545.09
+ },
+ {
+  "i": 326,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1216.86
+ },
+ {
+  "i": 327,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 841.51
+ },
+ {
+  "i": 328,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1145.54
+ },
+ {
+  "i": 329,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1893.79
+ },
+ {
+  "i": 330,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1202.58
+ },
+ {
+  "i": 331,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1895.67
+ },
+ {
+  "i": 332,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A.",
+  "ttft_ms": 3216.86
+ },
+ {
+  "i": 333,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1026.96
+ },
+ {
+  "i": 334,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 762.17
+ },
+ {
+  "i": 335,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1511.76
+ },
+ {
+  "i": 336,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1253.27
+ },
+ {
+  "i": 337,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 740.12
+ },
+ {
+  "i": 338,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 2581.83
+ },
+ {
+  "i": 339,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1024.37
+ },
+ {
+  "i": 340,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 868.34
+ },
+ {
+  "i": 341,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 873.79
+ },
+ {
+  "i": 342,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 826.44
+ },
+ {
+  "i": 343,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1128.43
+ },
+ {
+  "i": 344,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 3316.78
+ },
+ {
+  "i": 345,
+  "pred": "D",
+  "gold": "A",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 1285.77
+ },
+ {
+  "i": 346,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1354.28
+ },
+ {
+  "i": 347,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1974.55
+ },
+ {
+  "i": 348,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 3606.97
+ },
+ {
+  "i": 349,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1254.17
+ },
+ {
+  "i": 350,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D.",
+  "ttft_ms": 1051.61
+ },
+ {
+  "i": 351,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1054.7
+ },
+ {
+  "i": 352,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 734.02
+ },
+ {
+  "i": 353,
+  "pred": "D",
+  "gold": "B",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 5202.87
+ },
+ {
+  "i": 354,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1280.73
+ },
+ {
+  "i": 355,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1528.78
+ },
+ {
+  "i": 356,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 765.41
+ },
+ {
+  "i": 357,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D.",
+  "ttft_ms": 996.66
+ },
+ {
+  "i": 358,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C.",
+  "ttft_ms": 863.52
+ },
+ {
+  "i": 359,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1020.86
+ },
+ {
+  "i": 360,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. clarify boundaries between family members in order to reduce enmeshment.",
+  "ttft_ms": 1461.51
+ },
+ {
+  "i": 361,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1403.07
+ },
+ {
+  "i": 362,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 4951.59
+ },
+ {
+  "i": 363,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 823.9
+ },
+ {
+  "i": 364,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1620.13
+ },
+ {
+  "i": 365,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1290.3
+ },
+ {
+  "i": 366,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 839.2
+ },
+ {
+  "i": 367,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 846.87
+ },
+ {
+  "i": 368,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 1104.0
+ },
+ {
+  "i": 369,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1075.54
+ },
+ {
+  "i": 370,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 715.6
+ },
+ {
+  "i": 371,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. \"brinkmanship.\"",
+  "ttft_ms": 1045.73
+ },
+ {
+  "i": 372,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 5101.88
+ },
+ {
+  "i": 373,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1213.18
+ },
+ {
+  "i": 374,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1630.88
+ },
+ {
+  "i": 375,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1209.69
+ },
+ {
+  "i": 376,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 970.33
+ },
+ {
+  "i": 377,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1016.95
+ },
+ {
+  "i": 378,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1041.27
+ },
+ {
+  "i": 379,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 2266.91
+ },
+ {
+  "i": 380,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A. Error",
+  "ttft_ms": 704.48
+ },
+ {
+  "i": 381,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1010.99
+ },
+ {
+  "i": 382,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 897.27
+ },
+ {
+  "i": 383,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 882.74
+ },
+ {
+  "i": 384,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1119.5
+ },
+ {
+  "i": 385,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 3469.47
+ },
+ {
+  "i": 386,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 857.63
+ },
+ {
+  "i": 387,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D.",
+  "ttft_ms": 830.97
+ },
+ {
+  "i": 388,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1598.1
+ },
+ {
+  "i": 389,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1091.23
+ },
+ {
+  "i": 390,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 899.84
+ },
+ {
+  "i": 391,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 2132.2
+ },
+ {
+  "i": 392,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1060.55
+ },
+ {
+  "i": 393,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 765.35
+ },
+ {
+  "i": 394,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D.",
+  "ttft_ms": 741.45
+ },
+ {
+  "i": 395,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A.",
+  "ttft_ms": 843.8
+ },
+ {
+  "i": 396,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1638.88
+ },
+ {
+  "i": 397,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1321.66
+ },
+ {
+  "i": 398,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 834.15
+ },
+ {
+  "i": 399,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1392.63
+ },
+ {
+  "i": 400,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1072.27
+ },
+ {
+  "i": 401,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 7066.21
+ },
+ {
+  "i": 402,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D.",
+  "ttft_ms": 1395.76
+ },
+ {
+  "i": 403,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1519.98
+ },
+ {
+  "i": 404,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1079.8
+ },
+ {
+  "i": 405,
+  "pred": "D",
+  "gold": "B",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 873.1
+ },
+ {
+  "i": 406,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1211.91
+ },
+ {
+  "i": 407,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1423.88
+ },
+ {
+  "i": 408,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1295.86
+ },
+ {
+  "i": 409,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1123.91
+ },
+ {
+  "i": 410,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1747.72
+ },
+ {
+  "i": 411,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1959.72
+ },
+ {
+  "i": 412,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1235.5
+ },
+ {
+  "i": 413,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1071.54
+ },
+ {
+  "i": 414,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1394.59
+ },
+ {
+  "i": 415,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1629.28
+ },
+ {
+  "i": 416,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 847.39
+ },
+ {
+  "i": 417,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1103.32
+ },
+ {
+  "i": 418,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1341.73
+ },
+ {
+  "i": 419,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A.",
+  "ttft_ms": 840.01
+ },
+ {
+  "i": 420,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 2431.52
+ },
+ {
+  "i": 421,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 2474.06
+ },
+ {
+  "i": 422,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1320.55
+ },
+ {
+  "i": 423,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1250.31
+ },
+ {
+  "i": 424,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 955.39
+ },
+ {
+  "i": 425,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 795.03
+ },
+ {
+  "i": 426,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 2192.58
+ },
+ {
+  "i": 427,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1871.92
+ },
+ {
+  "i": 428,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1110.47
+ },
+ {
+  "i": 429,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 3301.87
+ },
+ {
+  "i": 430,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1212.98
+ },
+ {
+  "i": 431,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 856.15
+ },
+ {
+  "i": 432,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1401.09
+ },
+ {
+  "i": 433,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1166.16
+ },
+ {
+  "i": 434,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1039.91
+ },
+ {
+  "i": 435,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 846.51
+ },
+ {
+  "i": 436,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 3102.4
+ },
+ {
+  "i": 437,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1270.18
+ },
+ {
+  "i": 438,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 794.08
+ },
+ {
+  "i": 439,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 752.24
+ },
+ {
+  "i": 440,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 3264.81
+ },
+ {
+  "i": 441,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 2033.6
+ },
+ {
+  "i": 442,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 874.83
+ },
+ {
+  "i": 443,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D.",
+  "ttft_ms": 749.38
+ },
+ {
+  "i": 444,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1618.85
+ },
+ {
+  "i": 445,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1208.47
+ },
+ {
+  "i": 446,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 955.36
+ },
+ {
+  "i": 447,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 8577.36
+ },
+ {
+  "i": 448,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 1517.76
+ },
+ {
+  "i": 449,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 720.86
+ },
+ {
+  "i": 450,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 2410.39
+ },
+ {
+  "i": 451,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1831.81
+ },
+ {
+  "i": 452,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 969.89
+ },
+ {
+  "i": 453,
+  "pred": "D",
+  "gold": "A",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 842.04
+ },
+ {
+  "i": 454,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1290.08
+ },
+ {
+  "i": 455,
+  "pred": "D",
+  "gold": "B",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 1319.42
+ },
+ {
+  "i": 456,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A. 12",
+  "ttft_ms": 1004.2
+ },
+ {
+  "i": 457,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1118.0
+ },
+ {
+  "i": 458,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 649.02
+ },
+ {
+  "i": 459,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1033.28
+ },
+ {
+  "i": 460,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1481.77
+ },
+ {
+  "i": 461,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1297.09
+ },
+ {
+  "i": 462,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1611.27
+ },
+ {
+  "i": 463,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 3222.37
+ },
+ {
+  "i": 464,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 3386.69
+ },
+ {
+  "i": 465,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A.",
+  "ttft_ms": 866.26
+ },
+ {
+  "i": 466,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 735.08
+ },
+ {
+  "i": 467,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1395.58
+ },
+ {
+  "i": 468,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 994.53
+ },
+ {
+  "i": 469,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1240.69
+ },
+ {
+  "i": 470,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 768.05
+ },
+ {
+  "i": 471,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 861.01
+ },
+ {
+  "i": 472,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 2296.92
+ },
+ {
+  "i": 473,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1234.53
+ },
+ {
+  "i": 474,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C. 2/e",
+  "ttft_ms": 774.6
+ },
+ {
+  "i": 475,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1095.31
+ },
+ {
+  "i": 476,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 972.44
+ },
+ {
+  "i": 477,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1248.54
+ },
+ {
+  "i": 478,
+  "pred": "D",
+  "gold": "A",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 1085.47
+ },
+ {
+  "i": 479,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 3631.71
+ },
+ {
+  "i": 480,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 891.12
+ },
+ {
+  "i": 481,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 858.16
+ },
+ {
+  "i": 482,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1567.85
+ },
+ {
+  "i": 483,
+  "pred": "D",
+  "gold": "B",
+  "ok": false,
+  "gen": "D. When the catheter is dirty.",
+  "ttft_ms": 1040.13
+ },
+ {
+  "i": 484,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1415.02
+ },
+ {
+  "i": 485,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1366.21
+ },
+ {
+  "i": 486,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 2499.13
+ },
+ {
+  "i": 487,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1502.94
+ },
+ {
+  "i": 488,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 874.59
+ },
+ {
+  "i": 489,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 763.54
+ },
+ {
+  "i": 490,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 770.95
+ },
+ {
+  "i": 491,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 772.5
+ },
+ {
+  "i": 492,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1192.98
+ },
+ {
+  "i": 493,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1076.59
+ },
+ {
+  "i": 494,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1188.77
+ },
+ {
+  "i": 495,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 7877.65
+ },
+ {
+  "i": 496,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1903.52
+ },
+ {
+  "i": 497,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1228.12
+ },
+ {
+  "i": 498,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 2851.63
+ },
+ {
+  "i": 499,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1128.48
+ },
+ {
+  "i": 500,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1161.52
+ },
+ {
+  "i": 501,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1187.55
+ },
+ {
+  "i": 502,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1136.57
+ },
+ {
+  "i": 503,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 982.92
+ },
+ {
+  "i": 504,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1096.07
+ },
+ {
+  "i": 505,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1229.51
+ },
+ {
+  "i": 506,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1075.07
+ },
+ {
+  "i": 507,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1274.49
+ },
+ {
+  "i": 508,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 789.44
+ },
+ {
+  "i": 509,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1261.1
+ },
+ {
+  "i": 510,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1223.32
+ },
+ {
+  "i": 511,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1583.3
+ },
+ {
+  "i": 512,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1402.63
+ },
+ {
+  "i": 513,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1732.15
+ },
+ {
+  "i": 514,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1241.36
+ },
+ {
+  "i": 515,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D.",
+  "ttft_ms": 837.46
+ },
+ {
+  "i": 516,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A.",
+  "ttft_ms": 4117.4
+ },
+ {
+  "i": 517,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1316.48
+ },
+ {
+  "i": 518,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 1542.15
+ },
+ {
+  "i": 519,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1680.62
+ },
+ {
+  "i": 520,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1446.16
+ },
+ {
+  "i": 521,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 945.5
+ },
+ {
+  "i": 522,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1629.0
+ },
+ {
+  "i": 523,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 4253.67
+ },
+ {
+  "i": 524,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 3326.85
+ },
+ {
+  "i": 525,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1251.65
+ },
+ {
+  "i": 526,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1092.6
+ },
+ {
+  "i": 527,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1084.94
+ },
+ {
+  "i": 528,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 844.47
+ },
+ {
+  "i": 529,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 883.68
+ },
+ {
+  "i": 530,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1129.33
+ },
+ {
+  "i": 531,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1581.88
+ },
+ {
+  "i": 532,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 879.06
+ },
+ {
+  "i": 533,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 2100.64
+ },
+ {
+  "i": 534,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1451.2
+ },
+ {
+  "i": 535,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1292.39
+ },
+ {
+  "i": 536,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 841.92
+ },
+ {
+  "i": 537,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A.",
+  "ttft_ms": 1001.0
+ },
+ {
+  "i": 538,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 856.78
+ },
+ {
+  "i": 539,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B.",
+  "ttft_ms": 847.81
+ },
+ {
+  "i": 540,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1586.42
+ },
+ {
+  "i": 541,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1218.78
+ },
+ {
+  "i": 542,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1726.19
+ },
+ {
+  "i": 543,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1717.74
+ },
+ {
+  "i": 544,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 3797.97
+ },
+ {
+  "i": 545,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 875.87
+ },
+ {
+  "i": 546,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 908.08
+ },
+ {
+  "i": 547,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1099.84
+ },
+ {
+  "i": 548,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1401.29
+ },
+ {
+  "i": 549,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 850.39
+ },
+ {
+  "i": 550,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1336.65
+ },
+ {
+  "i": 551,
+  "pred": "D",
+  "gold": "B",
+  "ok": false,
+  "gen": "D. SF6",
+  "ttft_ms": 773.84
+ },
+ {
+  "i": 552,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1001.17
+ },
+ {
+  "i": 553,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 958.99
+ },
+ {
+  "i": 554,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1016.66
+ },
+ {
+  "i": 555,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 2081.17
+ },
+ {
+  "i": 556,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1306.55
+ },
+ {
+  "i": 557,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 721.84
+ },
+ {
+  "i": 558,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 740.54
+ },
+ {
+  "i": 559,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1426.54
+ },
+ {
+  "i": 560,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 3631.51
+ },
+ {
+  "i": 561,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 3191.29
+ },
+ {
+  "i": 562,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1413.32
+ },
+ {
+  "i": 563,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1395.51
+ },
+ {
+  "i": 564,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1891.49
+ },
+ {
+  "i": 565,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1138.31
+ },
+ {
+  "i": 566,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1981.65
+ },
+ {
+  "i": 567,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1409.47
+ },
+ {
+  "i": 568,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 803.9
+ },
+ {
+  "i": 569,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1101.75
+ },
+ {
+  "i": 570,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1574.68
+ },
+ {
+  "i": 571,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1216.76
+ },
+ {
+  "i": 572,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 681.83
+ },
+ {
+  "i": 573,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1162.78
+ },
+ {
+  "i": 574,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1228.08
+ },
+ {
+  "i": 575,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 991.54
+ },
+ {
+  "i": 576,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1403.45
+ },
+ {
+  "i": 577,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 2283.35
+ },
+ {
+  "i": 578,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1001.89
+ },
+ {
+  "i": 579,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1252.52
+ },
+ {
+  "i": 580,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 790.13
+ },
+ {
+  "i": 581,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D.",
+  "ttft_ms": 863.16
+ },
+ {
+  "i": 582,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 753.82
+ },
+ {
+  "i": 583,
+  "pred": "D",
+  "gold": "A",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 835.2
+ },
+ {
+  "i": 584,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A.",
+  "ttft_ms": 862.05
+ },
+ {
+  "i": 585,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 756.46
+ },
+ {
+  "i": 586,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 758.79
+ },
+ {
+  "i": 587,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 2461.24
+ },
+ {
+  "i": 588,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1118.89
+ },
+ {
+  "i": 589,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 923.28
+ },
+ {
+  "i": 590,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1209.43
+ },
+ {
+  "i": 591,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1888.38
+ },
+ {
+  "i": 592,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1400.45
+ },
+ {
+  "i": 593,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 880.25
+ },
+ {
+  "i": 594,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1149.72
+ },
+ {
+  "i": 595,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1036.91
+ },
+ {
+  "i": 596,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1531.25
+ },
+ {
+  "i": 597,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1569.07
+ },
+ {
+  "i": 598,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 2218.88
+ },
+ {
+  "i": 599,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 984.08
+ },
+ {
+  "i": 600,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 976.49
+ },
+ {
+  "i": 601,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 661.22
+ },
+ {
+  "i": 602,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 2262.78
+ },
+ {
+  "i": 603,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 840.96
+ },
+ {
+  "i": 604,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 791.58
+ },
+ {
+  "i": 605,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1185.37
+ },
+ {
+  "i": 606,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1054.36
+ },
+ {
+  "i": 607,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 3519.26
+ },
+ {
+  "i": 608,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1444.68
+ },
+ {
+  "i": 609,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1214.15
+ },
+ {
+  "i": 610,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 689.59
+ },
+ {
+  "i": 611,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 873.66
+ },
+ {
+  "i": 612,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1231.15
+ },
+ {
+  "i": 613,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1355.78
+ },
+ {
+  "i": 614,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 3492.86
+ },
+ {
+  "i": 615,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 4133.0
+ },
+ {
+  "i": 616,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1081.79
+ },
+ {
+  "i": 617,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 4014.26
+ },
+ {
+  "i": 618,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 767.52
+ },
+ {
+  "i": 619,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1614.06
+ },
+ {
+  "i": 620,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1138.33
+ },
+ {
+  "i": 621,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1536.6
+ },
+ {
+  "i": 622,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 722.62
+ },
+ {
+  "i": 623,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 695.92
+ },
+ {
+  "i": 624,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1711.73
+ },
+ {
+  "i": 625,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 854.68
+ },
+ {
+  "i": 626,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1456.46
+ },
+ {
+  "i": 627,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 812.03
+ },
+ {
+  "i": 628,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1467.16
+ },
+ {
+  "i": 629,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 866.27
+ },
+ {
+  "i": 630,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1168.06
+ },
+ {
+  "i": 631,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1092.25
+ },
+ {
+  "i": 632,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1283.97
+ },
+ {
+  "i": 633,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 6267.96
+ },
+ {
+  "i": 634,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1077.54
+ },
+ {
+  "i": 635,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1414.58
+ },
+ {
+  "i": 636,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1341.67
+ },
+ {
+  "i": 637,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 842.38
+ },
+ {
+  "i": 638,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. The survey is meaningless because of voluntary response bias.",
+  "ttft_ms": 2126.64
+ },
+ {
+  "i": 639,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 2052.14
+ },
+ {
+  "i": 640,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 824.18
+ },
+ {
+  "i": 641,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1035.93
+ },
+ {
+  "i": 642,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Not recover.",
+  "ttft_ms": 2822.07
+ },
+ {
+  "i": 643,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 997.31
+ },
+ {
+  "i": 644,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 874.96
+ },
+ {
+  "i": 645,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1371.29
+ },
+ {
+  "i": 646,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D.",
+  "ttft_ms": 864.48
+ },
+ {
+  "i": 647,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1018.26
+ },
+ {
+  "i": 648,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C.",
+  "ttft_ms": 749.0
+ },
+ {
+  "i": 649,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1178.05
+ },
+ {
+  "i": 650,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1026.37
+ },
+ {
+  "i": 651,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 3238.9
+ },
+ {
+  "i": 652,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1009.33
+ },
+ {
+  "i": 653,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1477.95
+ },
+ {
+  "i": 654,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 894.68
+ },
+ {
+  "i": 655,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 732.8
+ },
+ {
+  "i": 656,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 755.24
+ },
+ {
+  "i": 657,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1674.58
+ },
+ {
+  "i": 658,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1472.83
+ },
+ {
+  "i": 659,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C. The molecule is not rigid.",
+  "ttft_ms": 1427.71
+ },
+ {
+  "i": 660,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1308.28
+ },
+ {
+  "i": 661,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1312.05
+ },
+ {
+  "i": 662,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1516.7
+ },
+ {
+  "i": 663,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 799.48
+ },
+ {
+  "i": 664,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 5652.14
+ },
+ {
+  "i": 665,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 842.8
+ },
+ {
+  "i": 666,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 846.54
+ },
+ {
+  "i": 667,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1410.39
+ },
+ {
+  "i": 668,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 763.78
+ },
+ {
+  "i": 669,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 2566.43
+ },
+ {
+  "i": 670,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 857.22
+ },
+ {
+  "i": 671,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 782.31
+ },
+ {
+  "i": 672,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D.",
+  "ttft_ms": 1057.73
+ },
+ {
+  "i": 673,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1344.1
+ },
+ {
+  "i": 674,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1012.45
+ },
+ {
+  "i": 675,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 866.03
+ },
+ {
+  "i": 676,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 3064.97
+ },
+ {
+  "i": 677,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. Cannes",
+  "ttft_ms": 769.35
+ },
+ {
+  "i": 678,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1497.05
+ },
+ {
+  "i": 679,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1577.51
+ },
+ {
+  "i": 680,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 4116.95
+ },
+ {
+  "i": 681,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1618.8
+ },
+ {
+  "i": 682,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 861.03
+ },
+ {
+  "i": 683,
+  "pred": "D",
+  "gold": "B",
+  "ok": false,
+  "gen": "D. cannot compared either within individuals or between individuals.",
+  "ttft_ms": 1029.84
+ },
+ {
+  "i": 684,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 2775.62
+ },
+ {
+  "i": 685,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1293.78
+ },
+ {
+  "i": 686,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D.",
+  "ttft_ms": 989.96
+ },
+ {
+  "i": 687,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1003.31
+ },
+ {
+  "i": 688,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 3249.98
+ },
+ {
+  "i": 689,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 2432.44
+ },
+ {
+  "i": 690,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 792.55
+ },
+ {
+  "i": 691,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1210.99
+ },
+ {
+  "i": 692,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1513.84
+ },
+ {
+  "i": 693,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 2453.21
+ },
+ {
+  "i": 694,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D. Need more information.",
+  "ttft_ms": 793.42
+ },
+ {
+  "i": 695,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Sponsorship",
+  "ttft_ms": 772.77
+ },
+ {
+  "i": 696,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 984.93
+ },
+ {
+  "i": 697,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D.",
+  "ttft_ms": 3095.2
+ },
+ {
+  "i": 698,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1147.46
+ },
+ {
+  "i": 699,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1167.3
+ },
+ {
+  "i": 700,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1197.99
+ },
+ {
+  "i": 701,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 766.29
+ },
+ {
+  "i": 702,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 906.8
+ },
+ {
+  "i": 703,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1684.18
+ },
+ {
+  "i": 704,
+  "pred": "D",
+  "gold": "B",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 1956.52
+ },
+ {
+  "i": 705,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 799.24
+ },
+ {
+  "i": 706,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1671.65
+ },
+ {
+  "i": 707,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 774.46
+ },
+ {
+  "i": 708,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 676.28
+ },
+ {
+  "i": 709,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1574.32
+ },
+ {
+  "i": 710,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1130.96
+ },
+ {
+  "i": 711,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1002.65
+ },
+ {
+  "i": 712,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 822.74
+ },
+ {
+  "i": 713,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1252.27
+ },
+ {
+  "i": 714,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1109.14
+ },
+ {
+  "i": 715,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 3038.06
+ },
+ {
+  "i": 716,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 754.61
+ },
+ {
+  "i": 717,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1448.4
+ },
+ {
+  "i": 718,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1390.79
+ },
+ {
+  "i": 719,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 911.69
+ },
+ {
+  "i": 720,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 2559.9
+ },
+ {
+  "i": 721,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 2144.77
+ },
+ {
+  "i": 722,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1375.59
+ },
+ {
+  "i": 723,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1495.85
+ },
+ {
+  "i": 724,
+  "pred": "D",
+  "gold": "B",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 744.24
+ },
+ {
+  "i": 725,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1379.09
+ },
+ {
+  "i": 726,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1083.07
+ },
+ {
+  "i": 727,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 2734.72
+ },
+ {
+  "i": 728,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 2149.3
+ },
+ {
+  "i": 729,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 3229.27
+ },
+ {
+  "i": 730,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 2246.58
+ },
+ {
+  "i": 731,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1320.07
+ },
+ {
+  "i": 732,
+  "pred": "D",
+  "gold": "B",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 1606.22
+ },
+ {
+  "i": 733,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 5720.89
+ },
+ {
+  "i": 734,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. 4",
+  "ttft_ms": 766.99
+ },
+ {
+  "i": 735,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1036.87
+ },
+ {
+  "i": 736,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1340.55
+ },
+ {
+  "i": 737,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1349.56
+ },
+ {
+  "i": 738,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1358.21
+ },
+ {
+  "i": 739,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 2677.96
+ },
+ {
+  "i": 740,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1437.95
+ },
+ {
+  "i": 741,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. 0.0125 g",
+  "ttft_ms": 1578.56
+ },
+ {
+  "i": 742,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 734.55
+ },
+ {
+  "i": 743,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. 112",
+  "ttft_ms": 1864.85
+ },
+ {
+  "i": 744,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 4180.6
+ },
+ {
+  "i": 745,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1571.95
+ },
+ {
+  "i": 746,
+  "pred": "D",
+  "gold": "A",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 1121.04
+ },
+ {
+  "i": 747,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 5186.5
+ },
+ {
+  "i": 748,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 913.29
+ },
+ {
+  "i": 749,
+  "pred": "D",
+  "gold": "A",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 765.62
+ },
+ {
+  "i": 750,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 2500.55
+ },
+ {
+  "i": 751,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1428.18
+ },
+ {
+  "i": 752,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 858.8
+ },
+ {
+  "i": 753,
+  "pred": "D",
+  "gold": "B",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 2240.96
+ },
+ {
+  "i": 754,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D.",
+  "ttft_ms": 732.64
+ },
+ {
+  "i": 755,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1927.51
+ },
+ {
+  "i": 756,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1521.94
+ },
+ {
+  "i": 757,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1047.11
+ },
+ {
+  "i": 758,
+  "pred": "D",
+  "gold": "A",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 743.73
+ },
+ {
+  "i": 759,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1055.46
+ },
+ {
+  "i": 760,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1235.7
+ },
+ {
+  "i": 761,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1499.24
+ },
+ {
+  "i": 762,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1031.47
+ },
+ {
+  "i": 763,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 2955.81
+ },
+ {
+  "i": 764,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1030.35
+ },
+ {
+  "i": 765,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1198.11
+ },
+ {
+  "i": 766,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1157.39
+ },
+ {
+  "i": 767,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D. Emotion.",
+  "ttft_ms": 993.62
+ },
+ {
+  "i": 768,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 786.82
+ },
+ {
+  "i": 769,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1193.56
+ },
+ {
+  "i": 770,
+  "pred": "D",
+  "gold": "B",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 1370.78
+ },
+ {
+  "i": 771,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1170.27
+ },
+ {
+  "i": 772,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 4946.38
+ },
+ {
+  "i": 773,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1174.8
+ },
+ {
+  "i": 774,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1628.45
+ },
+ {
+  "i": 775,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1107.28
+ },
+ {
+  "i": 776,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1313.81
+ },
+ {
+  "i": 777,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1337.32
+ },
+ {
+  "i": 778,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1081.04
+ },
+ {
+  "i": 779,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 977.24
+ },
+ {
+  "i": 780,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 763.16
+ },
+ {
+  "i": 781,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1129.64
+ },
+ {
+  "i": 782,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1276.23
+ },
+ {
+  "i": 783,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1065.29
+ },
+ {
+  "i": 784,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1092.33
+ },
+ {
+  "i": 785,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1408.77
+ },
+ {
+  "i": 786,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 2191.7
+ },
+ {
+  "i": 787,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1175.49
+ },
+ {
+  "i": 788,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 3356.43
+ },
+ {
+  "i": 789,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1507.61
+ },
+ {
+  "i": 790,
+  "pred": "D",
+  "gold": "A",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 886.14
+ },
+ {
+  "i": 791,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1250.19
+ },
+ {
+  "i": 792,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1615.53
+ },
+ {
+  "i": 793,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 2735.63
+ },
+ {
+  "i": 794,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1328.7
+ },
+ {
+  "i": 795,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 845.35
+ },
+ {
+  "i": 796,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1029.33
+ },
+ {
+  "i": 797,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 866.17
+ },
+ {
+  "i": 798,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1229.53
+ },
+ {
+  "i": 799,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C.",
+  "ttft_ms": 1573.25
+ },
+ {
+  "i": 800,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1232.28
+ },
+ {
+  "i": 801,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1122.39
+ },
+ {
+  "i": 802,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1077.02
+ },
+ {
+  "i": 803,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1134.83
+ },
+ {
+  "i": 804,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 871.29
+ },
+ {
+  "i": 805,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 777.21
+ },
+ {
+  "i": 806,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1096.6
+ },
+ {
+  "i": 807,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 4266.99
+ },
+ {
+  "i": 808,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1210.64
+ },
+ {
+  "i": 809,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1209.53
+ },
+ {
+  "i": 810,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 4393.37
+ },
+ {
+  "i": 811,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 4905.22
+ },
+ {
+  "i": 812,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1205.48
+ },
+ {
+  "i": 813,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D.",
+  "ttft_ms": 792.49
+ },
+ {
+  "i": 814,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1510.78
+ },
+ {
+  "i": 815,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 856.41
+ },
+ {
+  "i": 816,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1140.93
+ },
+ {
+  "i": 817,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1411.17
+ },
+ {
+  "i": 818,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1584.22
+ },
+ {
+  "i": 819,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1462.43
+ },
+ {
+  "i": 820,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D.",
+  "ttft_ms": 849.63
+ },
+ {
+  "i": 821,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1253.29
+ },
+ {
+  "i": 822,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 744.85
+ },
+ {
+  "i": 823,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1851.6
+ },
+ {
+  "i": 824,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1208.55
+ },
+ {
+  "i": 825,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1259.38
+ },
+ {
+  "i": 826,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C.",
+  "ttft_ms": 1117.53
+ },
+ {
+  "i": 827,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1225.6
+ },
+ {
+  "i": 828,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 2526.98
+ },
+ {
+  "i": 829,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1536.35
+ },
+ {
+  "i": 830,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1209.05
+ },
+ {
+  "i": 831,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1546.25
+ },
+ {
+  "i": 832,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1325.15
+ },
+ {
+  "i": 833,
+  "pred": "D",
+  "gold": "B",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 810.3
+ },
+ {
+  "i": 834,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1143.18
+ },
+ {
+  "i": 835,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 741.82
+ },
+ {
+  "i": 836,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 2101.5
+ },
+ {
+  "i": 837,
+  "pred": "D",
+  "gold": "A",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 3896.64
+ },
+ {
+  "i": 838,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1281.86
+ },
+ {
+  "i": 839,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 776.21
+ },
+ {
+  "i": 840,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1561.22
+ },
+ {
+  "i": 841,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 985.73
+ },
+ {
+  "i": 842,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 830.76
+ },
+ {
+  "i": 843,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1122.53
+ },
+ {
+  "i": 844,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 852.98
+ },
+ {
+  "i": 845,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1401.4
+ },
+ {
+  "i": 846,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1012.12
+ },
+ {
+  "i": 847,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1499.56
+ },
+ {
+  "i": 848,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1348.24
+ },
+ {
+  "i": 849,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1151.24
+ },
+ {
+  "i": 850,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 759.3
+ },
+ {
+  "i": 851,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1199.89
+ },
+ {
+  "i": 852,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1155.87
+ },
+ {
+  "i": 853,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 971.78
+ },
+ {
+  "i": 854,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 877.81
+ },
+ {
+  "i": 855,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D.",
+  "ttft_ms": 856.92
+ },
+ {
+  "i": 856,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1309.04
+ },
+ {
+  "i": 857,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D.",
+  "ttft_ms": 784.04
+ },
+ {
+  "i": 858,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 2422.61
+ },
+ {
+  "i": 859,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 2263.06
+ },
+ {
+  "i": 860,
+  "pred": "D",
+  "gold": "A",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 3329.13
+ },
+ {
+  "i": 861,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1388.28
+ },
+ {
+  "i": 862,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 768.81
+ },
+ {
+  "i": 863,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1212.22
+ },
+ {
+  "i": 864,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A. Verify inventory pledged under loan agreements by confirming the details with financial institutions.",
+  "ttft_ms": 1489.08
+ },
+ {
+  "i": 865,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 1711.23
+ },
+ {
+  "i": 866,
+  "pred": "D",
+  "gold": "A",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 2671.57
+ },
+ {
+  "i": 867,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 755.29
+ },
+ {
+  "i": 868,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 2576.64
+ },
+ {
+  "i": 869,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. Reduced perceived risk.",
+  "ttft_ms": 1020.8
+ },
+ {
+  "i": 870,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 864.43
+ },
+ {
+  "i": 871,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1035.63
+ },
+ {
+  "i": 872,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 5495.37
+ },
+ {
+  "i": 873,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1079.69
+ },
+ {
+  "i": 874,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 6696.91
+ },
+ {
+  "i": 875,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D.",
+  "ttft_ms": 843.89
+ },
+ {
+  "i": 876,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1030.07
+ },
+ {
+  "i": 877,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 972.94
+ },
+ {
+  "i": 878,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1491.38
+ },
+ {
+  "i": 879,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1018.61
+ },
+ {
+  "i": 880,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 969.95
+ },
+ {
+  "i": 881,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 2213.17
+ },
+ {
+  "i": 882,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 785.9
+ },
+ {
+  "i": 883,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 2832.1
+ },
+ {
+  "i": 884,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 2069.19
+ },
+ {
+  "i": 885,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1409.24
+ },
+ {
+  "i": 886,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A. (-4.79,2.19)",
+  "ttft_ms": 1490.84
+ },
+ {
+  "i": 887,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 3145.18
+ },
+ {
+  "i": 888,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1153.1
+ },
+ {
+  "i": 889,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 2744.69
+ },
+ {
+  "i": 890,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 760.38
+ },
+ {
+  "i": 891,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 2294.78
+ },
+ {
+  "i": 892,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1097.43
+ },
+ {
+  "i": 893,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 922.72
+ },
+ {
+  "i": 894,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1117.17
+ },
+ {
+  "i": 895,
+  "pred": "D",
+  "gold": "B",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 1122.88
+ },
+ {
+  "i": 896,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1552.84
+ },
+ {
+  "i": 897,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D.",
+  "ttft_ms": 1015.43
+ },
+ {
+  "i": 898,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. 1.00 grams",
+  "ttft_ms": 1416.19
+ },
+ {
+  "i": 899,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 988.93
+ },
+ {
+  "i": 900,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 9661.82
+ },
+ {
+  "i": 901,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 4998.0
+ },
+ {
+  "i": 902,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C.",
+  "ttft_ms": 1151.11
+ },
+ {
+  "i": 903,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1216.36
+ },
+ {
+  "i": 904,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A.",
+  "ttft_ms": 745.31
+ },
+ {
+  "i": 905,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Work-life balance",
+  "ttft_ms": 1255.64
+ },
+ {
+  "i": 906,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 4369.2
+ },
+ {
+  "i": 907,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 2793.84
+ },
+ {
+  "i": 908,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1512.9
+ },
+ {
+  "i": 909,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 775.54
+ },
+ {
+  "i": 910,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1861.46
+ },
+ {
+  "i": 911,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1754.16
+ },
+ {
+  "i": 912,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 697.52
+ },
+ {
+  "i": 913,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1602.29
+ },
+ {
+  "i": 914,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1291.01
+ },
+ {
+  "i": 915,
+  "pred": "D",
+  "gold": "B",
+  "ok": false,
+  "gen": "D.",
+  "ttft_ms": 801.93
+ },
+ {
+  "i": 916,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1137.78
+ },
+ {
+  "i": 917,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1767.47
+ },
+ {
+  "i": 918,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 2774.33
+ },
+ {
+  "i": 919,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1330.07
+ },
+ {
+  "i": 920,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1153.71
+ },
+ {
+  "i": 921,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1192.02
+ },
+ {
+  "i": 922,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1016.5
+ },
+ {
+  "i": 923,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1229.91
+ },
+ {
+  "i": 924,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1259.15
+ },
+ {
+  "i": 925,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 850.47
+ },
+ {
+  "i": 926,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 871.89
+ },
+ {
+  "i": 927,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1615.31
+ },
+ {
+  "i": 928,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 1140.37
+ },
+ {
+  "i": 929,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 775.3
+ },
+ {
+  "i": 930,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 1120.63
+ },
+ {
+  "i": 931,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1091.46
+ },
+ {
+  "i": 932,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 854.42
+ },
+ {
+  "i": 933,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 839.75
+ },
+ {
+  "i": 934,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 3306.57
+ },
+ {
+  "i": 935,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1189.6
+ },
+ {
+  "i": 936,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D.",
+  "ttft_ms": 682.91
+ },
+ {
+  "i": 937,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 1562.23
+ },
+ {
+  "i": 938,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 6421.98
+ },
+ {
+  "i": 939,
+  "pred": "D",
+  "gold": "A",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 1961.03
+ },
+ {
+  "i": 940,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1880.58
+ },
+ {
+  "i": 941,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1682.43
+ },
+ {
+  "i": 942,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 4332.3
+ },
+ {
+  "i": 943,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 738.91
+ },
+ {
+  "i": 944,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 6737.66
+ },
+ {
+  "i": 945,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 826.19
+ },
+ {
+  "i": 946,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 978.4
+ },
+ {
+  "i": 947,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C. No information about either position or momentum can be known.",
+  "ttft_ms": 1468.6
+ },
+ {
+  "i": 948,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1183.59
+ },
+ {
+  "i": 949,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1568.97
+ },
+ {
+  "i": 950,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 724.65
+ },
+ {
+  "i": 951,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1402.57
+ },
+ {
+  "i": 952,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C. -40%",
+  "ttft_ms": 1011.98
+ },
+ {
+  "i": 953,
+  "pred": "D",
+  "gold": "A",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 779.51
+ },
+ {
+  "i": 954,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C",
+  "ttft_ms": 733.13
+ },
+ {
+  "i": 955,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 2520.77
+ },
+ {
+  "i": 956,
+  "pred": "D",
+  "gold": "B",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 1485.44
+ },
+ {
+  "i": 957,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 855.19
+ },
+ {
+  "i": 958,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B",
+  "ttft_ms": 1696.44
+ },
+ {
+  "i": 959,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1204.12
+ },
+ {
+  "i": 960,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A",
+  "ttft_ms": 1211.74
+ },
+ {
+  "i": 961,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A.",
+  "ttft_ms": 981.78
+ },
+ {
+  "i": 962,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1320.16
+ },
+ {
+  "i": 963,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D",
+  "ttft_ms": 1012.32
+ },
+ {
+  "i": 964,
+  "pred": "D",
+  "gold": "B",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 1884.75
+ },
+ {
+  "i": 965,
+  "pred": "D",
+  "gold": "B",
+  "ok": false,
+  "gen": "D",
+  "ttft_ms": 6902.32
+ },
+ {
+  "i": 966,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 2182.61
+ },
+ {
+  "i": 967,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A",
+  "ttft_ms": 764.8
+ },
+ {
+  "i": 968,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B",
+  "ttft_ms": 1130.29
+ }
+]

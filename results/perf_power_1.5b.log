@@ -1,0 +1,11 @@
+[power] 板载无功率节点（实测：simple-vin 仅电压）。将仅记录电压；整机功耗请外接 INA260/UM34C 后重测
+I rkllm: rkllm-runtime version: 1.2.3, rknpu driver version: 0.9.8, platform: RK3576
+I rkllm: loading rkllm model from models/Qwen2.5-1.5B-Instruct_RK3576_w4a16.rkllm
+I rkllm: rkllm-toolkit version: 1.2.3, max_context_limit: 4096, npu_core_num: 2, target_platform: RK3576, model_dtype: W4A16
+I rkllm: Enabled cpus: [4, 5, 6, 7]
+I rkllm: Enabled cpus num: 4
+[perf] len=  125 ttft=   115.7ms decode=  8.66tok/s total= 14901.1ms power=NoneW
+[perf] len=  497 ttft=   177.8ms decode=  7.79tok/s total=  9277.5ms power=NoneW
+[perf] len=  993 ttft=   249.7ms decode=  7.35tok/s total=  3925.6ms power=NoneW
+[perf] len= 1985 ttft=   205.3ms decode=  5.54tok/s total= 23303.1ms power=NoneW
+[perf] -> results/perf_qwen1.5b_w4a16_power.json

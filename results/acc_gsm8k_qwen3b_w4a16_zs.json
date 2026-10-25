@@ -1,0 +1,7 @@
+{
+  "model": "models/Qwen2.5-3B-Instruct_RK3576_w4a16.rkllm",
+  "task": "gsm8k",
+  "num_samples": 200,
+  "fewshot_num": 0,
+  "gsm8k_acc": 0.67
+}

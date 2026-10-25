@@ -1,0 +1,51 @@
+{
+  "model": "models/Qwen2.5-1.5B-Instruct_RK3576_w4a16.rkllm",
+  "max_new_tokens": 128,
+  "repeats": 5,
+  "freqs": {
+    "cpu0_mhz": 2016,
+    "cpu1_mhz": 2016,
+    "cpu2_mhz": 2016,
+    "cpu3_mhz": 2016,
+    "cpu4_mhz": 2208,
+    "cpu5_mhz": 2208,
+    "cpu6_mhz": 2208,
+    "cpu7_mhz": 2208,
+    "npu_mhz": 950000,
+    "dmc_mhz": 2736000
+  },
+  "points": [
+    {
+      "ttft_ms_median": 91.51,
+      "decode_tps_median": 13.01,
+      "total_ms_median": 9928.78,
+      "n_tokens_median": 129,
+      "prompt_len_target": 128,
+      "prompt_len_actual": 125
+    },
+    {
+      "ttft_ms_median": 107.44,
+      "decode_tps_median": 11.73,
+      "total_ms_median": 6160.61,
+      "n_tokens_median": 72,
+      "prompt_len_target": 512,
+      "prompt_len_actual": 497
+    },
+    {
+      "ttft_ms_median": 125.39,
+      "decode_tps_median": 10.44,
+      "total_ms_median": 2771.19,
+      "n_tokens_median": 28,
+      "prompt_len_target": 1024,
+      "prompt_len_actual": 993
+    },
+    {
+      "ttft_ms_median": 181.48,
+      "decode_tps_median": 7.42,
+      "total_ms_median": 17459.66,
+      "n_tokens_median": 129,
+      "prompt_len_target": 2048,
+      "prompt_len_actual": 1985
+    }
+  ]
+}

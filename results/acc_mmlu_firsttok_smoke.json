@@ -1,0 +1,10 @@
+{
+  "model": "models/Qwen2.5-1.5B-Instruct_RK3576_w4a16.rkllm",
+  "task": "mmlu_firsttoken",
+  "num_samples": 20,
+  "protocol": "greedy 1-token letter match (token-id level, A/B/C/D with space variants); GET_LOGITS mode unavailable in rkllm-runtime 1.2.3 RK3576 build",
+  "mmlu_acc": 0.55,
+  "none_pred_rate": 0.05,
+  "avg_ms_per_q": 764.6,
+  "wall_s": 15.3
+}

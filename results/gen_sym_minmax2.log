@@ -1,0 +1,31 @@
+[sym] layer 0/27 done
+[sym] layer 1/27 done
+[sym] layer 2/27 done
+[sym] layer 3/27 done
+[sym] layer 4/27 done
+[sym] layer 5/27 done
+[sym] layer 6/27 done
+[sym] layer 7/27 done
+[sym] layer 8/27 done
+[sym] layer 9/27 done
+[sym] layer 10/27 done
+[sym] layer 11/27 done
+[sym] layer 12/27 done
+[sym] layer 13/27 done
+[sym] layer 14/27 done
+[sym] layer 15/27 done
+[sym] layer 16/27 done
+[sym] layer 17/27 done
+[sym] layer 18/27 done
+[sym] layer 19/27 done
+[sym] layer 20/27 done
+[sym] layer 21/27 done
+[sym] layer 22/27 done
+[sym] layer 23/27 done
+[sym] layer 24/27 done
+[sym] layer 25/27 done
+[sym] layer 26/27 done
+[sym] layer 27/27 done
+[sym] saved 533 keys (weight=253 qscale=196) -> /media/pi/DATA/rknn-llm/nac_paper/results/sym_minmax_g64.qparams (1393 MB)
+[sym] weight int4 range [-8, 8.875]
+EXIT=0

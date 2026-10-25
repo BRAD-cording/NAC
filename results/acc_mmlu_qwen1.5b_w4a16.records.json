@@ -1,0 +1,7754 @@
+[
+ {
+  "i": 0,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Anthony",
+  "ttft_ms": 1103.04
+ },
+ {
+  "i": 1,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Thymine",
+  "ttft_ms": 1105.44
+ },
+ {
+  "i": 2,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Communicate deficiencies in the design of internal control to the entity's audit committee.\n\nExplanation: When a CPA is reviewing the financial statements of a nonissuer",
+  "ttft_ms": 743.44
+ },
+ {
+  "i": 3,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Observing rules of proper behavior toward others will ensure social and political harmony.",
+  "ttft_ms": 764.31
+ },
+ {
+  "i": 4,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "The correct answer is B. The responsibility to prevent.",
+  "ttft_ms": 448.22
+ },
+ {
+  "i": 5,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. Share options, Senior managers, Share Price",
+  "ttft_ms": 815.48
+ },
+ {
+  "i": 6,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. The objective intent of the parties.\n\nIn determining whether a contract has been created, the courts primarily look at the objective intent of the parties involved. This",
+  "ttft_ms": 816.06
+ },
+ {
+  "i": 7,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Social evaluations, Social programs, and Social impacts",
+  "ttft_ms": 562.24
+ },
+ {
+  "i": 8,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C. U.S. settlers were the first to arrive in the region; they claimed it for their country.",
+  "ttft_ms": 2169.63
+ },
+ {
+  "i": 9,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. chimpanzees",
+  "ttft_ms": 283.68
+ },
+ {
+  "i": 10,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Hall coefficient",
+  "ttft_ms": 442.67
+ },
+ {
+  "i": 11,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. being told by peers",
+  "ttft_ms": 326.97
+ },
+ {
+  "i": 12,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. reductio ad absurdum",
+  "ttft_ms": 355.0
+ },
+ {
+  "i": 13,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. electric current",
+  "ttft_ms": 279.9
+ },
+ {
+  "i": 14,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. Robert MacArthur and E. O. Wilson",
+  "ttft_ms": 624.74
+ },
+ {
+  "i": 15,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C. A solar day represents more than 360° of rotation for the earth.",
+  "ttft_ms": 663.38
+ },
+ {
+  "i": 16,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Overwhelmed by the unprecedented number of social and technological changes, the twentieth century sought refuge in the longstanding traditions of the past.\n\nThis passage best exempl",
+  "ttft_ms": 2557.5
+ },
+ {
+  "i": 17,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Nephrolithiasis",
+  "ttft_ms": 484.57
+ },
+ {
+  "i": 18,
+  "pred": "D",
+  "gold": "A",
+  "ok": false,
+  "gen": "D. all of the above",
+  "ttft_ms": 708.37
+ },
+ {
+  "i": 19,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. 27 ft by 53 ft",
+  "ttft_ms": 713.34
+ },
+ {
+  "i": 20,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. The ego is the self as a whole: an unstable mix of conscious and unconscious elements.",
+  "ttft_ms": 734.5
+ },
+ {
+  "i": 21,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "The correct answer is B. Milton Friedman is a Monetarist.",
+  "ttft_ms": 449.19
+ },
+ {
+  "i": 22,
+  "pred": "None",
+  "gold": "A",
+  "ok": false,
+  "gen": "To answer this question, we need to round the number 2,448 miles to the nearest thousand. The number 2,448 is",
+  "ttft_ms": 601.63
+ },
+ {
+  "i": 23,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Possible effects on the entity’s financial statements.\n\nAn auditor with substantial doubt about an entity's ability to continue as a going concern due to negative cash flows",
+  "ttft_ms": 793.62
+ },
+ {
+  "i": 24,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Adaptive immunity is characterized by the ability to distinguish self from non-self, which is a key feature of this type of immunity.",
+  "ttft_ms": 401.21
+ },
+ {
+  "i": 25,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. marginal product of labor is rising.",
+  "ttft_ms": 526.92
+ },
+ {
+  "i": 26,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. the fundamental attribution error",
+  "ttft_ms": 633.15
+ },
+ {
+  "i": 27,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. A derogation refers to the ability of rights holders to bring a claim against the State for breach of an obligation.",
+  "ttft_ms": 754.6
+ },
+ {
+  "i": 28,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Natural",
+  "ttft_ms": 279.96
+ },
+ {
+  "i": 29,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "The correct answer is D. All of these options. The environment is both an object to be secured and a source of risk, although it may mean different things",
+  "ttft_ms": 1486.08
+ },
+ {
+  "i": 30,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Modernization theory",
+  "ttft_ms": 429.49
+ },
+ {
+  "i": 31,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. rate of change of the magnetic flux through S",
+  "ttft_ms": 590.54
+ },
+ {
+  "i": 32,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "To determine the value of the investment, we need to use the formula for the present value of a perpetuity, which is given by:\n\n\\[ \\text{",
+  "ttft_ms": 447.71
+ },
+ {
+  "i": 33,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C. Christianity",
+  "ttft_ms": 425.31
+ },
+ {
+  "i": 34,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. The UK Constitution gives the judiciary the power to overturn acts of parliament.",
+  "ttft_ms": 670.57
+ },
+ {
+  "i": 35,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "The correct answer is B. linear in N.",
+  "ttft_ms": 312.55
+ },
+ {
+  "i": 36,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B.",
+  "ttft_ms": 497.13
+ },
+ {
+  "i": 37,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "The correct answer is B. -1.\n\nExplanation:\n- The matrix A is a 2x2 matrix where the (i, j) entry is i",
+  "ttft_ms": 737.68
+ },
+ {
+  "i": 38,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. megafauna.",
+  "ttft_ms": 369.17
+ },
+ {
+  "i": 39,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "The correct answer is B. American exceptionalism in terms of global economics implies that the United States is seen as a leader and model for other nations, often leading",
+  "ttft_ms": 390.57
+ },
+ {
+  "i": 40,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "The correct answer is B. 3.2.",
+  "ttft_ms": 392.52
+ },
+ {
+  "i": 41,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "To determine the minimum value of the function \\( f(x) = e^x - cx \\), we need to find the critical points by taking the derivative of",
+  "ttft_ms": 519.9
+ },
+ {
+  "i": 42,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. A and B",
+  "ttft_ms": 310.33
+ },
+ {
+  "i": 43,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. A stationary process",
+  "ttft_ms": 566.85
+ },
+ {
+  "i": 44,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Rousseau",
+  "ttft_ms": 325.25
+ },
+ {
+  "i": 45,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. glucose-1-phosphate.",
+  "ttft_ms": 412.64
+ },
+ {
+  "i": 46,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. scheduling of votes and the conditions under which bills are debated and amended",
+  "ttft_ms": 600.53
+ },
+ {
+  "i": 47,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Seine",
+  "ttft_ms": 279.81
+ },
+ {
+  "i": 48,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "The correct answer is B. crystal filter. The piezoelectric effect is commonly associated with crystal filters, which use the piezoelectric properties of crystals",
+  "ttft_ms": 279.85
+ },
+ {
+  "i": 49,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Egocentrism—sensorimotor stage",
+  "ttft_ms": 556.68
+ },
+ {
+  "i": 50,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. perpetual inventory",
+  "ttft_ms": 367.35
+ },
+ {
+  "i": 51,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C. Middle ear effusion",
+  "ttft_ms": 974.58
+ },
+ {
+  "i": 52,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Correlation-it would be unethical to purposefully expose middle school students to bullying behaviors, so Professor Ek should examine variables that correlate with existing instances of online",
+  "ttft_ms": 1422.18
+ },
+ {
+  "i": 53,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. The influence of Chinese science on Islamic civilizations through European immigration to Islamic lands\n\nThis question involves cultural exchange and the influence of different scientific systems a",
+  "ttft_ms": 4304.5
+ },
+ {
+  "i": 54,
+  "pred": "None",
+  "gold": "A",
+  "ok": false,
+  "gen": "To determine which point is NOT a solution to both inequalities y > 9x – 8 and y < –x + 8, we need to check",
+  "ttft_ms": 564.74
+ },
+ {
+  "i": 55,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B.",
+  "ttft_ms": 2343.01
+ },
+ {
+  "i": 56,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. In reproductive cloning, one seeks to impose one's will on a child's future.",
+  "ttft_ms": 675.89
+ },
+ {
+  "i": 57,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Average revenue equals marginal revenue.",
+  "ttft_ms": 517.68
+ },
+ {
+  "i": 58,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Trade contacts who came from the north across the Sahara.",
+  "ttft_ms": 2738.03
+ },
+ {
+  "i": 59,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Top, Globalisation, Political, Environmental",
+  "ttft_ms": 615.51
+ },
+ {
+  "i": 60,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. Firms produce a homogeneous product.",
+  "ttft_ms": 444.99
+ },
+ {
+  "i": 61,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Respiration",
+  "ttft_ms": 322.61
+ },
+ {
+  "i": 62,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. hypothalamus",
+  "ttft_ms": 326.65
+ },
+ {
+  "i": 63,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Are 100 or more years old",
+  "ttft_ms": 384.2
+ },
+ {
+  "i": 64,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "To answer these questions, let's break down the information provided:\n\n1. **Which organelle produces ATP?**\n   - The correct answer is B.",
+  "ttft_ms": 805.05
+ },
+ {
+  "i": 65,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To determine which statement is true, we need to understand the behavior of the `compareTo` method in Java. The `compareTo` method returns a negative integer if",
+  "ttft_ms": 1130.24
+ },
+ {
+  "i": 66,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. Wood",
+  "ttft_ms": 268.62
+ },
+ {
+  "i": 67,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "To answer these questions, let's break down the information provided:\n\n1. **Which organelle produces ATP?**\n   - The correct answer is B.",
+  "ttft_ms": 809.52
+ },
+ {
+  "i": 68,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "To solve this problem, we need to understand the relationship between the resonant field positions and the g-factor (g) of the radical. The g-factor is",
+  "ttft_ms": 1665.39
+ },
+ {
+  "i": 69,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To determine how long it takes Jennifer to complete the marathon, we need to calculate the time for each half of the race separately and then add them together.\n\n1",
+  "ttft_ms": 748.84
+ },
+ {
+  "i": 70,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. Basement membrane",
+  "ttft_ms": 872.7
+ },
+ {
+  "i": 71,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Thymine",
+  "ttft_ms": 416.7
+ },
+ {
+  "i": 72,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "The correct answer is C. [786, 2.23]. In Python, when you use the slice notation [1:3] on",
+  "ttft_ms": 794.25
+ },
+ {
+  "i": 73,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Wage = Marginal revenue product of labor.\n\nIn a perfectly competitive labor market, the firm maximizes profit by hiring labor up to the point where the",
+  "ttft_ms": 497.79
+ },
+ {
+  "i": 74,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. arise from the ascending aorta and fill during systole.",
+  "ttft_ms": 605.89
+ },
+ {
+  "i": 75,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Hurler's syndrome.",
+  "ttft_ms": 388.98
+ },
+ {
+  "i": 76,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A. Clostridium difficile",
+  "ttft_ms": 751.68
+ },
+ {
+  "i": 77,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. 3 months",
+  "ttft_ms": 511.55
+ },
+ {
+  "i": 78,
+  "pred": "None",
+  "gold": "A",
+  "ok": false,
+  "gen": "To solve the equation −17.02 = −2.3y, we need to isolate y. We can do this by dividing both sides of",
+  "ttft_ms": 506.87
+ },
+ {
+  "i": 79,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. A rapid increase in money supply",
+  "ttft_ms": 423.14
+ },
+ {
+  "i": 80,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Gabriel",
+  "ttft_ms": 272.42
+ },
+ {
+  "i": 81,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Improving the health status and satisfaction of patients.",
+  "ttft_ms": 557.27
+ },
+ {
+  "i": 82,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. synovial membrane and capsule.",
+  "ttft_ms": 506.91
+ },
+ {
+  "i": 83,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Quakers",
+  "ttft_ms": 2231.86
+ },
+ {
+  "i": 84,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B.",
+  "ttft_ms": 347.19
+ },
+ {
+  "i": 85,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. (H ∨ ~G) ⊃ J",
+  "ttft_ms": 643.11
+ },
+ {
+  "i": 86,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. He denies that law develops independently of social and economic forces.",
+  "ttft_ms": 615.04
+ },
+ {
+  "i": 87,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Uracil",
+  "ttft_ms": 677.24
+ },
+ {
+  "i": 88,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D. Small percentage of very high class individuals.",
+  "ttft_ms": 668.6
+ },
+ {
+  "i": 89,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A. Measure the ΔS and the ΔG for the reaction, and calculate the ΔH from the Gibbs free energy equation.",
+  "ttft_ms": 869.24
+ },
+ {
+  "i": 90,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Personal values",
+  "ttft_ms": 333.43
+ },
+ {
+  "i": 91,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Hasty Generalization",
+  "ttft_ms": 330.2
+ },
+ {
+  "i": 92,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Indo-European",
+  "ttft_ms": 288.07
+ },
+ {
+  "i": 93,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. For 3, 5, 7, and 11 only",
+  "ttft_ms": 714.25
+ },
+ {
+  "i": 94,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "To solve this problem, we need to use the formula for the centripetal force and the frictional force to determine the maximum distance from the center of the",
+  "ttft_ms": 744.46
+ },
+ {
+  "i": 95,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Positive environment and micro-management",
+  "ttft_ms": 374.54
+ },
+ {
+  "i": 96,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. ~(∀x)(Sx ⊃ Gx)",
+  "ttft_ms": 583.34
+ },
+ {
+  "i": 97,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Price-fixing",
+  "ttft_ms": 280.27
+ },
+ {
+  "i": 98,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "The correct answer is B. arguing that a claim must be true because there is no evidence that it is false.",
+  "ttft_ms": 927.34
+ },
+ {
+  "i": 99,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. RC oscillators",
+  "ttft_ms": 369.3
+ },
+ {
+  "i": 100,
+  "pred": "None",
+  "gold": "B",
+  "ok": false,
+  "gen": "To solve this problem, we need to use the exponential decay formula for the polarization of a 13C nucleus in a 600 MHz spectrometer",
+  "ttft_ms": 1064.15
+ },
+ {
+  "i": 101,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Promoter",
+  "ttft_ms": 360.44
+ },
+ {
+  "i": 102,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. It is reasonable to believe that the position would more likely that not be upheld.",
+  "ttft_ms": 751.78
+ },
+ {
+  "i": 103,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C. There is a 0.95 probability that Lipitor will outperform niacin by at least 23 points in lowering the cholesterol level of",
+  "ttft_ms": 1214.52
+ },
+ {
+  "i": 104,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Gastroesophageal reflux disease",
+  "ttft_ms": 439.45
+ },
+ {
+  "i": 105,
+  "pred": "None",
+  "gold": "A",
+  "ok": false,
+  "gen": "To determine the range of firing angle control for the given single-phase one pulse controlled circuit, we need to analyze the circuit and the relationship between the source voltage,",
+  "ttft_ms": 946.01
+ },
+ {
+  "i": 106,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "The correct answer is B. Doubled.",
+  "ttft_ms": 383.83
+ },
+ {
+  "i": 107,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Such conduct never attracts immunity",
+  "ttft_ms": 603.81
+ },
+ {
+  "i": 108,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. Globalisation, Cultural, Legal, Accountability",
+  "ttft_ms": 665.24
+ },
+ {
+  "i": 109,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A. The palatal surfaces of the upper molars and lingual surfaces of the lower incisors.",
+  "ttft_ms": 977.96
+ },
+ {
+  "i": 110,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. average",
+  "ttft_ms": 425.78
+ },
+ {
+  "i": 111,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. The expectations people will place on SCNT individuals could be no worse than normal expectations of children created sexually.",
+  "ttft_ms": 785.06
+ },
+ {
+  "i": 112,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Providing factual accounts in testimony explaining positions taken during the performance of any services provided to the client.",
+  "ttft_ms": 831.02
+ },
+ {
+  "i": 113,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. Living will",
+  "ttft_ms": 448.83
+ },
+ {
+  "i": 114,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Washington",
+  "ttft_ms": 388.37
+ },
+ {
+  "i": 115,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. hexagon",
+  "ttft_ms": 409.4
+ },
+ {
+  "i": 116,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. CH3Cl",
+  "ttft_ms": 610.09
+ },
+ {
+  "i": 117,
+  "pred": "None",
+  "gold": "B",
+  "ok": false,
+  "gen": "The correct answer is:\n\nA. (ii) and (iv) only\n\nExplanation:\n- (i) is incorrect because the significance level (alpha) is",
+  "ttft_ms": 1176.8
+ },
+ {
+  "i": 118,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "The correct answer is C. 1.38 × 10^-21 g.",
+  "ttft_ms": 677.79
+ },
+ {
+  "i": 119,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A. O(log e^N)",
+  "ttft_ms": 382.26
+ },
+ {
+  "i": 120,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Increasing the temperature at which the reaction occurs\n\nExplanation: In a first-order reaction, the half-life is given by the equation \\( t_{1/",
+  "ttft_ms": 948.35
+ },
+ {
+  "i": 121,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. anticommunism.",
+  "ttft_ms": 332.62
+ },
+ {
+  "i": 122,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "To determine the new length of the school year with a 5% increase, we need to calculate 5% of 180 days and add it",
+  "ttft_ms": 634.19
+ },
+ {
+  "i": 123,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. the need for perestroika was long in the making",
+  "ttft_ms": 1342.87
+ },
+ {
+  "i": 124,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "To determine the optimal angle for the cannon, we need to consider the physics of projectile motion. The key is to maximize the range of the projectile, which is",
+  "ttft_ms": 793.84
+ },
+ {
+  "i": 125,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "The correct answer is B. Recognition is simply declaratory of statehood but not determinate.",
+  "ttft_ms": 531.62
+ },
+ {
+  "i": 126,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. They have an open electron spot on their outer valence rings",
+  "ttft_ms": 618.64
+ },
+ {
+  "i": 127,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Repolarization",
+  "ttft_ms": 1159.25
+ },
+ {
+  "i": 128,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "The correct answer is D. Political, economic, social, technological. PEST stands for Political, Economic, Social, and Technological.",
+  "ttft_ms": 389.57
+ },
+ {
+  "i": 129,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. The sample mean and sample median are equal.",
+  "ttft_ms": 537.38
+ },
+ {
+  "i": 130,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. In DNA, adenine pairs with thymine.",
+  "ttft_ms": 842.21
+ },
+ {
+  "i": 131,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "Answer: D\n\nA Web site uses several strategies to prevent unauthorized individuals from accessing user accounts. Which of the following is NOT an example of multifactor authentication?",
+  "ttft_ms": 1208.93
+ },
+ {
+  "i": 132,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. the Song dynasty differed from the Tang in that the Song dynasty sponsored Buddhism to the detriment of Taoism and Confucianism.",
+  "ttft_ms": 3270.55
+ },
+ {
+  "i": 133,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "To determine the total increase in England's real GDP resulting from Mr. Woods' purchase, we need to consider the marginal propensity to consume (MPC). The",
+  "ttft_ms": 588.97
+ },
+ {
+  "i": 134,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B.",
+  "ttft_ms": 368.53
+ },
+ {
+  "i": 135,
+  "pred": "None",
+  "gold": "A",
+  "ok": false,
+  "gen": "The slope of a line passing through two points (x1, y1) and (x2, y2) is calculated using the formula:\n\n\\[ \\",
+  "ttft_ms": 446.02
+ },
+ {
+  "i": 136,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Wrong, Not wrong",
+  "ttft_ms": 772.53
+ },
+ {
+  "i": 137,
+  "pred": "None",
+  "gold": "B",
+  "ok": false,
+  "gen": "The proposed tax is probably constitutional, because the fact that controversial policy motives may have induced the enactment of an otherwise reasonable measure calculated to raise revenue does not i",
+  "ttft_ms": 1676.62
+ },
+ {
+  "i": 138,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "To find the inverse of the function \\( f(x) = 4 - 5x \\), we need to follow these steps:\n\n1. Replace \\( f",
+  "ttft_ms": 457.07
+ },
+ {
+  "i": 139,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Decreased rate of erectile dysfunction.",
+  "ttft_ms": 8195.13
+ },
+ {
+  "i": 140,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. contact child protective services\n\nExplanation: The patient has a burn injury that occurred due to an accidental hot water exposure. This type of burn is typically considered",
+  "ttft_ms": 1052.49
+ },
+ {
+  "i": 141,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To solve this problem, we need to use the relationship between the magnetic force, the velocity of the proton, and the magnetic field. The magnetic force on a",
+  "ttft_ms": 1067.5
+ },
+ {
+  "i": 142,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C. Independent",
+  "ttft_ms": 397.5
+ },
+ {
+  "i": 143,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. It expanded NATO to include former Soviet states\n\nThe George W. Bush administration did indeed expand NATO to include former Soviet states, which was a significant change",
+  "ttft_ms": 626.06
+ },
+ {
+  "i": 144,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. 4",
+  "ttft_ms": 372.28
+ },
+ {
+  "i": 145,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. 46%",
+  "ttft_ms": 384.26
+ },
+ {
+  "i": 146,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "To determine whether the argument is valid, we need to use the rules of logic and truth tables. Let's break down the argument:\n\n1. (A",
+  "ttft_ms": 971.52
+ },
+ {
+  "i": 147,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "To determine the number of independent parameters in a Bayesian network, we need to consider the number of nodes and the number of parameters associated with each node.\n\n1.",
+  "ttft_ms": 443.79
+ },
+ {
+  "i": 148,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "To answer these questions, let's break down the information provided:\n\n1. **Which organelle produces ATP?**\n   - The correct answer is B.",
+  "ttft_ms": 705.7
+ },
+ {
+  "i": 149,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Uracil",
+  "ttft_ms": 648.42
+ },
+ {
+  "i": 150,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To solve this problem, we need to calculate the work done by the force \\( F \\) on the particle along the given path. The work done by a",
+  "ttft_ms": 791.48
+ },
+ {
+  "i": 151,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. Direct.",
+  "ttft_ms": 390.17
+ },
+ {
+  "i": 152,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. A and B only\n\nExplanation:\nFresh impact craters on solid surfaces typically have ejecta (material ejected from the impact site) and raised rims (",
+  "ttft_ms": 496.6
+ },
+ {
+  "i": 153,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. waves",
+  "ttft_ms": 282.61
+ },
+ {
+  "i": 154,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. International society consists of a constellation of sovereign States and other international organizations, which are dispersed in a rather horizontal order of authority.",
+  "ttft_ms": 738.73
+ },
+ {
+  "i": 155,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "The correct answer is B. 4%. According to the World Bank's 2020 Global Poverty Report, about 4% of the world's",
+  "ttft_ms": 367.36
+ },
+ {
+  "i": 156,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Top to bottom",
+  "ttft_ms": 281.6
+ },
+ {
+  "i": 157,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Wrong, Not wrong",
+  "ttft_ms": 882.57
+ },
+ {
+  "i": 158,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "To solve this, we can use Fermat's Little Theorem, which states that if \\( p \\) is a prime number and \\( a \\) is",
+  "ttft_ms": 385.96
+ },
+ {
+  "i": 159,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Financial gain\n\nThe passage from Bartholomew de las Casas describes the motivations of the Spanish conquistadors in terms of financial gain. He",
+  "ttft_ms": 4001.14
+ },
+ {
+  "i": 160,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. increasing the surface area of the small intestine",
+  "ttft_ms": 587.1
+ },
+ {
+  "i": 161,
+  "pred": "None",
+  "gold": "B",
+  "ok": false,
+  "gen": "To determine the frictional force experienced by a block of the same material with half the height and twice the length, we need to consider the relationship between the dimensions",
+  "ttft_ms": 611.25
+ },
+ {
+  "i": 162,
+  "pred": "None",
+  "gold": "B",
+  "ok": false,
+  "gen": "To solve this problem, we need to understand the relationship between the velocity, mass, and electric field in the context of the particle's motion. The key is",
+  "ttft_ms": 583.97
+ },
+ {
+  "i": 163,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Uracil",
+  "ttft_ms": 664.4
+ },
+ {
+  "i": 164,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Thymine",
+  "ttft_ms": 324.4
+ },
+ {
+  "i": 165,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Identifying a student to be Ethan's partner and participate in center time with him",
+  "ttft_ms": 810.1
+ },
+ {
+  "i": 166,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. HClO < H2SeO3 < HBrO < H2SO3",
+  "ttft_ms": 723.6
+ },
+ {
+  "i": 167,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. To limit workers' rights\n\nExplanation: An organizational structure is designed to coordinate people and resources, organise lines of communication, and formalise authority. It",
+  "ttft_ms": 414.87
+ },
+ {
+  "i": 168,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "Australia has in common with the rest of the world during the Holocene epoch is:\n\nC. a growth in cultural diversity\n\nThe Holocene epoch is characterized by",
+  "ttft_ms": 498.08
+ },
+ {
+  "i": 169,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Olympus",
+  "ttft_ms": 387.33
+ },
+ {
+  "i": 170,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. A round-off error occurred.\n\nExplanation: In binary representation, the maximum value that can be represented with 3 bits is 7 (111",
+  "ttft_ms": 746.82
+ },
+ {
+  "i": 171,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. Thymine dimers",
+  "ttft_ms": 713.69
+ },
+ {
+  "i": 172,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. American rejection of Enlightenment ideals\n\nThe passage discusses the Zenger case and Andrew Hamilton's successful defense of a newspaper editor. The case is presented as a",
+  "ttft_ms": 3199.1
+ },
+ {
+  "i": 173,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C. balancing selection.\n\nThis phenomenon is known as the \"balancing selection\" or \"balancing polymorphism\" in evolutionary biology. It occurs when a population",
+  "ttft_ms": 692.48
+ },
+ {
+  "i": 174,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Grouping people according to their psychological characteristics, values, and lifestyles.",
+  "ttft_ms": 449.45
+ },
+ {
+  "i": 175,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "The correct answer is B. 60 burial mounds; 2,000. The Cahokia civilization, located in what is now Illinois,",
+  "ttft_ms": 702.06
+ },
+ {
+  "i": 176,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To solve the equation 24 = 2p, we need to isolate the variable p. We can do this by dividing both sides of the equation by",
+  "ttft_ms": 418.99
+ },
+ {
+  "i": 177,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Benzodiazepines (Diazepam, Alprazolam)",
+  "ttft_ms": 636.48
+ },
+ {
+  "i": 178,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "The correct answer is B. the lifestyle practice of shopping in peer groups.",
+  "ttft_ms": 659.52
+ },
+ {
+  "i": 179,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Working as a system",
+  "ttft_ms": 321.37
+ },
+ {
+  "i": 180,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Ganesha",
+  "ttft_ms": 364.43
+ },
+ {
+  "i": 181,
+  "pred": "None",
+  "gold": "B",
+  "ok": false,
+  "gen": "To determine the amount of depreciation Baker can deduct in the current year, we need to calculate the depreciation for the first three years and then subtract the depreciation for the",
+  "ttft_ms": 1229.7
+ },
+ {
+  "i": 182,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Only I is correct.\n\nExplanation:\nThe correct answer is B. I and II are correct. \n\nAn increase in the price level reduces total spending in",
+  "ttft_ms": 682.24
+ },
+ {
+  "i": 183,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. UNIX",
+  "ttft_ms": 489.09
+ },
+ {
+  "i": 184,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A. A decrease in partial pressure of carbon dioxide and an increase in concentration of hydrogen ions",
+  "ttft_ms": 913.17
+ },
+ {
+  "i": 185,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. primary succession",
+  "ttft_ms": 425.92
+ },
+ {
+  "i": 186,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C. Lateral sinus thrombosis",
+  "ttft_ms": 1413.24
+ },
+ {
+  "i": 187,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. tension.",
+  "ttft_ms": 391.65
+ },
+ {
+  "i": 188,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "The correct answer is A. the rate of muscle lactate production and the rate of muscle lactate efflux.",
+  "ttft_ms": 663.57
+ },
+ {
+  "i": 189,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. symbol",
+  "ttft_ms": 228.25
+ },
+ {
+  "i": 190,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. In ancient Rome, religious worship was the source of much social tension and turmoil.\n\nThis question is based on the following information:\nEdward Gibbon, The",
+  "ttft_ms": 1285.52
+ },
+ {
+  "i": 191,
+  "pred": "None",
+  "gold": "B",
+  "ok": false,
+  "gen": "To solve this problem, we need to use the concept of thin film interference, specifically the condition for constructive interference, which occurs when the path difference between the two",
+  "ttft_ms": 852.3
+ },
+ {
+  "i": 192,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Unit price elasticity of demand.\n\nThis is because the elasticity of demand is calculated as the percentage change in quantity demanded divided by the percentage change in price.",
+  "ttft_ms": 579.42
+ },
+ {
+  "i": 193,
+  "pred": "None",
+  "gold": "B",
+  "ok": false,
+  "gen": "To solve this problem, we need to use the concept of length contraction in special relativity. According to the observer on Earth, the two spaceships approach each",
+  "ttft_ms": 1594.93
+ },
+ {
+  "i": 194,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "The correct answer is D. Griswold v. Connecticut and Roe v. Wade.\n\nThese two cases are significant in the history of privacy rights in the",
+  "ttft_ms": 602.91
+ },
+ {
+  "i": 195,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Uracil",
+  "ttft_ms": 569.96
+ },
+ {
+  "i": 196,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "The correct answer is B. The so-called Lotus principle is that States are free to choose the Court that they will submit their disputes.",
+  "ttft_ms": 1287.06
+ },
+ {
+  "i": 197,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. In faith in God",
+  "ttft_ms": 397.41
+ },
+ {
+  "i": 198,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C. an increase in venous pressure and an equal but opposite decrease in arterial pressure",
+  "ttft_ms": 911.36
+ },
+ {
+  "i": 199,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. The primary transcripts of many genes can be spliced in various ways to produce different mRNAs, a process known as alternative RNA splicing.",
+  "ttft_ms": 724.89
+ },
+ {
+  "i": 200,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Wrong, Not wrong",
+  "ttft_ms": 1069.12
+ },
+ {
+  "i": 201,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C. The ATC curve intersects the MC curve at the minimum point of the MC curve.\n\nExplanation:\nThe average total cost (ATC) curve and the",
+  "ttft_ms": 704.87
+ },
+ {
+  "i": 202,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Laozi",
+  "ttft_ms": 372.04
+ },
+ {
+  "i": 203,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "The frequency of the next higher harmonic for a pipe closed at one end and open at the other is twice the fundamental frequency. Therefore, the frequency of the next",
+  "ttft_ms": 590.39
+ },
+ {
+  "i": 204,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. It is expected that couples will engage in sex with the same partners on several occasions.",
+  "ttft_ms": 721.35
+ },
+ {
+  "i": 205,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To solve this problem, we can use the Ideal Gas Law, which states that \\( PV = nRT \\), where \\( P \\) is the pressure,",
+  "ttft_ms": 1118.1
+ },
+ {
+  "i": 206,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. gamma rays",
+  "ttft_ms": 330.98
+ },
+ {
+  "i": 207,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. active/passive euthanasia",
+  "ttft_ms": 479.65
+ },
+ {
+  "i": 208,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Active government ownership and direction of production.",
+  "ttft_ms": 629.71
+ },
+ {
+  "i": 209,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. (i) and (iii) only\n\nExplanation:\n(i) The acf (autocorrelation function) and pacf (partial autocor",
+  "ttft_ms": 1080.15
+ },
+ {
+  "i": 210,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. 0.100 M NaCl",
+  "ttft_ms": 578.78
+ },
+ {
+  "i": 211,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Lincoln favored the exclusion of slavery from any of the new territories.\n\nThis question is based on the following information:\n\"In one view the slaveholders have a",
+  "ttft_ms": 2201.51
+ },
+ {
+  "i": 212,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Conditional (or hypothetical)\n\nThe statement \"The minor premise must affirm the antecedent or deny the consequent\" is a requirement for conditional arguments,",
+  "ttft_ms": 503.32
+ },
+ {
+  "i": 213,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Three-step.",
+  "ttft_ms": 467.89
+ },
+ {
+  "i": 214,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B.",
+  "ttft_ms": 1866.87
+ },
+ {
+  "i": 215,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C. Interchanging line 6 and line 7\n\nExplanation: The code currently adds the value of each element in the list to the sum and then divides",
+  "ttft_ms": 1559.42
+ },
+ {
+  "i": 216,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. The Council of Europe was established in 1949 and consists of 47 member states",
+  "ttft_ms": 765.34
+ },
+ {
+  "i": 217,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "The correct answer is B. 2,3,4",
+  "ttft_ms": 325.3
+ },
+ {
+  "i": 218,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "The correct answer is D. All of the above. The \"underclass\" concept, often associated with the sociologist C. Wright Mills, refers to a",
+  "ttft_ms": 588.62
+ },
+ {
+  "i": 219,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Transnational organized criminal activities consist of profit driven crime for a high level return that may result in the subversion or infiltration of the legal economy through the",
+  "ttft_ms": 1689.58
+ },
+ {
+  "i": 220,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. All tissue proteins undergo catabolism at more or less the same rate.",
+  "ttft_ms": 667.25
+ },
+ {
+  "i": 221,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Equal to the block’s gravitational potential energy when it was released, because the gain in kinetic energy compensates for the mechanical energy lost to thermal energy on",
+  "ttft_ms": 1329.52
+ },
+ {
+  "i": 222,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Oxford",
+  "ttft_ms": 226.36
+ },
+ {
+  "i": 223,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Quicksort",
+  "ttft_ms": 550.88
+ },
+ {
+  "i": 224,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Life review",
+  "ttft_ms": 327.84
+ },
+ {
+  "i": 225,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. An American proclamation that China should be open to US trade and missionaries",
+  "ttft_ms": 610.58
+ },
+ {
+  "i": 226,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. False, False\n\nExplanation:\nStatement 1 is incorrect. Residual networks (ResNets) do not eschew max pooling in favor of",
+  "ttft_ms": 553.86
+ },
+ {
+  "i": 227,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Determining the likelihood that the photo was taken at a particular public event\n\nAnalyzing metadata such as the date and geographic location where the photo was taken",
+  "ttft_ms": 1084.35
+ },
+ {
+  "i": 228,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Wrong, Not wrong",
+  "ttft_ms": 786.54
+ },
+ {
+  "i": 229,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. To provide an opportunity to surpass competitors.\n\nMarket segmentation is a process of dividing a market into smaller groups of customers who have similar needs, preferences, and",
+  "ttft_ms": 544.35
+ },
+ {
+  "i": 230,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Receiver site",
+  "ttft_ms": 319.34
+ },
+ {
+  "i": 231,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. an external locus of control.\n\nLearned helplessness is a psychological concept that refers to the feeling of being unable to control or change one's own fate",
+  "ttft_ms": 395.36
+ },
+ {
+  "i": 232,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. acrosomal reaction",
+  "ttft_ms": 539.92
+ },
+ {
+  "i": 233,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To solve this problem, we need to use Bayes' theorem. Let's break it down step by step:\n\n1. **Identify the given probabilities:",
+  "ttft_ms": 1210.33
+ },
+ {
+  "i": 234,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Professional, Organizational, Personal, Organizational",
+  "ttft_ms": 969.27
+ },
+ {
+  "i": 235,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D.",
+  "ttft_ms": 386.71
+ },
+ {
+  "i": 236,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Bounded rationality",
+  "ttft_ms": 401.73
+ },
+ {
+  "i": 237,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. separation of sister chromatids occurs during the second division, whereas in mitosis separation of sister chromatids occurs during the first division",
+  "ttft_ms": 890.34
+ },
+ {
+  "i": 238,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. The Senate as a whole has confirmation powers that the House does not have.\n\nExplanation: The Senate has confirmation powers over appointments to the Supreme Court, which",
+  "ttft_ms": 963.01
+ },
+ {
+  "i": 239,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Examination of sputum for eosinophils",
+  "ttft_ms": 1193.15
+ },
+ {
+  "i": 240,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Wrong, Not wrong",
+  "ttft_ms": 836.66
+ },
+ {
+  "i": 241,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Children",
+  "ttft_ms": 348.91
+ },
+ {
+  "i": 242,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D. none of the above",
+  "ttft_ms": 702.09
+ },
+ {
+  "i": 243,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. The Squeegee Guy",
+  "ttft_ms": 419.63
+ },
+ {
+  "i": 244,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. To operate the organisation's status system.",
+  "ttft_ms": 678.64
+ },
+ {
+  "i": 245,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. American confidence in a time of prosperity\n\nKennedy's statement reflects a sense of optimism and confidence in the United States during a time of prosperity and technological",
+  "ttft_ms": 2285.25
+ },
+ {
+  "i": 246,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "The correct answer is C. v = sqrt(2GM/R).",
+  "ttft_ms": 655.44
+ },
+ {
+  "i": 247,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Ownership of processed data and costs of data migrations.",
+  "ttft_ms": 655.13
+ },
+ {
+  "i": 248,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. All of the above.",
+  "ttft_ms": 760.41
+ },
+ {
+  "i": 249,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "The correct answer is B. `abcd`\n\nExplanation:\nIn Python, when you print a tuple, it will print all the elements in the tuple, separated by",
+  "ttft_ms": 725.16
+ },
+ {
+  "i": 250,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. irrelevant conclusion",
+  "ttft_ms": 330.24
+ },
+ {
+  "i": 251,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "To answer these questions, let's break down the information provided:\n\n1. **Which organelle produces ATP?**\n   - The correct answer is B.",
+  "ttft_ms": 726.03
+ },
+ {
+  "i": 252,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "The correct answer is D. (i), (ii), (iii), and (iv).\n\nExplanation:\n- **i) Take logarithms of each of the",
+  "ttft_ms": 946.9
+ },
+ {
+  "i": 253,
+  "pred": "D",
+  "gold": "B",
+  "ok": false,
+  "gen": "D. all of the above",
+  "ttft_ms": 609.72
+ },
+ {
+  "i": 254,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. The New Left.\n\nThe Port Huron Statement is a significant document that reflects the sentiments and aspirations of the New Left movement in the United States. The",
+  "ttft_ms": 2124.83
+ },
+ {
+  "i": 255,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. P(A and B) = P(A) · P(B)\n\nTwo events A and B are independent if the occurrence of one does not affect the probability",
+  "ttft_ms": 679.96
+ },
+ {
+  "i": 256,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Intangibility, value, variability, inseparability, and profitability.",
+  "ttft_ms": 897.43
+ },
+ {
+  "i": 257,
+  "pred": "D",
+  "gold": "B",
+  "ok": false,
+  "gen": "D. Gerontological",
+  "ttft_ms": 521.96
+ },
+ {
+  "i": 258,
+  "pred": "None",
+  "gold": "A",
+  "ok": false,
+  "gen": "To determine the validity of the argument using indirect truth tables, we need to analyze the logical structure of the argument step by step.\n\nThe argument is:\n1.",
+  "ttft_ms": 1082.86
+ },
+ {
+  "i": 259,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "To determine the greatest common divisor (GCD) of \\(2^{1001} - 1\\) and \\(2^{1012}",
+  "ttft_ms": 528.67
+ },
+ {
+  "i": 260,
+  "pred": "None",
+  "gold": "A",
+  "ok": false,
+  "gen": "The characteristic of a ring is the number of elements in the ring. In this case, the ring is \\( \\mathbb{Z}_3 \\times \\",
+  "ttft_ms": 389.78
+ },
+ {
+  "i": 261,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "The correct answer is C. GDP measures income earned by the factors of production plus depreciation and indirect business taxes.\n\nGDP stands for Gross Domestic Product, which is",
+  "ttft_ms": 623.22
+ },
+ {
+  "i": 262,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C. in many cases, phenotype is not merely determined by genotype, but by the environment as well.\n\nThis answer reflects the understanding that natural selection is influenced by",
+  "ttft_ms": 1230.78
+ },
+ {
+  "i": 263,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Photosynthesis requires light, CO2, and water.",
+  "ttft_ms": 330.9
+ },
+ {
+  "i": 264,
+  "pred": "None",
+  "gold": "A",
+  "ok": false,
+  "gen": "Détente, or the relaxing of tensions coupled with firm guarantees of mutual security, represented a shift in American foreign policy toward the communist world ushered in by",
+  "ttft_ms": 448.65
+ },
+ {
+  "i": 265,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D. all of the above.\n\nExplanation: All of the options listed are examples of morally impossible rules. Lying to prevent a catastrophe would be considered a lie",
+  "ttft_ms": 596.87
+ },
+ {
+  "i": 266,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A buffer is a sequential segment of the memory location that is allocated for containing some data such as a character string or an array of integers. Therefore, the correct",
+  "ttft_ms": 386.45
+ },
+ {
+  "i": 267,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "The correct answer is B. appeal to compassion.",
+  "ttft_ms": 390.01
+ },
+ {
+  "i": 268,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. increasing awareness and importance of individual identity",
+  "ttft_ms": 544.35
+ },
+ {
+  "i": 269,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B.",
+  "ttft_ms": 377.59
+ },
+ {
+  "i": 270,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. arguing that a claim must be true because there is no evidence that it is false.",
+  "ttft_ms": 849.57
+ },
+ {
+  "i": 271,
+  "pred": "None",
+  "gold": "B",
+  "ok": false,
+  "gen": "To solve this problem, we need to understand the probability distribution of the random variables X and Y. Given that the probability that X = n is 1/",
+  "ttft_ms": 815.32
+ },
+ {
+  "i": 272,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "The correct answer is B. long-distance trade of exotic raw materials.",
+  "ttft_ms": 586.88
+ },
+ {
+  "i": 273,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. It specifies the poverty line at a level set in the 1960s and adjusted since to reflect inflation.",
+  "ttft_ms": 1020.21
+ },
+ {
+  "i": 274,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D. Message-oriented",
+  "ttft_ms": 383.76
+ },
+ {
+  "i": 275,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Thymine",
+  "ttft_ms": 329.63
+ },
+ {
+  "i": 276,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To solve this problem, we need to use the principle of continuity for fluid flow, which states that the volume flow rate remains constant throughout the pipe. The volume",
+  "ttft_ms": 606.51
+ },
+ {
+  "i": 277,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. violet",
+  "ttft_ms": 268.72
+ },
+ {
+  "i": 278,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Failure to notify a taxpayer about an inadvertent error on a tax return filed 10 years ago.",
+  "ttft_ms": 895.13
+ },
+ {
+  "i": 279,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Uracil",
+  "ttft_ms": 333.86
+ },
+ {
+  "i": 280,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Comparing the TTL values of the actual and spoofed addresses",
+  "ttft_ms": 613.73
+ },
+ {
+  "i": 281,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "The correct answer is B. 2CO2 and 16ATP.",
+  "ttft_ms": 625.18
+ },
+ {
+  "i": 282,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. voltage difference across part or all of your body.",
+  "ttft_ms": 375.19
+ },
+ {
+  "i": 283,
+  "pred": "D",
+  "gold": "A",
+  "ok": false,
+  "gen": "D. both A and B\n\nExplanation: The major premise states that either you will do well on the test or you will be mad. If you do not",
+  "ttft_ms": 676.67
+ },
+ {
+  "i": 284,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "To find the potential difference between the origin and the point (3, 4), we need to integrate the electric field equation from 0 to 3 meters",
+  "ttft_ms": 711.95
+ },
+ {
+  "i": 285,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Thymine",
+  "ttft_ms": 434.94
+ },
+ {
+  "i": 286,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. When our body responds to an external event, our brain interprets the biological changes as a specific emotion.\n\nThis summary aligns with Stanley Schacter's",
+  "ttft_ms": 886.42
+ },
+ {
+  "i": 287,
+  "pred": "None",
+  "gold": "B",
+  "ok": false,
+  "gen": "To determine the fraction of the disk's total kinetic energy that is rotational kinetic energy, we need to consider the energy transformation during the rolling motion.\n\n1. **",
+  "ttft_ms": 545.25
+ },
+ {
+  "i": 288,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "The correct answer is B. \"It is not a social rule.\"",
+  "ttft_ms": 701.82
+ },
+ {
+  "i": 289,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. 2-3 day basis",
+  "ttft_ms": 612.44
+ },
+ {
+  "i": 290,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. real",
+  "ttft_ms": 273.43
+ },
+ {
+  "i": 291,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. is accompanied by a slight decrease in body core temperature.",
+  "ttft_ms": 590.22
+ },
+ {
+  "i": 292,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Price bonding.",
+  "ttft_ms": 492.64
+ },
+ {
+  "i": 293,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. 2",
+  "ttft_ms": 277.29
+ },
+ {
+  "i": 294,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C. Kali",
+  "ttft_ms": 325.36
+ },
+ {
+  "i": 295,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. It is impossible to calculate all the consequences of one's acts.",
+  "ttft_ms": 628.56
+ },
+ {
+  "i": 296,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Appellate trials are usually jury trials.",
+  "ttft_ms": 558.18
+ },
+ {
+  "i": 297,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Competitor-oriented approach.",
+  "ttft_ms": 369.49
+ },
+ {
+  "i": 298,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D. All of these options.",
+  "ttft_ms": 659.12
+ },
+ {
+  "i": 299,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Strong organizational culture is correlated with high levels of job performance.",
+  "ttft_ms": 538.6
+ },
+ {
+  "i": 300,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Medium-term",
+  "ttft_ms": 392.57
+ },
+ {
+  "i": 301,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Pith; secondary xylem; primary xylem; vascular cambium; secondary phloem; primary phloem; cortex",
+  "ttft_ms": 1639.39
+ },
+ {
+  "i": 302,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Fair Labor Standards Act of 1961",
+  "ttft_ms": 595.38
+ },
+ {
+  "i": 303,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B.",
+  "ttft_ms": 2066.46
+ },
+ {
+  "i": 304,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Hygiene and social distancing",
+  "ttft_ms": 400.67
+ },
+ {
+  "i": 305,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D. evaluate the effects of history and maturation.",
+  "ttft_ms": 381.73
+ },
+ {
+  "i": 306,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Autocracy",
+  "ttft_ms": 348.5
+ },
+ {
+  "i": 307,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Cliff-side nesting confers a higher fitness than does beach nesting.",
+  "ttft_ms": 1183.64
+ },
+ {
+  "i": 308,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Begging the question",
+  "ttft_ms": 328.35
+ },
+ {
+  "i": 309,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "The correct answer is B. cortisol. During exercise, cortisol is released by the body to increase the breakdown of glycogen in muscles to provide energy for the muscles",
+  "ttft_ms": 281.33
+ },
+ {
+  "i": 310,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "To determine the correct answer, let's analyze the statements one by one:\n\nStatement 1: \"Every solvable group is of prime-power order.\"\n- A",
+  "ttft_ms": 439.63
+ },
+ {
+  "i": 311,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. states' fears of an overpowerful national government",
+  "ttft_ms": 569.67
+ },
+ {
+  "i": 312,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "The correct answer is B. 4. In Python 3, the right shift operator (>>) is used to shift the bits of an integer to the right",
+  "ttft_ms": 318.1
+ },
+ {
+  "i": 313,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "The correct answer is C. Mis-reporting of low energy content foods would not be identified.\n\nThe doubly labeled water technique is a method used to measure the energy",
+  "ttft_ms": 632.38
+ },
+ {
+  "i": 314,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. These patients are more likely to get urinary tract infections if their blood sugar is unstable.\n\nExplanation: Diabetes can lead to poor blood circulation and nerve damage,",
+  "ttft_ms": 650.43
+ },
+ {
+  "i": 315,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. there are inequalities that are not to the benefit of all.",
+  "ttft_ms": 688.98
+ },
+ {
+  "i": 316,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. increase the significance of their election results",
+  "ttft_ms": 575.82
+ },
+ {
+  "i": 317,
+  "pred": "None",
+  "gold": "B",
+  "ok": false,
+  "gen": "To determine the fraction of the cube's volume that floats above the surface of the fluid, we need to compare the density of the cube to the density of the",
+  "ttft_ms": 788.73
+ },
+ {
+  "i": 318,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C. The human side of the equation",
+  "ttft_ms": 391.0
+ },
+ {
+  "i": 319,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. The employee's beliefs about the inherent (intrinsic) value of the work itself.",
+  "ttft_ms": 662.9
+ },
+ {
+  "i": 320,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Stage 2 sleep",
+  "ttft_ms": 323.8
+ },
+ {
+  "i": 321,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. while taking a reflective attitude toward life is interesting and even sometimes important, most of what makes life worth living is not worth examining.\n\nSocrates' claim",
+  "ttft_ms": 1326.22
+ },
+ {
+  "i": 322,
+  "pred": "D",
+  "gold": "B",
+  "ok": false,
+  "gen": "D. Pope John Paul II's",
+  "ttft_ms": 457.2
+ },
+ {
+  "i": 323,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Rate = k[A]^2",
+  "ttft_ms": 826.47
+ },
+ {
+  "i": 324,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Yes, because most Democrats advocated lower duties\n\nThe Underwood-Simmons Tariff of 1913 was indeed generally endorsed by Progressives",
+  "ttft_ms": 2471.6
+ },
+ {
+  "i": 325,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. The lack of new land to assign to well-connected Spaniards and conquistadores",
+  "ttft_ms": 3670.18
+ },
+ {
+  "i": 326,
+  "pred": "None",
+  "gold": "A",
+  "ok": false,
+  "gen": "To solve this problem, we need to determine the linear transformation \\( f \\) from the plane to the real numbers. A linear transformation can be represented by a",
+  "ttft_ms": 560.82
+ },
+ {
+  "i": 327,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. The Department of Justice",
+  "ttft_ms": 374.25
+ },
+ {
+  "i": 328,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Dopamine and serotonin.",
+  "ttft_ms": 970.71
+ },
+ {
+  "i": 329,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Wrong, Not wrong",
+  "ttft_ms": 892.77
+ },
+ {
+  "i": 330,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "To determine how long it will take for two-thirds of a radioactive substance to decay, we need to use the concept of half-life. The half-life is the",
+  "ttft_ms": 556.78
+ },
+ {
+  "i": 331,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. 5′-G-U-A-3′",
+  "ttft_ms": 1010.94
+ },
+ {
+  "i": 332,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. Depending on how the rubber band is initially wound, more or less potential energy can be transferred from the rubber band to the kinetic energy of the cart’s",
+  "ttft_ms": 1559.66
+ },
+ {
+  "i": 333,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. electing a new state governor",
+  "ttft_ms": 437.38
+ },
+ {
+  "i": 334,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. make",
+  "ttft_ms": 285.02
+ },
+ {
+  "i": 335,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "To answer these questions, let's analyze each statement one by one:\n\n1. **Which organelle produces ATP?**\n   - The correct answer is B",
+  "ttft_ms": 712.59
+ },
+ {
+  "i": 336,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Subtracting the mean of each entity away from each observation on that entity",
+  "ttft_ms": 655.0
+ },
+ {
+  "i": 337,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "The correct answer is B. 1,3.",
+  "ttft_ms": 320.58
+ },
+ {
+  "i": 338,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. He cannot date her because she was once his psychiatric patient\n\nThe correct answer is D. The medical student should not date the former patient because they were",
+  "ttft_ms": 1336.94
+ },
+ {
+  "i": 339,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To determine the correct answer, let's analyze each statement:\n\n1. **Statement 1: Every field is also a ring.**\n   - A field is",
+  "ttft_ms": 446.07
+ },
+ {
+  "i": 340,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "The correct answer is D. During the time an aircraft produces a sonic boom, the aircraft is breaking the sound barrier. A sonic boom occurs when an object traveling",
+  "ttft_ms": 379.26
+ },
+ {
+  "i": 341,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C. Both of these.",
+  "ttft_ms": 374.28
+ },
+ {
+  "i": 342,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. moral morbidity.",
+  "ttft_ms": 319.4
+ },
+ {
+  "i": 343,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Movement without resistance, stretching at the end of range.",
+  "ttft_ms": 575.57
+ },
+ {
+  "i": 344,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "The correct answer is:\n\nD. All of these options.\n\nExplanation:\n- Biological weapons can indeed weaken or kill, but they are often associated with the use of",
+  "ttft_ms": 1721.12
+ },
+ {
+  "i": 345,
+  "pred": "None",
+  "gold": "A",
+  "ok": false,
+  "gen": "To convert 4.95 to a mixed number or fraction, we can express it as 4 + 0.95. The decimal 0",
+  "ttft_ms": 592.35
+ },
+ {
+  "i": 346,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "The correct answer is C. They infect a wide range of domestic animals and so contaminate meat. This is because the astrovirus family was only recently",
+  "ttft_ms": 634.92
+ },
+ {
+  "i": 347,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. Nearly all of the enzyme molecules are interacting with acetaldehyde molecules.\n\nThis is because at the maximal rate of reaction, the enzyme is utilizing all of",
+  "ttft_ms": 1030.24
+ },
+ {
+  "i": 348,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A. U.S. involvement in Vietnam and flag burning",
+  "ttft_ms": 1992.1
+ },
+ {
+  "i": 349,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "The correct answer is A. Moche. The Moche developed one of the earliest kingdoms in South America, reaching its height at around AD 400",
+  "ttft_ms": 622.28
+ },
+ {
+  "i": 350,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. contraction of contralateral limb musculature.",
+  "ttft_ms": 522.08
+ },
+ {
+  "i": 351,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Social licence to operate",
+  "ttft_ms": 450.38
+ },
+ {
+  "i": 352,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. a and b only",
+  "ttft_ms": 360.96
+ },
+ {
+  "i": 353,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C. admissible, but the jury must be cautioned that it does not pertain to felony murder or second-degree murder.\n\nThe husband's actions constitute murder in",
+  "ttft_ms": 2760.34
+ },
+ {
+  "i": 354,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Inappropriately makes proximity morally important.",
+  "ttft_ms": 642.7
+ },
+ {
+  "i": 355,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C. It seems to be true for homosexuals but not for heterosexuals.",
+  "ttft_ms": 752.36
+ },
+ {
+  "i": 356,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C. plateau",
+  "ttft_ms": 319.56
+ },
+ {
+  "i": 357,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Thymine",
+  "ttft_ms": 457.18
+ },
+ {
+  "i": 358,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "The correct answer is C. Ann Landers. Ann Landers is the twin sister of the 'Dear Abby' columnist Abigail Van Buren.",
+  "ttft_ms": 335.58
+ },
+ {
+  "i": 359,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. cannot pay creditors in full after realisation of its assets",
+  "ttft_ms": 390.53
+ },
+ {
+  "i": 360,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. work initially with the most differentiated family member.\n\nThis approach focuses on understanding the dynamics of the family system and identifying the most stable and differentiated member, which",
+  "ttft_ms": 725.85
+ },
+ {
+  "i": 361,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. both A and B",
+  "ttft_ms": 699.35
+ },
+ {
+  "i": 362,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. It used information obtained through experimentation to conceptualize the universe.\n\nThe passage describes Galileo's observations of celestial bodies and his use of telescopic instruments to",
+  "ttft_ms": 2629.65
+ },
+ {
+  "i": 363,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. MRI",
+  "ttft_ms": 383.69
+ },
+ {
+  "i": 364,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Interest, Uncertain, Assured, Tangible assets",
+  "ttft_ms": 722.35
+ },
+ {
+  "i": 365,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Alternating bands of rising and falling air at different latitudes.",
+  "ttft_ms": 619.49
+ },
+ {
+  "i": 366,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. From DNA to RNA to protein",
+  "ttft_ms": 328.84
+ },
+ {
+  "i": 367,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "The correct answer is B. 830.",
+  "ttft_ms": 398.56
+ },
+ {
+  "i": 368,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D. all of the above.",
+  "ttft_ms": 478.35
+ },
+ {
+  "i": 369,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. rules and expectations about interaction that regulate social life",
+  "ttft_ms": 500.48
+ },
+ {
+  "i": 370,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. A Trojan horse",
+  "ttft_ms": 282.63
+ },
+ {
+  "i": 371,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. \"brinkmanship.\"\n\nThe policy of \"brinkmanship\" refers to a strategy of brinkmanship, which involves using aggressive or provocative actions to deter",
+  "ttft_ms": 440.5
+ },
+ {
+  "i": 372,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Meconium aspiration syndrome",
+  "ttft_ms": 2638.82
+ },
+ {
+  "i": 373,
+  "pred": "None",
+  "gold": "A",
+  "ok": false,
+  "gen": "Durkheim defined social facts as:\n\nA. ways of acting, thinking, and feeling that are collective and social in origin\n\nThis aligns with the concept",
+  "ttft_ms": 688.29
+ },
+ {
+  "i": 374,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Extra-territorial abduction gives rise to the abductor's liability but does not lead to a stay of proceedings.",
+  "ttft_ms": 754.47
+ },
+ {
+  "i": 375,
+  "pred": "None",
+  "gold": "A",
+  "ok": false,
+  "gen": "To solve the equation \\( \\frac{z}{7.74} = 6.73 \\), we need to isolate \\( z \\). We",
+  "ttft_ms": 555.42
+ },
+ {
+  "i": 376,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "The correct answer is:\n\nD. Pompe disease\n\nRecombinant alpha-iduronidase is used to treat Pompe disease, which is a genetic disorder that",
+  "ttft_ms": 384.66
+ },
+ {
+  "i": 377,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. shared equally among the population.",
+  "ttft_ms": 395.5
+ },
+ {
+  "i": 378,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. is also called current-dollar GDP.",
+  "ttft_ms": 389.95
+ },
+ {
+  "i": 379,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "The correct answer is C. 1:9:35:82:120:120:82:35:9",
+  "ttft_ms": 1148.29
+ },
+ {
+  "i": 380,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "The correct answer is B. a\n\nExplanation:\nIn Python, the index operator `[-1]` is used to access the last element in a sequence.",
+  "ttft_ms": 273.4
+ },
+ {
+  "i": 381,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Nagel claims that most skeptical arguments are based on linguistic confusions.",
+  "ttft_ms": 394.55
+ },
+ {
+  "i": 382,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "The correct answer is B. 4Z, 2 + 4Z.\n\nExplanation:\n- 4Z is the subgroup of 2Z consisting of",
+  "ttft_ms": 376.83
+ },
+ {
+  "i": 383,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C. Lactiferous sinus",
+  "ttft_ms": 445.15
+ },
+ {
+  "i": 384,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. obtains its energy by oxidizing organic molecules",
+  "ttft_ms": 498.52
+ },
+ {
+  "i": 385,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. the separation of church and state",
+  "ttft_ms": 1857.34
+ },
+ {
+  "i": 386,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. All of the above",
+  "ttft_ms": 367.96
+ },
+ {
+  "i": 387,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Digambara",
+  "ttft_ms": 326.8
+ },
+ {
+  "i": 388,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. light pink below the mucogingival junction and red above it.",
+  "ttft_ms": 714.46
+ },
+ {
+  "i": 389,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. does not have any official secrets in its government",
+  "ttft_ms": 775.61
+ },
+ {
+  "i": 390,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. Solid",
+  "ttft_ms": 373.45
+ },
+ {
+  "i": 391,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B.",
+  "ttft_ms": 1084.1
+ },
+ {
+  "i": 392,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. taxes will have to be raised.",
+  "ttft_ms": 441.2
+ },
+ {
+  "i": 393,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. blue",
+  "ttft_ms": 314.17
+ },
+ {
+  "i": 394,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. A point mutation.\n\nThe sickle-cell mutation is a point mutation where a single nucleotide changes, resulting in a substitution of a glutamic acid (",
+  "ttft_ms": 279.81
+ },
+ {
+  "i": 395,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "The correct answer is C. Capacitance.",
+  "ttft_ms": 397.32
+ },
+ {
+  "i": 396,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. I and II only\n\nExplanation: A president typically experiences a reduction in political power in the final two years of their second term due to the \"pres",
+  "ttft_ms": 782.91
+ },
+ {
+  "i": 397,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B.",
+  "ttft_ms": 614.41
+ },
+ {
+  "i": 398,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. Gatekeepers.",
+  "ttft_ms": 437.64
+ },
+ {
+  "i": 399,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. all of the above",
+  "ttft_ms": 742.31
+ },
+ {
+  "i": 400,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "The correct answer is B. 2.5 children per woman.",
+  "ttft_ms": 493.8
+ },
+ {
+  "i": 401,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Killing of civilians during wartime\n\nThe passages describe the Cawnpore massacres as a war of religion, race, and revenge, involving the killing",
+  "ttft_ms": 3813.02
+ },
+ {
+  "i": 402,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. participation",
+  "ttft_ms": 665.01
+ },
+ {
+  "i": 403,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To solve this problem, we need to understand the formula for calculating the resistance of a conductor. The resistance \\( R \\) of a conductor is given by the",
+  "ttft_ms": 563.28
+ },
+ {
+  "i": 404,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. You can't do it right",
+  "ttft_ms": 449.68
+ },
+ {
+  "i": 405,
+  "pred": "None",
+  "gold": "B",
+  "ok": false,
+  "gen": "To determine the resultant of two vectors, we need to consider the vector addition. The resultant of two vectors is the vector sum of the two vectors. The resultant",
+  "ttft_ms": 374.21
+ },
+ {
+  "i": 406,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Uracil",
+  "ttft_ms": 596.62
+ },
+ {
+  "i": 407,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. increase the price of automobiles and protect domestic producers at the expense of consumers.",
+  "ttft_ms": 704.79
+ },
+ {
+  "i": 408,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "To determine which of the given options correctly represents the addition of the integers 109 and -42 within the range of an 8-bit word,",
+  "ttft_ms": 608.51
+ },
+ {
+  "i": 409,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "The correct answer is B. About $8k.",
+  "ttft_ms": 599.59
+ },
+ {
+  "i": 410,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D. When the audience are convinced via the speech act or the securitizing actor but fail to grant that actor the special rights requested in order to address",
+  "ttft_ms": 900.66
+ },
+ {
+  "i": 411,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "The magnetogyric ratio (γ) is calculated as the product of the frequency (f) and the magnetic field strength (B0). The formula is:",
+  "ttft_ms": 970.19
+ },
+ {
+  "i": 412,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Uracil",
+  "ttft_ms": 547.97
+ },
+ {
+  "i": 413,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "Thatcher's government did not strive to achieve option C. generous financial benefits for single parents, students, and the unemployed. The government's approach was more focused on",
+  "ttft_ms": 465.79
+ },
+ {
+  "i": 414,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Electricity passes between neurons, which carries messages between one neuron and another.",
+  "ttft_ms": 684.79
+ },
+ {
+  "i": 415,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Wrong, Not wrong",
+  "ttft_ms": 750.24
+ },
+ {
+  "i": 416,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. An imagined sequence of future events",
+  "ttft_ms": 334.56
+ },
+ {
+  "i": 417,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. The marginal propensity to consume is larger.",
+  "ttft_ms": 450.96
+ },
+ {
+  "i": 418,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. To ensure best lung expansion and accuracy and consistency of readings.",
+  "ttft_ms": 749.74
+ },
+ {
+  "i": 419,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Episodic memory",
+  "ttft_ms": 333.7
+ },
+ {
+  "i": 420,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C. After several seconds, necessary for the electrons to absorb sufficient energy from the incident light, photoelectrons would be produced with a kinetic energy equal to the",
+  "ttft_ms": 1237.39
+ },
+ {
+  "i": 421,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "C. Carbon dioxide is rather soluble in water.\n\nThis is the correct answer because the solubility of carbon dioxide in water is a significant factor that affects the",
+  "ttft_ms": 1306.94
+ },
+ {
+  "i": 422,
+  "pred": "None",
+  "gold": "B",
+  "ok": false,
+  "gen": "To solve the problem, we start by using the identity for the expansion of \\((a+b+c)^3\\):\n\n\\[\n(a+b+c)^3 =",
+  "ttft_ms": 577.08
+ },
+ {
+  "i": 423,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Asp235Phe in a molecular report indicates that phenylalanine has been replaced by asparagine.\n\nExplanation:\nIn bioinformatics",
+  "ttft_ms": 587.14
+ },
+ {
+  "i": 424,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "The latching current of SCR is 20 mA. Its holding current will be 20 mA.",
+  "ttft_ms": 449.59
+ },
+ {
+  "i": 425,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B.",
+  "ttft_ms": 282.16
+ },
+ {
+  "i": 426,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "To answer these questions, let's analyze each statement one by one:\n\n1. **Which organelle produces ATP?**\n   - The correct answer is B",
+  "ttft_ms": 1035.86
+ },
+ {
+  "i": 427,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. It is possible for several legal regimes (ie foreign investment law and human rights law) to exist and develop in isolation of each other, ultimately culminating",
+  "ttft_ms": 940.7
+ },
+ {
+  "i": 428,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. The impeachment of a federal judge",
+  "ttft_ms": 598.25
+ },
+ {
+  "i": 429,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Refinement of gunpowder technologies",
+  "ttft_ms": 1733.25
+ },
+ {
+  "i": 430,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "To answer these questions, let's break down the information provided:\n\n1. **Which organelle produces ATP?**\n   - The correct answer is B.",
+  "ttft_ms": 537.75
+ },
+ {
+  "i": 431,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Cordilleran",
+  "ttft_ms": 371.57
+ },
+ {
+  "i": 432,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "The correct answer is B. 5.19 T.\n\nThe rotational correlation time (\\(\\tau_{\\text{rot}}\\)) is related to the",
+  "ttft_ms": 684.98
+ },
+ {
+  "i": 433,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Such an estimator will always be unbiased\n\nExplanation: An estimator with minimum variance is often referred to as an \"efficient\" estimator. This means that it",
+  "ttft_ms": 562.01
+ },
+ {
+  "i": 434,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. 33 1/3 rpm",
+  "ttft_ms": 511.07
+ },
+ {
+  "i": 435,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. usefulness to society.",
+  "ttft_ms": 438.17
+ },
+ {
+  "i": 436,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "The correct answer is B. Some cookies have oatmeal. If something is not a cookie and does not have chocolate chips, it doesn't have oatmeal.",
+  "ttft_ms": 1705.13
+ },
+ {
+  "i": 437,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Stratified sample\n\nA stratified sample is recommended in this scenario because it allows for the study of different groups (honors, regular, and below",
+  "ttft_ms": 573.3
+ },
+ {
+  "i": 438,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Confidentiality",
+  "ttft_ms": 319.76
+ },
+ {
+  "i": 439,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "The correct answer is B. 56. In the Data Encryption Standard (DES), the key length is 56 bits, which is the number of",
+  "ttft_ms": 361.97
+ },
+ {
+  "i": 440,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. The violent overthrow of the bourgeois by the proletariat\n\nThis question refers to the following information:\n\"The specter of Communism. All the powers of old",
+  "ttft_ms": 1693.69
+ },
+ {
+  "i": 441,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To determine the correct answer, let's analyze each statement:\n\n**Statement 1:** The derivative of the sigmoid function $\\sigma(x) = (1 + e",
+  "ttft_ms": 981.5
+ },
+ {
+  "i": 442,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. IT and computing skills",
+  "ttft_ms": 325.1
+ },
+ {
+  "i": 443,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Network or transport layer",
+  "ttft_ms": 281.41
+ },
+ {
+  "i": 444,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A. Actual parameters of the active procedures\n\nExplanation: In a typical garbage collector, the root set includes all objects that are reachable from the stack. This means",
+  "ttft_ms": 756.42
+ },
+ {
+  "i": 445,
+  "pred": "None",
+  "gold": "A",
+  "ok": false,
+  "gen": "To find the ratio of the number of toucans to the number of parrots, we need to divide the number of toucans by the number of",
+  "ttft_ms": 569.61
+ },
+ {
+  "i": 446,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. (∀x)(Ax ⊃ ~Px)",
+  "ttft_ms": 385.05
+ },
+ {
+  "i": 447,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C",
+  "ttft_ms": 4824.32
+ },
+ {
+  "i": 448,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. I only\n\nExplanation:\nGiven that \\( P^2 = P \\), we can rewrite this as \\( P^2 - P = 0 \\",
+  "ttft_ms": 770.45
+ },
+ {
+  "i": 449,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. All of the above",
+  "ttft_ms": 319.58
+ },
+ {
+  "i": 450,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. The system has infinitely many solutions.\n\nExplanation: The system of linear equations provided is inconsistent, meaning there is no solution. The system does not have infinitely",
+  "ttft_ms": 1303.91
+ },
+ {
+  "i": 451,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "To determine the validity of the argument, we need to construct a truth table for the given statements and analyze the logical structure.\n\nThe argument is:\nI ≡",
+  "ttft_ms": 1028.3
+ },
+ {
+  "i": 452,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Beta-thalassaemia",
+  "ttft_ms": 388.85
+ },
+ {
+  "i": 453,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. MgO",
+  "ttft_ms": 317.28
+ },
+ {
+  "i": 454,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Hubble Space Telescope images that resolved Pluto's disk",
+  "ttft_ms": 630.95
+ },
+ {
+  "i": 455,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. False, False\n\nThe ID3 algorithm is not guaranteed to find the optimal decision tree. It is a decision tree learning algorithm that is used for classification",
+  "ttft_ms": 580.06
+ },
+ {
+  "i": 456,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To find the area of an equilateral triangle with an inscribed circle of radius 2, we can use the relationship between the radius of the inscribed circle",
+  "ttft_ms": 513.99
+ },
+ {
+  "i": 457,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. The Vulnerability that allows “fingerprinting” & other enumeration of host information",
+  "ttft_ms": 458.41
+ },
+ {
+  "i": 458,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Both\n\nExplanation: Passive elements, also known as resistors, are those that do not actively participate in the circuit's current flow. They only resist",
+  "ttft_ms": 227.29
+ },
+ {
+  "i": 459,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. the argument from marginal cases",
+  "ttft_ms": 531.0
+ },
+ {
+  "i": 460,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B.",
+  "ttft_ms": 627.64
+ },
+ {
+  "i": 461,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To determine the conversion price, we need to understand that the conversion ratio is the ratio of the selling price to the par value. In this case, the conversion",
+  "ttft_ms": 576.06
+ },
+ {
+  "i": 462,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Informal relationships, owner and family member influence on the organisation, lack of organisational resources",
+  "ttft_ms": 796.48
+ },
+ {
+  "i": 463,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "Answer: B\n\nTo determine the correct answer, let's analyze the situation step by step:\n\n1. **Beeson's Contractual Obligation**: Beeson",
+  "ttft_ms": 1766.68
+ },
+ {
+  "i": 464,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. The adaptation of Western literary forms by non-Western authors",
+  "ttft_ms": 1726.72
+ },
+ {
+  "i": 465,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Shaper",
+  "ttft_ms": 438.23
+ },
+ {
+  "i": 466,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Palmitic acid",
+  "ttft_ms": 321.28
+ },
+ {
+  "i": 467,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "To answer these questions, let's break down the information provided:\n\n1. **Which organelle produces ATP?**\n   - The correct answer is B.",
+  "ttft_ms": 718.74
+ },
+ {
+  "i": 468,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C. whether it violates any duties.\n\nAnscombe argues that on Sidgwick's view, the badness of an action must be estimated in light of whether",
+  "ttft_ms": 510.39
+ },
+ {
+  "i": 469,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. 7 more than 2 times m",
+  "ttft_ms": 578.86
+ },
+ {
+  "i": 470,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Gamma",
+  "ttft_ms": 315.3
+ },
+ {
+  "i": 471,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Milton Friedman",
+  "ttft_ms": 387.73
+ },
+ {
+  "i": 472,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. A reasonable time-and-cost-saving procedure would be to randomly choose families and include all drivers in each of these families in the sample.\n\nExplanation:\n- Option",
+  "ttft_ms": 1183.09
+ },
+ {
+  "i": 473,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Creatine supplements can increase muscle strength and power.",
+  "ttft_ms": 616.48
+ },
+ {
+  "i": 474,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "To determine the relative maximum value of the function \\( y = \\frac{\\ln x}{x} \\), we need to find the critical points by taking the",
+  "ttft_ms": 322.87
+ },
+ {
+  "i": 475,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C. large vacuoles that store water",
+  "ttft_ms": 545.2
+ },
+ {
+  "i": 476,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. standardized",
+  "ttft_ms": 384.52
+ },
+ {
+  "i": 477,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Chylomicrons and VLDL",
+  "ttft_ms": 571.73
+ },
+ {
+  "i": 478,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. False, False\n\nExplanation:\nStatement 1: Word2Vec parameters were not initialized using a Restricted Boltzmann Machine.\nThis statement is false.",
+  "ttft_ms": 532.48
+ },
+ {
+  "i": 479,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C. enslaved Christians, and turned them into Safavid fighters\n\nThis question refers to the following information.\n\"The Safavids drew the ire of Islamic empires",
+  "ttft_ms": 1866.79
+ },
+ {
+  "i": 480,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. of the same substance",
+  "ttft_ms": 324.85
+ },
+ {
+  "i": 481,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. their families live there already.\n\nExplanation: While the availability of jobs and educational opportunities can be important factors for young people to move to a major city,",
+  "ttft_ms": 446.25
+ },
+ {
+  "i": 482,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. H → He → C → O → Ne → Si → Fe",
+  "ttft_ms": 756.1
+ },
+ {
+  "i": 483,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. When the catheter is blocked.",
+  "ttft_ms": 527.43
+ },
+ {
+  "i": 484,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. The force of the man on the scale\n\nExplanation: When the elevator moves upward, the man's weight is balanced by the upward force exerted by",
+  "ttft_ms": 698.61
+ },
+ {
+  "i": 485,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. They maintain the habitat as it is for their own kind.",
+  "ttft_ms": 634.86
+ },
+ {
+  "i": 486,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "The correct answer is B. Invalid. Counterexample when L, M, O, Q, and R are true and N and P are false.",
+  "ttft_ms": 1275.13
+ },
+ {
+  "i": 487,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "To solve this problem, we need to understand the relationship between the numbers on the faces of the cube and the numbers on the vertices. Each vertex is the product",
+  "ttft_ms": 747.14
+ },
+ {
+  "i": 488,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Subsistence",
+  "ttft_ms": 412.43
+ },
+ {
+  "i": 489,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. entirely subjective",
+  "ttft_ms": 300.4
+ },
+ {
+  "i": 490,
+  "pred": "None",
+  "gold": "B",
+  "ok": false,
+  "gen": "The characteristic of a ring is the number of elements in the ring. In this case, the ring is \\( \\mathbb{Z}_3 \\times \\",
+  "ttft_ms": 316.72
+ },
+ {
+  "i": 491,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. all of these",
+  "ttft_ms": 365.89
+ },
+ {
+  "i": 492,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Asia and Latin America",
+  "ttft_ms": 598.52
+ },
+ {
+  "i": 493,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "The correct answer is B. A new balance of power between the US and China.",
+  "ttft_ms": 524.05
+ },
+ {
+  "i": 494,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. the number who change attitudes and opinions",
+  "ttft_ms": 539.81
+ },
+ {
+  "i": 495,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. ascertaining the state of the New Philosophy in England and abroad",
+  "ttft_ms": 4417.08
+ },
+ {
+  "i": 496,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. 5 over 6, 1 over 3, 0.75, 1 over 8",
+  "ttft_ms": 875.54
+ },
+ {
+  "i": 497,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. A neutral atom always has equal numbers of neutrons and protons.\n\nExplanation: A neutral atom has an equal number of protons and electrons, not",
+  "ttft_ms": 570.6
+ },
+ {
+  "i": 498,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Tell Mrs. Lopez to ask Leticia what (Mrs. Lopez) can do to help her.\n\nThis is the best course of action because it",
+  "ttft_ms": 1520.68
+ },
+ {
+  "i": 499,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C. Qualifying widow(er).\n\nExplanation: A widow or a surviving spouse filing jointly is a common filing status option for those who have lost a spouse. If",
+  "ttft_ms": 584.46
+ },
+ {
+  "i": 500,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "The correct answer is B. the eradication of the welfare state.",
+  "ttft_ms": 564.15
+ },
+ {
+  "i": 501,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To determine the probability that the three smaller segments can form the sides of a triangle, we need to use the triangle inequality theorem. The triangle inequality theorem states that",
+  "ttft_ms": 629.73
+ },
+ {
+  "i": 502,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Value of externality = marginal social costs.\n\nExplanation:\nIn economics, the value of an externality is the difference between the marginal social cost (MSC",
+  "ttft_ms": 572.49
+ },
+ {
+  "i": 503,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Main disease related to age and lifestyle",
+  "ttft_ms": 441.6
+ },
+ {
+  "i": 504,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Cannot be digested in the human gut",
+  "ttft_ms": 520.43
+ },
+ {
+  "i": 505,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C. Political, Interactions, Outcomes",
+  "ttft_ms": 627.33
+ },
+ {
+  "i": 506,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. thorium-234",
+  "ttft_ms": 945.26
+ },
+ {
+  "i": 507,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "The correct answer is C. CO32- and NO3-. These two molecules have multiple resonance structures due to the presence of double bonds and the ability of",
+  "ttft_ms": 608.95
+ },
+ {
+  "i": 508,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. Receiver",
+  "ttft_ms": 310.26
+ },
+ {
+  "i": 509,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. The rule that distinguishes norms from habits of obedience.",
+  "ttft_ms": 545.35
+ },
+ {
+  "i": 510,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. The government increases spending with no increase in taxes.",
+  "ttft_ms": 609.13
+ },
+ {
+  "i": 511,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To determine how many flits are required to represent at least 256 different values, we need to understand the properties of ternary logic. In tern",
+  "ttft_ms": 683.9
+ },
+ {
+  "i": 512,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. (D • G) ⊃ P",
+  "ttft_ms": 729.63
+ },
+ {
+  "i": 513,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. All of the above",
+  "ttft_ms": 780.54
+ },
+ {
+  "i": 514,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. They place greater emphasis on material interests and power",
+  "ttft_ms": 675.26
+ },
+ {
+  "i": 515,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D. alliance",
+  "ttft_ms": 418.11
+ },
+ {
+  "i": 516,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A.",
+  "ttft_ms": 2210.28
+ },
+ {
+  "i": 517,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. It arises in response to changes in the environment.",
+  "ttft_ms": 589.92
+ },
+ {
+  "i": 518,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "To answer these questions, let's break down the information provided:\n\n1. **Which organelle produces ATP?**\n   - The correct answer is B.",
+  "ttft_ms": 715.49
+ },
+ {
+  "i": 519,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Wrong, Not wrong",
+  "ttft_ms": 830.67
+ },
+ {
+  "i": 520,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. about 5.2 times longer",
+  "ttft_ms": 628.04
+ },
+ {
+  "i": 521,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Critical Legal Studies",
+  "ttft_ms": 454.69
+ },
+ {
+  "i": 522,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Wrong, Not wrong",
+  "ttft_ms": 877.84
+ },
+ {
+  "i": 523,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. establish several colonies along the Atlantic coastline of North America.\n\nRichard Hakluyt's ideas and efforts contributed to the eventual establishment of several colonies along the",
+  "ttft_ms": 2271.08
+ },
+ {
+  "i": 524,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "The correct answer is A. 15.5 MHz = 11.104 mT = 27.201 Gauss =",
+  "ttft_ms": 1772.27
+ },
+ {
+  "i": 525,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A. May be very well rehearsed",
+  "ttft_ms": 548.68
+ },
+ {
+  "i": 526,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Assertive and sociable",
+  "ttft_ms": 558.27
+ },
+ {
+  "i": 527,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "To determine the correct answer, let's analyze the statements:\n\nStatement 1: \"4x - 2 is irreducible over Z.\"\n- In the context",
+  "ttft_ms": 464.97
+ },
+ {
+  "i": 528,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A. SRAM",
+  "ttft_ms": 326.9
+ },
+ {
+  "i": 529,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. All of the above",
+  "ttft_ms": 326.39
+ },
+ {
+  "i": 530,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. The least liquid measure of money is M2.",
+  "ttft_ms": 532.33
+ },
+ {
+  "i": 531,
+  "pred": "None",
+  "gold": "B",
+  "ok": false,
+  "gen": "To determine the percentage of chlorine in the sample, we need to follow these steps:\n\n1. **Identify the given information:**\n   - Mass of the",
+  "ttft_ms": 784.78
+ },
+ {
+  "i": 532,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. an antecedent boundary.\n\nAn antecedent boundary refers to a boundary that was formed before the detailed geographic knowledge and mapping of the current area.",
+  "ttft_ms": 437.96
+ },
+ {
+  "i": 533,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. The value of social capital.\n\nThis correlation demonstrates the value of social capital, as it shows that having a social network that overlaps with the alumni networks of",
+  "ttft_ms": 1012.58
+ },
+ {
+  "i": 534,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. In DNA, adenine pairs with thymine.",
+  "ttft_ms": 761.54
+ },
+ {
+  "i": 535,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Mis-specified models are certain to produce inaccurate forecasts\n\nExplanation:\n- A. Forecasts can only be made for time-series data - This is incorrect",
+  "ttft_ms": 576.01
+ },
+ {
+  "i": 536,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. collect taxes",
+  "ttft_ms": 323.44
+ },
+ {
+  "i": 537,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. Encoding.",
+  "ttft_ms": 443.48
+ },
+ {
+  "i": 538,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. Lower variance\n\nExplanation: As the number of training examples goes to infinity, the model's variance (the difference between the model's predictions and the true",
+  "ttft_ms": 417.91
+ },
+ {
+  "i": 539,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. consumer relations",
+  "ttft_ms": 393.58
+ },
+ {
+  "i": 540,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Wrong, Not wrong",
+  "ttft_ms": 755.31
+ },
+ {
+  "i": 541,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Wrong, Not wrong",
+  "ttft_ms": 617.44
+ },
+ {
+  "i": 542,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. To explain the fact that planets sometimes appear to move westward rather than eastward relative to the stars in our sky.",
+  "ttft_ms": 882.3
+ },
+ {
+  "i": 543,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. Social accountability standard, SA 8000",
+  "ttft_ms": 875.3
+ },
+ {
+  "i": 544,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. By abolishing feudalism and manorialism",
+  "ttft_ms": 2066.56
+ },
+ {
+  "i": 545,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "The correct answer is B. 6. \n\nExplanation:\nIn Python, the expression `4 + 3 % 2` is evaluated as follows:\n1",
+  "ttft_ms": 324.89
+ },
+ {
+  "i": 546,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C. Alteration of generations",
+  "ttft_ms": 330.07
+ },
+ {
+  "i": 547,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. When intakes exceed established ULs (Upper Levels)\n\nExplanation: The Upper Level (UL) is the highest level of exposure to a nutrient that is",
+  "ttft_ms": 459.91
+ },
+ {
+  "i": 548,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Left ventricle → aorta → arteries → veins → capillaries",
+  "ttft_ms": 627.55
+ },
+ {
+  "i": 549,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Epiglottis",
+  "ttft_ms": 330.04
+ },
+ {
+  "i": 550,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. The threat is often permanent until the entire disk is wiped clean.",
+  "ttft_ms": 635.01
+ },
+ {
+  "i": 551,
+  "pred": "D",
+  "gold": "B",
+  "ok": false,
+  "gen": "D. SF6",
+  "ttft_ms": 314.88
+ },
+ {
+  "i": 552,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. 3’ Poly A tail",
+  "ttft_ms": 523.29
+ },
+ {
+  "i": 553,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. War of 1812",
+  "ttft_ms": 470.79
+ },
+ {
+  "i": 554,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Interpret the answers you get from people",
+  "ttft_ms": 537.17
+ },
+ {
+  "i": 555,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C. recognize that such attraction is inappropriate and refer Lisa to another therapist without explaining the reason to her.",
+  "ttft_ms": 1072.4
+ },
+ {
+  "i": 556,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A. The roots of the characteristic equation must all lie inside the unit circle",
+  "ttft_ms": 618.75
+ },
+ {
+  "i": 557,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Impact",
+  "ttft_ms": 282.54
+ },
+ {
+  "i": 558,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. scarce economic resources.",
+  "ttft_ms": 324.14
+ },
+ {
+  "i": 559,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A. codominance",
+  "ttft_ms": 623.94
+ },
+ {
+  "i": 560,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Mucosal edema",
+  "ttft_ms": 2088.42
+ },
+ {
+  "i": 561,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. FindName ([\"Andrea\", \"Ben\"], \"Diane\" )\n\nExplanation: In option B, \"Diane\" is not in the list",
+  "ttft_ms": 1709.79
+ },
+ {
+  "i": 562,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. nuts and fruits to species more focused on grasses.\n\nThis transition is known as the \"C3 to C4\" pathway shift, which occurred in",
+  "ttft_ms": 607.85
+ },
+ {
+  "i": 563,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Observed frequencies should be whole numbers.",
+  "ttft_ms": 648.47
+ },
+ {
+  "i": 564,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. The conduct of any State organ shall be considered an act of that State, even in the case that this conduct was unauthorized or ultra vires",
+  "ttft_ms": 880.95
+ },
+ {
+  "i": 565,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Minimizing The Influence Of Stakeholder Information On The Firm\n\nExplanation: A stakeholder orientation typically involves generating data about stakeholder groups, assessing the",
+  "ttft_ms": 539.68
+ },
+ {
+  "i": 566,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A. Acalculous cholecystitis",
+  "ttft_ms": 1087.82
+ },
+ {
+  "i": 567,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Decrease the money supply; run a federal budget deficit.",
+  "ttft_ms": 652.06
+ },
+ {
+  "i": 568,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Wild birds",
+  "ttft_ms": 311.33
+ },
+ {
+  "i": 569,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C. producers are operating near the limits of their production.\n\nThe elasticity of supply is a measure of how responsive the quantity supplied of a good is to changes in",
+  "ttft_ms": 452.11
+ },
+ {
+  "i": 570,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. The Civil Rights Act of 1964 prohibits discrimination based on gender.",
+  "ttft_ms": 756.14
+ },
+ {
+  "i": 571,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. less than 1%",
+  "ttft_ms": 577.28
+ },
+ {
+  "i": 572,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Supplier",
+  "ttft_ms": 273.37
+ },
+ {
+  "i": 573,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "The correct answer is C. 3-Jan.",
+  "ttft_ms": 557.2
+ },
+ {
+  "i": 574,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. are sometimes useful in resolving ethical disagreement, but are not always sufficient.",
+  "ttft_ms": 655.42
+ },
+ {
+  "i": 575,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Ectopic pregnancy",
+  "ttft_ms": 416.76
+ },
+ {
+  "i": 576,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Little power, Major contribution, Corporate social responsibility",
+  "ttft_ms": 731.99
+ },
+ {
+  "i": 577,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B.",
+  "ttft_ms": 1078.8
+ },
+ {
+  "i": 578,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Epitope escape",
+  "ttft_ms": 398.24
+ },
+ {
+  "i": 579,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "The correct answer is B. The way in which all media outlets post similar content to their competitors. This best describes media convergence, which refers to the trend where",
+  "ttft_ms": 550.01
+ },
+ {
+  "i": 580,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C. sP",
+  "ttft_ms": 310.59
+ },
+ {
+  "i": 581,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. tafsir",
+  "ttft_ms": 421.25
+ },
+ {
+  "i": 582,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. Alveoli",
+  "ttft_ms": 375.56
+ },
+ {
+  "i": 583,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Petitio principii",
+  "ttft_ms": 400.84
+ },
+ {
+  "i": 584,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. people with fixed money incomes",
+  "ttft_ms": 398.89
+ },
+ {
+  "i": 585,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. print lock",
+  "ttft_ms": 317.13
+ },
+ {
+  "i": 586,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Compound proposition",
+  "ttft_ms": 285.98
+ },
+ {
+  "i": 587,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Having a process request all its required resources when it first begins, and restarting if it cannot obtain them all\n\nThis option does not deal effectively with the",
+  "ttft_ms": 1184.02
+ },
+ {
+  "i": 588,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. the executive branch to veto legislation approved by Congress",
+  "ttft_ms": 542.06
+ },
+ {
+  "i": 589,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C. quasi-",
+  "ttft_ms": 420.39
+ },
+ {
+  "i": 590,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "The correct answer is B. 3.75 G.",
+  "ttft_ms": 632.02
+ },
+ {
+  "i": 591,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. All of the options given are correct",
+  "ttft_ms": 886.35
+ },
+ {
+  "i": 592,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To determine the weight of the box on the moon, we need to understand that weight is a force due to gravity and is calculated as mass times the gravitational acceleration",
+  "ttft_ms": 667.58
+ },
+ {
+  "i": 593,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Uracil",
+  "ttft_ms": 438.21
+ },
+ {
+  "i": 594,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. workplace violence",
+  "ttft_ms": 633.07
+ },
+ {
+  "i": 595,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To determine the day of the week that April 1st falls on, we need to consider the number of days in April and how they align with the days",
+  "ttft_ms": 510.28
+ },
+ {
+  "i": 596,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. T3 & T4",
+  "ttft_ms": 670.72
+ },
+ {
+  "i": 597,
+  "pred": "None",
+  "gold": "A",
+  "ok": false,
+  "gen": "To determine the molar solubility of iron(III) hydroxide, we need to use the solubility product constant (Ksp) provided",
+  "ttft_ms": 795.12
+ },
+ {
+  "i": 598,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. a 10 percent increase in income produces a 15 percent increase in consumption of DVDs. DVDs are a normal luxury good.",
+  "ttft_ms": 1184.19
+ },
+ {
+  "i": 599,
+  "pred": "None",
+  "gold": "B",
+  "ok": false,
+  "gen": "To solve this, we need to simplify the expression \\((x\\sqrt{x^3})^4\\).\n\nFirst, let's simplify the expression inside the",
+  "ttft_ms": 474.06
+ },
+ {
+  "i": 600,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "The correct answer is B. According to Reiman, van den Haag's arguments in favor of the death penalty prove that torture is morally impermissible.",
+  "ttft_ms": 433.19
+ },
+ {
+  "i": 601,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B.",
+  "ttft_ms": 321.06
+ },
+ {
+  "i": 602,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To determine the correct answer, let's review the properties of the Ordinary Least Squares (OLS) estimator:\n\n1. **Consistency**: The OLS estimator",
+  "ttft_ms": 1146.53
+ },
+ {
+  "i": 603,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D. Evaluation",
+  "ttft_ms": 330.63
+ },
+ {
+  "i": 604,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. all of these",
+  "ttft_ms": 323.75
+ },
+ {
+  "i": 605,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. cranial nerves, spinal nerves, autonomic ganglia",
+  "ttft_ms": 593.77
+ },
+ {
+  "i": 606,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Free radicals and sunlight",
+  "ttft_ms": 444.17
+ },
+ {
+  "i": 607,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. an increase in funding from officials in the French capital",
+  "ttft_ms": 1924.55
+ },
+ {
+  "i": 608,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. the House meets for substantially fewer hours per day than does the Senate",
+  "ttft_ms": 724.5
+ },
+ {
+  "i": 609,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. 3",
+  "ttft_ms": 533.14
+ },
+ {
+  "i": 610,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. not pure",
+  "ttft_ms": 268.41
+ },
+ {
+  "i": 611,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "The correct answer is B. 40%.",
+  "ttft_ms": 380.38
+ },
+ {
+  "i": 612,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Management’s assertions that internal controls exist and are operating efficiently.",
+  "ttft_ms": 603.35
+ },
+ {
+  "i": 613,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Mutations are the main source of all variation in a population.\n\nThis is NOT part of Darwin's theory of evolution by natural selection. Darwin's theory",
+  "ttft_ms": 579.08
+ },
+ {
+  "i": 614,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C. inadmissible as a violation of the physicianpatient privilege.\n\nThe doctor's testimony about the man's back pain is likely to be considered privileged information between",
+  "ttft_ms": 1843.95
+ },
+ {
+  "i": 615,
+  "pred": "None",
+  "gold": "B",
+  "ok": false,
+  "gen": "The author of the passage does not explicitly state that prosperity ripened the principle of decay or that the causes of destruction multiplied with the extent of conquest. However,",
+  "ttft_ms": 2300.38
+ },
+ {
+  "i": 616,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. When an organization's trading is interrupted.",
+  "ttft_ms": 450.38
+ },
+ {
+  "i": 617,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. mobilization for war in 1914 was greeted with great enthusiasm in Paris",
+  "ttft_ms": 2107.67
+ },
+ {
+  "i": 618,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. conductance.",
+  "ttft_ms": 309.76
+ },
+ {
+  "i": 619,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Winning a game of chess, like life, frequently depends on luck.",
+  "ttft_ms": 721.53
+ },
+ {
+  "i": 620,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A.",
+  "ttft_ms": 524.49
+ },
+ {
+  "i": 621,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. incomplete dominance",
+  "ttft_ms": 664.5
+ },
+ {
+  "i": 622,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Serial cross-sectional",
+  "ttft_ms": 305.63
+ },
+ {
+  "i": 623,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Differentiation",
+  "ttft_ms": 312.89
+ },
+ {
+  "i": 624,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Wrong, Not wrong",
+  "ttft_ms": 879.19
+ },
+ {
+  "i": 625,
+  "pred": "A",
+  "gold": "B",
+  "ok": false,
+  "gen": "A. near the rotational axis",
+  "ttft_ms": 477.35
+ },
+ {
+  "i": 626,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. arguing that since two things happened at the same time one must have caused the other",
+  "ttft_ms": 719.43
+ },
+ {
+  "i": 627,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A. Esprit de corps",
+  "ttft_ms": 388.97
+ },
+ {
+  "i": 628,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Eight percent of those who took the test scored between Pam and Mary.\n\nExplanation:\nThe 64th percentile means that 64% of the",
+  "ttft_ms": 750.22
+ },
+ {
+  "i": 629,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Hypothyroidism is characterized by a lowered metabolic rate, which can lead to weight gain, particularly around the neck area (pre-tibial my",
+  "ttft_ms": 431.91
+ },
+ {
+  "i": 630,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C. a shortage of fast-food workers.\n\nExplanation: A minimum wage in the market for fast-food workers would likely increase the cost of labor for these workers.",
+  "ttft_ms": 504.86
+ },
+ {
+  "i": 631,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To find the zeros of the polynomial \\( x^3 + 2x + 2 \\) in the finite field \\( \\mathbb{Z}_7",
+  "ttft_ms": 533.05
+ },
+ {
+  "i": 632,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To determine the wavelength of the wave, we need to use the formula for the wavelength of a standing wave on a string:\n\n\\[ \\lambda = \\frac{",
+  "ttft_ms": 643.55
+ },
+ {
+  "i": 633,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. The ability of the Tang emperor to project military power on the frontier in order to impose his will.",
+  "ttft_ms": 3455.67
+ },
+ {
+  "i": 634,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. It requires ATP.\n\nProton pumps are indeed involved in the process of loading sugars into the phloem for transport. This process is driven by the",
+  "ttft_ms": 527.42
+ },
+ {
+  "i": 635,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Uracil",
+  "ttft_ms": 710.19
+ },
+ {
+  "i": 636,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. effective only if 3 or fewer processes are running alternately on the processor\n\nA 3-way, set-associative cache is one in which",
+  "ttft_ms": 640.4
+ },
+ {
+  "i": 637,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "The correct answer is B. 34%. According to the latest data from the World Bank, as of 2017, 34%",
+  "ttft_ms": 414.3
+ },
+ {
+  "i": 638,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. No meaningful conclusion is possible without knowing something more about the characteristics of his listeners.\n\nThis shows that the survey results are not reliable without additional information a",
+  "ttft_ms": 1005.41
+ },
+ {
+  "i": 639,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. OCSP stapling allows a server to prove to a browser that its certificate hasn’t been revoked.\n\nExplanation:\nOCSP stapling is a technique that",
+  "ttft_ms": 1005.25
+ },
+ {
+  "i": 640,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Standard deviation",
+  "ttft_ms": 434.77
+ },
+ {
+  "i": 641,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. cannot coherently invoke morality to protect one’s own interests.",
+  "ttft_ms": 444.22
+ },
+ {
+  "i": 642,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C. recover for assault and battery.\n\nExplanation: The woman was startled by the ball hitting her hat, which is an act of battery. Assault is a separate",
+  "ttft_ms": 1408.59
+ },
+ {
+  "i": 643,
+  "pred": "None",
+  "gold": "B",
+  "ok": false,
+  "gen": "To solve the expression \\(5 + 2 \\cdot 15 + (12 \\cdot 4)\\), we need to follow the order of operations",
+  "ttft_ms": 423.35
+ },
+ {
+  "i": 644,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Open, half-open, closed",
+  "ttft_ms": 390.95
+ },
+ {
+  "i": 645,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Use a logarithmic functional form instead of a linear one",
+  "ttft_ms": 589.37
+ },
+ {
+  "i": 646,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. edge city.",
+  "ttft_ms": 335.92
+ },
+ {
+  "i": 647,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. To produce virtuous citizens and encourage righteousness in individuals.",
+  "ttft_ms": 462.46
+ },
+ {
+  "i": 648,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Value.",
+  "ttft_ms": 284.92
+ },
+ {
+  "i": 649,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C. J = 0, K = 1.",
+  "ttft_ms": 526.33
+ },
+ {
+  "i": 650,
+  "pred": "None",
+  "gold": "B",
+  "ok": false,
+  "gen": "To determine the correct answer, let's analyze each statement:\n\n1. **Statement 1: R is a splitting field of some polynomial over Q.**",
+  "ttft_ms": 446.06
+ },
+ {
+  "i": 651,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Convolving an image with $\\begin{bmatrix}0 & 0 & 0\\\\ 0 & 1 & 0 \\\\",
+  "ttft_ms": 1630.36
+ },
+ {
+  "i": 652,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Organising, leading, planning, controlling",
+  "ttft_ms": 509.63
+ },
+ {
+  "i": 653,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. After you’ve repeated your experiment many times.",
+  "ttft_ms": 732.8
+ },
+ {
+  "i": 654,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Stuart Russell",
+  "ttft_ms": 438.52
+ },
+ {
+  "i": 655,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Necrophilia",
+  "ttft_ms": 319.81
+ },
+ {
+  "i": 656,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C. Integrity",
+  "ttft_ms": 283.17
+ },
+ {
+  "i": 657,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. 3 only because the iron is reduced\n\nExplanation: In option 3, Fe2+ → Fe3+ + e- is a reduction half",
+  "ttft_ms": 825.02
+ },
+ {
+  "i": 658,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C. 29,000–30,000",
+  "ttft_ms": 694.47
+ },
+ {
+  "i": 659,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "The correct answer is B. The hydrogen atom undergoes rapid intermolecular exchange.\n\nThis is because the hydrogen atoms in 12CHCl3 are not",
+  "ttft_ms": 649.91
+ },
+ {
+  "i": 660,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. a decrease in the marginal product of labor",
+  "ttft_ms": 575.79
+ },
+ {
+  "i": 661,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "The correct answer is B. It makes the orbit of Io slightly elliptical.",
+  "ttft_ms": 596.0
+ },
+ {
+  "i": 662,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Objective security: when a matter is objectively considered a security issue, regardless of interpretation.\n\nExplanation: Objective security refers to the actual existence of a security issue",
+  "ttft_ms": 744.94
+ },
+ {
+  "i": 663,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. simple foragers.\n\nThe native peoples of the northwest coast of North America were simple foragers. They primarily relied on hunting and gathering, rather than growing",
+  "ttft_ms": 435.12
+ },
+ {
+  "i": 664,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. The framers of the Articles of Confederation made a mistake in allowing for too great a degree of democracy in the new republic.\n\nThis phrase reflects Washington",
+  "ttft_ms": 3161.71
+ },
+ {
+  "i": 665,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C. European use of bow and arrow",
+  "ttft_ms": 399.35
+ },
+ {
+  "i": 666,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. phenotype",
+  "ttft_ms": 414.55
+ },
+ {
+  "i": 667,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. J ≡ K",
+  "ttft_ms": 719.53
+ },
+ {
+  "i": 668,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Rulers, warriors",
+  "ttft_ms": 396.1
+ },
+ {
+  "i": 669,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "The passage above is part of President Truman's argument to Congress in favor of the **McCarran Internal Security Act**.\n\nThis answer is based on the historical",
+  "ttft_ms": 1266.15
+ },
+ {
+  "i": 670,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Hexokinase",
+  "ttft_ms": 370.69
+ },
+ {
+  "i": 671,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. China",
+  "ttft_ms": 279.56
+ },
+ {
+  "i": 672,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. uptake and oxidation by other tissues.\n\nExplanation: Lactate is produced in muscle cells during intense exercise when the body needs to conserve energy. It is",
+  "ttft_ms": 511.84
+ },
+ {
+  "i": 673,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. A model that contains many variables",
+  "ttft_ms": 614.5
+ },
+ {
+  "i": 674,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Voluntary reliance on an external power for security",
+  "ttft_ms": 424.52
+ },
+ {
+  "i": 675,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Oracle Days",
+  "ttft_ms": 370.7
+ },
+ {
+  "i": 676,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To determine the maximum average instruction execution time that allows the microcomputer to keep up with the input-output data rates, we need to consider the time it takes to",
+  "ttft_ms": 1599.84
+ },
+ {
+  "i": 677,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. Cannes",
+  "ttft_ms": 283.0
+ },
+ {
+  "i": 678,
+  "pred": "None",
+  "gold": "B",
+  "ok": false,
+  "gen": "To solve this problem, we need to understand the region defined by the inequality \\(0 < |x| + |y| < 1\\). This region",
+  "ttft_ms": 725.27
+ },
+ {
+  "i": 679,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. their realistic niche only\n\nThe treetop-nesting birds are utilizing their realistic niche, which is the specific environment and conditions that are most suitable for",
+  "ttft_ms": 712.57
+ },
+ {
+  "i": 680,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Although the mechanic was preparing to perform the repair work, he had not begun the requested acts of acceptance when the man revoked his offer.\n\nExplanation: In",
+  "ttft_ms": 2104.13
+ },
+ {
+  "i": 681,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. All of the above.",
+  "ttft_ms": 719.81
+ },
+ {
+  "i": 682,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. law of demand",
+  "ttft_ms": 370.47
+ },
+ {
+  "i": 683,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "The correct answer is C. Parfit claims that the magnitude of pains can be compared, but only roughly.",
+  "ttft_ms": 486.95
+ },
+ {
+  "i": 684,
+  "pred": "None",
+  "gold": "B",
+  "ok": false,
+  "gen": "To determine the ratio of the total time required by the compilation if run on the diskless workstation to the total time required if run on the workstation with the local",
+  "ttft_ms": 1288.93
+ },
+ {
+  "i": 685,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. 9 lines",
+  "ttft_ms": 642.23
+ },
+ {
+  "i": 686,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "The correct answer is B. 20%.",
+  "ttft_ms": 392.4
+ },
+ {
+  "i": 687,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Selenocysteine",
+  "ttft_ms": 533.05
+ },
+ {
+  "i": 688,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Yes, because under the circumstances the coach would be strictly liable.\n\nThe coach was employed as a physical education teacher, which means he was responsible for the",
+  "ttft_ms": 1698.08
+ },
+ {
+  "i": 689,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. The official encouragement of Buddhist edicts",
+  "ttft_ms": 1262.66
+ },
+ {
+  "i": 690,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Media tour",
+  "ttft_ms": 335.32
+ },
+ {
+  "i": 691,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Mitochondrion",
+  "ttft_ms": 654.58
+ },
+ {
+  "i": 692,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B.",
+  "ttft_ms": 684.09
+ },
+ {
+  "i": 693,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. (∃x){(Kx • Px) • (∃y)[(Ey • Sy) • Hxy]}",
+  "ttft_ms": 1296.03
+ },
+ {
+  "i": 694,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. More.\n\nLED (Light Emitting Diode) lamps typically use a small current to produce a significant amount of light. The current in the connecting wire",
+  "ttft_ms": 317.81
+ },
+ {
+  "i": 695,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Stunts",
+  "ttft_ms": 321.34
+ },
+ {
+  "i": 696,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Induces apoptosis via caspases",
+  "ttft_ms": 480.72
+ },
+ {
+  "i": 697,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. No, because the entire population information was used from both offices. Because no samples were taken, a t-test should not be used.\n\nExplanation: A",
+  "ttft_ms": 1626.65
+ },
+ {
+  "i": 698,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To find the index of <p> in S_5, we need to determine how many elements in S_5 are in the same orbit as p.",
+  "ttft_ms": 538.45
+ },
+ {
+  "i": 699,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Import restrictions to protect a domestic market from foreign goods.",
+  "ttft_ms": 590.63
+ },
+ {
+  "i": 700,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Report it to the APA Ethics Committee",
+  "ttft_ms": 613.59
+ },
+ {
+  "i": 701,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D. Older adults",
+  "ttft_ms": 277.1
+ },
+ {
+  "i": 702,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Sagittarius A*",
+  "ttft_ms": 435.57
+ },
+ {
+  "i": 703,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. arguing that what is true of an entire object must also be true of every individual part of that object",
+  "ttft_ms": 835.63
+ },
+ {
+  "i": 704,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. It is formed of Purkinje fibres and is the only electrical connection between the atria and the ventricles",
+  "ttft_ms": 958.74
+ },
+ {
+  "i": 705,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Meson",
+  "ttft_ms": 317.65
+ },
+ {
+  "i": 706,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Wrong, Not wrong",
+  "ttft_ms": 766.91
+ },
+ {
+  "i": 707,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Mammography",
+  "ttft_ms": 317.68
+ },
+ {
+  "i": 708,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. All of these",
+  "ttft_ms": 271.78
+ },
+ {
+  "i": 709,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C. competing with the substrate molecule for the same enzyme but a different binding site than the substrate binding site",
+  "ttft_ms": 748.83
+ },
+ {
+  "i": 710,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "The map \\( f(x) = axa^2 \\) of a group \\( G \\) into itself is a homomorphism if and only if \\(",
+  "ttft_ms": 447.44
+ },
+ {
+  "i": 711,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. L ∨ ~L",
+  "ttft_ms": 393.77
+ },
+ {
+  "i": 712,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C. Grandchild",
+  "ttft_ms": 370.1
+ },
+ {
+  "i": 713,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "The correct answer is:\n\nD. all of the options given are correct\n\nExplanation:\n- Epigenetic changes can indeed be key to understanding the links between early",
+  "ttft_ms": 902.37
+ },
+ {
+  "i": 714,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Early and accurate diagnosis with molecular kits",
+  "ttft_ms": 525.75
+ },
+ {
+  "i": 715,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Oral doxycycline therapy\n\nExplanation: The patient has symptoms of sexually transmitted infection (STI) and the lesions are nontender,",
+  "ttft_ms": 1678.93
+ },
+ {
+  "i": 716,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "The correct answer is B. 64. According to the order of operations (PEMDAS/BODMAS), multiplication should be performed before addition. So",
+  "ttft_ms": 371.32
+ },
+ {
+  "i": 717,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "The correct answer is C. 66%. According to a survey conducted in 2017, 66% of survey respondents from China reported",
+  "ttft_ms": 647.7
+ },
+ {
+  "i": 718,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Bosons have antisymmetric wave functions and do not obey the Pauli exclusion principle.",
+  "ttft_ms": 711.35
+ },
+ {
+  "i": 719,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B.",
+  "ttft_ms": 440.37
+ },
+ {
+  "i": 720,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Fred's acceptance on April 5 will not create a contract if James dies on April 4.\n\nExplanation: In a contract, the offeror (",
+  "ttft_ms": 1322.85
+ },
+ {
+  "i": 721,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "To determine the standard deviation of the weights of the packed boxes, we need to consider the combined effect of the weights of the books, the boxes, and the",
+  "ttft_ms": 1159.58
+ },
+ {
+  "i": 722,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "The best symbolization of the sentence \"The restaurant serves pie or cheesecake or ice cream for dessert\" using the given options is:\n\nB. (P",
+  "ttft_ms": 598.47
+ },
+ {
+  "i": 723,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. In Asia, which is the poorest region of the world with a steady overall economic growth.",
+  "ttft_ms": 667.35
+ },
+ {
+  "i": 724,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "The correct answer is B. Rotaviruses are RNA viruses that contain a single segment of double-stranded RNA.",
+  "ttft_ms": 345.94
+ },
+ {
+  "i": 725,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Phosphorylase activity is higher in Type II fibres than in Type I fibres.",
+  "ttft_ms": 682.51
+ },
+ {
+  "i": 726,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "The correct answer is B. 86%.",
+  "ttft_ms": 392.89
+ },
+ {
+  "i": 727,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To determine the correct answer, let's analyze the procedure step by step:\n\n1. The procedure starts with the parameter `number`.\n2. The `REPEAT",
+  "ttft_ms": 1340.3
+ },
+ {
+  "i": 728,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C. 1 tall violet: 1 tall white: 1 dwarf violet: 1 dwarf white",
+  "ttft_ms": 1132.34
+ },
+ {
+  "i": 729,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Double-stranded nucleic acid genome\n\nThe infectious agent described in the patient's condition is likely to have a double-stranded nucleic acid genome.",
+  "ttft_ms": 1631.74
+ },
+ {
+  "i": 730,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "The correct answer is C. 111110.\n\nTo calculate the number of parameters in a fully connected (dense) neural network, you need",
+  "ttft_ms": 1193.01
+ },
+ {
+  "i": 731,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. all of the above",
+  "ttft_ms": 615.48
+ },
+ {
+  "i": 732,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C. The Chipmunks do not win their first game.",
+  "ttft_ms": 721.12
+ },
+ {
+  "i": 733,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Latin America has survived many invaders and will endure.\n\nThe poem reflects the theme that Latin America has survived many invaders and will endure. It portrays Latin America",
+  "ttft_ms": 3217.61
+ },
+ {
+  "i": 734,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "The correct answer is B. 0.25.",
+  "ttft_ms": 310.8
+ },
+ {
+  "i": 735,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C. remains largely unchanged.\n\nExplanation: The buoyant force acting on an object is determined by Archimedes' principle, which states that the buoyant force",
+  "ttft_ms": 455.59
+ },
+ {
+  "i": 736,
+  "pred": "None",
+  "gold": "B",
+  "ok": false,
+  "gen": "To determine how many times brighter the Sun would need to be for Europa to receive the same solar flux as we currently receive on Earth, we need to use the",
+  "ttft_ms": 615.16
+ },
+ {
+  "i": 737,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. If A is closed, then A = R.",
+  "ttft_ms": 620.8
+ },
+ {
+  "i": 738,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Mass of the planet",
+  "ttft_ms": 610.42
+ },
+ {
+  "i": 739,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. The sample temperature changed more than the water temperature did, but the sample lost the same amount of heat energy as the water gained.\n\nExplanation:\nWhen the",
+  "ttft_ms": 1386.29
+ },
+ {
+  "i": 740,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Brown v. Board of Education of Topeka",
+  "ttft_ms": 738.02
+ },
+ {
+  "i": 741,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To solve this problem, we need to use the integrated rate law for a first-order reaction. The integrated rate law for a first-order reaction is:\n\n\\[ \\",
+  "ttft_ms": 673.55
+ },
+ {
+  "i": 742,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "The answer to the question about life expectancy is not provided in the options given. The correct answer would depend on the specific year and country being considered. For the",
+  "ttft_ms": 313.8
+ },
+ {
+  "i": 743,
+  "pred": "None",
+  "gold": "A",
+  "ok": false,
+  "gen": "To solve this problem, we need to calculate the sum of the ceiling of the square roots of the numbers from 5 to 29. The ceiling function",
+  "ttft_ms": 894.47
+ },
+ {
+  "i": 744,
+  "pred": "None",
+  "gold": "A",
+  "ok": false,
+  "gen": "The United States Supreme Court likely would **not** reverse the conviction. The reasoning is that the wording of the instruction did not mandate a specific finding of intent,",
+  "ttft_ms": 2316.34
+ },
+ {
+  "i": 745,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C. All the members of the arbitral tribunal are appointed by an impartial third party, such as the president of the ICJ",
+  "ttft_ms": 827.73
+ },
+ {
+  "i": 746,
+  "pred": "D",
+  "gold": "A",
+  "ok": false,
+  "gen": "D. all of the above",
+  "ttft_ms": 455.69
+ },
+ {
+  "i": 747,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. It was written long after the time period in which Xuanzang lived.\n\nThe excerpt provided is a fictionalized account of the life of the Chinese",
+  "ttft_ms": 2891.63
+ },
+ {
+  "i": 748,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Absence of menstruation",
+  "ttft_ms": 331.1
+ },
+ {
+  "i": 749,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "The correct answer is B. aliens (panspermia).\n\nThis theory suggests that life on Earth originated from extraterrestrial sources, specifically from comets or",
+  "ttft_ms": 392.98
+ },
+ {
+  "i": 750,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. chronic lymphocytic leukemia",
+  "ttft_ms": 1349.36
+ },
+ {
+  "i": 751,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Inspection of a sample will give no indication of whether or not it is a simple random sample.",
+  "ttft_ms": 721.74
+ },
+ {
+  "i": 752,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "The correct answer is B. 3%.",
+  "ttft_ms": 380.51
+ },
+ {
+  "i": 753,
+  "pred": "D",
+  "gold": "B",
+  "ok": false,
+  "gen": "D. (i), (ii), and (iii)\n\nExplanation:\n(i) The use of panel data can increase the number of degrees of freedom and therefore the",
+  "ttft_ms": 1134.94
+ },
+ {
+  "i": 754,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A. Asexual reproduction",
+  "ttft_ms": 390.35
+ },
+ {
+  "i": 755,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C. L ⊃ [(B ∨ D) • H]\n\nThis formula correctly represents the given sentence. It states that a person is considered to have lived",
+  "ttft_ms": 964.06
+ },
+ {
+  "i": 756,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. The reasonable person standard focuses on the defendant's subjective mental state rather than on the defendant's behavior",
+  "ttft_ms": 715.48
+ },
+ {
+  "i": 757,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "The correct answer is C. 1,000.",
+  "ttft_ms": 441.55
+ },
+ {
+  "i": 758,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "The correct answer is B. 1. There is only one known human polyomavirus, which is called Polyomavirus Type 1 (Polyomavirus",
+  "ttft_ms": 342.61
+ },
+ {
+  "i": 759,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. A helium-neon laser is the best type of laser for spectroscopy over a range of visible wavelengths. It has a narrow spectral output and is commonly",
+  "ttft_ms": 389.46
+ },
+ {
+  "i": 760,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. The quantity demanded equals the quantity supplied of good X.",
+  "ttft_ms": 617.48
+ },
+ {
+  "i": 761,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Their velocity increases by a factor of four.\n\nExplanation:\nThe kinetic energy of gas molecules is directly proportional to the temperature. When the temperature increases, the",
+  "ttft_ms": 730.87
+ },
+ {
+  "i": 762,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Pastorialism.",
+  "ttft_ms": 462.67
+ },
+ {
+  "i": 763,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C. Yes, because of the doctrine of equitable redemption.\n\nThe doctrine of equitable redemption allows a party to redeem a property that has been sold to them, even",
+  "ttft_ms": 1535.85
+ },
+ {
+  "i": 764,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. States outside of the 'family of nations'",
+  "ttft_ms": 582.03
+ },
+ {
+  "i": 765,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. demand characteristics",
+  "ttft_ms": 549.6
+ },
+ {
+  "i": 766,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. East Asia's industrial regions are characterized by a mix of natural resources and a large labor force. This is a common feature of many East Asian countries,",
+  "ttft_ms": 454.28
+ },
+ {
+  "i": 767,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "The correct answer is B. a moral sense that is unique to each person.",
+  "ttft_ms": 436.81
+ },
+ {
+  "i": 768,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B.",
+  "ttft_ms": 319.24
+ },
+ {
+  "i": 769,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "To determine the inverse of a in the group (Z, *), we need to find an element b such that a * b = a + b +",
+  "ttft_ms": 444.0
+ },
+ {
+  "i": 770,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. is usually lower at the end of the game than at the end of the first half.",
+  "ttft_ms": 622.02
+ },
+ {
+  "i": 771,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. inheritance of both \"fit\" and \"unfit\" genes",
+  "ttft_ms": 593.8
+ },
+ {
+  "i": 772,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B.",
+  "ttft_ms": 2765.82
+ },
+ {
+  "i": 773,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. The international recognition of human rights after World War II",
+  "ttft_ms": 537.63
+ },
+ {
+  "i": 774,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Wrong, Not wrong",
+  "ttft_ms": 754.01
+ },
+ {
+  "i": 775,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. Silk Road",
+  "ttft_ms": 465.96
+ },
+ {
+  "i": 776,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C. the young men and women employed in domestic service in the nineteenth century",
+  "ttft_ms": 646.09
+ },
+ {
+  "i": 777,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "To solve this problem, we need to use the properties of combinations. The number of subsets of a set with \\( n \\) elements that contain exactly \\( k",
+  "ttft_ms": 719.23
+ },
+ {
+  "i": 778,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. indirect moral standing.\n\nMary is a person, and as such, she plausibly deserves moral consideration because of features inherent to her, such as being",
+  "ttft_ms": 537.6
+ },
+ {
+  "i": 779,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. 12 in females only",
+  "ttft_ms": 466.5
+ },
+ {
+  "i": 780,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C. a unique force, opposed to goodness.",
+  "ttft_ms": 331.38
+ },
+ {
+  "i": 781,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "The correct answer is B. 20%.",
+  "ttft_ms": 449.45
+ },
+ {
+  "i": 782,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "C. decrease price because demand is inelastic",
+  "ttft_ms": 576.55
+ },
+ {
+  "i": 783,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Oestrogen",
+  "ttft_ms": 465.38
+ },
+ {
+  "i": 784,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "The correct answer is A. 50 cm. When an object is placed 100 cm from a plane mirror, the image will be formed",
+  "ttft_ms": 507.08
+ },
+ {
+  "i": 785,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. response rate bias",
+  "ttft_ms": 699.97
+ },
+ {
+  "i": 786,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Polymerase chain reaction",
+  "ttft_ms": 1082.05
+ },
+ {
+  "i": 787,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "The correct answer is B. Empathy through reflective listening is not one of the basic principles used in Motivational Interviewing. The principles of Motivational",
+  "ttft_ms": 653.71
+ },
+ {
+  "i": 788,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. The Ottoman Empire's increasing pressure upon the Greek Peninsula",
+  "ttft_ms": 1781.69
+ },
+ {
+  "i": 789,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Losing 5-7% of body weight through a hypocaloric low fat diet and 30 minutes of daily activity",
+  "ttft_ms": 770.39
+ },
+ {
+  "i": 790,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Aortic stenosis",
+  "ttft_ms": 427.89
+ },
+ {
+  "i": 791,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. 380 to 740 nm.",
+  "ttft_ms": 545.82
+ },
+ {
+  "i": 792,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Wrong, Not wrong",
+  "ttft_ms": 755.31
+ },
+ {
+  "i": 793,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "To determine the relative occupancies of the α and β spin energy levels for a radical species with g = 2.05, we need to use the",
+  "ttft_ms": 1328.92
+ },
+ {
+  "i": 794,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "To determine the maximum number of different examples, we need to consider the number of possible values for each attribute and how they combine with the class.\n\nGiven:\n-",
+  "ttft_ms": 603.88
+ },
+ {
+  "i": 795,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. All of the above",
+  "ttft_ms": 375.33
+ },
+ {
+  "i": 796,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Meta pneumo virus",
+  "ttft_ms": 386.08
+ },
+ {
+  "i": 797,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Dorset",
+  "ttft_ms": 475.38
+ },
+ {
+  "i": 798,
+  "pred": "None",
+  "gold": "A",
+  "ok": false,
+  "gen": "To determine the maximum number of elements that will be examined during a binary search, we need to understand the properties of binary search. In a binary search, the",
+  "ttft_ms": 564.57
+ },
+ {
+  "i": 799,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To determine the order of growth of \\( T(n) \\), we need to analyze the recurrence relation given:\n\n\\[ T(1) = 7 \\]",
+  "ttft_ms": 765.8
+ },
+ {
+  "i": 800,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "The correct answer is:\n\nC. States are unitary and rational actors; sovereign states will act in a way suited to achieving their goals.\n\nThis option accurately represents",
+  "ttft_ms": 671.07
+ },
+ {
+  "i": 801,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Identifying genetic variation",
+  "ttft_ms": 598.78
+ },
+ {
+  "i": 802,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. dynamically induced emf.",
+  "ttft_ms": 457.79
+ },
+ {
+  "i": 803,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. all of the above",
+  "ttft_ms": 703.74
+ },
+ {
+  "i": 804,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Cat Chow",
+  "ttft_ms": 434.36
+ },
+ {
+  "i": 805,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C. variable.\n\nMonetarists believe that the money supply (V) and velocity of money (Q) are variable and can significantly impact the economy.",
+  "ttft_ms": 314.38
+ },
+ {
+  "i": 806,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. They can indicate completion of an I/O operation.\n\nInterrupts are a mechanism that allows a computer to respond to an external event, such as a hardware",
+  "ttft_ms": 450.75
+ },
+ {
+  "i": 807,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. The Berlin blockade\n\nThe Berlin blockade was a policy implemented by the United States and the United Kingdom during the Cold War, not by Joseph Stalin.",
+  "ttft_ms": 2349.88
+ },
+ {
+  "i": 808,
+  "pred": "None",
+  "gold": "A",
+  "ok": false,
+  "gen": "To solve this problem, we can use the principle of inclusion-exclusion for sets. Let's define the sets as follows:\n- Let \\( P \\) be",
+  "ttft_ms": 554.97
+ },
+ {
+  "i": 809,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Increases the control voters have over their elected officials\n\nExplanation: Gerrymandering is the process of manipulating electoral district boundaries to favor one political party or group",
+  "ttft_ms": 564.85
+ },
+ {
+  "i": 810,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Development of the slave trade in Sub-Saharan Africa\n\nThe letters describe interactions between Portuguese explorers and the Kongo Kingdom, where Portuguese merchants and explorers",
+  "ttft_ms": 2261.41
+ },
+ {
+  "i": 811,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Women's power increasingly fell within the private sphere.\n\nThis question refers to the following information.\n\"Let a woman retire late to bed, but rise early",
+  "ttft_ms": 2713.59
+ },
+ {
+  "i": 812,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B.",
+  "ttft_ms": 657.53
+ },
+ {
+  "i": 813,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Ventilator-associated pneumonia.",
+  "ttft_ms": 399.06
+ },
+ {
+  "i": 814,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Additional terms always become part of the contract.",
+  "ttft_ms": 723.48
+ },
+ {
+  "i": 815,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "The correct answer is B. 23.",
+  "ttft_ms": 328.13
+ },
+ {
+  "i": 816,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "To answer these questions, let's break down the information provided:\n\n1. **Which organelle produces ATP?**\n   - The correct answer is B.",
+  "ttft_ms": 544.25
+ },
+ {
+  "i": 817,
+  "pred": "None",
+  "gold": "B",
+  "ok": false,
+  "gen": "To solve this problem, we need to understand the properties of prime factorization and exponents.\n\nGiven that \\( x = 107 \\cdot 1",
+  "ttft_ms": 633.53
+ },
+ {
+  "i": 818,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. the atmosphere on Mars is too thin to trap a significant amount of heat",
+  "ttft_ms": 815.88
+ },
+ {
+  "i": 819,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "To determine which representation has overflow from the addition of the integers 011000 and 011000, let's analyze each",
+  "ttft_ms": 653.29
+ },
+ {
+  "i": 820,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Oxide",
+  "ttft_ms": 408.71
+ },
+ {
+  "i": 821,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Thymine",
+  "ttft_ms": 637.97
+ },
+ {
+  "i": 822,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. Jupiter",
+  "ttft_ms": 276.3
+ },
+ {
+  "i": 823,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. They lead us into \"tragedy of the commons\" situations and they instill in us an atomistic view of persons.",
+  "ttft_ms": 840.79
+ },
+ {
+  "i": 824,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. Provide a lot of reinforcement and a small amount of punishment",
+  "ttft_ms": 552.76
+ },
+ {
+  "i": 825,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "The correct answer is A. Sunda; Wallacea.\n\nThe Sunda landmass, also known as the Sunda Plateau, is a geological feature that",
+  "ttft_ms": 645.85
+ },
+ {
+  "i": 826,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To determine how many miles Ms. Perez drove each day, we need to divide the total miles driven by the number of days.\n\nTotal miles driven = 4",
+  "ttft_ms": 494.78
+ },
+ {
+  "i": 827,
+  "pred": "D",
+  "gold": "A",
+  "ok": false,
+  "gen": "D. the number of test items on the test’s reliability.",
+  "ttft_ms": 601.95
+ },
+ {
+  "i": 828,
+  "pred": "None",
+  "gold": "B",
+  "ok": false,
+  "gen": "To determine which statement is true, let's analyze the problem of finding a shortest simple path (P_1) and a longest simple path (P_2",
+  "ttft_ms": 1266.5
+ },
+ {
+  "i": 829,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "To solve this problem, we need to use the equations of motion for an object in free fall under gravity. The key equation we will use is:\n\n\\[ h",
+  "ttft_ms": 787.1
+ },
+ {
+  "i": 830,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "To answer these questions, let's break down the information provided:\n\n1. **Which organelle produces ATP?**\n   - The correct answer is B.",
+  "ttft_ms": 645.2
+ },
+ {
+  "i": 831,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. D = 5 cm\n\nExplanation: When two waves of equal frequency and amplitude superimpose, the resultant wave's amplitude is the sum of the",
+  "ttft_ms": 806.36
+ },
+ {
+  "i": 832,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "The correct answer is C. 0.5 GeV/c^2.",
+  "ttft_ms": 611.3
+ },
+ {
+  "i": 833,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Secure IP Protocol",
+  "ttft_ms": 337.25
+ },
+ {
+  "i": 834,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. maize, beans, and squash",
+  "ttft_ms": 600.88
+ },
+ {
+  "i": 835,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Mission statement",
+  "ttft_ms": 369.51
+ },
+ {
+  "i": 836,
+  "pred": "None",
+  "gold": "B",
+  "ok": false,
+  "gen": "To determine the mean and standard deviation, we need to use the given percentages and the properties of the normal distribution. The total probability for the distribution is 1",
+  "ttft_ms": 1141.63
+ },
+ {
+  "i": 837,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "The correct answer is B. Central to the political and critical nature of post-structural literature is the idea of fostering an ethos of democracy and a critique that is",
+  "ttft_ms": 2010.34
+ },
+ {
+  "i": 838,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "To answer these questions, let's break down the information provided:\n\n1. **Which organelle produces ATP?**\n   - The correct answer is B.",
+  "ttft_ms": 630.2
+ },
+ {
+  "i": 839,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. legitimacy",
+  "ttft_ms": 322.5
+ },
+ {
+  "i": 840,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To solve this problem, we need to use the Pythagorean theorem and related rates. Let's denote the distance of the foot of the ladder from the building",
+  "ttft_ms": 769.69
+ },
+ {
+  "i": 841,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. increased investment in capital",
+  "ttft_ms": 421.32
+ },
+ {
+  "i": 842,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. testosterone.",
+  "ttft_ms": 347.53
+ },
+ {
+  "i": 843,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Finding a shortest cycle in G",
+  "ttft_ms": 580.67
+ },
+ {
+  "i": 844,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. Enhancer",
+  "ttft_ms": 360.41
+ },
+ {
+  "i": 845,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. The ability to provide credibility to the information distributed",
+  "ttft_ms": 702.66
+ },
+ {
+  "i": 846,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "The correct answer is B. 1.40%.",
+  "ttft_ms": 464.02
+ },
+ {
+  "i": 847,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. The procedures to be applied on a particular engagement are a matter of the auditor’s professional judgment.",
+  "ttft_ms": 666.23
+ },
+ {
+  "i": 848,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To determine how many seats to the left of Tonya does Kim sit, we need to follow the given information step by step.\n\n1. **Identify the",
+  "ttft_ms": 589.75
+ },
+ {
+  "i": 849,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. common person appeal",
+  "ttft_ms": 530.59
+ },
+ {
+  "i": 850,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "The correct answer is B. 6.",
+  "ttft_ms": 379.66
+ },
+ {
+  "i": 851,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. 1 in 100 to 1 in 200",
+  "ttft_ms": 620.13
+ },
+ {
+  "i": 852,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. The international recognition of human rights after WWII.",
+  "ttft_ms": 534.54
+ },
+ {
+  "i": 853,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. Identify chromosome regions associated with a complex trait in a genetic cross.",
+  "ttft_ms": 437.89
+ },
+ {
+  "i": 854,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Langar",
+  "ttft_ms": 368.14
+ },
+ {
+  "i": 855,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Epidemic disease",
+  "ttft_ms": 441.18
+ },
+ {
+  "i": 856,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. 100 KHz to 500 MHz",
+  "ttft_ms": 687.96
+ },
+ {
+  "i": 857,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Semantic",
+  "ttft_ms": 311.68
+ },
+ {
+  "i": 858,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "Answer: D. I and III only\n\nExplanation: Resolution theorem proving is a sound and complete proof system for showing that a formula is not satisfiable. It",
+  "ttft_ms": 1295.82
+ },
+ {
+  "i": 859,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. Acting out",
+  "ttft_ms": 1160.14
+ },
+ {
+  "i": 860,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Obtain a court order permitting evaluation",
+  "ttft_ms": 1629.62
+ },
+ {
+  "i": 861,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. To provide housing for all those homeless within a state",
+  "ttft_ms": 687.18
+ },
+ {
+  "i": 862,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Turnover rate",
+  "ttft_ms": 279.5
+ },
+ {
+  "i": 863,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. the process of becoming part of a society by learning its norms and values",
+  "ttft_ms": 564.93
+ },
+ {
+  "i": 864,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Inquire about the current status of transactions that were recorded on the basis of preliminary data.",
+  "ttft_ms": 663.25
+ },
+ {
+  "i": 865,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To answer these questions, let's break down the information and analyze each statement:\n\n1. **Which organelle produces ATP?**\n   - The correct answer",
+  "ttft_ms": 809.3
+ },
+ {
+  "i": 866,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "The correct answer is C. (i), (ii), and (iii) only.\n\nExplanation:\n(i) The Box-Jenkins approach is used to identify the",
+  "ttft_ms": 1359.62
+ },
+ {
+  "i": 867,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Unacceptable premises",
+  "ttft_ms": 317.69
+ },
+ {
+  "i": 868,
+  "pred": "A",
+  "gold": "D",
+  "ok": false,
+  "gen": "A. The true proportion of students at this university with the correct address on record is within the confidence interval constructed.",
+  "ttft_ms": 1366.34
+ },
+ {
+  "i": 869,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Service recovery.",
+  "ttft_ms": 449.82
+ },
+ {
+  "i": 870,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Functional",
+  "ttft_ms": 370.33
+ },
+ {
+  "i": 871,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "In hypovolaemic shock, the percentage of blood that can be lost before it is reflected in changes in heart rate and blood pressure is typically less than",
+  "ttft_ms": 430.8
+ },
+ {
+  "i": 872,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Undermining Communism in Vietnam after the Tet Offensive",
+  "ttft_ms": 3154.98
+ },
+ {
+  "i": 873,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Corpus luteum",
+  "ttft_ms": 534.28
+ },
+ {
+  "i": 874,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. the steam engine",
+  "ttft_ms": 3612.67
+ },
+ {
+  "i": 875,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Hyperventilation",
+  "ttft_ms": 373.8
+ },
+ {
+  "i": 876,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. All of these options.",
+  "ttft_ms": 444.9
+ },
+ {
+  "i": 877,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. decreasing SRAS with constant AD.",
+  "ttft_ms": 387.71
+ },
+ {
+  "i": 878,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Girls being attached to their mothers but then breaking away",
+  "ttft_ms": 713.41
+ },
+ {
+  "i": 879,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "The correct answer is B. The demand curve for the output produced by labor. The demand curve for labor is derived from the demand curve for the output produced by",
+  "ttft_ms": 396.3
+ },
+ {
+  "i": 880,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "The correct answer is C. ratio of 1 C to 1 V.",
+  "ttft_ms": 385.84
+ },
+ {
+  "i": 881,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. The water level of a large lake lowered. A beach then formed where previously there had been lake bottom.",
+  "ttft_ms": 1074.2
+ },
+ {
+  "i": 882,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Uracil",
+  "ttft_ms": 316.27
+ },
+ {
+  "i": 883,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. there is no one distinguishing feature that identifies an issue as philosophic, only an overlapping of issues roughly associated with one another.",
+  "ttft_ms": 1398.75
+ },
+ {
+  "i": 884,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. Eukaryotic organelles helped create separate environments for metabolic reactions, thus increasing their metabolic efficiency.",
+  "ttft_ms": 1086.69
+ },
+ {
+  "i": 885,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. 4F",
+  "ttft_ms": 586.49
+ },
+ {
+  "i": 886,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "The correct answer is B. (-4.16,4.16).",
+  "ttft_ms": 702.55
+ },
+ {
+  "i": 887,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. was unaffected by Germany's defeat in World War II",
+  "ttft_ms": 1613.32
+ },
+ {
+  "i": 888,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Three-age system",
+  "ttft_ms": 506.45
+ },
+ {
+  "i": 889,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Whether the mother's refusal to authorize medical treatment is justified on the basis of current knowledge.\n\nThe state court must consider whether the mother's refusal to authorize",
+  "ttft_ms": 1442.54
+ },
+ {
+  "i": 890,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Both A and B",
+  "ttft_ms": 286.53
+ },
+ {
+  "i": 891,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. C2H5OH(aq) + O2(aq) → HC2H3O2(aq) + H2O(aq",
+  "ttft_ms": 1142.28
+ },
+ {
+  "i": 892,
+  "pred": "None",
+  "gold": "A",
+  "ok": false,
+  "gen": "To determine the average pitch in a lap winding dc machine, we need to understand the relationship between the number of conductors, the number of parallel paths, and",
+  "ttft_ms": 449.69
+ },
+ {
+  "i": 893,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "The correct answer is B. 16%.",
+  "ttft_ms": 368.93
+ },
+ {
+  "i": 894,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Recognition of governments has largely been replaced by functional Recognition\n\nThis answer reflects the current trend in international relations, where governments are often recognized based on th",
+  "ttft_ms": 524.84
+ },
+ {
+  "i": 895,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. superordinate goals",
+  "ttft_ms": 538.17
+ },
+ {
+  "i": 896,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Mitochondrion",
+  "ttft_ms": 739.67
+ },
+ {
+  "i": 897,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Fe ⊃ Ss",
+  "ttft_ms": 497.87
+ },
+ {
+  "i": 898,
+  "pred": "None",
+  "gold": "A",
+  "ok": false,
+  "gen": "To solve this problem, we need to use the concept of half-life. The half-life is the time it takes for half of the material to decay. Given",
+  "ttft_ms": 726.78
+ },
+ {
+  "i": 899,
+  "pred": "A",
+  "gold": "C",
+  "ok": false,
+  "gen": "A. Quantity demanded of pears rises.",
+  "ttft_ms": 408.64
+ },
+ {
+  "i": 900,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. The conquest of Constantinople by Latin Christians\n\nThe speech presented by Pope Urban II at the Council of Clermont in 1095 C.E",
+  "ttft_ms": 5400.28
+ },
+ {
+  "i": 901,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. The chartering of companies to assume costs and share profits\n\nThe passage describes the use of companies to manage and control the Indian trade, which aligns",
+  "ttft_ms": 2728.95
+ },
+ {
+  "i": 902,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. Category-killer stores.\n\nThese stores are characterized by their narrow but very deep product assortment, low prices, and few to moderate customer services, which are",
+  "ttft_ms": 448.17
+ },
+ {
+  "i": 903,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. not realizing how cold the pool is after you are under the water for a few minutes",
+  "ttft_ms": 652.99
+ },
+ {
+  "i": 904,
+  "pred": "None",
+  "gold": "A",
+  "ok": false,
+  "gen": "The Punjabi word \"Sikh\" means \"enlightened\" or \"disciple\" in English. It refers to a person who has been enlightened or",
+  "ttft_ms": 314.22
+ },
+ {
+  "i": 905,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Work-life balance",
+  "ttft_ms": 618.71
+ },
+ {
+  "i": 906,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D. not succeed, because the law does not permit the mortgagor to delegate duties under this type of a property transfer.\n\nExplanation: In a jurisdiction",
+  "ttft_ms": 2332.76
+ },
+ {
+  "i": 907,
+  "pred": "D",
+  "gold": "C",
+  "ok": false,
+  "gen": "D. Reform",
+  "ttft_ms": 1387.91
+ },
+ {
+  "i": 908,
+  "pred": "C",
+  "gold": "D",
+  "ok": false,
+  "gen": "The correct answer is C. Human rights orientated liberalism is particularly focused on persons subject to economic, sexual, gender, religious, and political persecution, discrimination,",
+  "ttft_ms": 716.95
+ },
+ {
+  "i": 909,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. penetration",
+  "ttft_ms": 283.33
+ },
+ {
+  "i": 910,
+  "pred": "None",
+  "gold": "D",
+  "ok": false,
+  "gen": "To determine the theoretically best possible elapsed times for the program running with 2 and 4 processors, we need to consider the sequential part of the computation and how",
+  "ttft_ms": 840.93
+ },
+ {
+  "i": 911,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C. It is lipid soluble and can react with free radicals in the bloodstream resulting from nitric oxide formation by vascular endothelial cells.",
+  "ttft_ms": 878.01
+ },
+ {
+  "i": 912,
+  "pred": "C",
+  "gold": "B",
+  "ok": false,
+  "gen": "C. Florida",
+  "ttft_ms": 273.3
+ },
+ {
+  "i": 913,
+  "pred": "None",
+  "gold": "A",
+  "ok": false,
+  "gen": "To determine the area of the polygon formed by the $x$- and $y$-intercepts of the graph of $y = f(x) =",
+  "ttft_ms": 716.55
+ },
+ {
+  "i": 914,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. The metabolic demand is to maintain protein turnover.",
+  "ttft_ms": 613.79
+ },
+ {
+  "i": 915,
+  "pred": "D",
+  "gold": "B",
+  "ok": false,
+  "gen": "D. confusion stage",
+  "ttft_ms": 401.0
+ },
+ {
+  "i": 916,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "Answer: B\n\nThe L1 norm is a type of regularization penalty that encourages sparsity in the model coefficients. It is also known as the Lasso (",
+  "ttft_ms": 602.76
+ },
+ {
+  "i": 917,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. The absence of implementing legislation with respect to the Council's founding treaty meant that individuals did not derive rights and duties from it in the English legal system",
+  "ttft_ms": 889.46
+ },
+ {
+  "i": 918,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. the empowerment of Congress to regulate commerce",
+  "ttft_ms": 1404.52
+ },
+ {
+  "i": 919,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. In biology, the correct answer is B. Mitochondrion. Mitochondria are the organelles that produce ATP (adenosine tri",
+  "ttft_ms": 591.39
+ },
+ {
+  "i": 920,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Biased but consistent",
+  "ttft_ms": 619.41
+ },
+ {
+  "i": 921,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Severe pain usually indicates a life threatening cause",
+  "ttft_ms": 618.0
+ },
+ {
+  "i": 922,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. . . . asthma.\n\nExplanation: Serial peak flow readings over a two-week period are typically used to monitor the progression of asthma, which is a condition",
+  "ttft_ms": 443.36
+ },
+ {
+  "i": 923,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "The correct answer is D. The term 'marketing mix' describes a blending of four strategic elements to satisfy specific target markets.",
+  "ttft_ms": 606.78
+ },
+ {
+  "i": 924,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B.",
+  "ttft_ms": 689.43
+ },
+ {
+  "i": 925,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Cluster migration",
+  "ttft_ms": 330.06
+ },
+ {
+  "i": 926,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Mitochondrion",
+  "ttft_ms": 377.88
+ },
+ {
+  "i": 927,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Wrong, Not wrong",
+  "ttft_ms": 751.82
+ },
+ {
+  "i": 928,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "The correct answer is C. Customer participation and customer relationship.",
+  "ttft_ms": 533.33
+ },
+ {
+  "i": 929,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. all three structures.",
+  "ttft_ms": 384.1
+ },
+ {
+  "i": 930,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "B. Because Aristotle justified slavery.\n\nThis answer is correct because Aristotle's philosophy of communitarianism, which emphasizes the importance of the community and the individual's",
+  "ttft_ms": 586.34
+ },
+ {
+  "i": 931,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Sensitive or critical periods",
+  "ttft_ms": 544.56
+ },
+ {
+  "i": 932,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. Paris, France",
+  "ttft_ms": 460.6
+ },
+ {
+  "i": 933,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "The correct answer is B. sometimes.\n\nIn four-dimensional geometry, the angles of a triangle do not necessarily add up to 180°. In four",
+  "ttft_ms": 324.55
+ },
+ {
+  "i": 934,
+  "pred": "None",
+  "gold": "C",
+  "ok": false,
+  "gen": "To determine the best unit for measuring the electronic storage required for the text in all the books of the university's libraries, we need to calculate the total number of",
+  "ttft_ms": 1558.08
+ },
+ {
+  "i": 935,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Specific punishments are justified based on the overall intrinsic value that they produce",
+  "ttft_ms": 619.73
+ },
+ {
+  "i": 936,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. codified",
+  "ttft_ms": 263.42
+ },
+ {
+  "i": 937,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. A 4% price increase results in a 6% decrease in the quantity demanded.",
+  "ttft_ms": 784.28
+ },
+ {
+  "i": 938,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Government efforts to prevent the publication of the Pentagon Papers in 1971",
+  "ttft_ms": 3509.48
+ },
+ {
+  "i": 939,
+  "pred": "D",
+  "gold": "A",
+  "ok": false,
+  "gen": "D. Peroxisomes are the site for the degradation of xenobiotics and eicosanoids.\n\nExplanation:\nPeroxisomes are indeed involved in the",
+  "ttft_ms": 985.43
+ },
+ {
+  "i": 940,
+  "pred": "None",
+  "gold": "A",
+  "ok": false,
+  "gen": "To determine Strom's basis in Ace Partnership, we need to consider the following:\n\n1. Strom contributed land with an adjusted basis of $16,00",
+  "ttft_ms": 884.01
+ },
+ {
+  "i": 941,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Wrong, Not wrong",
+  "ttft_ms": 874.53
+ },
+ {
+  "i": 942,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. The pioneers",
+  "ttft_ms": 2351.18
+ },
+ {
+  "i": 943,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Succession",
+  "ttft_ms": 317.15
+ },
+ {
+  "i": 944,
+  "pred": "None",
+  "gold": "B",
+  "ok": false,
+  "gen": "The probable legal effect of the tutor's endorsement of the check is:\n\nB. It constituted an accord and satisfaction of an unliquidated claim.\n\nThis is because",
+  "ttft_ms": 3623.29
+ },
+ {
+  "i": 945,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. The electric field between a pair of oppositely charged parallel plates follows the inverse-square law.",
+  "ttft_ms": 373.54
+ },
+ {
+  "i": 946,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Style over substance",
+  "ttft_ms": 437.95
+ },
+ {
+  "i": 947,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Position is known exactly, but no information about momentum can be known.",
+  "ttft_ms": 731.1
+ },
+ {
+  "i": 948,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. influences the position of the viscerocranium.",
+  "ttft_ms": 626.71
+ },
+ {
+  "i": 949,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Mechanical solidarity leads to repressive law. Organic solidarity leads to restitutive law.\n\nThis is a correct statement about the relationship between the type of law",
+  "ttft_ms": 833.9
+ },
+ {
+  "i": 950,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Class consciousness",
+  "ttft_ms": 311.55
+ },
+ {
+  "i": 951,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. Elaborative rehearsal\n\nExplanation:\nElaborative rehearsal is a learning strategy where the learner actively connects new information to existing knowledge. In this case,",
+  "ttft_ms": 642.76
+ },
+ {
+  "i": 952,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "The correct answer is B. 40%.",
+  "ttft_ms": 434.44
+ },
+ {
+  "i": 953,
+  "pred": "D",
+  "gold": "A",
+  "ok": false,
+  "gen": "The correct answer is D. The U.S. and the U.S.S.R.",
+  "ttft_ms": 317.29
+ },
+ {
+  "i": 954,
+  "pred": "B",
+  "gold": "A",
+  "ok": false,
+  "gen": "B. A national holiday",
+  "ttft_ms": 314.81
+ },
+ {
+  "i": 955,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Psychoanalytic",
+  "ttft_ms": 1292.24
+ },
+ {
+  "i": 956,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. the mucosa covering the vocal folds is tightly attached to underlying tissues.",
+  "ttft_ms": 697.08
+ },
+ {
+  "i": 957,
+  "pred": "B",
+  "gold": "C",
+  "ok": false,
+  "gen": "B. Thymine",
+  "ttft_ms": 754.33
+ },
+ {
+  "i": 958,
+  "pred": "B",
+  "gold": "D",
+  "ok": false,
+  "gen": "B. Females are more likely to have depression and are more likely to have an alcohol use disorder than males.",
+  "ttft_ms": 877.99
+ },
+ {
+  "i": 959,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. It has an all-or-none quality: it either happens, or it does not.\n\nThis is the most accurate description of the firing of a neuron.",
+  "ttft_ms": 615.22
+ },
+ {
+  "i": 960,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. It greatly improved crop yields in sub-Saharan Africa.\n\nThe Green Revolution, also known as the Third Green Revolution, was a period of agricultural progress in the",
+  "ttft_ms": 547.25
+ },
+ {
+  "i": 961,
+  "pred": "C",
+  "gold": "A",
+  "ok": false,
+  "gen": "C. Third-party endorsement",
+  "ttft_ms": 387.14
+ },
+ {
+  "i": 962,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Unpredictable fluctuations.",
+  "ttft_ms": 591.57
+ },
+ {
+  "i": 963,
+  "pred": "D",
+  "gold": "D",
+  "ok": true,
+  "gen": "D. price level and real GDP",
+  "ttft_ms": 500.05
+ },
+ {
+  "i": 964,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Decimal 11, Binary 1100, Hexadecimal D",
+  "ttft_ms": 839.83
+ },
+ {
+  "i": 965,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. Europeans gaining a more thorough understanding of the rich cultural diversity through trade and travel",
+  "ttft_ms": 3830.84
+ },
+ {
+  "i": 966,
+  "pred": "C",
+  "gold": "C",
+  "ok": true,
+  "gen": "C. $14,000\n\nExplanation:\nIn a liquidating distribution, the basis of the distributed property is transferred to the recipient. The basis",
+  "ttft_ms": 1196.0
+ },
+ {
+  "i": 967,
+  "pred": "A",
+  "gold": "A",
+  "ok": true,
+  "gen": "A. Appeal to consensus is another name for appeal to the people.",
+  "ttft_ms": 395.57
+ },
+ {
+  "i": 968,
+  "pred": "B",
+  "gold": "B",
+  "ok": true,
+  "gen": "B. In a buffer solution, the base pair that can be used is a conjugate acid-base pair. For example, a common buffer system is a conjug",
+  "ttft_ms": 456.11
+ }
+]

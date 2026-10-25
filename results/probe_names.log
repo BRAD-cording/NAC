@@ -1,0 +1,39 @@
+/media/pi/DATA/rknn-llm/nac_paper/scripts/probe_module_names.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  llm = rb.RKLLMBase()
+[37mINFO: rkllm-toolkit version: 1.2.3[0m
+[names] load ret=0
+[names] model class=Qwen2ForCausalLM
+[names] total=371
+[names] Qwen2ForCausalLM         
+[names] Qwen2Model               model
+[names] Embedding                model.embed_tokens
+[names] ModuleList               model.layers
+[names] Qwen2DecoderLayer        model.layers.0
+[names] Qwen2Attention           model.layers.0.self_attn
+[names] Linear                   model.layers.0.self_attn.q_proj
+[names] Linear                   model.layers.0.self_attn.k_proj
+[names] Linear                   model.layers.0.self_attn.v_proj
+[names] Linear                   model.layers.0.self_attn.o_proj
+[names] Qwen2MLP                 model.layers.0.mlp
+[names] Linear                   model.layers.0.mlp.gate_proj
+[names] Linear                   model.layers.0.mlp.up_proj
+[names] Linear                   model.layers.0.mlp.down_proj
+[names] SiLU                     model.layers.0.mlp.act_fn
+[names] --- sample with 'layers.0' ---
+[names] Qwen2DecoderLayer        model.layers.0
+[names] Qwen2Attention           model.layers.0.self_attn
+[names] Linear                   model.layers.0.self_attn.q_proj
+[names] Linear                   model.layers.0.self_attn.k_proj
+[names] Linear                   model.layers.0.self_attn.v_proj
+[names] Linear                   model.layers.0.self_attn.o_proj
+[names] Qwen2MLP                 model.layers.0.mlp
+[names] Linear                   model.layers.0.mlp.gate_proj
+[names] Linear                   model.layers.0.mlp.up_proj
+[names] Linear                   model.layers.0.mlp.down_proj
+[names] SiLU                     model.layers.0.mlp.act_fn
+[names] Qwen2RMSNorm             model.layers.0.input_layernorm
+[names] Qwen2RMSNorm             model.layers.0.post_attention_layernorm
+[names] --- linear-ish classes ---
+[names] {'Linear': 'model.layers.0.self_attn.q_proj'}
+[names] module classes=['Embedding', 'Linear', 'ModuleList', 'Qwen2Attention', 'Qwen2DecoderLayer', 'Qwen2ForCausalLM', 'Qwen2MLP', 'Qwen2Model', 'Qwen2RMSNorm', 'Qwen2RotaryEmbedding', 'SiLU']
+[names] DONE

@@ -1,0 +1,79 @@
+{
+  "model": "models/Qwen2.5-1.5B-Instruct-hf",
+  "group_size": 64,
+  "num_samples": 1000,
+  "max_new_tokens": 32,
+  "protocol": "zero-shot generative(32tok)+firsttok, batched sim fp32",
+  "configs": {
+    "minmax": {
+      "num_evaluated": 969,
+      "acc_gen": 0.4675,
+      "acc_gen_ci95": [
+        0.4355,
+        0.4985
+      ],
+      "acc_ftok": 0.4561,
+      "acc_ftok_ci95": [
+        0.4241,
+        0.4881
+      ],
+      "none_gen_rate": 0.0072,
+      "none_ftok_rate": 0.0103,
+      "elapsed_s": 0.6
+    },
+    "nac": {
+      "num_evaluated": 969,
+      "acc_gen": 0.3932,
+      "acc_gen_ci95": [
+        0.3643,
+        0.4231
+      ],
+      "acc_ftok": 0.387,
+      "acc_ftok_ci95": [
+        0.3571,
+        0.418
+      ],
+      "none_gen_rate": 0.0454,
+      "none_ftok_rate": 0.0485,
+      "elapsed_s": 0.6
+    },
+    "gptq": {
+      "num_evaluated": 969,
+      "acc_gen": 0.452,
+      "acc_gen_ci95": [
+        0.42,
+        0.485
+      ],
+      "acc_ftok": 0.4499,
+      "acc_ftok_ci95": [
+        0.4169,
+        0.484
+      ],
+      "none_gen_rate": 0.0155,
+      "none_ftok_rate": 0.0206,
+      "elapsed_s": 0.5
+    },
+    "fp16": {
+      "num_evaluated": 969,
+      "acc_gen": 0.4634,
+      "acc_gen_ci95": [
+        0.4324,
+        0.4943
+      ],
+      "acc_ftok": 0.4634,
+      "acc_ftok_ci95": [
+        0.4334,
+        0.4943
+      ],
+      "none_gen_rate": 0.0,
+      "none_ftok_rate": 0.0,
+      "elapsed_s": 4166.5
+    }
+  },
+  "paired_nac_vs_minmax": {
+    "n": 969,
+    "acc_diff_pp": -7.43,
+    "mcnemar_b_minmax_only": 108,
+    "mcnemar_c_nac_only": 36
+  }
+}

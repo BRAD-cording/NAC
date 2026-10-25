@@ -1,0 +1,14 @@
+# RK3576 端（本机）评测依赖
+numpy>=1.24
+pyyaml>=6.0
+tqdm>=4.65
+
+# 精度评测需要（数据下载 + 分词）
+transformers>=4.37
+datasets>=2.14
+
+# NAC 校准（CPU 端 PTQ；1.5B/3B 可在 RK3576 上跑，7B 建议 x86）
+torch>=2.1
+
+# ---- 以下仅 x86 校准机需要（rkllm_toolkit 官方 wheel 为 x86_64, cp38/cp310）----
+# rkllm-toolkit @ file:///path/to/rkllm_toolkit-1.1.4-cp310-cp310-linux_x86_64.whl

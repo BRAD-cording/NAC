@@ -1,0 +1,19 @@
+==> [3/4] qemu 冒烟 + pip 依赖（较慢，属正常）
+Python 3.10.22
+WARNING: Ignoring invalid distribution -ransformers (/media/pi/DATA/rktoolkit/x86py/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -ransformers (/media/pi/DATA/rktoolkit/x86py/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -ransformers (/media/pi/DATA/rktoolkit/x86py/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -ransformers (/media/pi/DATA/rktoolkit/x86py/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -ransformers (/media/pi/DATA/rktoolkit/x86py/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -ransformers (/media/pi/DATA/rktoolkit/x86py/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -ransformers (/media/pi/DATA/rktoolkit/x86py/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -ransformers (/media/pi/DATA/rktoolkit/x86py/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -ransformers (/media/pi/DATA/rktoolkit/x86py/lib/python3.10/site-packages)
+==> [4/4] rkllm-toolkit 1.2.3
+WARNING: Ignoring invalid distribution -ransformers (/media/pi/DATA/rktoolkit/x86py/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -ransformers (/media/pi/DATA/rktoolkit/x86py/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -ransformers (/media/pi/DATA/rktoolkit/x86py/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -ransformers (/media/pi/DATA/rktoolkit/x86py/lib/python3.10/site-packages)
+WARNING: Ignoring invalid distribution -ransformers (/media/pi/DATA/rktoolkit/x86py/lib/python3.10/site-packages)
+rkllm_toolkit import OK
+[setup] OK

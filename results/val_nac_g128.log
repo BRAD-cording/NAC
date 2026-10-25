@@ -1,0 +1,43 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[val] loading models/Qwen2.5-1.5B-Instruct-hf ...
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  19%|█▉        | 64/338 [00:00<00:00, 339.35it/s]Loading weights:  29%|██▉       | 98/338 [00:00<00:00, 303.99it/s]Loading weights:  38%|███▊      | 128/338 [00:00<00:00, 243.77it/s]Loading weights:  45%|████▌     | 153/338 [00:00<00:00, 243.01it/s]Loading weights:  53%|█████▎    | 179/338 [00:00<00:00, 239.82it/s]Loading weights:  60%|██████    | 203/338 [00:01<00:02, 58.01it/s] Loading weights:  65%|██████▌   | 220/338 [00:03<00:04, 24.86it/s]Loading weights:  69%|██████▊   | 232/338 [00:05<00:05, 20.01it/s]Loading weights:  72%|███████▏  | 243/338 [00:06<00:05, 17.12it/s]Loading weights:  74%|███████▎  | 249/338 [00:06<00:04, 18.39it/s]Loading weights:  75%|███████▌  | 255/338 [00:07<00:05, 14.26it/s]Loading weights:  77%|███████▋  | 259/338 [00:07<00:05, 15.12it/s]Loading weights:  79%|███████▉  | 267/338 [00:08<00:05, 12.43it/s]Loading weights:  80%|███████▉  | 270/338 [00:08<00:05, 13.41it/s]Loading weights:  83%|████████▎ | 279/338 [00:09<00:04, 12.11it/s]Loading weights:  83%|████████▎ | 282/338 [00:09<00:04, 12.25it/s]Loading weights:  86%|████████▌ | 291/338 [00:10<00:04, 11.32it/s]Loading weights:  87%|████████▋ | 293/338 [00:10<00:03, 11.41it/s]Loading weights:  90%|████████▉ | 303/338 [00:11<00:03, 10.85it/s]Loading weights:  90%|█████████ | 305/338 [00:11<00:03, 11.00it/s]Loading weights:  93%|█████████▎| 315/338 [00:12<00:02, 10.75it/s]Loading weights:  94%|█████████▍| 317/338 [00:12<00:01, 10.99it/s]Loading weights:  97%|█████████▋| 327/338 [00:13<00:00, 11.12it/s]Loading weights: 100%|██████████| 338/338 [00:13<00:00, 24.64it/s]
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext.py
+Retrying in 1s [Retry 1/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext.py
+Retrying in 2s [Retry 2/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext.py
+Retrying in 4s [Retry 3/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext.py
+Retrying in 8s [Retry 4/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext.py
+Retrying in 8s [Retry 5/5].
+'[Errno -3] Temporary failure in name resolution' thrown while requesting HEAD https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext.py
+Using the latest cached version of the dataset since Salesforce/wikitext couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at /home/pi/.cache/huggingface/datasets/Salesforce___wikitext/wikitext-2-raw-v1/0.0.0/b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Tue Oct  6 19:52:06 2026).
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (299078 > 131072). Running this sequence through the model will result in indexing errors
+[val] held-out: 16 seqs x 1024 tokens
+[val] fp16   PPL = 10.627  (reused)
+    [ppl] 2/16 seqs
+    [ppl] 4/16 seqs
+    [ppl] 6/16 seqs
+    [ppl] 8/16 seqs
+    [ppl] 10/16 seqs
+    [ppl] 12/16 seqs
+    [ppl] 14/16 seqs
+    [ppl] 16/16 seqs
+[val] minmax  PPL = 11.988  (2128s)
+    [ppl] 2/16 seqs
+    [ppl] 4/16 seqs
+    [ppl] 6/16 seqs
+    [ppl] 8/16 seqs
+    [ppl] 10/16 seqs
+    [ppl] 12/16 seqs
+    [ppl] 14/16 seqs
+    [ppl] 16/16 seqs
+[val] nac     PPL = 11.679  (2106s)
+[val] -> results/val_nac_g128.json
+{
+ "fp16": 10.627,
+ "minmax": 11.988,
+ "nac": 11.679
+}

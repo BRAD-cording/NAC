@@ -1,0 +1,2 @@
+[mut] model.layers.0.self_attn.q_proj.weight_qscale: x8.0 -> mean=0.050203
+[mut] saved 39 keys -> results/tiny_gdq_mut.qparams

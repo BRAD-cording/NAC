@@ -1,0 +1,6 @@
+{
+  "model": "models/Qwen2.5-1.5B-Instruct_RK3576_w4a16.rkllm",
+  "task": "mmlu",
+  "num_samples": 24,
+  "mmlu_acc": 0.5
+}

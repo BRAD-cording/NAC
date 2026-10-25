@@ -1,0 +1,10 @@
+I rkllm: rkllm-runtime version: 1.2.3, rknpu driver version: 0.9.8, platform: RK3576
+I rkllm: loading rkllm model from models/Qwen2.5-1.5B-Instruct_RK3576_w4a16.rkllm
+I rkllm: rkllm-toolkit version: 1.2.3, max_context_limit: 4096, npu_core_num: 2, target_platform: RK3576, model_dtype: W4A16
+I rkllm: Enabled cpus: [4, 5, 6, 7]
+I rkllm: Enabled cpus num: 4
+[perf] len=  125 ttft=    91.5ms decode= 13.01tok/s total=  9928.8ms
+[perf] len=  497 ttft=   107.4ms decode= 11.73tok/s total=  6160.6ms
+[perf] len=  993 ttft=   125.4ms decode= 10.44tok/s total=  2771.2ms
+[perf] len= 1985 ttft=   181.5ms decode=  7.42tok/s total= 17459.7ms
+[perf] -> results/perf_qwen1.5b_w4a16_full.json

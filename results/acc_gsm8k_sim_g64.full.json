@@ -1,0 +1,45 @@
+{
+  "model": "models/Qwen2.5-1.5B-Instruct-hf",
+  "group_size": 64,
+  "num_samples": 200,
+  "max_new_tokens": 512,
+  "protocol": "2-shot CoT generative(512tok), batched sim fp32",
+  "configs": {
+    "minmax": {
+      "num_evaluated": 200,
+      "acc": 0.075,
+      "acc_ci95": [
+        0.04,
+        0.115
+      ],
+      "none_rate": 0.0,
+      "elapsed_s": 0.1
+    },
+    "nac": {
+      "num_evaluated": 200,
+      "acc": 0.07,
+      "acc_ci95": [
+        0.035,
+        0.11
+      ],
+      "none_rate": 0.0,
+      "elapsed_s": 0.1
+    },
+    "gptq": {
+      "num_evaluated": 200,
+      "acc": 0.305,
+      "acc_ci95": [
+        0.24,
+        0.37
+      ],
+      "none_rate": 0.0,
+      "elapsed_s": 0.1
+    }
+  },
+  "paired_nac_vs_minmax": {
+    "n": 200,
+    "acc_diff_pp": -0.5,
+    "mcnemar_b_minmax_only": 12,
+    "mcnemar_c_nac_only": 11
+  }
+}

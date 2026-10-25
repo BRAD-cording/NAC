@@ -1,0 +1,331 @@
+=== queue start 2026-10-13 19:26:31 ===
+=== queue start 2026-10-15 11:13:40 ===
+[queue] nac-p0 inactive but MMLU g64 incomplete(1/4) -> resume 11:13:40
+Running as unit: nac-p0.service
+=== queue start 2026-10-15 19:19:20 ===
+[queue] nac-p0 inactive but MMLU g64 incomplete(2/4) -> resume 19:19:20
+Running as unit: nac-p0.service
+=== queue start 2026-10-16 13:09:41 ===
+[queue] nac-p0 inactive but MMLU g64 incomplete(3/4) -> resume 13:09:41
+Running as unit: nac-p0.service
+=== queue start 2026-10-16 22:53:38 ===
+[queue] nac-p0 inactive but MMLU g64 incomplete(3/4) -> resume 22:53:38
+Running as unit: nac-p0.service
+=== [1/3] MMLU g64 4-configs DONE 2026-10-17 00:10:11 ===
+[sim-gsm8k] loading models/Qwen2.5-1.5B-Instruct-hf (fp32) ...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:03<17:29,  3.12s/it]Loading weights:  36%|███▋      | 123/338 [00:03<00:04, 50.86it/s]Loading weights:  46%|████▌     | 155/338 [00:03<00:03, 53.02it/s]Loading weights:  52%|█████▏    | 175/338 [00:04<00:03, 52.10it/s]Loading weights:  56%|█████▌    | 189/338 [00:04<00:02, 53.80it/s]Loading weights:  59%|█████▉    | 201/338 [00:04<00:02, 53.62it/s]Loading weights:  62%|██████▏   | 211/338 [00:04<00:02, 51.19it/s]Loading weights:  65%|██████▍   | 219/338 [00:05<00:02, 49.05it/s]Loading weights:  68%|██████▊   | 231/338 [00:05<00:02, 51.28it/s]Loading weights:  72%|███████▏  | 243/338 [00:05<00:01, 52.58it/s]Loading weights:  75%|███████▌  | 255/338 [00:05<00:01, 52.00it/s]Loading weights:  79%|███████▉  | 267/338 [00:06<00:01, 52.15it/s]Loading weights:  83%|████████▎ | 279/338 [00:06<00:01, 51.68it/s]Loading weights:  86%|████████▌ | 291/338 [00:06<00:00, 53.50it/s]Loading weights:  90%|████████▉ | 303/338 [00:06<00:00, 55.52it/s]Loading weights:  93%|█████████▎| 315/338 [00:06<00:00, 53.45it/s]Loading weights:  97%|█████████▋| 327/338 [00:07<00:00, 54.46it/s]Loading weights: 100%|██████████| 338/338 [00:07<00:00, 46.99it/s]
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 1s [Retry 1/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 2s [Retry 2/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 4s [Retry 3/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 8s [Retry 4/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 8s [Retry 5/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Using the latest cached version of the dataset since openai/gsm8k couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'main' at /home/pi/.cache/huggingface/datasets/openai___gsm8k/main/0.0.0/740312add88f781978c0658806c59bc2815b9866 (last modified on Tue Oct  6 20:10:10 2026).
+[sim-gsm8k] 200 questions (board-protocol, 2-shot CoT) gs=64 bs=16
+[sim-gsm8k] ===== config: minmax =====
+[sim-gsm8k] 16/200 acc=0.0625 (169.96s/q, ETA 8.7h)
+[sim-gsm8k] 32/200 acc=0.0625 (175.74s/q, ETA 8.2h)
+[sim-gsm8k] 48/200 acc=0.0625 (181.98s/q, ETA 7.7h)
+[sim-gsm8k] 64/200 acc=0.0469 (182.93s/q, ETA 6.9h)
+[sim-gsm8k] 80/200 acc=0.0750 (183.59s/q, ETA 6.1h)
+[sim-gsm8k] 96/200 acc=0.0625 (183.69s/q, ETA 5.3h)
+[sim-gsm8k] 112/200 acc=0.0536 (184.09s/q, ETA 4.5h)
+[sim-gsm8k] 128/200 acc=0.0547 (185.4s/q, ETA 3.7h)
+[sim-gsm8k] 144/200 acc=0.0556 (185.96s/q, ETA 2.9h)
+[sim-gsm8k] 160/200 acc=0.0750 (185.42s/q, ETA 2.1h)
+[sim-gsm8k] 176/200 acc=0.0739 (185.26s/q, ETA 1.2h)
+[sim-gsm8k] 192/200 acc=0.0729 (186.05s/q, ETA 0.4h)
+[sim-gsm8k] 200/200 acc=0.0750 (189.67s/q, ETA 0.0h)
+[sim-gsm8k] minmax: {"num_evaluated": 200, "acc": 0.075, "acc_ci95": [0.04, 0.115], "none_rate": 0.0, "elapsed_s": 37933.8}
+[sim-gsm8k] ===== config: nac =====
+[sim-gsm8k] 16/200 acc=0.1250 (179.63s/q, ETA 9.2h)
+[sim-gsm8k] 32/200 acc=0.0938 (180.46s/q, ETA 8.4h)
+[sim-gsm8k] 48/200 acc=0.0625 (185.84s/q, ETA 7.8h)
+[sim-gsm8k] 64/200 acc=0.0625 (186.68s/q, ETA 7.1h)
+[sim-gsm8k] 80/200 acc=0.0625 (187.5s/q, ETA 6.2h)
+[sim-gsm8k] 96/200 acc=0.0625 (188.32s/q, ETA 5.4h)
+[sim-gsm8k] 112/200 acc=0.0536 (188.63s/q, ETA 4.6h)
+[sim-gsm8k] 128/200 acc=0.0703 (189.48s/q, ETA 3.8h)
+[sim-gsm8k] 144/200 acc=0.0625 (190.1s/q, ETA 3.0h)
+[sim-gsm8k] 160/200 acc=0.0688 (189.26s/q, ETA 2.1h)
+[sim-gsm8k] 176/200 acc=0.0795 (189.06s/q, ETA 1.3h)
+[sim-gsm8k] 192/200 acc=0.0729 (189.59s/q, ETA 0.4h)
+[sim-gsm8k] 200/200 acc=0.0700 (192.97s/q, ETA 0.0h)
+[sim-gsm8k] nac: {"num_evaluated": 200, "acc": 0.07, "acc_ci95": [0.035, 0.11], "none_rate": 0.0, "elapsed_s": 38593.3}
+[sim-gsm8k] ===== config: gptq =====
+[sim-gsm8k] 16/200 acc=0.5625 (181.47s/q, ETA 9.3h)
+[sim-gsm8k] 32/200 acc=0.3125 (185.79s/q, ETA 8.7h)
+[sim-gsm8k] 48/200 acc=0.3333 (189.21s/q, ETA 8.0h)
+[sim-gsm8k] 64/200 acc=0.3125 (188.98s/q, ETA 7.1h)
+[sim-gsm8k] 80/200 acc=0.3250 (189.29s/q, ETA 6.3h)
+[sim-gsm8k] 96/200 acc=0.3438 (188.5s/q, ETA 5.4h)
+[sim-gsm8k] 112/200 acc=0.3125 (188.79s/q, ETA 4.6h)
+[sim-gsm8k] 128/200 acc=0.3203 (189.29s/q, ETA 3.8h)
+[sim-gsm8k] 144/200 acc=0.3194 (189.77s/q, ETA 3.0h)
+[sim-gsm8k] 160/200 acc=0.3250 (189.33s/q, ETA 2.1h)
+[sim-gsm8k] 176/200 acc=0.3239 (188.79s/q, ETA 1.3h)
+[sim-gsm8k] 192/200 acc=0.3125 (189.38s/q, ETA 0.4h)
+[sim-gsm8k] 200/200 acc=0.3050 (192.87s/q, ETA 0.0h)
+[sim-gsm8k] gptq: {"num_evaluated": 200, "acc": 0.305, "acc_ci95": [0.24, 0.37], "none_rate": 0.0, "elapsed_s": 38573.4}
+[sim-gsm8k] paired nac-minmax: {'n': 200, 'acc_diff_pp': -0.5, 'mcnemar_b_minmax_only': 12, 'mcnemar_c_nac_only': 11}
+[sim-gsm8k] -> results/acc_gsm8k_sim_g64.full.json
+=== [2/3] GSM8K g64 3-configs DONE 2026-10-18 08:17:39 ===
+[gptq] loading models/Qwen2.5-1.5B-Instruct-hf (fp32) ...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:03<17:23,  3.10s/it]Loading weights:  36%|███▋      | 123/338 [00:03<00:04, 50.39it/s]Loading weights:  44%|████▍     | 150/338 [00:03<00:03, 51.95it/s]Loading weights:  50%|████▉     | 168/338 [00:04<00:03, 54.80it/s]Loading weights:  54%|█████▍    | 182/338 [00:04<00:02, 56.03it/s]Loading weights:  57%|█████▋    | 193/338 [00:04<00:02, 54.58it/s]Loading weights:  60%|█████▉    | 202/338 [00:04<00:02, 52.48it/s]Loading weights:  62%|██████▏   | 210/338 [00:04<00:02, 48.07it/s]Loading weights:  65%|██████▍   | 219/338 [00:05<00:02, 48.55it/s]Loading weights:  68%|██████▊   | 231/338 [00:05<00:02, 50.96it/s]Loading weights:  72%|███████▏  | 243/338 [00:05<00:01, 51.48it/s]Loading weights:  75%|███████▌  | 255/338 [00:05<00:01, 50.12it/s]Loading weights:  79%|███████▉  | 267/338 [00:06<00:01, 52.13it/s]Loading weights:  83%|████████▎ | 279/338 [00:06<00:01, 53.78it/s]Loading weights:  86%|████████▌ | 291/338 [00:06<00:00, 53.00it/s]Loading weights:  90%|████████▉ | 303/338 [00:06<00:00, 53.16it/s]Loading weights:  93%|█████████▎| 315/338 [00:06<00:00, 50.97it/s]Loading weights:  97%|█████████▋| 327/338 [00:07<00:00, 56.98it/s]Loading weights: 100%|██████████| 338/338 [00:07<00:00, 47.06it/s]
+[gptq] calib seqs=8 seqlen=512 group=128
+=== queue start 2026-10-18 22:42:05 ===
+=== [1/3] MMLU g64 4-configs DONE 2026-10-18 22:42:05 ===
+[sim-gsm8k] loading models/Qwen2.5-1.5B-Instruct-hf (fp32) ...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:03<18:23,  3.28s/it]Loading weights:  19%|█▉        | 64/338 [00:03<00:10, 26.55it/s]Loading weights:  39%|███▉      | 132/338 [00:03<00:03, 63.23it/s]Loading weights:  54%|█████▍    | 182/338 [00:03<00:01, 90.58it/s]Loading weights:  66%|██████▋   | 224/338 [00:04<00:01, 73.02it/s]Loading weights:  75%|███████▍  | 253/338 [00:05<00:01, 66.22it/s]Loading weights:  81%|████████  | 274/338 [00:05<00:00, 66.57it/s]Loading weights:  86%|████████▌ | 290/338 [00:05<00:00, 64.15it/s]Loading weights:  90%|████████▉ | 303/338 [00:05<00:00, 63.11it/s]Loading weights:  93%|█████████▎| 315/338 [00:06<00:00, 62.68it/s]Loading weights:  97%|█████████▋| 327/338 [00:06<00:00, 67.83it/s]Loading weights: 100%|██████████| 338/338 [00:06<00:00, 54.65it/s]
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 1s [Retry 1/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 2s [Retry 2/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 4s [Retry 3/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 8s [Retry 4/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 8s [Retry 5/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Using the latest cached version of the dataset since openai/gsm8k couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'main' at /home/pi/.cache/huggingface/datasets/openai___gsm8k/main/0.0.0/740312add88f781978c0658806c59bc2815b9866 (last modified on Tue Oct  6 20:10:10 2026).
+[sim-gsm8k] 200 questions (board-protocol, 2-shot CoT) gs=64 bs=16
+[sim-gsm8k] ===== config: minmax =====
+[sim-gsm8k] resume minmax from #200
+[sim-gsm8k] minmax: {"num_evaluated": 200, "acc": 0.075, "acc_ci95": [0.04, 0.115], "none_rate": 0.0, "elapsed_s": 0.1}
+[sim-gsm8k] ===== config: nac =====
+[sim-gsm8k] resume nac from #200
+[sim-gsm8k] nac: {"num_evaluated": 200, "acc": 0.07, "acc_ci95": [0.035, 0.11], "none_rate": 0.0, "elapsed_s": 0.1}
+[sim-gsm8k] ===== config: gptq =====
+[sim-gsm8k] resume gptq from #200
+[sim-gsm8k] gptq: {"num_evaluated": 200, "acc": 0.305, "acc_ci95": [0.24, 0.37], "none_rate": 0.0, "elapsed_s": 0.1}
+[sim-gsm8k] paired nac-minmax: {'n': 200, 'acc_diff_pp': -0.5, 'mcnemar_b_minmax_only': 12, 'mcnemar_c_nac_only': 11}
+[sim-gsm8k] -> results/acc_gsm8k_sim_g64.full.json
+=== [2/3] GSM8K g64 3-configs DONE 2026-10-18 22:51:14 ===
+[gptq] loading models/Qwen2.5-1.5B-Instruct-hf (fp32) ...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:02<15:48,  2.81s/it]Loading weights:  43%|████▎     | 147/338 [00:03<00:02, 66.93it/s]Loading weights:  55%|█████▌    | 186/338 [00:03<00:02, 75.60it/s]Loading weights:  63%|██████▎   | 213/338 [00:03<00:01, 72.36it/s]Loading weights:  69%|██████▊   | 232/338 [00:04<00:01, 63.66it/s]Loading weights:  73%|███████▎  | 246/338 [00:04<00:01, 63.61it/s]Loading weights:  76%|███████▌  | 257/338 [00:04<00:01, 62.95it/s]Loading weights:  79%|███████▉  | 267/338 [00:04<00:01, 59.24it/s]Loading weights:  83%|████████▎ | 279/338 [00:05<00:01, 57.15it/s]Loading weights:  86%|████████▌ | 291/338 [00:05<00:00, 54.69it/s]Loading weights:  90%|████████▉ | 303/338 [00:05<00:00, 56.59it/s]Loading weights:  93%|█████████▎| 315/338 [00:05<00:00, 56.95it/s]Loading weights:  97%|█████████▋| 327/338 [00:06<00:00, 55.59it/s]Loading weights: 100%|██████████| 338/338 [00:06<00:00, 55.96it/s]
+[gptq] calib seqs=8 seqlen=512 group=128
+[gptq] captured 28 block inputs
+GPTQ blocks:   0%|          | 0/28 [00:00<?, ?it/s]GPTQ blocks:   0%|          | 0/28 [03:38<?, ?it/s, sec=219]GPTQ blocks:   4%|▎         | 1/28 [03:38<1:38:19, 218.52s/it, sec=219]GPTQ blocks:   4%|▎         | 1/28 [07:15<1:38:19, 218.52s/it, sec=436]GPTQ blocks:   7%|▋         | 2/28 [07:15<1:34:20, 217.73s/it, sec=436]GPTQ blocks:   7%|▋         | 2/28 [10:53<1:34:20, 217.73s/it, sec=653]GPTQ blocks:  11%|█         | 3/28 [10:53<1:30:43, 217.74s/it, sec=653]GPTQ blocks:  11%|█         | 3/28 [14:33<1:30:43, 217.74s/it, sec=873]GPTQ blocks:  14%|█▍        | 4/28 [14:33<1:27:25, 218.55s/it, sec=873]GPTQ blocks:  14%|█▍        | 4/28 [18:11<1:27:25, 218.55s/it, sec=1091.0]GPTQ blocks:  18%|█▊        | 5/28 [18:11<1:23:41, 218.34s/it, sec=1091.0]GPTQ blocks:  18%|█▊        | 5/28 [21:48<1:23:41, 218.34s/it, sec=1309.0]GPTQ blocks:  21%|██▏       | 6/28 [21:48<1:19:56, 218.04s/it, sec=1309.0]GPTQ blocks:  21%|██▏       | 6/28 [25:25<1:19:56, 218.04s/it, sec=1526.0]GPTQ blocks:  25%|██▌       | 7/28 [25:25<1:16:12, 217.75s/it, sec=1526.0]GPTQ blocks:  25%|██▌       | 7/28 [29:02<1:16:12, 217.75s/it, sec=1742.0]GPTQ blocks:  29%|██▊       | 8/28 [29:02<1:12:27, 217.38s/it, sec=1742.0]GPTQ blocks:  29%|██▊       | 8/28 [32:40<1:12:27, 217.38s/it, sec=1961.0]GPTQ blocks:  32%|███▏      | 9/28 [32:40<1:08:54, 217.62s/it, sec=1961.0]GPTQ blocks:  32%|███▏      | 9/28 [36:19<1:08:54, 217.62s/it, sec=2179.0]GPTQ blocks:  36%|███▌      | 10/28 [36:19<1:05:22, 217.94s/it, sec=2179.0]GPTQ blocks:  36%|███▌      | 10/28 [39:58<1:05:22, 217.94s/it, sec=2399.0]GPTQ blocks:  39%|███▉      | 11/28 [39:58<1:01:53, 218.46s/it, sec=2399.0]GPTQ blocks:  39%|███▉      | 11/28 [43:37<1:01:53, 218.46s/it, sec=2618.0]GPTQ blocks:  43%|████▎     | 12/28 [43:37<58:16, 218.55s/it, sec=2618.0]  GPTQ blocks:  43%|████▎     | 12/28 [47:16<58:16, 218.55s/it, sec=2837.0]GPTQ blocks:  46%|████▋     | 13/28 [47:16<54:40, 218.70s/it, sec=2837.0]GPTQ blocks:  46%|████▋     | 13/28 [50:56<54:40, 218.70s/it, sec=3056.0]GPTQ blocks:  50%|█████     | 14/28 [50:56<51:06, 219.01s/it, sec=3056.0]GPTQ blocks:  50%|█████     | 14/28 [54:36<51:06, 219.01s/it, sec=3276.0]GPTQ blocks:  54%|█████▎    | 15/28 [54:36<47:30, 219.29s/it, sec=3276.0]GPTQ blocks:  54%|█████▎    | 15/28 [58:14<47:30, 219.29s/it, sec=3495.0]GPTQ blocks:  57%|█████▋    | 16/28 [58:14<43:48, 219.01s/it, sec=3495.0]GPTQ blocks:  57%|█████▋    | 16/28 [1:01:54<43:48, 219.01s/it, sec=3714.0]GPTQ blocks:  61%|██████    | 17/28 [1:01:54<40:11, 219.23s/it, sec=3714.0]GPTQ blocks:  61%|██████    | 17/28 [1:05:34<40:11, 219.23s/it, sec=3935.0]GPTQ blocks:  64%|██████▍   | 18/28 [1:05:34<36:34, 219.49s/it, sec=3935.0]GPTQ blocks:  64%|██████▍   | 18/28 [1:09:13<36:34, 219.49s/it, sec=4153.0]GPTQ blocks:  68%|██████▊   | 19/28 [1:09:13<32:52, 219.21s/it, sec=4153.0]GPTQ blocks:  68%|██████▊   | 19/28 [1:12:52<32:52, 219.21s/it, sec=4372.0]GPTQ blocks:  71%|███████▏  | 20/28 [1:12:52<29:13, 219.23s/it, sec=4372.0]GPTQ blocks:  71%|███████▏  | 20/28 [1:16:31<29:13, 219.23s/it, sec=4591.0]GPTQ blocks:  75%|███████▌  | 21/28 [1:16:31<25:33, 219.06s/it, sec=4591.0]GPTQ blocks:  75%|███████▌  | 21/28 [1:20:08<25:33, 219.06s/it, sec=4809.0]GPTQ blocks:  79%|███████▊  | 22/28 [1:20:08<21:51, 218.61s/it, sec=4809.0]GPTQ blocks:  79%|███████▊  | 22/28 [1:23:45<21:51, 218.61s/it, sec=5025.0]GPTQ blocks:  82%|████████▏ | 23/28 [1:23:45<18:09, 217.98s/it, sec=5025.0]GPTQ blocks:  82%|████████▏ | 23/28 [1:27:22<18:09, 217.98s/it, sec=5242.0]GPTQ blocks:  86%|████████▌ | 24/28 [1:27:22<14:30, 217.69s/it, sec=5242.0]GPTQ blocks:  86%|████████▌ | 24/28 [1:30:59<14:30, 217.69s/it, sec=5459.0]GPTQ blocks:  89%|████████▉ | 25/28 [1:30:59<10:52, 217.48s/it, sec=5459.0]GPTQ blocks:  89%|████████▉ | 25/28 [1:34:35<10:52, 217.48s/it, sec=5676.0]GPTQ blocks:  93%|█████████▎| 26/28 [1:34:35<07:14, 217.23s/it, sec=5676.0]GPTQ blocks:  93%|█████████▎| 26/28 [1:38:12<07:14, 217.23s/it, sec=5893.0]GPTQ blocks:  96%|█████████▋| 27/28 [1:38:12<03:37, 217.21s/it, sec=5893.0]GPTQ blocks:  96%|█████████▋| 27/28 [1:41:36<03:37, 217.21s/it, sec=6096.0]GPTQ blocks: 100%|██████████| 28/28 [1:41:36<00:00, 213.09s/it, sec=6096.0]GPTQ blocks: 100%|██████████| 28/28 [1:41:36<00:00, 217.73s/it, sec=6096.0]
+[gptq] done in 6096.8s -> results/gptq_qwen1.5b_g128.qparams.pt
+=== GPTQ g128 calib DONE 2026-10-19 00:41:33 ===
+[sim-mmlu] loading models/Qwen2.5-1.5B-Instruct-hf (fp32) ...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   5%|▍         | 16/338 [00:00<00:02, 146.11it/s]Loading weights:  43%|████▎     | 146/338 [00:00<00:00, 787.09it/s]Loading weights:  67%|██████▋   | 227/338 [00:00<00:00, 226.17it/s]Loading weights:  82%|████████▏ | 277/338 [00:01<00:00, 223.55it/s]Loading weights:  93%|█████████▎| 316/338 [00:01<00:00, 206.76it/s]Loading weights: 100%|██████████| 338/338 [00:01<00:00, 247.50it/s]
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 1s [Retry 1/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 2s [Retry 2/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 4s [Retry 3/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 8s [Retry 4/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Retrying in 8s [Retry 5/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/mmlu.py
+Using the latest cached version of the dataset since cais/mmlu couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'all' at /home/pi/.cache/huggingface/datasets/cais___mmlu/all/0.0.0/c30699e8356da336a370243923dbaf21066bb9fe (last modified on Tue Oct  6 19:55:51 2026).
+[sim-mmlu] 969 questions (board-protocol aligned, zs) gs=128 bs=16 configs=minmax,nac,gptq=results/gptq_qwen1.5b_g128.qparams.pt
+[sim-mmlu] ===== config: minmax =====
+[sim-mmlu] 16/969 acc_gen=0.6250 acc_ftok=0.6250 (35.16s/q, ETA 9.3h)
+[sim-mmlu] 32/969 acc_gen=0.5000 acc_ftok=0.5000 (36.97s/q, ETA 9.6h)
+[sim-mmlu] 48/969 acc_gen=0.5208 acc_ftok=0.5208 (30.64s/q, ETA 7.8h)
+[sim-mmlu] 64/969 acc_gen=0.5781 acc_ftok=0.5781 (39.15s/q, ETA 9.8h)
+[sim-mmlu] 80/969 acc_gen=0.5250 acc_ftok=0.5250 (37.55s/q, ETA 9.3h)
+[sim-mmlu] 96/969 acc_gen=0.5000 acc_ftok=0.5000 (37.87s/q, ETA 9.2h)
+[sim-mmlu] 112/969 acc_gen=0.4821 acc_ftok=0.4732 (36.44s/q, ETA 8.7h)
+[sim-mmlu] 128/969 acc_gen=0.4453 acc_ftok=0.4375 (35.57s/q, ETA 8.3h)
+[sim-mmlu] 144/969 acc_gen=0.4306 acc_ftok=0.4167 (44.42s/q, ETA 10.2h)
+[sim-mmlu] 160/969 acc_gen=0.4062 acc_ftok=0.3937 (46.48s/q, ETA 10.4h)
+[sim-mmlu] 176/969 acc_gen=0.3977 acc_ftok=0.3864 (47.25s/q, ETA 10.4h)
+[sim-mmlu] 192/969 acc_gen=0.4062 acc_ftok=0.3958 (45.67s/q, ETA 9.9h)
+[sim-mmlu] 208/969 acc_gen=0.3942 acc_ftok=0.3846 (44.07s/q, ETA 9.3h)
+[sim-mmlu] 224/969 acc_gen=0.3884 acc_ftok=0.3795 (43.71s/q, ETA 9.0h)
+[sim-mmlu] 240/969 acc_gen=0.3917 acc_ftok=0.3833 (42.59s/q, ETA 8.6h)
+[sim-mmlu] 256/969 acc_gen=0.3750 acc_ftok=0.3672 (42.58s/q, ETA 8.4h)
+[sim-mmlu] 272/969 acc_gen=0.3676 acc_ftok=0.3603 (41.51s/q, ETA 8.0h)
+[sim-mmlu] 288/969 acc_gen=0.3611 acc_ftok=0.3576 (40.42s/q, ETA 7.6h)
+[sim-mmlu] 304/969 acc_gen=0.3717 acc_ftok=0.3684 (40.25s/q, ETA 7.4h)
+[sim-mmlu] 320/969 acc_gen=0.3719 acc_ftok=0.3688 (39.46s/q, ETA 7.1h)
+[sim-mmlu] 336/969 acc_gen=0.3780 acc_ftok=0.3750 (40.43s/q, ETA 7.1h)
+[sim-mmlu] 352/969 acc_gen=0.3778 acc_ftok=0.3750 (40.27s/q, ETA 6.9h)
+[sim-mmlu] 368/969 acc_gen=0.3777 acc_ftok=0.3750 (40.64s/q, ETA 6.8h)
+[sim-mmlu] 384/969 acc_gen=0.3776 acc_ftok=0.3750 (40.92s/q, ETA 6.6h)
+[sim-mmlu] 400/969 acc_gen=0.3800 acc_ftok=0.3775 (40.72s/q, ETA 6.4h)
+[sim-mmlu] 416/969 acc_gen=0.3702 acc_ftok=0.3702 (41.53s/q, ETA 6.4h)
+[sim-mmlu] 432/969 acc_gen=0.3681 acc_ftok=0.3681 (41.29s/q, ETA 6.2h)
+[sim-mmlu] 448/969 acc_gen=0.3683 acc_ftok=0.3683 (42.42s/q, ETA 6.1h)
+[sim-mmlu] 464/969 acc_gen=0.3642 acc_ftok=0.3642 (42.12s/q, ETA 5.9h)
+[sim-mmlu] 480/969 acc_gen=0.3646 acc_ftok=0.3646 (41.9s/q, ETA 5.7h)
+[sim-mmlu] 496/969 acc_gen=0.3609 acc_ftok=0.3609 (42.71s/q, ETA 5.6h)
+[sim-mmlu] 512/969 acc_gen=0.3613 acc_ftok=0.3613 (42.3s/q, ETA 5.4h)
+[sim-mmlu] 528/969 acc_gen=0.3580 acc_ftok=0.3580 (42.29s/q, ETA 5.2h)
+[sim-mmlu] 544/969 acc_gen=0.3621 acc_ftok=0.3621 (41.76s/q, ETA 4.9h)
+[sim-mmlu] 560/969 acc_gen=0.3607 acc_ftok=0.3607 (41.64s/q, ETA 4.7h)
+[sim-mmlu] 576/969 acc_gen=0.3594 acc_ftok=0.3594 (41.53s/q, ETA 4.5h)
+[sim-mmlu] 592/969 acc_gen=0.3598 acc_ftok=0.3598 (41.12s/q, ETA 4.3h)
+[sim-mmlu] 608/969 acc_gen=0.3618 acc_ftok=0.3618 (40.99s/q, ETA 4.1h)
+[sim-mmlu] 624/969 acc_gen=0.3574 acc_ftok=0.3574 (40.99s/q, ETA 3.9h)
+[sim-mmlu] 640/969 acc_gen=0.3578 acc_ftok=0.3578 (41.39s/q, ETA 3.8h)
+[sim-mmlu] 656/969 acc_gen=0.3552 acc_ftok=0.3552 (41.2s/q, ETA 3.6h)
+[sim-mmlu] 672/969 acc_gen=0.3512 acc_ftok=0.3512 (41.45s/q, ETA 3.4h)
+[sim-mmlu] 688/969 acc_gen=0.3503 acc_ftok=0.3503 (41.41s/q, ETA 3.2h)
+[sim-mmlu] 704/969 acc_gen=0.3523 acc_ftok=0.3523 (41.23s/q, ETA 3.0h)
+[sim-mmlu] 720/969 acc_gen=0.3528 acc_ftok=0.3528 (40.99s/q, ETA 2.8h)
+[sim-mmlu] 736/969 acc_gen=0.3478 acc_ftok=0.3478 (41.24s/q, ETA 2.7h)
+[sim-mmlu] 752/969 acc_gen=0.3497 acc_ftok=0.3497 (41.41s/q, ETA 2.5h)
+[sim-mmlu] 768/969 acc_gen=0.3542 acc_ftok=0.3529 (41.21s/q, ETA 2.3h)
+[sim-mmlu] 784/969 acc_gen=0.3546 acc_ftok=0.3533 (41.34s/q, ETA 2.1h)
+[sim-mmlu] 800/969 acc_gen=0.3588 acc_ftok=0.3575 (41.22s/q, ETA 1.9h)
+[sim-mmlu] 816/969 acc_gen=0.3542 acc_ftok=0.3529 (41.33s/q, ETA 1.8h)
+[sim-mmlu] 832/969 acc_gen=0.3558 acc_ftok=0.3546 (41.09s/q, ETA 1.6h)
+[sim-mmlu] 848/969 acc_gen=0.3550 acc_ftok=0.3538 (41.03s/q, ETA 1.4h)
+[sim-mmlu] 864/969 acc_gen=0.3576 acc_ftok=0.3565 (40.9s/q, ETA 1.2h)
+[sim-mmlu] 880/969 acc_gen=0.3602 acc_ftok=0.3591 (41.23s/q, ETA 1.0h)
+[sim-mmlu] 896/969 acc_gen=0.3616 acc_ftok=0.3594 (41.07s/q, ETA 0.8h)
+[sim-mmlu] 912/969 acc_gen=0.3629 acc_ftok=0.3607 (41.77s/q, ETA 0.7h)
+[sim-mmlu] 928/969 acc_gen=0.3642 acc_ftok=0.3621 (41.55s/q, ETA 0.5h)
+[sim-mmlu] 944/969 acc_gen=0.3686 acc_ftok=0.3665 (41.81s/q, ETA 0.3h)
+[sim-mmlu] 960/969 acc_gen=0.3625 acc_ftok=0.3604 (42.11s/q, ETA 0.1h)
+[sim-mmlu] 969/969 acc_gen=0.3622 acc_ftok=0.3602 (42.35s/q, ETA 0.0h)
+[sim-mmlu] minmax: {"num_evaluated": 969, "acc_gen": 0.3622, "acc_gen_ci95": [0.3323, 0.3922], "acc_ftok": 0.3602, "acc_ftok_ci95": [0.3302, 0.3901], "none_gen_rate": 0.0578, "none_ftok_rate": 0.0619, "elapsed_s": 41037.2}
+[sim-mmlu] ===== config: nac =====
+[sim-mmlu] 16/969 acc_gen=0.7500 acc_ftok=0.6875 (36.66s/q, ETA 9.7h)
+[sim-mmlu] 32/969 acc_gen=0.6875 acc_ftok=0.6562 (38.41s/q, ETA 10.0h)
+[sim-mmlu] 48/969 acc_gen=0.6458 acc_ftok=0.6250 (31.79s/q, ETA 8.1h)
+[sim-mmlu] 64/969 acc_gen=0.6719 acc_ftok=0.6562 (40.68s/q, ETA 10.2h)
+[sim-mmlu] 80/969 acc_gen=0.6000 acc_ftok=0.5875 (38.99s/q, ETA 9.6h)
+[sim-mmlu] 96/969 acc_gen=0.5625 acc_ftok=0.5521 (39.13s/q, ETA 9.5h)
+[sim-mmlu] 112/969 acc_gen=0.5446 acc_ftok=0.5357 (37.48s/q, ETA 8.9h)
+[sim-mmlu] 128/969 acc_gen=0.5156 acc_ftok=0.5078 (36.46s/q, ETA 8.5h)
+[sim-mmlu] 144/969 acc_gen=0.5000 acc_ftok=0.4861 (45.31s/q, ETA 10.4h)
+[sim-mmlu] 160/969 acc_gen=0.4813 acc_ftok=0.4688 (47.35s/q, ETA 10.6h)
+[sim-mmlu] 176/969 acc_gen=0.4773 acc_ftok=0.4659 (48.17s/q, ETA 10.6h)
+[sim-mmlu] 192/969 acc_gen=0.4792 acc_ftok=0.4688 (46.49s/q, ETA 10.0h)
+[sim-mmlu] 208/969 acc_gen=0.4615 acc_ftok=0.4519 (44.82s/q, ETA 9.5h)
+[sim-mmlu] 224/969 acc_gen=0.4554 acc_ftok=0.4464 (44.42s/q, ETA 9.2h)
+[sim-mmlu] 240/969 acc_gen=0.4583 acc_ftok=0.4500 (43.25s/q, ETA 8.8h)
+[sim-mmlu] 256/969 acc_gen=0.4531 acc_ftok=0.4453 (43.21s/q, ETA 8.6h)
+[sim-mmlu] 272/969 acc_gen=0.4522 acc_ftok=0.4449 (42.15s/q, ETA 8.2h)
+[sim-mmlu] 288/969 acc_gen=0.4410 acc_ftok=0.4340 (41.0s/q, ETA 7.8h)
+[sim-mmlu] 304/969 acc_gen=0.4474 acc_ftok=0.4408 (40.86s/q, ETA 7.5h)
+[sim-mmlu] 320/969 acc_gen=0.4469 acc_ftok=0.4406 (40.03s/q, ETA 7.2h)
+[sim-mmlu] 336/969 acc_gen=0.4464 acc_ftok=0.4405 (41.04s/q, ETA 7.2h)
+[sim-mmlu] 352/969 acc_gen=0.4489 acc_ftok=0.4432 (40.87s/q, ETA 7.0h)
+[sim-mmlu] 368/969 acc_gen=0.4511 acc_ftok=0.4457 (41.26s/q, ETA 6.9h)
+[sim-mmlu] 384/969 acc_gen=0.4453 acc_ftok=0.4375 (41.55s/q, ETA 6.8h)
+[sim-mmlu] 400/969 acc_gen=0.4450 acc_ftok=0.4375 (41.33s/q, ETA 6.5h)
+[sim-mmlu] 416/969 acc_gen=0.4375 acc_ftok=0.4303 (42.19s/q, ETA 6.5h)
+[sim-mmlu] 432/969 acc_gen=0.4306 acc_ftok=0.4236 (41.93s/q, ETA 6.3h)
+[sim-mmlu] 448/969 acc_gen=0.4353 acc_ftok=0.4286 (43.13s/q, ETA 6.2h)
+[sim-mmlu] 464/969 acc_gen=0.4310 acc_ftok=0.4246 (42.84s/q, ETA 6.0h)
+[sim-mmlu] 480/969 acc_gen=0.4313 acc_ftok=0.4250 (42.57s/q, ETA 5.8h)
+[sim-mmlu] 496/969 acc_gen=0.4335 acc_ftok=0.4254 (43.45s/q, ETA 5.7h)
+[sim-mmlu] 512/969 acc_gen=0.4316 acc_ftok=0.4238 (43.0s/q, ETA 5.5h)
+[sim-mmlu] 528/969 acc_gen=0.4280 acc_ftok=0.4205 (42.97s/q, ETA 5.3h)
+[sim-mmlu] 544/969 acc_gen=0.4301 acc_ftok=0.4228 (42.41s/q, ETA 5.0h)
+[sim-mmlu] 560/969 acc_gen=0.4304 acc_ftok=0.4214 (42.29s/q, ETA 4.8h)
+[sim-mmlu] 576/969 acc_gen=0.4306 acc_ftok=0.4219 (42.16s/q, ETA 4.6h)
+[sim-mmlu] 592/969 acc_gen=0.4291 acc_ftok=0.4223 (41.74s/q, ETA 4.4h)
+[sim-mmlu] 608/969 acc_gen=0.4260 acc_ftok=0.4211 (41.59s/q, ETA 4.2h)
+[sim-mmlu] 624/969 acc_gen=0.4263 acc_ftok=0.4183 (41.58s/q, ETA 4.0h)
+[sim-mmlu] 640/969 acc_gen=0.4297 acc_ftok=0.4219 (42.0s/q, ETA 3.8h)
+[sim-mmlu] 656/969 acc_gen=0.4268 acc_ftok=0.4192 (41.79s/q, ETA 3.6h)
+[sim-mmlu] 672/969 acc_gen=0.4256 acc_ftok=0.4182 (42.08s/q, ETA 3.5h)
+[sim-mmlu] 688/969 acc_gen=0.4259 acc_ftok=0.4186 (42.02s/q, ETA 3.3h)
+[sim-mmlu] 704/969 acc_gen=0.4290 acc_ftok=0.4219 (41.81s/q, ETA 3.1h)
+[sim-mmlu] 720/969 acc_gen=0.4278 acc_ftok=0.4208 (41.56s/q, ETA 2.9h)
+[sim-mmlu] 736/969 acc_gen=0.4226 acc_ftok=0.4158 (41.83s/q, ETA 2.7h)
+[sim-mmlu] 752/969 acc_gen=0.4255 acc_ftok=0.4189 (42.0s/q, ETA 2.5h)
+[sim-mmlu] 768/969 acc_gen=0.4297 acc_ftok=0.4232 (41.78s/q, ETA 2.3h)
+[sim-mmlu] 784/969 acc_gen=0.4286 acc_ftok=0.4222 (41.92s/q, ETA 2.2h)
+[sim-mmlu] 800/969 acc_gen=0.4313 acc_ftok=0.4250 (41.79s/q, ETA 2.0h)
+[sim-mmlu] 816/969 acc_gen=0.4301 acc_ftok=0.4240 (41.91s/q, ETA 1.8h)
+[sim-mmlu] 832/969 acc_gen=0.4303 acc_ftok=0.4243 (41.65s/q, ETA 1.6h)
+[sim-mmlu] 848/969 acc_gen=0.4316 acc_ftok=0.4257 (41.6s/q, ETA 1.4h)
+[sim-mmlu] 864/969 acc_gen=0.4317 acc_ftok=0.4259 (41.46s/q, ETA 1.2h)
+[sim-mmlu] 880/969 acc_gen=0.4330 acc_ftok=0.4273 (41.79s/q, ETA 1.0h)
+[sim-mmlu] 896/969 acc_gen=0.4319 acc_ftok=0.4263 (41.61s/q, ETA 0.8h)
+[sim-mmlu] 912/969 acc_gen=0.4320 acc_ftok=0.4265 (42.3s/q, ETA 0.7h)
+[sim-mmlu] 928/969 acc_gen=0.4310 acc_ftok=0.4256 (42.07s/q, ETA 0.5h)
+[sim-mmlu] 944/969 acc_gen=0.4333 acc_ftok=0.4280 (42.34s/q, ETA 0.3h)
+[sim-mmlu] 960/969 acc_gen=0.4302 acc_ftok=0.4250 (42.65s/q, ETA 0.1h)
+[sim-mmlu] 969/969 acc_gen=0.4293 acc_ftok=0.4241 (42.88s/q, ETA 0.0h)
+[sim-mmlu] nac: {"num_evaluated": 969, "acc_gen": 0.4293, "acc_gen_ci95": [0.3983, 0.4603], "acc_ftok": 0.4241, "acc_ftok_ci95": [0.3932, 0.4561], "none_gen_rate": 0.0268, "none_ftok_rate": 0.0268, "elapsed_s": 41556.1}
+[sim-mmlu] ===== config: gptq =====
+[sim-mmlu] 16/969 acc_gen=0.8125 acc_ftok=0.8125 (37.07s/q, ETA 9.8h)
+[sim-mmlu] 32/969 acc_gen=0.7188 acc_ftok=0.7500 (38.75s/q, ETA 10.1h)
+[sim-mmlu] 48/969 acc_gen=0.6875 acc_ftok=0.7083 (32.11s/q, ETA 8.2h)
+[sim-mmlu] 64/969 acc_gen=0.7344 acc_ftok=0.7500 (41.06s/q, ETA 10.3h)
+[sim-mmlu] 80/969 acc_gen=0.6375 acc_ftok=0.6500 (39.39s/q, ETA 9.7h)
+[sim-mmlu] 96/969 acc_gen=0.6146 acc_ftok=0.6250 (39.53s/q, ETA 9.6h)
+[sim-mmlu] 112/969 acc_gen=0.5982 acc_ftok=0.6071 (37.81s/q, ETA 9.0h)
+[sim-mmlu] 128/969 acc_gen=0.5625 acc_ftok=0.5703 (36.77s/q, ETA 8.6h)
+[sim-mmlu] 144/969 acc_gen=0.5486 acc_ftok=0.5556 (45.6s/q, ETA 10.4h)
+[sim-mmlu] 160/969 acc_gen=0.5312 acc_ftok=0.5375 (47.65s/q, ETA 10.7h)
+[sim-mmlu] 176/969 acc_gen=0.5284 acc_ftok=0.5341 (48.43s/q, ETA 10.7h)
+[sim-mmlu] 192/969 acc_gen=0.5260 acc_ftok=0.5312 (46.74s/q, ETA 10.1h)
+[sim-mmlu] 208/969 acc_gen=0.5096 acc_ftok=0.5144 (45.03s/q, ETA 9.5h)
+[sim-mmlu] 224/969 acc_gen=0.4955 acc_ftok=0.5000 (44.61s/q, ETA 9.2h)
+[sim-mmlu] 240/969 acc_gen=0.5000 acc_ftok=0.5042 (43.42s/q, ETA 8.8h)
+[sim-mmlu] 256/969 acc_gen=0.4961 acc_ftok=0.5000 (43.36s/q, ETA 8.6h)
+[sim-mmlu] 272/969 acc_gen=0.4963 acc_ftok=0.5000 (42.28s/q, ETA 8.2h)
+[sim-mmlu] 288/969 acc_gen=0.4931 acc_ftok=0.4965 (41.15s/q, ETA 7.8h)
+[sim-mmlu] 304/969 acc_gen=0.5000 acc_ftok=0.5033 (40.9s/q, ETA 7.6h)
+[sim-mmlu] 320/969 acc_gen=0.5000 acc_ftok=0.5031 (40.07s/q, ETA 7.2h)
+[sim-mmlu] 336/969 acc_gen=0.5030 acc_ftok=0.5030 (41.02s/q, ETA 7.2h)
+[sim-mmlu] 352/969 acc_gen=0.4972 acc_ftok=0.4972 (40.78s/q, ETA 7.0h)
+[sim-mmlu] 368/969 acc_gen=0.5054 acc_ftok=0.5054 (41.14s/q, ETA 6.9h)
+[sim-mmlu] 384/969 acc_gen=0.5078 acc_ftok=0.5078 (41.42s/q, ETA 6.7h)
+[sim-mmlu] 400/969 acc_gen=0.5075 acc_ftok=0.5075 (41.17s/q, ETA 6.5h)
+[sim-mmlu] 416/969 acc_gen=0.5072 acc_ftok=0.5072 (42.04s/q, ETA 6.5h)
+[sim-mmlu] 432/969 acc_gen=0.5023 acc_ftok=0.5023 (41.76s/q, ETA 6.2h)
+[sim-mmlu] 448/969 acc_gen=0.5022 acc_ftok=0.5022 (42.99s/q, ETA 6.2h)
+[sim-mmlu] 464/969 acc_gen=0.4957 acc_ftok=0.4957 (42.68s/q, ETA 6.0h)
+[sim-mmlu] 480/969 acc_gen=0.4958 acc_ftok=0.4958 (42.44s/q, ETA 5.8h)
+[sim-mmlu] 496/969 acc_gen=0.4980 acc_ftok=0.4980 (43.23s/q, ETA 5.7h)
+[sim-mmlu] 512/969 acc_gen=0.4961 acc_ftok=0.4961 (42.78s/q, ETA 5.4h)
+[sim-mmlu] 528/969 acc_gen=0.4924 acc_ftok=0.4924 (42.74s/q, ETA 5.2h)
+[sim-mmlu] 544/969 acc_gen=0.4945 acc_ftok=0.4945 (42.18s/q, ETA 5.0h)
+[sim-mmlu] 560/969 acc_gen=0.4964 acc_ftok=0.4964 (42.06s/q, ETA 4.8h)
+[sim-mmlu] 576/969 acc_gen=0.4965 acc_ftok=0.4983 (41.94s/q, ETA 4.6h)
+[sim-mmlu] 592/969 acc_gen=0.4983 acc_ftok=0.5000 (41.52s/q, ETA 4.3h)
+[sim-mmlu] 608/969 acc_gen=0.4951 acc_ftok=0.4967 (41.37s/q, ETA 4.1h)
+[sim-mmlu] 624/969 acc_gen=0.4936 acc_ftok=0.4952 (41.36s/q, ETA 4.0h)
+[sim-mmlu] 640/969 acc_gen=0.4938 acc_ftok=0.4953 (41.8s/q, ETA 3.8h)
+[sim-mmlu] 656/969 acc_gen=0.4909 acc_ftok=0.4924 (41.59s/q, ETA 3.6h)
+[sim-mmlu] 672/969 acc_gen=0.4896 acc_ftok=0.4911 (41.89s/q, ETA 3.5h)
+[sim-mmlu] 688/969 acc_gen=0.4869 acc_ftok=0.4898 (41.85s/q, ETA 3.3h)
+[sim-mmlu] 704/969 acc_gen=0.4901 acc_ftok=0.4929 (41.63s/q, ETA 3.1h)
+[sim-mmlu] 720/969 acc_gen=0.4931 acc_ftok=0.4958 (41.38s/q, ETA 2.9h)
+[sim-mmlu] 736/969 acc_gen=0.4891 acc_ftok=0.4918 (41.63s/q, ETA 2.7h)
+[sim-mmlu] 752/969 acc_gen=0.4867 acc_ftok=0.4880 (41.81s/q, ETA 2.5h)
+[sim-mmlu] 768/969 acc_gen=0.4896 acc_ftok=0.4909 (41.59s/q, ETA 2.3h)
+[sim-mmlu] 784/969 acc_gen=0.4872 acc_ftok=0.4885 (41.72s/q, ETA 2.1h)
+[sim-mmlu] 800/969 acc_gen=0.4863 acc_ftok=0.4875 (41.59s/q, ETA 2.0h)
+[sim-mmlu] 816/969 acc_gen=0.4841 acc_ftok=0.4865 (41.71s/q, ETA 1.8h)
+[sim-mmlu] 832/969 acc_gen=0.4820 acc_ftok=0.4844 (41.46s/q, ETA 1.6h)
+[sim-mmlu] 848/969 acc_gen=0.4811 acc_ftok=0.4835 (41.4s/q, ETA 1.4h)
+[sim-mmlu] 864/969 acc_gen=0.4838 acc_ftok=0.4861 (41.26s/q, ETA 1.2h)
+[sim-mmlu] 880/969 acc_gen=0.4864 acc_ftok=0.4886 (41.63s/q, ETA 1.0h)
+[sim-mmlu] 896/969 acc_gen=0.4855 acc_ftok=0.4877 (41.46s/q, ETA 0.8h)
+[sim-mmlu] 912/969 acc_gen=0.4868 acc_ftok=0.4890 (42.15s/q, ETA 0.7h)
+[sim-mmlu] 928/969 acc_gen=0.4871 acc_ftok=0.4892 (41.92s/q, ETA 0.5h)
+[sim-mmlu] 944/969 acc_gen=0.4905 acc_ftok=0.4926 (42.21s/q, ETA 0.3h)
+[sim-mmlu] 960/969 acc_gen=0.4875 acc_ftok=0.4896 (42.55s/q, ETA 0.1h)
+[sim-mmlu] 969/969 acc_gen=0.4871 acc_ftok=0.4892 (42.78s/q, ETA 0.0h)
+[sim-mmlu] gptq: {"num_evaluated": 969, "acc_gen": 0.4871, "acc_gen_ci95": [0.4561, 0.5181], "acc_ftok": 0.4892, "acc_ftok_ci95": [0.4582, 0.5222], "none_gen_rate": 0.0279, "none_ftok_rate": 0.0341, "elapsed_s": 41457.8}
+[sim-mmlu] paired nac-minmax: {'n': 969, 'acc_diff_pp': 6.71, 'mcnemar_b_minmax_only': 29, 'mcnemar_c_nac_only': 94}
+[sim-mmlu] -> results/acc_mmlu_sim_g128.full.json
+=== queue ALL DONE 2026-10-20 11:11:32 ===

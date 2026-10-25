@@ -1,0 +1,8 @@
+============================== build ==============================
+SRC_ERR TypeError: module, class, method, function, traceback, frame, or code object was expected, got cython_function_or_method
+============================== quant_model ==============================
+SRC_ERR TypeError: module, class, method, function, traceback, frame, or code object was expected, got cython_function_or_method
+============================== fakeq_model ==============================
+SRC_ERR TypeError: module, class, method, function, traceback, frame, or code object was expected, got cython_function_or_method
+============================== save_qparams ==============================
+SRC_ERR TypeError: module, class, method, function, traceback, frame, or code object was expected, got cython_function_or_method
