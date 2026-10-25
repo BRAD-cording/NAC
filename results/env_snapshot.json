@@ -6,7 +6,7 @@
     "transformers": null,
     "numpy": "1.24.2",
     "rkllm_runtime_so": "1.2.3 (rkllm-runtime-1.2.3/Linux/librkllm_api/aarch64, from release-v1.2.3 tag)",
-    "rkllm_toolkit_build": "rknn-llm repo v1.1.4 default; build side (laptop WSL qemu) version NOT recorded -> must record at next build (R3/R4)",
+    "rkllm_toolkit_build": "1.2.3 (confirmed via laptop x86 build log 2026-10-26 SSH probe)",
     "platform": "NanoPi RK3576 aarch64, 16GB",
     "note": "eval/calib run in .venv; build-side (laptop WSL qemu) toolkit version still must be recorded per-build",
     "python_venv": "3.11.2",
