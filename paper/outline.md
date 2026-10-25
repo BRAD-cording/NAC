@@ -169,7 +169,7 @@
 
 ### 6.7 边界条件二：任务轴与协议轴（系统发现）
 - Fig 4（核心图）：accuracy–PPL 散点（六方法），显示无单调关系；标注"PPL 最优 → GSM8K 最差"箭头。
-- 协议轴现象：板端 few-shot 系统性劣化（1.5B 5-shot 0.4469 < zs 0.5583；3B 5-shot 0.10 复述示例），定性为运行时/模板现象，与量化无关，但直接影响"边缘必须零样本评测"的方法学建议。
+- 协议轴现象：板端 few-shot 系统性劣化（1.5B 5-shot 0.4469 < zs 0.5583；3B 5-shot 0.10 复述示例），定性为运行时/模板现象，与量化无关，但直接影响"边缘必须零样本评测"的方法学建议。**[审计 10-25 决策：本条为质性观察——1.5B 5-shot 无落盘 JSON、3B 为 n=50 初步观察，只作叙述不进表格]**
 - 3B 系统数据：zs MMLU 0.6037 / GSM8K 0.6700（预转基线，无 NAC 对照——写明为扩展数据而非方法证据）。
 
 ### 6.8 系统表征（Table 5，效率三轴）
@@ -277,4 +277,18 @@
 **R4 重做板端对照**（待执行，设计需重估）：NAC-v2 产物改写为新格式（`w_int8=clamp(round(w/s)+zp,-8,7)` + `weight_qscale` + 原样 fp 参数）。注意：新格式只承载 int8 权重 + scale，**float-zp 无法注入**（须舍入烘焙），原 "minmax float-zp vs NAC-v2 int-zp" 对照不再成立；问题 B（NPU 重解释 float-zp）在该接口下**结构性不可检验**，对照变量需重新定义。
 
 **R5 文档回填**（待执行，C2 表述待改写）：板端归因大概率从"float-zp 重解释"改写为"注入格式/语义契约"层面；§6.2 归因链与 C2 待 R3/R4 结果后重写。**在此之前，TECHNICAL_REPORT 的 10-16/10-18 板端结论需标注"待复核"。**
+
+---
+
+## 14. 投稿就绪度审计决策记录（2026-10-25）
+
+> 审计报告：[../subprojects/thesis_audit_2026_10_25/outputs/audit_report.md](../subprojects/thesis_audit_2026_10_25/outputs/audit_report.md)（F1-F3 致命 / M1-M6 大修 / m1-m5 小修 / p1-p3 润色；sim 轴数字对账全过）。
+
+**已拍板决策**：
+1. **Venue = TMLR**（方法学/评测论文友好，first-claim 时间戳；MLSys/TCAD 备选）。
+2. **few-shot 协议轴发现降格为质性观察**（M3）：1.5B 5-shot 0.4469 / 3B 0.10@n=50 只在 §6.7 作质性叙述（3B 标注 n=50 初步观察），不进表格、不做板端重跑，板端机时留给 R3/R4。
+3. **g128 PPL 补 64-seq**（M2）：`taskset -c 4-7 python scripts/ppl_coherence.py --num-seqs 64 --group-size 128 --modes fp16,minmax,nac,gptq --qparams results/nac_qwen1.5b_g128.qparams.pt --gptq-qparams results/gptq_qwen1.5b_g128.qparams.pt --out results/ppl_g128_64seq.json`——**排队条件：R3 板端评测结束后启动**（torch CPU 与 NPU 评测抢 A72 核）；完成后 Table 4 PPL 列换 64-seq 口径，Table 2 表注仅保留 AWQ 16-seq 一处。
+4. **M1/M6/F3 已完成**：`results/stats_pairs.json`（22 配对统一重算，gold 序列断言顺序一致，Table 3 唯一来源；新增素材：v2 显著超 minmax GSM8K p=0.025、AWQ vs minmax GSM8K 平手 p=0.248）；`results/env_snapshot.json`（软件版本 + 全部 .rkllm 产物 md5，四旧产物 md5 同值 3bd8c0ba 物证落盘）；git 仓库已建立（.gitignore 排除 models/、*.pt、*.rkllm）。
+
+**投稿前仍开放**：F1（R3/R4/R5 链）、F2（R3/R4 重评统一 32-token 协议并重跑基线）、M4（TECHNICAL_REPORT 行内"待复核"标注，随 R5）、M5（相关工作三线补引，写作期）、m1/m2/m5（正文披露 + 代码归档，写作期）。
 
