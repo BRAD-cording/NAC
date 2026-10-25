@@ -93,3 +93,8 @@
 
 ## 后续记录索引（2026-10-18 补）
 10-08 起板端工程记录（extra_qparams 注入链路、qemu 构建病理、qparams 禁落 /tmp、重启自愈编排、E2/E3/E4 自动链）统一并入 [TECHNICAL_REPORT.md](TECHNICAL_REPORT.md) §4 与进展日志，本文件保留 D1–D7 期踩坑正文，不再续写。
+
+## 2026-10-26 R3 笔记本构建静默死亡与防复发（infra 踩坑）
+- **事故**：build 9（x86 plain build）于 10-25 23:59 前后死——Windows AC 睡眠超时 0x0e10（3600s），nohup 后台构建不算用户活动 → 笔记本睡眠 → WSL 整体重启，进程蒸发（dmesg 无 OOM、日志无 FAIL 标记，守望 shell 未触发通知）。日志停在 Optimizing 24/28 [5:01:42]，损失 ~5h。
+- **处置**：崩溃日志备份 `~/r3x86/build_x86.crash1026.log`；`start_build.sh` 重启（pid 117390，01:45 起跑，ETA：Optimizing ~6h + export ~45min ≈ 08:30 模型落盘，传输+板评 ~3h → 中午出分）；**远程 powercfg：AC 睡眠/休眠超时清零 + 合盖不动作**（原值 0x0e10，构建结束后恢复 `powercfg /change standby-timeout-ac 3600`）。
+- **教训**：跨机长任务必须 (a) 禁目标机睡眠 (b) 守望判据加"日志 mtime 超过 N 分钟未更新即报警"，不能只等 DONE/FAIL 关键词（进程蒸发不产生任何标记）。
