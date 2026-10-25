@@ -1,0 +1,424 @@
+{
+  "generated": "scripts/compute_stats_pairs.py",
+  "pairs": {
+    "sim_mmlu_g64::nacv2_vs_nac": {
+      "axis": "sim",
+      "protocol": "mmlu969/32tok",
+      "n": 969,
+      "acc_a": 0.3932,
+      "acc_b": 0.4469,
+      "diff_pp": 5.37,
+      "mcnemar_b_only_b": 98,
+      "mcnemar_c_only_a": 46,
+      "chi2_cc": 18.062,
+      "p": 2.138e-05,
+      "ci95_diff_pp": [
+        0.0299,
+        0.0774
+      ],
+      "records_a": "acc_mmlu_sim_g64.records.nac.json",
+      "records_b": "acc_mmlu_sim_g64_nacv2.records.nacv2.json",
+      "order_check": "gold-sequence-identical"
+    },
+    "sim_mmlu_g64::nacv2_vs_gptq": {
+      "axis": "sim",
+      "protocol": "mmlu969/32tok",
+      "n": 969,
+      "acc_a": 0.452,
+      "acc_b": 0.4469,
+      "diff_pp": -0.52,
+      "mcnemar_b_only_b": 58,
+      "mcnemar_c_only_a": 63,
+      "chi2_cc": 0.132,
+      "p": 0.7161,
+      "ci95_diff_pp": [
+        -0.0279,
+        0.0165
+      ],
+      "records_a": "acc_mmlu_sim_g64.records.gptq.json",
+      "records_b": "acc_mmlu_sim_g64_nacv2.records.nacv2.json",
+      "order_check": "gold-sequence-identical"
+    },
+    "sim_mmlu_g64::nacv2_vs_minmax": {
+      "axis": "sim",
+      "protocol": "mmlu969/32tok",
+      "n": 969,
+      "acc_a": 0.4675,
+      "acc_b": 0.4469,
+      "diff_pp": -2.06,
+      "mcnemar_b_only_b": 59,
+      "mcnemar_c_only_a": 79,
+      "chi2_cc": 2.616,
+      "p": 0.1058,
+      "ci95_diff_pp": [
+        -0.0444,
+        0.0031
+      ],
+      "records_a": "acc_mmlu_sim_g64.records.minmax.json",
+      "records_b": "acc_mmlu_sim_g64_nacv2.records.nacv2.json",
+      "order_check": "gold-sequence-identical"
+    },
+    "sim_mmlu_g64::nacv2_vs_fp16": {
+      "axis": "sim",
+      "protocol": "mmlu969/32tok",
+      "n": 969,
+      "acc_a": 0.4634,
+      "acc_b": 0.4469,
+      "diff_pp": -1.65,
+      "mcnemar_b_only_b": 41,
+      "mcnemar_c_only_a": 57,
+      "chi2_cc": 2.296,
+      "p": 0.1297,
+      "ci95_diff_pp": [
+        -0.0372,
+        0.0041
+      ],
+      "records_a": "acc_mmlu_sim_g64.records.fp16.json",
+      "records_b": "acc_mmlu_sim_g64_nacv2.records.nacv2.json",
+      "order_check": "gold-sequence-identical"
+    },
+    "sim_mmlu_g64::awq_vs_gptq": {
+      "axis": "sim",
+      "protocol": "mmlu969/32tok",
+      "n": 969,
+      "acc_a": 0.452,
+      "acc_b": 0.4396,
+      "diff_pp": -1.24,
+      "mcnemar_b_only_b": 69,
+      "mcnemar_c_only_a": 81,
+      "chi2_cc": 0.807,
+      "p": 0.3691,
+      "ci95_diff_pp": [
+        -0.0382,
+        0.0124
+      ],
+      "records_a": "acc_mmlu_sim_g64.records.gptq.json",
+      "records_b": "acc_mmlu_sim_g64_awq.records.awq.json",
+      "order_check": "gold-sequence-identical"
+    },
+    "sim_mmlu_g64::awq_vs_nacv2": {
+      "axis": "sim",
+      "protocol": "mmlu969/32tok",
+      "n": 969,
+      "acc_a": 0.4469,
+      "acc_b": 0.4396,
+      "diff_pp": -0.72,
+      "mcnemar_b_only_b": 55,
+      "mcnemar_c_only_a": 62,
+      "chi2_cc": 0.308,
+      "p": 0.5791,
+      "ci95_diff_pp": [
+        -0.0289,
+        0.0144
+      ],
+      "records_a": "acc_mmlu_sim_g64_nacv2.records.nacv2.json",
+      "records_b": "acc_mmlu_sim_g64_awq.records.awq.json",
+      "order_check": "gold-sequence-identical"
+    },
+    "sim_mmlu_g64::awq_vs_minmax": {
+      "axis": "sim",
+      "protocol": "mmlu969/32tok",
+      "n": 969,
+      "acc_a": 0.4675,
+      "acc_b": 0.4396,
+      "diff_pp": -2.79,
+      "mcnemar_b_only_b": 61,
+      "mcnemar_c_only_a": 88,
+      "chi2_cc": 4.537,
+      "p": 0.03317,
+      "ci95_diff_pp": [
+        -0.0526,
+        -0.0041
+      ],
+      "records_a": "acc_mmlu_sim_g64.records.minmax.json",
+      "records_b": "acc_mmlu_sim_g64_awq.records.awq.json",
+      "order_check": "gold-sequence-identical"
+    },
+    "sim_mmlu_g64::awq_vs_fp16": {
+      "axis": "sim",
+      "protocol": "mmlu969/32tok",
+      "n": 969,
+      "acc_a": 0.4634,
+      "acc_b": 0.4396,
+      "diff_pp": -2.37,
+      "mcnemar_b_only_b": 45,
+      "mcnemar_c_only_a": 68,
+      "chi2_cc": 4.283,
+      "p": 0.03849,
+      "ci95_diff_pp": [
+        -0.0454,
+        -0.0021
+      ],
+      "records_a": "acc_mmlu_sim_g64.records.fp16.json",
+      "records_b": "acc_mmlu_sim_g64_awq.records.awq.json",
+      "order_check": "gold-sequence-identical"
+    },
+    "sim_mmlu_g64::nac_vs_minmax": {
+      "axis": "sim",
+      "protocol": "mmlu969/32tok",
+      "n": 969,
+      "acc_a": 0.4675,
+      "acc_b": 0.3932,
+      "diff_pp": -7.43,
+      "mcnemar_b_only_b": 36,
+      "mcnemar_c_only_a": 108,
+      "chi2_cc": 35.007,
+      "p": 3.285e-09,
+      "ci95_diff_pp": [
+        -0.0991,
+        -0.0516
+      ],
+      "records_a": "acc_mmlu_sim_g64.records.minmax.json",
+      "records_b": "acc_mmlu_sim_g64.records.nac.json",
+      "order_check": "gold-sequence-identical"
+    },
+    "sim_gsm8k_g64::gptq_vs_minmax": {
+      "axis": "sim",
+      "protocol": "gsm8k200/2shot512",
+      "n": 200,
+      "acc_a": 0.075,
+      "acc_b": 0.305,
+      "diff_pp": 23.0,
+      "mcnemar_b_only_b": 53,
+      "mcnemar_c_only_a": 7,
+      "chi2_cc": 33.75,
+      "p": 6.267e-09,
+      "ci95_diff_pp": [
+        0.16,
+        0.3
+      ],
+      "records_a": "acc_gsm8k_sim_g64.records.minmax.json",
+      "records_b": "acc_gsm8k_sim_g64.records.gptq.json",
+      "order_check": "gold-sequence-identical"
+    },
+    "sim_gsm8k_g64::gptq_vs_nac": {
+      "axis": "sim",
+      "protocol": "gsm8k200/2shot512",
+      "n": 200,
+      "acc_a": 0.07,
+      "acc_b": 0.305,
+      "diff_pp": 23.5,
+      "mcnemar_b_only_b": 54,
+      "mcnemar_c_only_a": 7,
+      "chi2_cc": 34.689,
+      "p": 3.869e-09,
+      "ci95_diff_pp": [
+        0.165,
+        0.305
+      ],
+      "records_a": "acc_gsm8k_sim_g64.records.nac.json",
+      "records_b": "acc_gsm8k_sim_g64.records.gptq.json",
+      "order_check": "gold-sequence-identical"
+    },
+    "sim_gsm8k_g64::nacv2_vs_nac": {
+      "axis": "sim",
+      "protocol": "gsm8k200/2shot512",
+      "n": 200,
+      "acc_a": 0.07,
+      "acc_b": 0.15,
+      "diff_pp": 8.0,
+      "mcnemar_b_only_b": 26,
+      "mcnemar_c_only_a": 10,
+      "chi2_cc": 6.25,
+      "p": 0.01242,
+      "ci95_diff_pp": [
+        0.025,
+        0.14
+      ],
+      "records_a": "acc_gsm8k_sim_g64.records.nac.json",
+      "records_b": "acc_gsm8k_sim_g64_nacv2.records.nacv2.json",
+      "order_check": "gold-sequence-identical"
+    },
+    "sim_gsm8k_g64::nacv2_vs_gptq": {
+      "axis": "sim",
+      "protocol": "gsm8k200/2shot512",
+      "n": 200,
+      "acc_a": 0.305,
+      "acc_b": 0.15,
+      "diff_pp": -15.5,
+      "mcnemar_b_only_b": 15,
+      "mcnemar_c_only_a": 46,
+      "chi2_cc": 14.754,
+      "p": 0.0001225,
+      "ci95_diff_pp": [
+        -0.23,
+        -0.08
+      ],
+      "records_a": "acc_gsm8k_sim_g64.records.gptq.json",
+      "records_b": "acc_gsm8k_sim_g64_nacv2.records.nacv2.json",
+      "order_check": "gold-sequence-identical"
+    },
+    "sim_gsm8k_g64::nacv2_vs_minmax": {
+      "axis": "sim",
+      "protocol": "gsm8k200/2shot512",
+      "n": 200,
+      "acc_a": 0.075,
+      "acc_b": 0.15,
+      "diff_pp": 7.5,
+      "mcnemar_b_only_b": 27,
+      "mcnemar_c_only_a": 12,
+      "chi2_cc": 5.026,
+      "p": 0.02497,
+      "ci95_diff_pp": [
+        0.015,
+        0.135
+      ],
+      "records_a": "acc_gsm8k_sim_g64.records.minmax.json",
+      "records_b": "acc_gsm8k_sim_g64_nacv2.records.nacv2.json",
+      "order_check": "gold-sequence-identical"
+    },
+    "sim_gsm8k_g64::awq_vs_gptq": {
+      "axis": "sim",
+      "protocol": "gsm8k200/2shot512",
+      "n": 64,
+      "acc_a": 0.3125,
+      "acc_b": 0.0,
+      "diff_pp": -31.25,
+      "mcnemar_b_only_b": 0,
+      "mcnemar_c_only_a": 20,
+      "chi2_cc": 18.05,
+      "p": 2.152e-05,
+      "ci95_diff_pp": [
+        -0.4219,
+        -0.2031
+      ],
+      "records_a": "acc_gsm8k_sim_g64.records.gptq.json",
+      "records_b": "acc_gsm8k_sim_g64_awq.records.awq.json",
+      "order_check": "gold-sequence-identical"
+    },
+    "sim_gsm8k_g64::awq_vs_nacv2": {
+      "axis": "sim",
+      "protocol": "gsm8k200/2shot512",
+      "n": 64,
+      "acc_a": 0.1406,
+      "acc_b": 0.0,
+      "diff_pp": -14.06,
+      "mcnemar_b_only_b": 0,
+      "mcnemar_c_only_a": 9,
+      "chi2_cc": 7.111,
+      "p": 0.007661,
+      "ci95_diff_pp": [
+        -0.2344,
+        -0.0625
+      ],
+      "records_a": "acc_gsm8k_sim_g64_nacv2.records.nacv2.json",
+      "records_b": "acc_gsm8k_sim_g64_awq.records.awq.json",
+      "order_check": "gold-sequence-identical"
+    },
+    "sim_gsm8k_g64::awq_vs_minmax": {
+      "axis": "sim",
+      "protocol": "gsm8k200/2shot512",
+      "n": 64,
+      "acc_a": 0.0469,
+      "acc_b": 0.0,
+      "diff_pp": -4.69,
+      "mcnemar_b_only_b": 0,
+      "mcnemar_c_only_a": 3,
+      "chi2_cc": 1.333,
+      "p": 0.2482,
+      "ci95_diff_pp": [
+        -0.1094,
+        0.0
+      ],
+      "records_a": "acc_gsm8k_sim_g64.records.minmax.json",
+      "records_b": "acc_gsm8k_sim_g64_awq.records.awq.json",
+      "order_check": "gold-sequence-identical"
+    },
+    "sim_mmlu_g128::nac_vs_minmax": {
+      "axis": "sim",
+      "protocol": "g128 mmlu969/32tok",
+      "n": 969,
+      "acc_a": 0.3622,
+      "acc_b": 0.4293,
+      "diff_pp": 6.71,
+      "mcnemar_b_only_b": 94,
+      "mcnemar_c_only_a": 29,
+      "chi2_cc": 33.301,
+      "p": 7.895e-09,
+      "ci95_diff_pp": [
+        0.0454,
+        0.0888
+      ],
+      "records_a": "acc_mmlu_sim_g128.records.minmax.json",
+      "records_b": "acc_mmlu_sim_g128.records.nac.json",
+      "order_check": "gold-sequence-identical"
+    },
+    "sim_mmlu_g128::gptq_vs_minmax": {
+      "axis": "sim",
+      "protocol": "g128 mmlu969/32tok",
+      "n": 969,
+      "acc_a": 0.3622,
+      "acc_b": 0.4871,
+      "diff_pp": 12.49,
+      "mcnemar_b_only_b": 177,
+      "mcnemar_c_only_a": 56,
+      "chi2_cc": 61.803,
+      "p": 3.797e-15,
+      "ci95_diff_pp": [
+        0.0949,
+        0.1548
+      ],
+      "records_a": "acc_mmlu_sim_g128.records.minmax.json",
+      "records_b": "acc_mmlu_sim_g128.records.gptq.json",
+      "order_check": "gold-sequence-identical"
+    },
+    "sim_mmlu_g128::gptq_vs_nac": {
+      "axis": "sim",
+      "protocol": "g128 mmlu969/32tok",
+      "n": 969,
+      "acc_a": 0.4293,
+      "acc_b": 0.4871,
+      "diff_pp": 5.78,
+      "mcnemar_b_only_b": 121,
+      "mcnemar_c_only_a": 65,
+      "chi2_cc": 16.263,
+      "p": 5.512e-05,
+      "ci95_diff_pp": [
+        0.0299,
+        0.0857
+      ],
+      "records_a": "acc_mmlu_sim_g128.records.nac.json",
+      "records_b": "acc_mmlu_sim_g128.records.gptq.json",
+      "order_check": "gold-sequence-identical"
+    },
+    "board_mmlu::nacinject_vs_base": {
+      "axis": "board",
+      "protocol": "STALE: 注入未生效构建, F1",
+      "n": 969,
+      "acc_a": 0.5583,
+      "acc_b": 0.5614,
+      "diff_pp": 0.31,
+      "mcnemar_b_only_b": 87,
+      "mcnemar_c_only_a": 84,
+      "chi2_cc": 0.023,
+      "p": 0.8784,
+      "ci95_diff_pp": [
+        -0.0227,
+        0.0299
+      ],
+      "records_a": "acc_mmlu_qwen1.5b_w4a16_zs.records.json",
+      "records_b": "acc_mmlu_qwen1.5b_g64nac_zs.records.json",
+      "order_check": "gold-sequence-identical"
+    },
+    "board_gsm8k::nacinject_vs_base": {
+      "axis": "board",
+      "protocol": "STALE: 注入未生效构建 + 基线512tok协议疑不一致, F1/F2",
+      "n": 200,
+      "acc_a": 0.555,
+      "acc_b": 0.005,
+      "diff_pp": -55.0,
+      "mcnemar_b_only_b": 1,
+      "mcnemar_c_only_a": 111,
+      "chi2_cc": 106.08,
+      "p": 7.081e-25,
+      "ci95_diff_pp": [
+        -0.62,
+        -0.48
+      ],
+      "records_a": "acc_gsm8k_qwen1.5b_w4a16_zs.records.json",
+      "records_b": "acc_gsm8k_qwen1.5b_g64nac_zs.records.json",
+      "order_check": "gold-sequence-identical"
+    }
+  },
+  "warnings": []
+}
