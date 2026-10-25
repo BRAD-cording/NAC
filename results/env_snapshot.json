@@ -8,7 +8,12 @@
     "rkllm_runtime_so": "1.2.3 (rkllm-runtime-1.2.3/Linux/librkllm_api/aarch64, from release-v1.2.3 tag)",
     "rkllm_toolkit_build": "rknn-llm repo v1.1.4 default; build side (laptop WSL qemu) version NOT recorded -> must record at next build (R3/R4)",
     "platform": "NanoPi RK3576 aarch64, 16GB",
-    "note": "build-side toolkit version must be captured per-build into meta.json going forward"
+    "note": "eval/calib run in .venv; build-side (laptop WSL qemu) toolkit version still must be recorded per-build",
+    "python_venv": "3.11.2",
+    "torch_venv": "2.14.1+cpu",
+    "transformers_venv": "5.18.0",
+    "numpy_venv": "2.4.6",
+    "datasets_venv": "5.1.0"
   },
   "artifacts_md5": {
     "Qwen2.5-1.5B-Instruct_RK3576_w4a16.rkllm": "90330bf182cd52300b0cf8dc9e4d67ed",
