@@ -117,3 +117,4 @@
 - **cmd 重定向坑（新）**：ssh 到 Windows 后命令经 cmd.exe 解析，`bash -c '... > file'` 的 `>` 被当 cmd 重定向（报 "The system cannot find the path specified"）→ 必须用双引号嵌套 `bash -c \"...\"`（cmd 双引号内不解析 `>`）。
 - **传输链补充**：stdin 管道过 ssh→wsl.exe 不可用（cat 收不到）；scp 单文件 231KB 实测未触发 204800B 截断（之前结论仅部分场景成立）；base64 -d 解码远端文件后必须 md5 双端校验。
 - **R4-a 最终配置**：校准集缩为 **64 条多域**（gsm16/code8/zh16/wt24，data/quant_dataset_r4a64.json，md5 9077d495…；512 条原件与 128 条版均留档 data/）。对 B1（校准数据分布假设）检验效力不变：R3=128 条英文 wikitext vs R4-a=64 条多域，分布差异仍是唯一主变量；条数缩减对 normal 算法校准统计影响小（128 条已属保守量级）。
+- **回传事故（scp 截断确定性复现）**：r4a-watch 的 scp 拉取 1.41GB 模型 3 次全部截断在 204800B 且 md5 完全相同（e6e91088…，确定性 bug 非偶发）→ FATAL ABORT。**修复：改用 sftp**（`sshpass sftp` 批处理 `get`）全量拉取成功（md5 1494481a… 与源一致，~2h @1.8MB/s）。教训：**Windows sshd 的 scp 拉方向不可信，大文件一律 sftp**。swappiness=100 后 R4-a 构建 28 层校准 + export 全程稳定（05:30 DONE）。
