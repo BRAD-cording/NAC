@@ -1,1 +1,29 @@
 [2026-10-25 12:15:09] r3-x86-wd start (waiting for x86 model)
+[2026-10-26 08:44:32] x86 model detected (961M), stop qemu r3-plain
+Running as unit: r3-x86-eval.service
+[2026-10-26 08:44:32] r3-x86-eval STARTED
+=== R3 x86 eval pipeline start 2026-10-26 08:44:32 ===
+--- [B] smoke ---
+!!! [B] smoke 未见 PASS（继续评测，需复查 results/r3_x86_smoke.log）
+--- [C] GSM8K zs 200 start 2026-10-26 08:44:36 ---
+=== [C] GSM8K done 2026-10-26 08:44:39 ===
+--- [D] MMLU zs 969 start 2026-10-26 08:44:39 ---
+=== [D] MMLU done 2026-10-26 08:44:43 ===
+=== R3 X86 ALL DONE 2026-10-26 08:44:43 ===
+=== R3 x86 eval pipeline start 2026-10-26 23:33:56 ===
+stat: /home/pi/.trae-cn-server/bin/stable-871bca3bb55e7a37af74c1eef2a9696f29aa7b26-debian10/modules/ai-agent/libselinux.so.1: no version information available (required by stat)
+--- [B] smoke ---
+!!! [B] smoke 未见 PASS（继续评测，需复查 results/r3_x86_smoke.log）
+--- [C] GSM8K zs 200 start 2026-10-26 23:33:56 ---
+=== [C] GSM8K done 2026-10-26 23:33:56 ===
+--- [D] MMLU zs 969 start 2026-10-26 23:33:56 ---
+=== [D] MMLU done 2026-10-26 23:33:56 ===
+=== R3 X86 ALL DONE 2026-10-26 23:33:56 ===
+=== R3 x86 eval pipeline start 2026-10-26 23:35:21 ===
+--- [B] smoke ---
+=== [B] smoke PASS 2026-10-26 23:35:32 ===
+--- [C] GSM8K zs 200 start 2026-10-26 23:35:32 ---
+=== [C] GSM8K done 2026-10-26 23:46:47 ===
+--- [D] MMLU zs 969 start 2026-10-26 23:46:47 ---
+=== [D] MMLU done 2026-10-27 00:03:51 ===
+=== R3 X86 ALL DONE 2026-10-27 00:03:51 ===

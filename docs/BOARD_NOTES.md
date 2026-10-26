@@ -98,3 +98,14 @@
 - **事故**：build 9（x86 plain build）于 10-25 23:59 前后死——Windows AC 睡眠超时 0x0e10（3600s），nohup 后台构建不算用户活动 → 笔记本睡眠 → WSL 整体重启，进程蒸发（dmesg 无 OOM、日志无 FAIL 标记，守望 shell 未触发通知）。日志停在 Optimizing 24/28 [5:01:42]，损失 ~5h。
 - **处置**：崩溃日志备份 `~/r3x86/build_x86.crash1026.log`；`start_build.sh` 重启（pid 117390，01:45 起跑，ETA：Optimizing ~6h + export ~45min ≈ 08:30 模型落盘，传输+板评 ~3h → 中午出分）；**远程 powercfg：AC 睡眠/休眠超时清零 + 合盖不动作**（原值 0x0e10，构建结束后恢复 `powercfg /change standby-timeout-ac 3600`）。
 - **教训**：跨机长任务必须 (a) 禁目标机睡眠 (b) 守望判据加"日志 mtime 超过 N 分钟未更新即报警"，不能只等 DONE/FAIL 关键词（进程蒸发不产生任何标记）。
+
+## 2026-10-27 R3 全链收官：双事故 + 判别分 + 叙事级结论
+- **全链**：x86 原生 toolkit 1.2.3 构建 07:21 DONE → `models/local_w4a16_plain.rkllm`（1,410,933,676B，md5 `12aaf476a8f95eb5e8f4699d8e6b4256`）→ scp 回传板上 `models/local_w4a16_plain_x86.rkllm`（md5 一致）→ 板端评测出分。
+- **事故①（wd 提前触发）**：`r3_x86_watcher.sh` 原以">1GB 即视为传完"为判据，1.41GB 模型传到 ~70% 就被误判，评测拉起读半截模型 → `rkllm_init failed: -1` 全灭。**修复**：改为「>1GB 且大小连续 3 轮（~3min）不再增长」才触发。
+- **事故②（LD_LIBRARY_PATH 污染）**：Shell 工具环境 `LD_LIBRARY_PATH` 指向 Trae server 自带老库（缺 GLIBCXX_3.4.26），评测/客户端 dlopen 秒退。**修复**：`env -u LD_LIBRARY_PATH` 重拉，smoke PASS。教训：容器/host 环境变量对 Shell 工具子进程同样污染，拉起长任务前先 `env -u`。
+- **R3 判别分（[acc_gsm8k_qwen1.5b_w4a16plain_x86_zs.json](../results/acc_gsm8k_qwen1.5b_w4a16plain_x86_zs.json) / [acc_mmlu_qwen1.5b_w4a16plain_x86_zs.json](../results/acc_mmlu_qwen1.5b_w4a16plain_x86_zs.json)）**：
+  | 模型 | GSM8K zs 200 | MMLU zs 969 |
+  |---|---|---|
+  | 本地 plain build（g64） | **0.015（崩）** | 0.4974（存活） |
+  | 厂商预转基线 | 0.5550 | 0.5583 |
+- **叙事级结论（≈0.005 分支确认）**：本地构建的崩坏模式与 10-23 事故前"注入构建"板端行为**完全同型**（GSM8K 崩 / MMLU 存活）→ 10-23 的板端崩塌有了更简单解释：**崩在本地 toolkit 构建路径共性，与 extra_qparams 注入/float-zp 重解释无关**。问题 B（NPU zp 重解释）嫌疑整体降级，outline H2 必须重写；MMLU 0.4974 vs 0.5583 的 6pp 差亦待归因。**下一步 bisect**：本地 plain build vs 厂商预转的构建差异（tokenizer/对话模板、LLM_HEAD/embed 处理、校准 dataset、quant 参数），产出差异假设清单 + R4 最小对照实验。

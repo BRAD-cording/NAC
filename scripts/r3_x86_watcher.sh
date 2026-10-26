@@ -13,10 +13,18 @@ echo "[$(ts)] r3-x86-wd start (waiting for x86 model)" >> "$LOG"
 # 已完成 → 直接退出，不留守
 grep -qF 'R3 X86 ALL DONE' "$LOG" 2>/dev/null && { echo "[$(ts)] x86 eval already done, exit" >> "$LOG"; exit 0; }
 
-# 等模型落盘且 >1G（scp 传完前文件会持续增长）
+# 等模型落盘：>1G 且大小连续 3 轮（约 3min）不再增长（scp 传完前文件持续增长；
+# 10-26 事故：1.41GB 模型传到 1GB 即被误判传完，评测拉起读半截模型全灭）
+last=0; stable=0
 while :; do
     sz=$(stat -c%s "$MODEL" 2>/dev/null || echo 0)
-    [ "$sz" -gt 1000000000 ] && break
+    if [ "$sz" -gt 1000000000 ] && [ "$sz" -eq "$last" ]; then
+        stable=$((stable+1))
+        [ "$stable" -ge 3 ] && break
+    else
+        stable=0
+    fi
+    last=$sz
     sleep 60
 done
 
