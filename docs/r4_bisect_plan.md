@@ -54,6 +54,7 @@ torch zip 格式，141 条 = 28×(q/k/v_proj.bias + input_layernorm + post_atten
 每轮成本：笔记本构建 ~6h（Optimizing 5.5h + export）+ scp 回传 ~1h + 板端 GSM8K zs 200 评测 ~1.5h（32-token 协议）≈ 8–9h/轮。**优先做 x86 侧可判别的实验**（md5/diff 地图即可判别，不必等板端分数）。
 
 - **R4-a（首选，1 轮）**：唯一改动 = 换校准数据集（用更大/多域数据，如 wikitext-2 全量采样 512 条 + 中英混合；或 vendor 社区常用的大数据集）。判别：(a) 与 vendor md5 全同 → 直接锁定 vendor 数据集（中彩）；(b) diff 地图模式改变（权重区从 high 变 low/部分差异）→ 数据集进入量化决策被证实，板端评测这版看 GSM8K 是否恢复；(c) 与 R3 本地版 diff 仍同模式 → 数据集无关，转 B2/B3。
+  - **10-27 执行修正**：多域数据使构建 OOM（13GB VM 上限；128 条多域仍爆，R3 128 条 wikitext 能过 → 多域内容推高校准内存峰值，与条数弱相关；`vm.swappiness=100` 后稳定）。最终校准集 = **64 条多域**（gsm16/code8/zh16/wt24，`data/quant_dataset_r4a64.json` md5 9077d495…；512/128 条留档）。B1 检验效力不变：与 R3 的唯一主差异仍是数据分布；条数缩减对 normal 校准统计影响小。
 - **R4-b（次选）**：唯一改动 = optimization_level=3。判别：diff 地图是否整体重排（支持 B3）。
 - **R4-c（可选）**：唯一改动 = quantized_algorithm（若 1.2.3 提供 normal 之外的算法）。
 - **辅助**：构建时把 toolkit 的量化中间日志（每层 clamp/scale 统计）打开（若 API 可选 verbose），与 diff 地图逐层对齐可把差异定位到具体张量级，避免整轮板端盲试。

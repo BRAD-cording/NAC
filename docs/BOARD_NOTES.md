@@ -109,3 +109,11 @@
   | 本地 plain build（g64） | **0.015（崩）** | 0.4974（存活） |
   | 厂商预转基线 | 0.5550 | 0.5583 |
 - **叙事级结论（≈0.005 分支确认）**：本地构建的崩坏模式与 10-23 事故前"注入构建"板端行为**完全同型**（GSM8K 崩 / MMLU 存活）→ 10-23 的板端崩塌有了更简单解释：**崩在本地 toolkit 构建路径共性，与 extra_qparams 注入/float-zp 重解释无关**。问题 B（NPU zp 重解释）嫌疑整体降级，outline H2 必须重写；MMLU 0.4974 vs 0.5583 的 6pp 差亦待归因。**下一步 bisect**：本地 plain build vs 厂商预转的构建差异（tokenizer/对话模板、LLM_HEAD/embed 处理、校准 dataset、quant 参数），产出差异假设清单 + R4 最小对照实验。
+
+## 2026-10-27 凌晨：R4-a 构建连环事故与修复（OOM/转义/判活三连）
+- **根因①（OOM）**：R4-a 512 条多域数据集构建必死——dmesg 实锤 `oom_kill_process python3.10 anon-rss:12.68GB`（.wslconfig memory=13GB，实际可用 ~12GB；swap 20GB 但 OOM 时仅用 5MB = 分配突发快于 kswapd 换出）。**条数减半不解决**：128 条仍爆；**R3 同 13GB 上限 128 条 wikitext 能过** → 多域内容（中文/代码/数学）使校准内存峰值显著高于等量英文 wikitext，与条数弱相关。**修复：`sysctl vm.swappiness=100`**（root 写 /etc/sysctl.d/99-swapaggro.conf 持久化）→ swap 主动承接 3GB、物理内存回落 9-11GB，构建稳定过 Optimizing 1/28。宿主 16GB 不敢调大 VM 上限（Windows 只剩 2-3GB）。
+- **根因②（keeper 转义地狱）**：r4a_keeper.sh 原判活查询为 ssh 双引号内嵌 bash -c 单引号内嵌 \$p 多层转义 → 解析崩坏返回空 → alive 恒空 → **每 60-90s 误判 DEAD 疯狂 schtasks restart**（01:34-01:45 日志 11 轮）。**修复：判活逻辑抽成远端脚本** ~/r3x86/check_r4a.sh（本地副本 scripts/check_r4a.sh），keeper 只调 `$SSH "wsl -d Ubuntu -- bash .../check_r4a.sh"`，彻底消除转义层。教训：**跨机判活一律远端脚本化，不做多层内联转义**。
+- **根因③（/end 副作用）**：schtasks /end 杀 wsl.exe 前台树 → WSL 内 python 成孤儿后仍可能被会话回收；且 .bat PID 守卫读旧 PID 残影会 exit 0 拒绝新实例。诊断期手动操作只用 /run 不用 /end。
+- **cmd 重定向坑（新）**：ssh 到 Windows 后命令经 cmd.exe 解析，`bash -c '... > file'` 的 `>` 被当 cmd 重定向（报 "The system cannot find the path specified"）→ 必须用双引号嵌套 `bash -c \"...\"`（cmd 双引号内不解析 `>`）。
+- **传输链补充**：stdin 管道过 ssh→wsl.exe 不可用（cat 收不到）；scp 单文件 231KB 实测未触发 204800B 截断（之前结论仅部分场景成立）；base64 -d 解码远端文件后必须 md5 双端校验。
+- **R4-a 最终配置**：校准集缩为 **64 条多域**（gsm16/code8/zh16/wt24，data/quant_dataset_r4a64.json，md5 9077d495…；512 条原件与 128 条版均留档 data/）。对 B1（校准数据分布假设）检验效力不变：R3=128 条英文 wikitext vs R4-a=64 条多域，分布差异仍是唯一主变量；条数缩减对 normal 算法校准统计影响小（128 条已属保守量级）。
