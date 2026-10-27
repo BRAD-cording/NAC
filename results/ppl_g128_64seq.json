@@ -1,0 +1,12 @@
+{
+  "model": "models/Qwen2.5-1.5B-Instruct-hf",
+  "num_seqs": 64,
+  "seqlen": 1024,
+  "group_size": 128,
+  "ppl": {
+    "fp16": 11.0747,
+    "minmax": 12.5436,
+    "nac": 12.1644,
+    "gptq": 12.5032
+  }
+}
