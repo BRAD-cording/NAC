@@ -1,0 +1,7 @@
+{
+  "model": "models/local_w4a16_r4b.rkllm",
+  "task": "gsm8k",
+  "num_samples": 200,
+  "fewshot_num": 0,
+  "gsm8k_acc": 0.025
+}

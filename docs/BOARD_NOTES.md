@@ -124,3 +124,9 @@
 - **B1（校准数据分布）证伪**：R3（128 条 wikitext）0.015 vs R4-a（64 条多域）0.0000——换多域数据无任何恢复，崩坏模式不变。**R3 vs R4-a 字节 diff 地图**（scripts/rkllm_diffmap.py，64KiB 块）：3 区共 46.4%（624MB），全部落在 448–1123MiB 量化层权重区，与 R3 vs vendor 差异区域同型 → **校准数据确实改变权重字节但完全不改变板端行为** → 崩坏与校准数据无关实锤。
 - **R4-b 启动（B3：optimization_level 1→3）**：脚本推为笔记本 r4a_build.py（备份 r4a_build_opt1.py.bak；PID/log/标记前缀复用 r4a 生态，keeper/watcher 零改动），数据集保持 64 条多域（单变量）；R4-a 模型笔记本侧备份 local_w4a16_r4a_opt1ds64.bak.rkllm。08:20 起跑 Optimizing，ETA ~14:30。watcher 已改 sftp 回传 + r4b_pipeline.sh 自动评测。构建期笔记本睡眠再次禁用。
 - **候选假设剩余**：B3（opt level，R4-b 在跑）→ B2（quantized_algorithm）→ **B7（新，升位）：num_npu_core=2 或其他 build 参数与 vendor 不一致**——vendor model card 未披露 opt level/algorithm/npu core，本地全部显式传参，任何一个都可能是崩因。
+
+## 2026-10-27 下午/晚：R4-b 判别分 → B3 证伪 → 签名对齐 → R4-c（npu_core=1）
+- **R4-b 判别分**：GSM8K zs 200 = **0.025**（opt 1→3 无实质变化，0.015→0.025 噪声级）；MMLU = **0.5191**（略高于 R3/R4a 的 0.4974——opt=3 图优化对单步任务小改善，核心崩坏不动）→ **B3 证伪**。R4-b 模型 1.294GB（比 R3/R4a 的 1.411GB 小 8.3%，opt=3 算子融合改变结构；vendor 1.41GB 同 R3 → vendor 大概率非 opt=3）。
+- **toolkit 1.2.3 签名对齐（内省实锤）**：`build(do_quantization=True, optimization_level=1, quantized_dtype='w8a8', quantized_algorithm='normal', target_platform='rk3588', num_npu_core=1, extra_qparams=None, dataset=None, hybrid_rate=0.0, max_context=4096)`。对照本地调用：**唯一显式偏离默认且 vendor 未必使用的参数 = num_npu_core=2**（默认 1）；w4a16/rk3576 是 vendor 必同项；max_context 默认 4096 与 vendor 一致。→ **B7 焦点收窄至 num_npu_core**。
+- **R4-c 启动（B7）**：与 R3 完全一致仅 npu_core=1，数据集回 R3 原版 128 条 wikitext（严格单变量）。21:20 起跑 Optimizing，ETA ~00:40 出模型 → watcher 自动 sftp 回传 + r4c_pipeline 自动评测，判别分 ~01:30。恢复则 npu_core=2 是元凶（论文叙事再修正）；仍崩则 npu_core 排除，转 B2（algorithm）/target_platform。
+- **传输链提速**：R4-b 模型 sftp 回传仅 ~20 分钟（12:04 OK，1.29GB）——R4-a 首次拉取的 2h 可能含 Windows cp 中转等待；现流程（cp→sync→sftp）已顺。watcher 为 transient 单元（systemd-run），完成即消失，需 systemd-run 重拉（10-27 深夜踩点）。
