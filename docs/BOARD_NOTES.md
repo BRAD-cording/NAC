@@ -118,3 +118,9 @@
 - **传输链补充**：stdin 管道过 ssh→wsl.exe 不可用（cat 收不到）；scp 单文件 231KB 实测未触发 204800B 截断（之前结论仅部分场景成立）；base64 -d 解码远端文件后必须 md5 双端校验。
 - **R4-a 最终配置**：校准集缩为 **64 条多域**（gsm16/code8/zh16/wt24，data/quant_dataset_r4a64.json，md5 9077d495…；512 条原件与 128 条版均留档 data/）。对 B1（校准数据分布假设）检验效力不变：R3=128 条英文 wikitext vs R4-a=64 条多域，分布差异仍是唯一主变量；条数缩减对 normal 算法校准统计影响小（128 条已属保守量级）。
 - **回传事故（scp 截断确定性复现）**：r4a-watch 的 scp 拉取 1.41GB 模型 3 次全部截断在 204800B 且 md5 完全相同（e6e91088…，确定性 bug 非偶发）→ FATAL ABORT。**修复：改用 sftp**（`sshpass sftp` 批处理 `get`）全量拉取成功（md5 1494481a… 与源一致，~2h @1.8MB/s）。教训：**Windows sshd 的 scp 拉方向不可信，大文件一律 sftp**。swappiness=100 后 R4-a 构建 28 层校准 + export 全程稳定（05:30 DONE）。
+
+## 2026-10-27 上午：R4-a 判别分 → B1 证伪 → R4-b（opt=3）启动
+- **R4-a 判别分**：smoke PASS（9s）；**GSM8K zs 200 = 0.0000**（21min，acc_gsm8k_qwen1.5b_r4a_zs.json）；MMLU zs 969 在跑。
+- **B1（校准数据分布）证伪**：R3（128 条 wikitext）0.015 vs R4-a（64 条多域）0.0000——换多域数据无任何恢复，崩坏模式不变。**R3 vs R4-a 字节 diff 地图**（scripts/rkllm_diffmap.py，64KiB 块）：3 区共 46.4%（624MB），全部落在 448–1123MiB 量化层权重区，与 R3 vs vendor 差异区域同型 → **校准数据确实改变权重字节但完全不改变板端行为** → 崩坏与校准数据无关实锤。
+- **R4-b 启动（B3：optimization_level 1→3）**：脚本推为笔记本 r4a_build.py（备份 r4a_build_opt1.py.bak；PID/log/标记前缀复用 r4a 生态，keeper/watcher 零改动），数据集保持 64 条多域（单变量）；R4-a 模型笔记本侧备份 local_w4a16_r4a_opt1ds64.bak.rkllm。08:20 起跑 Optimizing，ETA ~14:30。watcher 已改 sftp 回传 + r4b_pipeline.sh 自动评测。构建期笔记本睡眠再次禁用。
+- **候选假设剩余**：B3（opt level，R4-b 在跑）→ B2（quantized_algorithm）→ **B7（新，升位）：num_npu_core=2 或其他 build 参数与 vendor 不一致**——vendor model card 未披露 opt level/algorithm/npu core，本地全部显式传参，任何一个都可能是崩因。
