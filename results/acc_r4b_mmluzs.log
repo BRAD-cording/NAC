@@ -1,0 +1,28 @@
+I rkllm: rkllm-runtime version: 1.2.3, rknpu driver version: 0.9.8, platform: RK3576
+I rkllm: loading rkllm model from models/local_w4a16_r4b.rkllm
+I rkllm: rkllm-toolkit version: 1.2.3, max_context_limit: 4096, npu_core_num: 2, target_platform: RK3576, model_dtype: W4A16
+I rkllm: Enabled cpus: [4, 5, 6, 7]
+I rkllm: Enabled cpus num: 4
+Using the latest cached version of the dataset since cais/mmlu couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'all' at /home/pi/.cache/huggingface/datasets/cais___mmlu/all/0.0.0/c30699e8356da336a370243923dbaf21066bb9fe (last modified on Tue Oct  6 19:55:51 2026).
+[acc] mmlu 50/969 acc=0.6800
+[acc] mmlu 100/969 acc=0.6000
+[acc] mmlu 150/969 acc=0.5400
+[acc] mmlu 200/969 acc=0.5450
+[acc] mmlu 250/969 acc=0.5280
+[acc] mmlu 300/969 acc=0.5367
+[acc] mmlu 350/969 acc=0.5371
+[acc] mmlu 400/969 acc=0.5475
+[acc] mmlu 450/969 acc=0.5489
+[acc] mmlu 500/969 acc=0.5460
+[acc] mmlu 550/969 acc=0.5436
+[acc] mmlu 600/969 acc=0.5300
+[acc] mmlu 650/969 acc=0.5369
+[acc] mmlu 700/969 acc=0.5343
+[acc] mmlu 750/969 acc=0.5227
+[acc] mmlu 800/969 acc=0.5188
+[acc] mmlu 850/969 acc=0.5188
+[acc] mmlu 900/969 acc=0.5233
+[acc] mmlu 950/969 acc=0.5211
+[acc] MMLU acc = 0.5191
+[acc] -> results/acc_mmlu_qwen1.5b_r4b_zs.json

@@ -1,0 +1,7 @@
+{
+  "model": "models/local_w4a16_r4c.rkllm",
+  "task": "mmlu",
+  "num_samples": 969,
+  "fewshot_num": 0,
+  "mmlu_acc": 0.4974
+}

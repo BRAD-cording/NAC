@@ -130,3 +130,10 @@
 - **toolkit 1.2.3 签名对齐（内省实锤）**：`build(do_quantization=True, optimization_level=1, quantized_dtype='w8a8', quantized_algorithm='normal', target_platform='rk3588', num_npu_core=1, extra_qparams=None, dataset=None, hybrid_rate=0.0, max_context=4096)`。对照本地调用：**唯一显式偏离默认且 vendor 未必使用的参数 = num_npu_core=2**（默认 1）；w4a16/rk3576 是 vendor 必同项；max_context 默认 4096 与 vendor 一致。→ **B7 焦点收窄至 num_npu_core**。
 - **R4-c 启动（B7）**：与 R3 完全一致仅 npu_core=1，数据集回 R3 原版 128 条 wikitext（严格单变量）。21:20 起跑 Optimizing，ETA ~00:40 出模型 → watcher 自动 sftp 回传 + r4c_pipeline 自动评测，判别分 ~01:30。恢复则 npu_core=2 是元凶（论文叙事再修正）；仍崩则 npu_core 排除，转 B2（algorithm）/target_platform。
 - **传输链提速**：R4-b 模型 sftp 回传仅 ~20 分钟（12:04 OK，1.29GB）——R4-a 首次拉取的 2h 可能含 Windows cp 中转等待；现流程（cp→sync→sftp）已顺。watcher 为 transient 单元（systemd-run），完成即消失，需 systemd-run 重拉（10-27 深夜踩点）。
+
+## 2026-10-28 凌晨/上午：R4-c 判别 → B7 证伪 → 算法列表泄露 → R4-d（gdq）
+- **R4-c 判别分（03:52 ALL DONE，全链自动）**：GSM8K = **0.015** / MMLU = **0.4974**——与 R3 **逐位一致** → **B7（npu_core）证伪**。模型 1.391GB。
+- **字节侦察两个关键事实**：(a) R4c vs vendor 头部 0–64KiB 也不同（R3/R4a vs vendor 头部 448MiB 全同）→ npu_core 改头部指纹，vendor 头部与 R3（npu2）一致 → vendor 也是 npu2 类配置；(b) **vendor 与 R3 文件总大小逐字节相同（1,410,933,676B）→ 若 vendor 用 hybrid_rate>0（部分层 w8a8）大小必变 → hybrid 假设排除**（B8）。
+- **toolkit 1.2.3 算法列表泄露（rkllm/api/rkllm.py py 源码 docstring，.so 无 docstring）**：`quantized_algorithm options: [none, normal, normal_r1~normal_r64, gdq, gdq_r1~gdq_r64, grq, grq_r1~grq_r64]`，gdq/grq 仅支持 4bit（w4a16 ✓），且 extra_qparams 机制标注 "cached by gdq/grq [gdq/grq.qparams]" → 高级算法可产生与 normal 完全不同的 scale/zp 决策，同 dtype 同打包尺寸不变——**恰好同时解释"同头部同尺寸同结构但权重区 payload 全不同 + 行为天差地别"**。
+- **R4-d 启动（B2）**：algorithm normal→gdq，其余与 R3 全同（opt1/w4a16/rk3576/npu2/R3 数据集）。构建已 ALIVE，判别分 ~+5h。恢复 → B2 证实（vendor 用 gdq 类高级算法，"toolkit 默认参数不能开箱复现 vendor 质量"本身就是论文可写发现）；仍崩 → 试 grq / normal_r 变体 / 数据条数。
+- **假设战况总览**：B1 数据 ✗ / B3 opt ✗ / B5 元数据 ✗ / B6 模型源 ✗ / B7 npu_core ✗ / B8 hybrid ✗ / B4 版本降级 → **剩 B2（algorithm 家族）与 target_platform（弱）**。
