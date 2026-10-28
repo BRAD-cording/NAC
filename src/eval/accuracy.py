@@ -79,6 +79,22 @@ def extract_number(text: str) -> float | None:
     return float(m[-1]) if m else None
 
 
+ANSWER_IS_RE = re.compile(r"answer\s+(?:is|:|=)\s*\$?\s*(-?\d[\d,]*\.?\d*)")
+
+
+def extract_answer_is(text: str) -> float | None:
+    """answer-is 优先抽取：首个 "answer is/:" 后数字，无命中回退 extract_number。
+
+    背景（2026-10-29 m1 复核，results/extractor_recheck.json）：非终止生成下
+    取末数字会从续写文本错位取数，为全配置一阶混杂；本函数作为 dual-metric
+    的第二指标使用，不替换 extract_number 默认路径（保持历史可比性）。
+    """
+    m = ANSWER_IS_RE.findall(text.replace(",", ""))
+    if m:
+        return float(m[0])
+    return extract_number(text)
+
+
 def eval_task(client: RKLLMClient, rows: list, kind: str, log_path: Path | None = None,
               fewshot_num: int = 2):
     correct = 0
@@ -102,7 +118,7 @@ def eval_task(client: RKLLMClient, rows: list, kind: str, log_path: Path | None 
             pred is not None and abs(pred - float(gold)) < 1e-4)
         correct += int(ok)
         records.append({"i": i, "pred": str(pred), "gold": str(gold),
-                        "ok": ok, "gen": text[:200], "ttft_ms": out["ttft_ms"]})
+                        "ok": ok, "gen": text[:600], "ttft_ms": out["ttft_ms"]})
         if (i + 1) % 50 == 0:
             print(f"[acc] {kind} {i + 1}/{len(rows)} acc={correct / (i + 1):.4f}")
     if log_path:
@@ -124,7 +140,7 @@ def main():
     stem = Path(args.model).stem
     out_path = Path(args.out or f"results/acc_{args.task}_{stem}_{datetime.now():%Y%m%d_%H%M%S}.json")
     results = {"model": args.model, "task": args.task, "num_samples": args.num_samples,
-               "fewshot_num": args.fewshot_num}
+               "fewshot_num": args.fewshot_num, "max_new_tokens": args.max_new_tokens}
 
     with RKLLMClient(args.model, max_new_tokens=args.max_new_tokens) as client:
         if args.task in ("mmlu", "both"):

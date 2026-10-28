@@ -21,7 +21,8 @@ from pathlib import Path
 import torch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from src.eval.accuracy import GSM8K_FEWSHOT, GSM8K_TMPL, extract_number, load_gsm8k  # noqa: E402
+from src.eval.accuracy import (GSM8K_FEWSHOT, GSM8K_TMPL, extract_answer_is,  # noqa: E402
+                               extract_number, load_gsm8k)
 from src.nac.awq import apply_fold, undo_fold_norms  # noqa: E402
 from src.nac.validate_sim import apply_qparams, restore_from_disk  # noqa: E402
 
@@ -55,11 +56,18 @@ def eval_config(model, tok, rows, bs, max_new, records, start, out_path, rec_pat
             gold = row["answer"].split("####")[-1].strip().replace(",", "")
             pred = extract_number(text)
             ok = pred is not None and abs(pred - float(gold)) < 1e-4
+            # dual-metric（2026-10-29 m1 复核处置 A 线）：answer-is 优先为第二指标，
+            # 主指标 ok 仍用 extract_number 保持与历史口径可比
+            pred_ai = extract_answer_is(text)
+            ok_ai = pred_ai is not None and abs(pred_ai - float(gold)) < 1e-4
             records.append({"i": done + j, "pred": str(pred), "gold": gold,
-                            "ok": ok, "gen": text[:300]})
+                            "ok": ok, "pred_answeris": str(pred_ai),
+                            "ok_answeris": ok_ai, "gen": text})
             done += 1
         accs = [r["ok"] for r in records]
+        accs_ai = [r["ok_answeris"] for r in records]
         snapshot = {"num_evaluated": done, "acc": round(sum(accs) / done, 4),
+                    "acc_answeris": round(sum(accs_ai) / done, 4),
                     "none_rate": round(sum(r["pred"] == "None" for r in records) / done, 4),
                     "elapsed_s": round(time.time() - t0, 1),
                     "sec_per_q": round((time.time() - t0) / done, 2)}
@@ -70,9 +78,11 @@ def eval_config(model, tok, rows, bs, max_new, records, start, out_path, rec_pat
               flush=True)
 
     accs = [r["ok"] for r in records]
+    accs_ai = [r["ok_answeris"] for r in records]
     lo, hi = bootstrap_ci(accs)
     return {"num_evaluated": done, "acc": round(sum(accs) / done, 4),
             "acc_ci95": [round(lo, 4), round(hi, 4)],
+            "acc_answeris": round(sum(accs_ai) / done, 4),
             "none_rate": round(sum(r["pred"] == "None" for r in records) / done, 4),
             "elapsed_s": round(time.time() - t0, 1)}
 
