@@ -1,0 +1,39 @@
+[2026-10-27 01:13:57] r4a-wd start
+[2026-10-27 05:34:49] build DONE detected, transfer model
+-rwxrwxrwx 1 dministrator dministrator 1410933676 Oct 27 05:34 /mnt/c/Users/Administrator/r4a_model.rkllm
+[2026-10-27 05:49:06] try1 md5 src=1494481a2fad42ce3fdac23d62d49223 dst=e6e910886cbeddc302e7d85a1d3db0a6
+-rwxrwxrwx 1 dministrator dministrator 1410933676 Oct 27 05:49 /mnt/c/Users/Administrator/r4a_model.rkllm
+[2026-10-27 06:03:02] try2 md5 src=1494481a2fad42ce3fdac23d62d49223 dst=e6e910886cbeddc302e7d85a1d3db0a6
+-rwxrwxrwx 1 dministrator dministrator 1410933676 Oct 27 06:02 /mnt/c/Users/Administrator/r4a_model.rkllm
+[2026-10-27 06:16:14] try3 md5 src=1494481a2fad42ce3fdac23d62d49223 dst=e6e910886cbeddc302e7d85a1d3db0a6
+[2026-10-27 06:16:14] FATAL: md5 mismatch after 3 tries, ABORT
+[2026-10-27 08:25:46] r4a-wd start
+[2026-10-27 11:46:17] build DONE detected, transfer model
+-rwxrwxrwx 1 dministrator dministrator 1294257260 Oct 27 11:46 /mnt/c/Users/Administrator/r4a_model.rkllm
+Connected to 192.168.3.16.
+sftp> get r4a_model.rkllm /media/pi/DATA/rknn-llm/nac_paper/models/local_w4a16_r4b.rkllm
+Fetching /C:/Users/Administrator/r4a_model.rkllm to /media/pi/DATA/rknn-llm/nac_paper/models/local_w4a16_r4b.rkllm
+[2026-10-27 12:04:16] try1 md5 src=0005f15e9ca4d1d667a27bc67d5c926c dst=0005f15e9ca4d1d667a27bc67d5c926c
+[2026-10-27 12:04:16] model transfer OK (1.3G)
+Running as unit: r4b-eval.service
+[2026-10-27 12:04:17] r4b-eval STARTED
+[2026-10-27 21:22:36] r4a-wd start
+[2026-10-28 02:53:36] build DONE detected, transfer model
+-rwxrwxrwx 1 dministrator dministrator 1391642196 Oct 28 02:53 /mnt/c/Users/Administrator/r4a_model.rkllm
+Connected to 192.168.3.16.
+sftp> get r4a_model.rkllm /media/pi/DATA/rknn-llm/nac_paper/models/local_w4a16_r4c.rkllm
+Fetching /C:/Users/Administrator/r4a_model.rkllm to /media/pi/DATA/rknn-llm/nac_paper/models/local_w4a16_r4c.rkllm
+[2026-10-28 03:16:44] try1 md5 src=1f067442d1890ca844790c5329a8f4ca dst=1f067442d1890ca844790c5329a8f4ca
+[2026-10-28 03:16:44] model transfer OK (1.3G)
+Running as unit: r4c-eval.service
+[2026-10-28 03:16:44] r4c-eval STARTED
+[2026-10-28 07:15:12] r4a-wd start
+[2026-10-28 19:07:09] build DONE detected, transfer model
+-rwxrwxrwx 1 dministrator dministrator 1410933676 Oct 28 19:06 /mnt/c/Users/Administrator/r4a_model.rkllm
+Connected to 192.168.3.16.
+sftp> get r4a_model.rkllm /media/pi/DATA/rknn-llm/nac_paper/models/local_w4a16_r4d.rkllm
+Fetching /C:/Users/Administrator/r4a_model.rkllm to /media/pi/DATA/rknn-llm/nac_paper/models/local_w4a16_r4d.rkllm
+[2026-10-28 19:26:18] try1 md5 src=f06e53f8748d3b605005cbaa2eb6bd77 dst=f06e53f8748d3b605005cbaa2eb6bd77
+[2026-10-28 19:26:18] model transfer OK (1.4G)
+Running as unit: r4d-eval.service
+[2026-10-28 19:26:18] r4d-eval STARTED

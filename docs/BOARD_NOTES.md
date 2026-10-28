@@ -138,3 +138,10 @@
 - **R4-d 启动（B2）**：algorithm normal→gdq，其余与 R3 全同（opt1/w4a16/rk3576/npu2/R3 数据集）。构建已 ALIVE，判别分 ~+5h。恢复 → B2 证实（vendor 用 gdq 类高级算法，"toolkit 默认参数不能开箱复现 vendor 质量"本身就是论文可写发现）；仍崩 → 试 grq / normal_r 变体 / 数据条数。
 - **假设战况总览**：B1 数据 ✗ / B3 opt ✗ / B5 元数据 ✗ / B6 模型源 ✗ / B7 npu_core ✗ / B8 hybrid ✗ / B4 版本降级 → **剩 B2（algorithm 家族）与 target_platform（弱）**。
 - **R4-d 启动真相勘误（07:20 复盘）**：前次会话记录的"R4-d 已启动（ALIVE / Optimizing 0/28）"**未生效**——build_r4a.log 第 110 行（R4-c DONE）之后无任何运行记录，04:00-07:13 板上无构建进程（keeper 因尾部 DONE 标记正确不重启）。**实际首次运行由 30 分钟级"构建监控"定时自动化于 07:13:03 恢复触发**（schtasks Last Run 实锤），07:15:12 该自动化又重拉了 r4a-watch（transient 单元）。当前进程 PID 56653，07:13:45 起跑，RSS ~10GB，gdq 算法 Optimizing 中。**教训**：(a) 跨会话交接的"已启动"断言必须用日志行计数验证（`grep -c 'load ret='`），不能只看 ALIVE；(b) 监控自动化具备真实恢复能力，其消息口径已同步更新为 R4-d（含恢复动作边界：仅 DEAD 且无 DONE 时才 schtasks 重启）。
+
+## 2026-10-28 晚：R4-d 判别 → B2 主形态（gdq）证伪
+- **R4-d 判别分（19:54 ALL DONE，全链自动，构建 07:13→19:05 ≈11.9h，gdq 实测 ~1500s/层）**：GSM8K zs 200 = **0.01**（崩坏带纹丝不动，vendor 0.5550）/ MMLU zs 969 = **0.5387**（本地系列最高：R3 0.4974 → R4a 0.4974 → R4b 0.5191 → R4d 0.5387，与 vendor 0.5583 差距收窄到 2pp）→ **B2 主形态 gdq 证伪**：高级算法确实改变模型行为（MMLU +4pp），但 GSM8K 崩坏与算法无关。
+- **模型特征**：local_w4a16_r4d.rkllm = 1,410,933,676B（与 vendor/R3 逐字节同大小——gdq 同 dtype 同打包的预测兑现）；构建产物 gdq.qparams 1.32GB（extra_qparams 缓存机制，docstring "cached by gdq/grq" 的实证）。
+- **模式学新观察（待纳入归因）**：全部本地构建呈现"**MMLU（短生成判别）存活 ≈0.50-0.54，GSM8K（多步长链生成）崩 ≈0.01-0.025**"二相行为 → 崩坏可能不在权重全局质量，而与**长链解码/数值放大**相关（疑点：lm_head/LLM_HEAD 处理、ctx/解码链路），或算术误差逐 token 放大。vendor 同评测框架 0.5550 → 评测面无问题。
+- **假设战况总览（更新）**：B1✗ B3✗ B5✗ B6✗ B7✗ B8✗ **B2-gdq✗** → 剩：**B2 其他形态（grq / normal_r1~r64 / gdq_r1~r64）**、target_platform（弱）、B4 版本（降级未排除）。
+- **R4-e 决策（23:58）**：R4-e 此前从未启动（跨会话误记，笔记本 DEAD 且日志尾为 R4-d DONE 实锤）。候选项：grq（~13h）/ normal_r1（~6h）/ 转 target_platform——待用户拍板。
