@@ -1,0 +1,426 @@
+{
+ "caveat": "records.gen 是截断存档（sim 300 / board 200 字符）；原始评分为推理时全文。本复核在截断文本上进行，A 规则与存档 ok 的一致率代表其代表性；结论仅用于 m1 定性裁定（抽取器伪影 vs 真实校准行为），不改写论文数字。",
+ "configs": {
+  "sim_awq": {
+   "n": 64,
+   "source": "results/acc_gsm8k_sim_g64_awq.records.awq.json",
+   "A_agreement_with_stored_ok": 0.9531,
+   "acc_A_recomputed": 0.0469,
+   "acc_B_first": 0.3594,
+   "acc_B_last": 0.3281,
+   "records_changed_by_B": 22,
+   "gold_string_in_gen": 36,
+   "changed_samples": [
+    {
+     "i": 4,
+     "gold": "83",
+     "predA": "1.0",
+     "predBf": "83.0",
+     "predBl": "83.0"
+    },
+    {
+     "i": 6,
+     "gold": "10",
+     "predA": "3.0",
+     "predBf": "10.0",
+     "predBl": "10.0"
+    },
+    {
+     "i": 12,
+     "gold": "48",
+     "predA": "2.0",
+     "predBf": "48.0",
+     "predBl": "48.0"
+    },
+    {
+     "i": 18,
+     "gold": "48",
+     "predA": "7.0",
+     "predBf": "48.0",
+     "predBl": "48.0"
+    },
+    {
+     "i": 20,
+     "gold": "90",
+     "predA": "3.0",
+     "predBf": "90.0",
+     "predBl": "90.0"
+    },
+    {
+     "i": 22,
+     "gold": "10",
+     "predA": "3.0",
+     "predBf": "10.0",
+     "predBl": "10.0"
+    },
+    {
+     "i": 30,
+     "gold": "140",
+     "predA": "1.0",
+     "predBf": "140.0",
+     "predBl": "140.0"
+    },
+    {
+     "i": 18,
+     "gold": "68",
+     "predA": "14.0",
+     "predBf": "68.0",
+     "predBl": "68.0"
+    },
+    {
+     "i": 20,
+     "gold": "8",
+     "predA": "6.0",
+     "predBf": "8.0",
+     "predBl": "8.0"
+    },
+    {
+     "i": 22,
+     "gold": "14",
+     "predA": "6.0",
+     "predBf": "14.0",
+     "predBl": "14.0"
+    }
+   ]
+  },
+  "sim_nac_v1": {
+   "n": 200,
+   "source": "results/acc_gsm8k_sim_g64.records.nac.json",
+   "A_agreement_with_stored_ok": 0.875,
+   "acc_A_recomputed": 0.095,
+   "acc_B_first": 0.3,
+   "acc_B_last": 0.295,
+   "records_changed_by_B": 43,
+   "gold_string_in_gen": 90,
+   "changed_samples": [
+    {
+     "i": 2,
+     "gold": "5",
+     "predA": "50.0",
+     "predBf": "5.0",
+     "predBl": "5.0"
+    },
+    {
+     "i": 18,
+     "gold": "48",
+     "predA": "7.0",
+     "predBf": "48.0",
+     "predBl": "48.0"
+    },
+    {
+     "i": 28,
+     "gold": "18",
+     "predA": "4.0",
+     "predBf": "18.0",
+     "predBl": "18.0"
+    },
+    {
+     "i": 30,
+     "gold": "140",
+     "predA": "8.0",
+     "predBf": "140.0",
+     "predBl": "140.0"
+    },
+    {
+     "i": 20,
+     "gold": "8",
+     "predA": "900.0",
+     "predBf": "8.0",
+     "predBl": "8.0"
+    },
+    {
+     "i": 22,
+     "gold": "14",
+     "predA": "6.0",
+     "predBf": "14.0",
+     "predBl": "14.0"
+    },
+    {
+     "i": 40,
+     "gold": "11",
+     "predA": "10.0",
+     "predBf": "11.0",
+     "predBl": "11.0"
+    },
+    {
+     "i": 36,
+     "gold": "2",
+     "predA": "75.0",
+     "predBf": "2.0",
+     "predBl": "2.0"
+    },
+    {
+     "i": 40,
+     "gold": "4",
+     "predA": "5.0",
+     "predBf": "4.0",
+     "predBl": "4.0"
+    },
+    {
+     "i": 46,
+     "gold": "188",
+     "predA": "6.0",
+     "predBf": "188.0",
+     "predBl": "6.0"
+    }
+   ]
+  },
+  "sim_minmax": {
+   "n": 200,
+   "source": "results/acc_gsm8k_sim_g64.records.minmax.json",
+   "A_agreement_with_stored_ok": 0.91,
+   "acc_A_recomputed": 0.035,
+   "acc_B_first": 0.31,
+   "acc_B_last": 0.25,
+   "records_changed_by_B": 56,
+   "gold_string_in_gen": 88,
+   "changed_samples": [
+    {
+     "i": 2,
+     "gold": "5",
+     "predA": "24.0",
+     "predBf": "5.0",
+     "predBl": "5.0"
+    },
+    {
+     "i": 12,
+     "gold": "48",
+     "predA": "7.0",
+     "predBf": "48.0",
+     "predBl": "48.0"
+    },
+    {
+     "i": 14,
+     "gold": "16",
+     "predA": "50.0",
+     "predBf": "16.0",
+     "predBl": "16.0"
+    },
+    {
+     "i": 18,
+     "gold": "48",
+     "predA": "60.0",
+     "predBf": "48.0",
+     "predBl": "48.0"
+    },
+    {
+     "i": 20,
+     "gold": "90",
+     "predA": "40.0",
+     "predBf": "90.0",
+     "predBl": "40.0"
+    },
+    {
+     "i": 22,
+     "gold": "10",
+     "predA": "20.0",
+     "predBf": "10.0",
+     "predBl": "3.0"
+    },
+    {
+     "i": 30,
+     "gold": "140",
+     "predA": "7.0",
+     "predBf": "140.0",
+     "predBl": "140.0"
+    },
+    {
+     "i": 20,
+     "gold": "8",
+     "predA": "1050.0",
+     "predBf": "8.0",
+     "predBl": "1050.0"
+    },
+    {
+     "i": 22,
+     "gold": "14",
+     "predA": "994.0",
+     "predBf": "14.0",
+     "predBl": "14.0"
+    },
+    {
+     "i": 40,
+     "gold": "11",
+     "predA": "7.0",
+     "predBf": "11.0",
+     "predBl": "11.0"
+    }
+   ]
+  },
+  "sim_gptq": {
+   "n": 200,
+   "source": "results/acc_gsm8k_sim_g64.records.gptq.json",
+   "A_agreement_with_stored_ok": 0.825,
+   "acc_A_recomputed": 0.28,
+   "acc_B_first": 0.385,
+   "acc_B_last": 0.38,
+   "records_changed_by_B": 21,
+   "gold_string_in_gen": 99,
+   "changed_samples": [
+    {
+     "i": 22,
+     "gold": "10",
+     "predA": "84.0",
+     "predBf": "10.0",
+     "predBl": "84.0"
+    },
+    {
+     "i": 26,
+     "gold": "45000",
+     "predA": "30.0",
+     "predBf": "45000.0",
+     "predBl": "45000.0"
+    },
+    {
+     "i": 30,
+     "gold": "140",
+     "predA": "40.0",
+     "predBf": "140.0",
+     "predBl": "140.0"
+    },
+    {
+     "i": 22,
+     "gold": "14",
+     "predA": "2.0",
+     "predBf": "14.0",
+     "predBl": "14.0"
+    },
+    {
+     "i": 26,
+     "gold": "100",
+     "predA": "80.0",
+     "predBf": "100.0",
+     "predBl": "100.0"
+    },
+    {
+     "i": 40,
+     "gold": "11",
+     "predA": "7.0",
+     "predBf": "11.0",
+     "predBl": "11.0"
+    },
+    {
+     "i": 84,
+     "gold": "80",
+     "predA": "7.0",
+     "predBf": "80.0",
+     "predBl": "80.0"
+    },
+    {
+     "i": 86,
+     "gold": "45",
+     "predA": "3.0",
+     "predBf": "45.0",
+     "predBl": "45.0"
+    },
+    {
+     "i": 90,
+     "gold": "5",
+     "predA": "240.0",
+     "predBf": "5.0",
+     "predBl": "5.0"
+    },
+    {
+     "i": 94,
+     "gold": "36",
+     "predA": "30.0",
+     "predBf": "36.0",
+     "predBl": "36.0"
+    }
+   ]
+  },
+  "sim_nacv2": {
+   "n": 200,
+   "source": "results/acc_gsm8k_sim_g64_nacv2.records.nacv2.json",
+   "A_agreement_with_stored_ok": 0.85,
+   "acc_A_recomputed": 0.13,
+   "acc_B_first": 0.34,
+   "acc_B_last": 0.325,
+   "records_changed_by_B": 46,
+   "gold_string_in_gen": 94,
+   "changed_samples": [
+    {
+     "i": 2,
+     "gold": "5",
+     "predA": "1.5",
+     "predBf": "5.0",
+     "predBl": "5.0"
+    },
+    {
+     "i": 4,
+     "gold": "83",
+     "predA": "12.0",
+     "predBf": "83.0",
+     "predBl": "83.0"
+    },
+    {
+     "i": 6,
+     "gold": "10",
+     "predA": "80.0",
+     "predBf": "10.0",
+     "predBl": "10.0"
+    },
+    {
+     "i": 14,
+     "gold": "16",
+     "predA": "7.0",
+     "predBf": "16.0",
+     "predBl": "16.0"
+    },
+    {
+     "i": 18,
+     "gold": "48",
+     "predA": "49.0",
+     "predBf": "48.0",
+     "predBl": "48.0"
+    },
+    {
+     "i": 26,
+     "gold": "45000",
+     "predA": "3.0",
+     "predBf": "45000.0",
+     "predBl": "45000.0"
+    },
+    {
+     "i": 28,
+     "gold": "18",
+     "predA": "12.0",
+     "predBf": "18.0",
+     "predBl": "18.0"
+    },
+    {
+     "i": 30,
+     "gold": "140",
+     "predA": "234.0",
+     "predBf": "140.0",
+     "predBl": "140.0"
+    },
+    {
+     "i": 20,
+     "gold": "8",
+     "predA": "7.0",
+     "predBf": "8.0",
+     "predBl": "8.0"
+    },
+    {
+     "i": 22,
+     "gold": "14",
+     "predA": "7.0",
+     "predBf": "14.0",
+     "predBl": "14.0"
+    }
+   ]
+  },
+  "board_vendor_zs": {
+   "n": 200,
+   "source": "results/acc_gsm8k_qwen1.5b_w4a16_zs.records.json",
+   "A_agreement_with_stored_ok": 0.455,
+   "acc_A_recomputed": 0.02,
+   "acc_B_first": 0.02,
+   "acc_B_last": 0.02,
+   "records_changed_by_B": 0,
+   "gold_string_in_gen": 13,
+   "changed_samples": []
+  }
+ }
+}
