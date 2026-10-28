@@ -145,3 +145,8 @@
 - **模式学新观察（待纳入归因）**：全部本地构建呈现"**MMLU（短生成判别）存活 ≈0.50-0.54，GSM8K（多步长链生成）崩 ≈0.01-0.025**"二相行为 → 崩坏可能不在权重全局质量，而与**长链解码/数值放大**相关（疑点：lm_head/LLM_HEAD 处理、ctx/解码链路），或算术误差逐 token 放大。vendor 同评测框架 0.5550 → 评测面无问题。
 - **假设战况总览（更新）**：B1✗ B3✗ B5✗ B6✗ B7✗ B8✗ **B2-gdq✗** → 剩：**B2 其他形态（grq / normal_r1~r64 / gdq_r1~r64）**、target_platform（弱）、B4 版本（降级未排除）。
 - **R4-e 决策（23:58）**：R4-e 此前从未启动（跨会话误记，笔记本 DEAD 且日志尾为 R4-d DONE 实锤）。候选项：grq（~13h）/ normal_r1（~6h）/ 转 target_platform——待用户拍板。
+
+## 2026-10-29 凌晨：R4-e（grq）启动 + R4-d 侦察
+- **R4-e 启动（00:04，PID 88944）**：与 R3/R4-d 唯一变量 quantized_algorithm gdq→grq（其余 opt1/w4a16/rk3576/npu2/R3 数据集严格不变）。笔记本 scripts/r4a_build.py 经 sftp 更新（QP=results/tk_r4e.qparams、OUT=models/local_w4a16_r4e.rkllm）；watcher 切 r4e 口径（模型名/r4e-eval 单元），r4e_pipeline.sh 新建（幂等 + R4E X86 ALL DONE 标记）；30min 监控自动化改名「R4-e 构建监控与汇报」（恢复边界不变）。启动后核验：`grep -c 'load ret='` 14→15、已进 Optimizing、RSS 9.7GB。**竞态规避**：watcher 在新构建写入 load ret 行之后才拉起（日志尾仍是旧 [r4a] DONE 时启动会误触发回传 R4-d 模型——cp 目标 r4e 不存在会 FATAL ABORT，但不必要的浪费）。
+- **R4-d 字节侦察（三条互相印证）**：(a) R4d vs vendor 与 R4d vs R3（normal）差异区域**完全同型**：2 区（450.8–456.3 + 498.2–1123.1 MiB），各 46.8%，diff_total 逐字节相同（660,996,096B）→ 三方同打包布局，gdq 恰好重排整个量化 payload 区；(b) 头部 0–450.8MiB R4d/vendor/R3 三方全同（npu2 头指纹，与 R4-c npu_core 改头的结论自洽）；(c) gdq 未让 R4d 与 vendor 逐字节一致 → vendor 非「gdq+同数据集+同参数」可复现组合。payload 区字节级三方相似度（等/不等比例）见后续补充。
+- **ETA**：gdq 实测 ~1500s/层，grq 预计同量级 → 模型 ~12:30，回传+评测 ~1.5h → **判别分 ~14:00**。判据：GSM8K ≈0.5+ → vendor 算法=grq（B2 证实）；仍 ≈0.0x → **B2 主形态整族（normal/gdq/grq）出清**，转 target_platform/B4/二相行为归因。

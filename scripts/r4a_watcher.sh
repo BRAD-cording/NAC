@@ -3,7 +3,7 @@
 # 然后回传模型（md5 校验，失败重试 ≤3），拉起 r4a-eval。
 set -u
 PROJ=/media/pi/DATA/rknn-llm/nac_paper
-MODEL=$PROJ/models/local_w4a16_r4d.rkllm
+MODEL=$PROJ/models/local_w4a16_r4e.rkllm
 LOG=$PROJ/results/r4a_watch.log
 SSH="sshpass -p 131468 ssh -o StrictHostKeyChecking=no -o ConnectTimeout=20 Administrator@192.168.3.16"
 W() { $SSH "wsl -d Ubuntu -- bash -c \"$1\"" 2>/dev/null | tr -d '\r\000'; }
@@ -37,12 +37,12 @@ echo "[$(ts)] build DONE detected, transfer model" >> "$LOG"
 
 # 回传：WSL cp 到 Windows 中转 → 板上 sftp 拉回（scp 拉方向确定性截断 204800B，10-27 实锤）→ md5 校验，重试 3 次
 for i in 1 2 3; do
-    W "cp /home/dministrator/r3x86/models/local_w4a16_r4d.rkllm /mnt/c/Users/Administrator/r4a_model.rkllm && sync && ls -la /mnt/c/Users/Administrator/r4a_model.rkllm" >> "$LOG" 2>&1
+    W "cp /home/dministrator/r3x86/models/local_w4a16_r4e.rkllm /mnt/c/Users/Administrator/r4a_model.rkllm && sync && ls -la /mnt/c/Users/Administrator/r4a_model.rkllm" >> "$LOG" 2>&1
     sleep 10
     rm -f "$MODEL"
     sshpass -p '131468' sftp -o StrictHostKeyChecking=no 'Administrator@192.168.3.16' <<< "get r4a_model.rkllm $MODEL" >> "$LOG" 2>&1
     sleep 5
-    md5_src=$(W "md5sum /home/dministrator/r3x86/models/local_w4a16_r4d.rkllm | cut -d' ' -f1")
+    md5_src=$(W "md5sum /home/dministrator/r3x86/models/local_w4a16_r4e.rkllm | cut -d' ' -f1")
     md5_dst=$(md5sum "$MODEL" 2>/dev/null | cut -d' ' -f1)
     echo "[$(ts)] try$i md5 src=$md5_src dst=$md5_dst" >> "$LOG"
     if [ -n "$md5_src" ] && [ "$md5_src" = "$md5_dst" ]; then
@@ -53,9 +53,9 @@ for i in 1 2 3; do
 done
 [ "${TRANSFER_OK:-0}" = "1" ] || { echo "[$(ts)] FATAL: md5 mismatch after 3 tries, ABORT" >> "$LOG"; exit 1; }
 
-if systemd-run --user --unit=r4d-eval --working-directory="$PROJ" \
-        bash "$PROJ/scripts/r4d_pipeline.sh" >> "$LOG" 2>&1; then
-    echo "[$(ts)] r4d-eval STARTED" >> "$LOG"
+if systemd-run --user --unit=r4e-eval --working-directory="$PROJ" \
+        bash "$PROJ/scripts/r4e_pipeline.sh" >> "$LOG" 2>&1; then
+    echo "[$(ts)] r4e-eval STARTED" >> "$LOG"
 else
     echo "[$(ts)] r4a-eval skipped (already active/exists)" >> "$LOG"
 fi
