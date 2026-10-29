@@ -294,7 +294,7 @@ We do not claim this list is complete, but every entry is backed by a measured f
 
 ## 9 Conclusion
 
-Under one W4A16 pipeline on one edge SoC, we find that calibration objectives that are indistinguishable on perplexity and multiple-choice accuracy differ by more than 4× on long-form reasoning; that this difference is invisible under a 32-token generation cap, which zeroes out even the vendor reference; and that the sign of the calibration effect depends on group size. We release the harness, the archived generations, and a protocol that makes these distinctions reproducible. The broader lesson is that for edge LLM quantization, the evaluation protocol is part of the result.
+Under one W4A16 pipeline on one edge SoC, we find that calibration objectives that are indistinguishable on perplexity and multiple-choice accuracy differ by more than 4× on long-form reasoning; that this difference is invisible under a 32-token generation cap, which zeroes out even the vendor reference; and that the sign of the calibration effect depends on group size. The cap also changes the verdict outright: the same artifacts score 0.0150 or 0.5350, and 0.0050 or 0.5650, depending only on how many tokens the harness allows — and at the proper cap both are statistically indistinguishable from the vendor model. We release the harness, the archived generations, and a protocol that makes these distinctions reproducible. The broader lesson is that for edge LLM quantization, the evaluation protocol is part of the result.
 
 ---
 
@@ -308,7 +308,9 @@ Under one W4A16 pipeline on one edge SoC, we find that calibration objectives th
 | MMLU p-values (NAC vs min-max, etc.) | `stats_pairs.json` | ✅ |
 | g128 inversion (+6.71 pp, p=7.9e-9) | `acc_mmlu_sim_g128.full.json`, `stats_pairs.json` | ✅ |
 | Vendor 0.0000 @32 vs 0.5550 @512 | `acc_gsm8k_..._zs32.json`, `..._zs.json` | ✅ |
-| Board 512-token comparisons | `q1_board512` queue | ⏳ |
+| Local rebuild 0.0150 @32 vs 0.5350 @512 (p = 0.69 vs vendor) | `acc_gsm8k_qwen1.5b_w4a16plain_x86_zs512.json` | ✅ |
+| Group-quantized artifact 0.0050 @32 vs 0.5650 @512 (p = 0.88; answer-is identical) | `acc_gsm8k_q1bd8_zs512.json` | ✅ |
+| Deployment MMLU build-path deltas and p-values | `acc_mmlu_*_zs.records.json`, `stats_pairs.json` | ✅ |
 | fp16 GSM8K anchor | — | ⏳ |
 
 ## Appendix B — Reproducibility package
