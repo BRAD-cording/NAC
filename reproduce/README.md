@@ -89,6 +89,6 @@ diverging from the JSON they cite.
 |---|---|---|
 | 3B artifact deleted | 3B control not re-runnable locally | re-download (2.4 GB) and verify sha256 |
 | External injection never demonstrated at 1.5B | no valid board-side NAC arm | rebuild with the flat state-dict schema and verify md5 changes |
-| Sim GSM8K archives truncate at 300 chars | extraction sensitivity can only be bounded | re-run with full archive + stop sequence |
-| No fp16 simulation GSM8K anchor | quantization loss vs stack loss not separable | one 10 h run |
+| Sim GSM8K archives truncate at 300 chars | extraction sensitivity can only be bounded | `scripts/q1_sim_queue.sh` re-runs with full archive and `\nQuestion:` stop sequence |
+| No fp16 simulation GSM8K anchor | quantization loss vs stack loss not separable | same queue, first job |
 | Single platform / single model family | external validity unproven | second model family |
