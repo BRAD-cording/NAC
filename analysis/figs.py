@@ -164,8 +164,40 @@ def fig3():
     s.save(OUT / "fig3_group_size.svg")
 
 
+def fig4():
+    """部署侧：同一模型、同一 dtype，只变构建算法。"""
+    data = [("vendor", 0.5583, "#718096"), ("normal\nopt1", 0.4974, "#2b6cb0"),
+            ("normal\nopt3", 0.5191, "#2b6cb0"), ("normal\nmultidomain", 0.4974, "#2b6cb0"),
+            ("gdq", 0.5387, "#2f855a")]
+    s = SVG()
+    s.text(W / 2, 18, "A local rebuild does not reproduce vendor quality by default", 12.5, "middle")
+    ylo, yhi = 0.45, 0.58
+    s.line(ML, H - MB, W - MR, H - MB)
+    s.line(ML, MT, ML, H - MB)
+    for v in [0.45, 0.48, 0.51, 0.54, 0.57]:
+        y = sy(v, ylo, yhi)
+        s.line(ML - 4, y, ML, y)
+        s.text(ML - 8, y + 3, f"{v:.2f}", 10, "end")
+    gw = (W - ML - MR) / len(data)
+    for i, (name, val, col) in enumerate(data):
+        cx = ML + gw * (i + 0.5)
+        bw = gw * 0.46
+        y = sy(val, ylo, yhi)
+        s.rect(cx - bw / 2, y, bw, H - MB - y, col)
+        s.text(cx, y - 5, f"{val:.4f}", 9, "middle")
+        for k, part in enumerate(name.split("\n")):
+            s.text(cx, H - MB + 16 + k * 12, part, 9, "middle")
+    yv = sy(0.5583, ylo, yhi)
+    s.line(ML, yv, W - MR, yv, 1, "#c53030", "5,3")
+    s.text(W - MR, yv - 5, "vendor 0.5583", 9, "end", "#c53030")
+    s.text((ML + W - MR) / 2, H - 12, "MMLU (969 items, 32-token), all W4A16", 10, "middle")
+    s.text(ML, MT - 4, "MMLU acc.", 9, "start", "#555")
+    s.save(OUT / "fig4_build_path.svg")
+
+
 if __name__ == "__main__":
     fig1()
     fig2()
     fig3()
+    fig4()
     print("wrote", *[p.name for p in sorted(OUT.glob("*.svg"))])
