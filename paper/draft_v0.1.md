@@ -23,7 +23,7 @@ Our study is organised around three axes that are usually conflated (Section 3):
 
 **Finding 1 (calibration objective).** In simulation, GPTQ's Hessian-based error compensation is worth 23 points of GSM8K accuracy over min-max and NAC-v1 (0.305 versus 0.075 and 0.070), while NAC-v1 has the *best* perplexity of the three (11.893 versus 12.168 and 12.225). Perplexity and long-form accuracy rank the methods in opposite directions. Activation-weighted objectives (NAC-v1, AWQ) are not worse on likelihood or multiple-choice; they are specifically worse at producing a terminating chain of thought.
 
-**Finding 2 (protocol).** The same measurements are extremely sensitive to how generation is scored. With a 32-token cap — the default of the evaluation harness and of several published edge-deployment recipes — the vendor's own W4A16 model scores 0.0000 on GSM8K, and nine locally built variants score 0.000–0.025. Extending the cap to 512 tokens restores the vendor model to 0.5550. Separately, extracting the first "answer is" number instead of the last number in the generation raises every configuration and compresses the GPTQ advantage from 4.1× to about 1.1×. Neither artefact is visible in the accuracy scalar alone; both are visible in the length distribution and in the termination rate.
+**Finding 2 (protocol).** The same measurements are extremely sensitive to how generation is scored. With a 32-token cap — the default of the evaluation harness and of several published edge-deployment recipes — the vendor's own W4A16 model scores 0.0000 on GSM8K, and ten locally built variants score 0.000–0.025. Extending the cap to 512 tokens restores the vendor model to 0.5550. Separately, extracting the first "answer is" number instead of the last number in the generation raises every configuration and compresses the GPTQ advantage from 4.1× to about 1.1×. Neither artefact is visible in the accuracy scalar alone; both are visible in the length distribution and in the termination rate.
 
 **Finding 3 (boundary).** Calibration effects are conditional on group size. At g64, NAC-v1 loses 7.43 points of MMLU to min-max (p = 3.3e-9); at g128 it *wins* by 6.71 points (p = 7.9e-9). The sign of the effect, not just its size, depends on a hyperparameter that papers rarely ablate.
 
@@ -126,9 +126,43 @@ The pattern is not a single-method accident. AWQ — an independent activation-w
 
 ### 6.2 Protocol artefacts
 
-**The generation cap.** [[TBD: 512-token table. Placeholder text describing the 32 vs 512 comparison; numbers to be inserted after the board queue completes.]]
+#### 6.2.1 The generation cap
 
-**The extraction rule.** Re-scoring archived generations with the "answer is" rule raises every simulated configuration: GPTQ 0.280→0.385, NAC-v2 0.130→0.340, min-max 0.035→0.310, NAC-v1 0.095→0.300, AWQ 0.047→0.359 (archived prefixes, which truncate at 300 characters, so these are lower bounds). The GPTQ margin over NAC-v1 falls from 4.1× to 1.1×. We therefore report both rules and treat any conclusion that flips between them as protocol-dependent rather than method-dependent.
+The strongest evidence that the cap, not the model, can determine the score comes from a within-model manipulation. We evaluated the *vendor-provided* W4A16 model — the reference artifact, untouched by any of our calibration code — on the same 200 GSM8K items, changing only `max_new_tokens`:
+
+| Model | max_new_tokens | GSM8K | median generation length |
+|---|---|---|---|
+| vendor W4A16 | 32 | **0.0000** | 140 chars |
+| vendor W4A16 | 512 | **0.5550** | >200 chars (archive capped) |
+
+At 32 tokens the reference model scores zero. Its generations are not degenerate: they begin with a correct restatement of the problem and a correct first step, and stop mid-number — for the first item, `"…divide by 3.\n\nThe first measurement is 47 W"`. The harness's last-number extractor reads `47` and marks the item wrong.
+
+The same signature appears in every locally built variant we evaluated at 32 tokens (Table 3): median length 129–147 characters, 90th percentile ≤161, no generation reaches a concluding sentence, and the distribution of final characters is dominated by digits and operators. Under a 512-token cap the vendor model reaches 0.5550. We therefore treat all 32-token numbers in our own earlier records — and any published edge-deployment number produced with a similar default — as measuring the cap.
+
+**Table 3.** Truncation signature of GSM8K runs. `tail-mid` is the fraction of generations whose last character is a digit or operator; `hasAns` is the fraction containing a concluding "answer is".
+
+| Run (all 32-token unless noted) | n | GSM8K | p50 len | p90 len | tail-mid | hasAns |
+|---|---|---|---|---|---|---|
+| vendor | 200 | 0.0000 | 140 | 160 | 0.32 | 0.00 |
+| min-max (toolkit) | 200 | 0.0050 | 147 | 161 | 0.32 | 0.00 |
+| NAC-v1 calibration artifact | 200 | 0.0050 | 138 | 158 | 0.28 | 0.00 |
+| NAC-v2 calibration artifact | 200 | 0.0050 | 138 | 158 | 0.28 | 0.00 |
+| local x86 build, alg=normal | 200 | 0.0150 | 138 | 157 | 0.38 | 0.00 |
+| local x86 build, alg=gdq | 200 | 0.0100 | 145 | 161 | 0.28 | 0.00 |
+| vendor, 512-token | 200 | **0.5550** | 200* | 200* | 0.23 | 0.00¹ |
+
+\* archive capped at 200 characters; the scoring used full text.
+¹ "answer is" appears only after the first 200 characters, which is why archived prefixes cannot be re-scored (Section 6.2.2).
+
+This is a measurement-validity problem rather than a modelling result, and it has a simple control: **run the reference model under the same harness**. If the reference scores near zero, the harness is the treatment.
+
+#### 6.2.2 The extraction rule
+
+Re-scoring archived generations with the "answer is" rule raises every simulated configuration: GPTQ 0.280→0.385, NAC-v2 0.130→0.340, min-max 0.035→0.310, NAC-v1 0.095→0.300, AWQ 0.047→0.359. These are lower bounds: the archives truncate at 300 characters, so the true effect is at least this large. The GPTQ margin over NAC-v1 falls from 4.1× to 1.1×.
+
+The mechanism is visible in AWQ's case. Its generations are coherent and often contain the correct final number, but the model does not emit EOS; it continues into a new question, and last-number extraction reads a number from the continuation. Under answer-is extraction the same 64 items score 0.359 instead of 0.047. The underlying phenomenon — a calibration objective that damages the termination policy while preserving local fluency — is real and worth reporting, but it is not an accuracy collapse, and reporting it as one would be wrong.
+
+We therefore report both rules and treat any conclusion that flips between them as protocol-dependent rather than method-dependent.
 
 ### 6.3 Group size reverses the sign
 
