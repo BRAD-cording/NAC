@@ -1,0 +1,90 @@
+@page {
+  size: A4;
+  margin: 22mm 18mm 20mm 18mm;
+  @bottom-center {
+    content: counter(page);
+    font-family: "DejaVu Sans", sans-serif;
+    font-size: 8pt;
+    color: #666;
+  }
+  @top-right {
+    content: "draft v0.1 — 2026-10-30";
+    font-family: "DejaVu Sans", sans-serif;
+    font-size: 7.5pt;
+    color: #999;
+  }
+}
+
+html { font-size: 10.5pt; }
+
+body {
+  font-family: "DejaVu Serif", "Times New Roman", serif;
+  line-height: 1.42;
+  color: #111;
+  text-align: justify;
+  hyphens: auto;
+}
+
+header#title-block-header { text-align: center; margin-bottom: 18pt; }
+h1.title { font-size: 19pt; line-height: 1.25; margin: 0 0 6pt 0; font-weight: bold; }
+p.subtitle { font-size: 11pt; color: #444; margin: 0 0 10pt 0; }
+p.author, p.date { font-size: 9.5pt; color: #555; margin: 2pt 0; }
+
+h1, h2, h3, h4 { font-family: "DejaVu Sans", sans-serif; page-break-after: avoid; }
+h1 { font-size: 15pt; margin: 18pt 0 8pt 0; border-bottom: 0.6pt solid #bbb; padding-bottom: 3pt; }
+h2 { font-size: 12.5pt; margin: 14pt 0 6pt 0; }
+h3 { font-size: 11pt; margin: 12pt 0 5pt 0; }
+h4 { font-size: 10pt; margin: 10pt 0 4pt 0; }
+
+p { margin: 0 0 6pt 0; orphans: 2; widows: 2; }
+ul, ol { margin: 0 0 6pt 0; padding-left: 16pt; }
+li { margin-bottom: 2pt; }
+
+blockquote {
+  border-left: 2pt solid #cbd5e0;
+  margin: 6pt 0 6pt 12pt;
+  padding-left: 8pt;
+  color: #333;
+  font-size: 9.5pt;
+}
+
+code {
+  font-family: "DejaVu Sans Mono", monospace;
+  font-size: 8.6pt;
+  background: #f4f4f4;
+  padding: 0 1.5pt;
+  border-radius: 2pt;
+}
+pre {
+  font-family: "DejaVu Sans Mono", monospace;
+  font-size: 8.2pt;
+  background: #f7f7f7;
+  border: 0.5pt solid #ddd;
+  padding: 5pt 6pt;
+  white-space: pre-wrap;
+  page-break-inside: avoid;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 8.2pt;
+  margin: 6pt 0 10pt 0;
+  page-break-inside: avoid;
+}
+thead { background: #eef1f4; }
+th, td {
+  border: 0.4pt solid #b8c0c8;
+  padding: 2.2pt 3.5pt;
+  text-align: left;
+  vertical-align: top;
+}
+th { font-family: "DejaVu Sans", sans-serif; font-weight: bold; }
+
+img { max-width: 100%; height: auto; }
+
+a { color: #1a4f8a; text-decoration: none; }
+
+hr { border: none; border-top: 0.5pt solid #ccc; margin: 10pt 0; }
+
+strong { font-weight: bold; }
