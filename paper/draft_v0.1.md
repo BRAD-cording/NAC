@@ -231,11 +231,11 @@ MMLU is answered with a single letter and is therefore insensitive to the genera
 |---|---|---|---|---|
 | vendor | not disclosed | 0.5583 | — | — |
 | local, opt=1 | `normal` | 0.4974 | −6.09 pp | b=158 / c=99, p=3.0e-4 |
-| local, opt=3 | `normal` | 0.5191 | −3.92 pp | [[TBD]] |
-| local, opt=1, multi-domain calibration | `normal` | 0.4974 | −6.09 pp | [[TBD]] |
+| local, opt=3 | `normal` | 0.5191 | −3.92 pp | b=132 / c=94, p=0.014 |
+| local, opt=1, multi-domain calibration | `normal` | 0.4974 | −6.09 pp | b=150 / c=91, p=1.9e-4 |
 | local, opt=1 | `gdq` | 0.5387 | −1.96 pp | b=98 / c=79, p=0.18 (tie) |
 
-Two readings. First, a local rebuild with the default algorithm is 6.1 points worse than the vendor artifact — significant, and reproduced across two independent builds with different calibration sets (both 0.4974). Second, the gap is statistically closed by a different quantization algorithm (`gdq`), which the vendor does not document. "Vendor quality" is therefore not reproducible from the documented default pipeline: the algorithm is a hidden variable, and any study that compares calibration methods on top of a locally rebuilt baseline inherits that uncertainty.
+Two readings. First, a local rebuild with the default algorithm is 6.1 points worse than the vendor artifact — significant, and reproduced across two independent builds with different calibration sets (both 0.4974; p = 3.0e-4 and 1.9e-4). Raising the optimization level recovers about a third of the gap (0.5191, p = 0.014). Second, the gap is statistically closed by a different quantization algorithm (`gdq`), which the vendor does not document. "Vendor quality" is therefore not reproducible from the documented default pipeline: the algorithm is a hidden variable, and any study that compares calibration methods on top of a locally rebuilt baseline inherits that uncertainty.
 
 The loss is task-specific, and we report it as such: at 512 tokens the same local build is statistically tied with the vendor on GSM8K (0.5350 vs 0.5550, p = 0.69). The build-path difference therefore shows up on the knowledge-oriented multiple-choice task and not on the arithmetic task, which rules out a generic "the local build is worse" explanation and makes the mechanism an open question (Section 8).
 
