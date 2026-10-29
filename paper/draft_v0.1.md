@@ -7,7 +7,7 @@
 
 ## Abstract
 
-Weight-only 4-bit quantization is the default way to deploy LLMs on edge NPUs, and calibration is almost always evaluated in a floating-point simulation of the quantizer. We present a controlled study of five calibration objectives (min-max, GPTQ, AWQ, and two activation-weighted variants we call NAC-v1 and NAC-v2) under one W4A16 pipeline, one 1.5B model, and one edge SoC (Rockchip RK3576). Three findings emerge. First, calibration objectives that are indistinguishable or better on perplexity and multiple-choice accuracy can differ by more than 4× on long-form chain-of-thought accuracy: GPTQ reaches 0.305 on GSM8K while min-max and NAC-v1 reach 0.075 and 0.070, despite NAC-v1 having the best perplexity of the three. That gap falls to about 1.3× when the metric anchors on the answer sentence instead of the last number, and the residual difference is behavioural: the activation-weighted methods continue into a new question after answering, which a last-number metric scores as an arithmetic error. Second, this ranking is not stable under the evaluation protocol: capping generation at 32 tokens drives *every* configuration, including the vendor-provided reference model, to 0.000–0.025, and the choice between last-number and answer-is extraction compresses the 4× gap to about 1.1×. Third, the effect of calibration is bounded by group size: the same NAC-v1 that loses 7.43 points to min-max at group size 64 gains 6.71 points at group size 128. On the deployment stack — where the generation cap is immaterial — a local rebuild with the toolkit's default algorithm loses 6.1 points of MMLU to the vendor artifact (p = 3e-4), and that gap closes only when a different quantization algorithm is used (p = 0.18), which makes the vendor's algorithm an unreported variable. We argue that edge quantization papers must report long-form generation, termination behaviour, the extraction rule, and the dtypes of every arm, and we provide a reproducible protocol and harness for doing so. We make no state-of-the-art claim.
+Weight-only 4-bit quantization is the default way to deploy LLMs on edge NPUs, and its calibration is almost always evaluated in a floating-point simulation. We present a controlled study of five calibration objectives (min-max, GPTQ, AWQ, NAC-v1, NAC-v2) under one W4A16 pipeline, one 1.5B model and one edge SoC (Rockchip RK3576). Four findings emerge. First, objectives that are indistinguishable on perplexity and multiple-choice accuracy differ by more than 4× on chain-of-thought accuracy: GPTQ reaches 0.305 on GSM8K while min-max and NAC-v1 reach 0.075 and 0.070, although NAC-v1 has the best perplexity of the three. Second, much of that gap is measurement: it falls to about 1.3× when scoring anchors on the answer sentence, because the activation-weighted methods continue into a new question after answering, which last-number extraction scores as an arithmetic error. Third, the protocol itself can erase the result: a 32-token generation cap drives every configuration, including the vendor reference model, to 0.000–0.025. Fourth, calibration effects are bounded by group size — NAC-v1 loses 7.43 points of MMLU to min-max at g64 and gains 6.71 at g128 — and, on the deployment stack, a local rebuild with the toolkit's default algorithm loses 6.1 points to the vendor artifact (p = 3e-4) until a different build algorithm is used (p = 0.18). We give a reproducible protocol, harness and checklist so that these confounds are visible. We make no state-of-the-art claim.
 
 **Keywords**: post-training quantization; edge NPU; W4A16; evaluation protocol; chain-of-thought; calibration
 
@@ -114,6 +114,8 @@ All methods produce per-group `(scale, zero_point)` for the deployment kernel's 
 
 ### 6.1 Calibration objective: likelihood and multiple-choice invert long-form ranking
 
+**Table 1.** Simulated calibration objectives, one model (Qwen2.5-1.5B), one dtype (W4A16), group size 64.
+
 | Method | MMLU (969) | GSM8K (200) | PPL (64 seq) | Calib. time |
 |---|---|---|---|---|
 | fp16 | 0.4634 | [[TBD: fp16 anchor]] | 11.075 | — |
@@ -160,14 +162,13 @@ The strongest evidence that the cap, not the model, can determine the score come
 
 At 32 tokens the reference model scores zero. Its generations are not degenerate: they begin with a correct restatement of the problem and a correct first step, and stop mid-number — for the first item, `"…divide by 3.\n\nThe first measurement is 47 W"`. The harness's last-number extractor reads `47` and marks the item wrong. A second vendor model (Qwen2.5-3B, same harness, 512 tokens) scores 0.6700, so the harness is not degenerate by construction: it is the cap that is.
 
-The same signature appears in every locally built variant we evaluated at 32 tokens (Table 3, Figure 2): median length 129–147 characters, 90th percentile ≤161, no generation reaches a concluding sentence, and the distribution of final characters is dominated by digits and operators. Under a 512-token cap the vendor model reaches 0.5550. We therefore treat all 32-token numbers in our own earlier records — and any published edge-deployment number produced with a similar default — as measuring the cap.
+The same signature appears in every locally built variant we evaluated at 32 tokens (Table 2, Figure 2): median length 129–147 characters, 90th percentile ≤161, no generation reaches a concluding sentence, and the distribution of final characters is dominated by digits and operators. Under a 512-token cap the vendor model reaches 0.5550. We therefore treat all 32-token numbers in our own earlier records — and any published edge-deployment number produced with a similar default — as measuring the cap.
 
 ![Figure 2](figs/fig2_truncation.svg)
 
 **Figure 2.** Length distribution of GSM8K generations under a 32-token cap, vendor model versus one locally built variant. Both distributions terminate against the same budget; neither reaches a concluding answer sentence.
 
-**Table 3.** Truncation signature of GSM8K runs. `tail-mid` is the fraction of generations whose last character is a digit or operator; `hasAns` is the fraction containing a concluding "answer is".
-
+**Table 2.** Truncation signature of GSM8K runs. `tail-mid` is the fraction of generations whose last character is a digit or operator; `hasAns` is the fraction containing a concluding "answer is".
 | Run (all 32-token unless noted) | n | GSM8K | p50 len | p90 len | tail-mid | hasAns |
 |---|---|---|---|---|---|---|
 | vendor | 200 | 0.0000 | 140 | 160 | 0.32 | 0.00 |
@@ -193,6 +194,8 @@ We therefore report both rules and treat any conclusion that flips between them 
 
 ### 6.3 Group size reverses the sign
 
+**Table 3.** The same three objectives at group size 128 (MMLU, 969 items; 64-sequence perplexity).
+
 | g128 | MMLU (969) | PPL (64 seq) |
 |---|---|---|
 | min-max | 0.3622 | 12.544 |
@@ -212,6 +215,8 @@ This is not an argument that the continuation behaviour is harmless. In deployme
 ### 6.5 Deployment: the build path is a variable
 
 MMLU is answered with a single letter and is therefore insensitive to the generation cap (Section 6.2), so it can serve as a clean deployment-side probe. Fixing the model, the toolkit version (1.2.3) and the quantization dtype (`W4A16`), we rebuilt locally and varied only the build algorithm:
+
+**Table 4.** Deployment-side MMLU for the same model and dtype, rebuilt with different toolkit settings.
 
 | Build | Algorithm | MMLU (969) | vs vendor | McNemar |
 |---|---|---|---|---|
@@ -303,6 +308,8 @@ Under one W4A16 pipeline on one edge SoC, we find that calibration objectives th
 ## Appendix C — Pairwise comparisons
 
 McNemar's test with continuity correction on paired items; `OR = b/c` where `b` counts items the first configuration gets right and the second gets wrong. Differences and CIs are in percentage points; positive means the second configuration is better.
+
+**Table 5.** Pairwise comparisons.
 
 | Comparison | n | acc(A) | acc(B) | Δ (pp) | OR | 95% CI (pp) | p |
 |---|---|---|---|---|---|---|---|
