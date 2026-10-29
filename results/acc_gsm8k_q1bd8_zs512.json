@@ -1,0 +1,14 @@
+{
+  "model": "models/nac_qwen1.5b_g64_nac.rkllm",
+  "task": "gsm8k",
+  "num_samples": 200,
+  "fewshot_num": 0,
+  "max_new_tokens": 512,
+  "extractor": [
+    "last_number",
+    "answer_is"
+  ],
+  "gen_archive_chars": 4000,
+  "gsm8k_acc": 0.565,
+  "gsm8k_acc_answeris": 0.565
+}

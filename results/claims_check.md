@@ -5,6 +5,10 @@
 | B3 | vendor GSM8K @512tok == 0.5550 | `acc_gsm8k_qwen1.5b_w4a16_zs.json` | 0.555 | 0.555 | PASS |
 | B4 | NAC 注入 GSM8K @32tok == 0.0050（伪影，非退化） | `acc_gsm8k_qwen1.5b_g64nac_zs.json` | 0.005 | 0.005 | PASS |
 | B5 | E3 minmax 注入 GSM8K @32tok == 0.0050 | `acc_gsm8k_qwen1.5b_g64mmctrl_zs.json` | 0.005 | 0.005 | PASS |
+| B6 | 本地构建 GSM8K @512tok == 0.5350（与 @32 的 0.0150 对照） | `acc_gsm8k_qwen1.5b_plain_x86_zs512.json` | 0.535 | 0.535 | PASS |
+| B7 | 本地构建 @512 记录 max_new_tokens == 512 | `acc_gsm8k_qwen1.5b_plain_x86_zs512.json` | 512 | 512 | PASS |
+| B8 | g64 构建（曾被标为 NAC 崩溃）GSM8K @512tok == 0.5650 | `acc_gsm8k_q1bd8_zs512.json` | 0.565 | 0.565 | PASS |
+| B9 | g64 构建 @512 的 answer-is 指标同为 0.5650（无续写污染） | `acc_gsm8k_q1bd8_zs512.json` | 0.565 | 0.565 | PASS |
 | S1 | sim fp16 MMLU 0.4634 | `acc_mmlu_sim_g64.json` | 0.4634 | 0.4634 | PASS |
 | S2 | sim minmax MMLU 0.4675 | `acc_mmlu_sim_g64.full.json` | 0.4675 | 0.4675 | PASS |
 | S3 | sim GPTQ MMLU 0.4520 | `acc_mmlu_sim_g64.full.json` | 0.452 | 0.452 | PASS |
@@ -28,4 +32,4 @@
 | T5 | NAC-v2 vs NAC GSM8K p=0.01242 | `stats_pairs.json` | 0.01242 | 0.01242 | PASS |
 | T6 | NAC-v2 vs GPTQ GSM8K p=1.225e-4 | `stats_pairs.json` | 0.0001225 | 0.0001225 | PASS |
 
-**27/27 PASS**
+**31/31 PASS**
