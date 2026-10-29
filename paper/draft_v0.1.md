@@ -42,7 +42,7 @@ We do **not** claim state of the art, that one calibration family dominates, or 
 
 ## 2 Related Work
 
-**Post-training quantization.** GPTQ [Frantar et al., 2023] minimises layer-wise reconstruction error with a Hessian-based update in column order. AWQ [Lin et al., 2024] searches per-channel scales that protect salient activation channels and folds them into adjacent weights. SmoothQuant [Xiao et al., 2023] migrates activation outliers into weights. OmniQuant [Shao et al., 2024] learns clipping and transformation parameters. All four optimise a *simulated* objective, and all are evaluated primarily by perplexity plus zero-shot accuracy on classification-style tasks.
+**Post-training quantization.** GPTQ [Frantar et al., 2023] minimises layer-wise reconstruction error with a Hessian-based update in column order. AWQ [Lin et al., 2024] searches per-channel scales that protect salient activation channels and folds them into adjacent weights. SmoothQuant [Xiao et al., 2023] migrates activation outliers into weights, and ZeroQuant [Yao et al., 2022] combines group-wise weight quantization with layer-wise distillation. OmniQuant [Shao et al., 2024] learns clipping and transformation parameters, and rotation-based methods such as QuaRot [Ashkboos et al., 2024] remove outliers before quantization. All of these optimise a *simulated* objective, and all are evaluated primarily by perplexity plus zero-shot accuracy on classification-style tasks; the scaling behaviour of k-bit inference is itself the subject of [Dettmers & Zettlemoyer, 2023].
 
 **Evaluation validity.** The observation that accuracy is insufficient to characterise compressed models is not new — [Accuracy is Not All You Need, NeurIPS 2024] makes the general case for compression. What is missing is a *deployment-side* account: which protocol choices move the number, by how much, and in which direction. Our §6.2 is an attempt at that accounting on a concrete NPU.
 
@@ -70,7 +70,7 @@ Hardware: NanoPi M5 (RK3576), 4×Cortex-A53 @2.016 GHz + 4×Cortex-A72 @2.208 GH
 
 Models: Qwen2.5-1.5B-Instruct (full matrix) and Qwen2.5-3B-Instruct (vendor-quantized reference point only).
 
-Tasks: MMLU (969 items, zero-shot, 32-token cap, single-letter answer), GSM8K (200 items, zero-shot for deployment and 2-shot CoT for simulation, 512-token cap), WikiText-2 held-out perplexity (64 sequences × 1024 tokens).
+Tasks: MMLU [Hendrycks et al., 2021] (969 items, zero-shot, 32-token cap, single-letter answer), GSM8K [Cobbe et al., 2021] (200 items, zero-shot for deployment and 2-shot CoT for simulation, 512-token cap), WikiText-2 [Merity et al., 2017] held-out perplexity (64 sequences × 1024 tokens).
 
 ### 3.3 What we archive
 
@@ -361,3 +361,8 @@ The AWQ rows use n = 64 and their odds ratios are zero by construction (no corre
 8. K. Cobbe, V. Kosaraju, M. Bavarian, M. Chen, H. Jun, L. Kaiser, M. Plappert, J. Tworek, J. Hilton, R. Nakano, C. Hesse, J. Schulman. Training Verifiers to Solve Math Word Problems. arXiv:2110.14168, 2021.
 9. D. Hendrycks, C. Burns, S. Basart, A. Zou, M. Mazeika, D. Song, J. Steinhardt. Measuring Massive Multitask Language Understanding. ICLR 2021.
 10. Qwen Team. Qwen2.5 Technical Report. arXiv:2412.15115, 2024.
+11. T. Dettmers, M. Lewis, Y. Belkada, L. Zettlemoyer. LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale. NeurIPS 2022.
+12. Z. Yao, R. Yazdani Aminabadi, M. Zhang, X. Wu, C. Li, Y. He. ZeroQuant: Efficient and Affordable Post-Training Quantization for Large-Scale Transformers. NeurIPS 2022.
+13. T. Dettmers, L. Zettlemoyer. The case for 4-bit precision: k-bit Inference Scaling Laws. ICML 2023.
+14. S. Ashkboos, A. Mohtashami, M. L. Croci, B. Li, M. Jaggi, D. Alistarh, T. Hoefler, J. Hensman. QuaRot: Outlier-Free 4-Bit Inference in Rotated LLMs. NeurIPS 2024.
+15. S. Merity, C. Xiong, J. Bradbury, R. Socher. Pointer Sentinel Mixture Models. ICLR 2017. (WikiText-2)
