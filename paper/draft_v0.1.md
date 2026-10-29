@@ -118,7 +118,11 @@ Statistics: McNemar's test with continuity correction for paired binary outcomes
 
 ¹ 16-sequence probe; all other perplexities are 64-sequence.
 
-Two orderings coexist in this table. By perplexity, NAC-v1 is best among the quantized methods and GPTQ is worst; by GSM8K, GPTQ is 4.1× better than NAC-v1 and 4.3× better than min-max. MMLU does not discriminate: NAC-v1's 7.43-point simulated deficit to min-max (p = 3.3e-9) is real, but it is the *opposite* of what the long-form task shows, and on the deployment stack the same model is statistically tied with the reference (Section 6.2, [[TBD]]).
+Two orderings coexist in this table. By perplexity, NAC-v1 is best among the quantized methods and GPTQ is worst; by GSM8K, GPTQ is 4.1× better than NAC-v1 and 4.3× better than min-max (Figure 1). MMLU does not discriminate: NAC-v1's 7.43-point simulated deficit to min-max (p = 3.3e-9) is real, but it is the *opposite* of what the long-form task shows, and on the deployment stack the same model is statistically tied with the reference (Section 6.2, [[TBD]]).
+
+![Figure 1](figs/fig1_ppl_vs_gsm8k.svg)
+
+**Figure 1.** Perplexity versus GSM8K accuracy for the five calibration objectives. The two axes rank the methods in opposite directions; NAC-v1 has the best perplexity and the worst long-form accuracy among the quantized variants. AWQ's perplexity is a 16-sequence probe (open marker).
 
 **The 4× is partly an extraction effect, and we say so.** Re-scoring archived generations with an answer-anchored rule ("first `answer is` number") instead of the last number raises every configuration and compresses the gap to about 1.3×:
 
@@ -149,7 +153,11 @@ The strongest evidence that the cap, not the model, can determine the score come
 
 At 32 tokens the reference model scores zero. Its generations are not degenerate: they begin with a correct restatement of the problem and a correct first step, and stop mid-number — for the first item, `"…divide by 3.\n\nThe first measurement is 47 W"`. The harness's last-number extractor reads `47` and marks the item wrong.
 
-The same signature appears in every locally built variant we evaluated at 32 tokens (Table 3): median length 129–147 characters, 90th percentile ≤161, no generation reaches a concluding sentence, and the distribution of final characters is dominated by digits and operators. Under a 512-token cap the vendor model reaches 0.5550. We therefore treat all 32-token numbers in our own earlier records — and any published edge-deployment number produced with a similar default — as measuring the cap.
+The same signature appears in every locally built variant we evaluated at 32 tokens (Table 3, Figure 2): median length 129–147 characters, 90th percentile ≤161, no generation reaches a concluding sentence, and the distribution of final characters is dominated by digits and operators. Under a 512-token cap the vendor model reaches 0.5550. We therefore treat all 32-token numbers in our own earlier records — and any published edge-deployment number produced with a similar default — as measuring the cap.
+
+![Figure 2](figs/fig2_truncation.svg)
+
+**Figure 2.** Length distribution of GSM8K generations under a 32-token cap, vendor model versus one locally built variant. Both distributions terminate against the same budget; neither reaches a concluding answer sentence.
 
 **Table 3.** Truncation signature of GSM8K runs. `tail-mid` is the fraction of generations whose last character is a digit or operator; `hasAns` is the fraction containing a concluding "answer is".
 
@@ -184,7 +192,11 @@ We therefore report both rules and treat any conclusion that flips between them 
 | NAC-v1 | **0.4293** (+6.71 pp, p = 7.9e-9) | **12.164** |
 | GPTQ | 0.4871 | 12.503 |
 
-The NAC-v1 deficit at g64 (−7.43 pp) becomes a gain at g128 (+6.71 pp). The effect is not a monotone function of "finer grouping is better": g128 is coarser, and the coarser setting favours the truncation-grid objective while the finer setting favours Hessian compensation. Any claim of the form "method X beats method Y" must therefore carry its group size.
+The NAC-v1 deficit at g64 (−7.43 pp) becomes a gain at g128 (+6.71 pp). The effect is not a monotone function of "finer grouping is better": g128 is coarser, and the coarser setting favours the truncation-grid objective while the finer setting favours Hessian compensation (Figure 3). Any claim of the form "method X beats method Y" must therefore carry its group size.
+
+![Figure 3](figs/fig3_group_size.svg)
+
+**Figure 3.** MMLU accuracy at group size 64 versus 128. The ordering of the three calibration objectives is not preserved; NAC-v1 moves from last to second, and min-max moves from first to last.
 
 ### 6.4 Termination behaviour as a first-class metric
 
