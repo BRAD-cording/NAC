@@ -193,7 +193,7 @@ The NAC-v1 deficit at g64 (−7.43 pp) becomes a gain at g128 (+6.71 pp). The ef
 ## 8 Limitations
 
 1. **Single platform, single model family.** One SoC and one 1.5B model; the 3B model is a vendor-quantized reference without calibration variants. External validity is unproven.
-2. **Board-level calibration variants are not yet validated.** The externally calibrated artifacts on the NPU were produced through a toolchain path whose parameter injection we have not yet demonstrated to take effect at 1.5B scale; board-side NAC results are therefore reported as pending, not as findings.
+2. **Board-level calibration variants are not yet validated.** The externally calibrated artifacts on the NPU were produced through a toolchain path whose parameter injection we have not yet demonstrated to take effect at 1.5B scale; moreover those artifacts were built at group size 64 (`W4A16_G64`) while the vendor reference and our local rebuilds are per-channel (`W4A16`), so the board-level "calibration" comparison confounds calibration with granularity. Board-side NAC results are therefore reported as pending, not as findings.
 3. **Simulation is not deployment.** The x86 fp32 stack differs from the NPU in batch handling, prompt formatting, and numerical path; we use it only for paired relative comparisons and never for absolute prediction.
 4. **Extraction sensitivity is bounded by archived prefixes.** Historical generations were archived truncated (300/200 characters), so re-scoring gives lower bounds only; the re-run archives full text.
 5. **No energy measurement.** The board exposes voltage but not current; we report TTFT and decode throughput only.

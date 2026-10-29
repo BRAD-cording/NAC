@@ -1,0 +1,55 @@
+[2026-10-27 01:20:31] r4a-keeper start
+[2026-10-27 01:21:06] build dead (procs=0, tail: Optimizing model:   0%|          | 0/28 [00:00<?, ?it/s]) -> restart
+[2026-10-27 01:21:23] restart check procs=0
+[2026-10-27 01:22:28] build dead (procs=0, tail: Optimizing model:   0%|          | 0/28 [00:00<?, ?it/s]) -> restart
+[2026-10-27 01:22:45] restart check procs=0
+[2026-10-27 01:23:48] build dead (procs=0, tail: Optimizing model:   0%|          | 0/28 [00:00<?, ?it/s]) -> restart
+[2026-10-27 01:24:04] restart check procs=0
+[2026-10-27 01:24:34] r4a-keeper v2 start
+[2026-10-27 01:25:09] build dead (procs=0, tail: Optimizing model:   0%|          | 0/28 [00:00<?, ?it/s]) -> schtasks restart
+[2026-10-27 01:25:31] restart check procs=0
+[2026-10-27 01:26:36] build dead (procs=0, tail: Optimizing model:   0%|          | 0/28 [00:00<?, ?it/s]) -> schtasks restart
+[2026-10-27 01:26:59] restart check procs=0
+[2026-10-27 01:28:04] build dead (procs=0, tail: Optimizing model:   0%|          | 0/28 [00:00<?, ?it/s]) -> schtasks restart
+[2026-10-27 01:28:08] r4a-keeper v3 start
+[2026-10-27 01:29:11] build dead (tail: ) -> schtasks restart
+[2026-10-27 01:29:37] restart check DEAD'
+[2026-10-27 01:30:39] build dead (tail: ) -> schtasks restart
+[2026-10-27 01:31:05] restart check DEAD'
+[2026-10-27 01:32:09] build dead (tail: ) -> schtasks restart
+[2026-10-27 01:32:35] restart check DEAD'
+[2026-10-27 01:33:44] build dead (tail: ) -> schtasks restart
+[2026-10-27 01:34:10] restart check DEAD'
+[2026-10-27 01:35:15] build dead (tail: ) -> schtasks restart
+[2026-10-27 01:35:42] restart check DEAD'
+[2026-10-27 01:37:04] build dead (tail: ) -> schtasks restart
+[2026-10-27 01:37:30] restart check DEAD'
+[2026-10-27 01:38:32] build dead (tail: ) -> schtasks restart
+[2026-10-27 01:38:59] restart check DEAD'
+[2026-10-27 01:40:10] build dead (tail: ) -> schtasks restart
+[2026-10-27 01:40:36] restart check DEAD'
+[2026-10-27 01:41:41] build dead (tail: ) -> schtasks restart
+[2026-10-27 01:42:07] restart check DEAD'
+[2026-10-27 01:43:29] build dead (tail: ) -> schtasks restart
+[2026-10-27 01:43:55] restart check DEAD'
+[2026-10-27 01:44:57] build dead (tail: ) -> schtasks restart
+[2026-10-27 01:45:23] restart check DEAD'
+[2026-10-27 02:20:06] r4a-keeper v3 start
+[2026-10-27 21:21:47] build dead (tail: Error code: Wsl/Service/0x8007274c) -> schtasks restart
+[2026-10-27 21:22:13] restart check ALIVE
+[2026-10-29 03:27:54] build dead (tail: Error code: Wsl/Service/0x8007274c) -> schtasks restart
+[2026-10-29 03:28:21] restart check ALIVE
+[2026-10-29 06:02:48] build dead (tail: build failed) -> schtasks restart
+[2026-10-29 06:03:15] restart check ALIVE
+[2026-10-29 06:56:29] build dead (tail: Error code: Wsl/Service/0x8007274c) -> schtasks restart
+[2026-10-29 06:56:55] restart check ALIVE
+[2026-10-29 09:21:29] build dead (tail: Error code: Wsl/Service/0x8007274c) -> schtasks restart
+[2026-10-29 09:21:56] restart check ALIVE
+[2026-10-29 11:41:10] build dead (tail: build failed) -> schtasks restart
+[2026-10-29 11:41:36] restart check ALIVE
+[2026-10-29 17:16:46] build dead (tail: build failed) -> schtasks restart
+[2026-10-29 17:17:12] restart check ALIVE
+[2026-10-29 22:52:13] build dead (tail: build failed) -> schtasks restart
+[2026-10-29 22:52:39] restart check ALIVE
+[2026-10-29 23:12:10] build dead (tail: Error code: Wsl/Service/0x8007274c) -> schtasks restart
+[2026-10-29 23:12:37] restart check ALIVE

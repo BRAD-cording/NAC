@@ -37,3 +37,4 @@ Fetching /C:/Users/Administrator/r4a_model.rkllm to /media/pi/DATA/rknn-llm/nac_
 [2026-10-28 19:26:18] model transfer OK (1.4G)
 Running as unit: r4d-eval.service
 [2026-10-28 19:26:18] r4d-eval STARTED
+[2026-10-29 00:06:37] r4a-wd start

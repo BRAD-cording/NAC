@@ -1,0 +1,13 @@
+I rkllm: rkllm-runtime version: 1.2.3, rknpu driver version: 0.9.8, platform: RK3576
+I rkllm: loading rkllm model from models/local_w4a16_r4b.rkllm
+I rkllm: rkllm-toolkit version: 1.2.3, max_context_limit: 4096, npu_core_num: 2, target_platform: RK3576, model_dtype: W4A16
+I rkllm: Enabled cpus: [4, 5, 6, 7]
+I rkllm: Enabled cpus num: 4
+[smoke] init 2.8s
+[smoke] '你好，请用一句话介绍你自己。'
+        tokens=33 ttft=282.97ms decode=13.88tok/s total=2588.88ms
+        text='你好，我是阿里云的Qwen，一个智能助手，可以回答问题、提供信息、与用户进行交流，帮助用户解决各种问题。'
+[smoke] 'What is the capital of France?'
+        tokens=9 ttft=137.21ms decode=13.5tok/s total=730.03ms
+        text='The capital of France is Paris.'
+[smoke] PASS
