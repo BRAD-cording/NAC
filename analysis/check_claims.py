@@ -49,6 +49,10 @@ CLAIMS = [
      "acc_gsm8k_qwen1.5b_plain_x86_zs512.json", "gsm8k_acc", 0.535, 1e-9),
     ("B7", "本地构建 @512 记录 max_new_tokens == 512",
      "acc_gsm8k_qwen1.5b_plain_x86_zs512.json", "max_new_tokens", 512, 0),
+    ("B8", "g64 构建（曾被标为 NAC 崩溃）GSM8K @512tok == 0.5650",
+     "acc_gsm8k_q1bd8_zs512.json", "gsm8k_acc", 0.565, 1e-9),
+    ("B9", "g64 构建 @512 的 answer-is 指标同为 0.5650（无续写污染）",
+     "acc_gsm8k_q1bd8_zs512.json", "gsm8k_acc_answeris", 0.565, 1e-9),
     # --- sim 轴 MMLU ---
     ("S1", "sim fp16 MMLU 0.4634", "acc_mmlu_sim_g64.json", "acc_gen", 0.4634, 1e-9),
     ("S2", "sim minmax MMLU 0.4675", "acc_mmlu_sim_g64.full.json", "configs.minmax.acc_gen", 0.4675, 1e-9),
