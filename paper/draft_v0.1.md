@@ -34,7 +34,8 @@ Our study is organised around three axes that are usually conflated (Section 3):
 2. A controlled comparison of five calibration objectives under one W4A16 pipeline, showing that likelihood and multiple-choice metrics invert the long-form ranking (Section 6.1).
 3. A quantified account of two protocol artefacts — the generation cap and the extraction rule — that are large enough to reverse published conclusions (Section 6.2), with the vendor model as the control.
 4. A boundary characterisation of calibration effects along group size and task type (Section 6.3).
-5. A protocol checklist for edge quantization papers, in which every item corresponds to a measured failure in this study rather than to intuition (Section 7.1).
+5. A build-reproducibility result: the same model rebuilt with the toolkit's default algorithm loses 6.1 points of MMLU to the vendor artifact, and only a different quantization algorithm closes the gap (Section 6.5).
+6. A protocol checklist for edge quantization papers, in which every item corresponds to a measured failure in this study rather than to intuition (Section 7.1).
 
 We do **not** claim state of the art, that one calibration family dominates, or that any of these effects transfer to other SoCs without replication.
 
