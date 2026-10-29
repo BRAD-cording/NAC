@@ -127,7 +127,7 @@ All methods produce per-group `(scale, zero_point)` for the deployment kernel's 
 
 ¹ 16-sequence probe; all other perplexities are 64-sequence.
 
-Two orderings coexist in this table. By perplexity, NAC-v1 is best among the quantized methods and GPTQ is worst; by GSM8K, GPTQ is 4.1× better than NAC-v1 and 4.3× better than min-max (Figure 1). MMLU does not discriminate: NAC-v1's 7.43-point simulated deficit to min-max (p = 3.3e-9) is real, but it is the *opposite* of what the long-form task shows, and on the deployment stack the same model is statistically tied with the reference (Section 6.2, [[TBD]]).
+Two orderings coexist in this table. By perplexity, NAC-v1 is best among the quantized methods and GPTQ is worst; by GSM8K, GPTQ is 4.1× better than NAC-v1 and 4.3× better than min-max (Figure 1). MMLU does not discriminate: NAC-v1's 7.43-point simulated deficit to min-max (p = 3.3e-9) is real, but it is the *opposite* of what the long-form task shows, and the deployment-side MMLU comparison (Section 6.5) shows only a build-path effect, not a calibration effect.
 
 ![Figure 1](figs/fig1_ppl_vs_gsm8k.svg)
 
