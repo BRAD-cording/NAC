@@ -38,7 +38,8 @@ def bootstrap_ci(ok, n_boot=1000, seed=0):
 
 
 @torch.no_grad()
-def eval_config(model, tok, rows, bs, max_new, records, start, out_path, rec_path):
+def eval_config(model, tok, rows, bs, max_new, records, start, out_path, rec_path,
+                stop_strings=None):
     n = len(rows)
     t0 = time.time()
     done = start
@@ -47,9 +48,14 @@ def eval_config(model, tok, rows, bs, max_new, records, start, out_path, rec_pat
         prompts = [GSM8K_FEWSHOT + GSM8K_TMPL.format(q=r["question"]) for r in chunk]
         enc = tok(prompts, return_tensors="pt", padding=True)
         input_len = enc.input_ids.shape[1]
+        gen_kw = {}
+        if stop_strings:
+            # 2026-10-29：2-shot CoT 下所有方法都会在答完后续写下一题，
+            # 末数字抽取因此读到续写文本里的数字（见 draft §6.2）。停止串让"算错/不停"分离。
+            gen_kw = {"stop_strings": list(stop_strings), "tokenizer": tok}
         out = model.generate(
             **enc, max_new_tokens=max_new, do_sample=False, num_beams=1,
-            pad_token_id=tok.pad_token_id or tok.eos_token_id)
+            pad_token_id=tok.pad_token_id or tok.eos_token_id, **gen_kw)
         texts = tok.batch_decode(out[:, input_len:], skip_special_tokens=True)
         for j, row in enumerate(chunk):
             text = texts[j].strip()
@@ -99,6 +105,8 @@ def main():
     ap.add_argument("--limit", type=int, default=None, help="调试：只评前 N 题")
     ap.add_argument("--fold", default=None,
                     help="AWQ 折叠参数 .fold.pt（awq_calibrate.py 产物）；qparams 配置评测前折叠，评测后撤销 norms")
+    ap.add_argument("--stop-strings", default="",
+                    help="逗号分隔的停止串（如 '\\nQuestion:'）；空=不启用，保持与历史结果可比")
     ap.add_argument("--out", required=True)
     args = ap.parse_args()
 
@@ -124,7 +132,10 @@ def main():
     results = {"model": args.model, "group_size": args.group_size,
                "num_samples": args.num_samples, "max_new_tokens": args.max_new_tokens,
                "protocol": "2-shot CoT generative(512tok), batched sim fp32",
+               "stop_strings": args.stop_strings or None,
                "configs": {}}
+    stops = ([s.encode("utf-8").decode("unicode_escape")
+              for s in args.stop_strings.split(",") if s] if args.stop_strings else None)
     fold = None
     if args.fold:
         fold = torch.load(args.fold, map_location="cpu", weights_only=True)
@@ -153,7 +164,7 @@ def main():
         try:
             stats = eval_config(model, tok, rows, args.batch_size,
                                 args.max_new_tokens, records, len(records),
-                                out_path, rec_path)
+                                out_path, rec_path, stop_strings=stops)
         finally:
             if cfg != "fp16" and BACKUP.exists():
                 restore_from_disk(model, str(BACKUP))
