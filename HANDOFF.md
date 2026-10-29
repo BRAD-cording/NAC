@@ -33,11 +33,15 @@
 
 | 任务 | 触发/状态 | 产物 |
 |---|---|---|
-| 板端 512 队列 `q1_board512_queue.sh` | 运行中（`q1bd8` g64 构建） | `acc_gsm8k_q1bd8_zs512.json` 等 |
-| 板端汇总 `q1_postprocess.sh` | 等 `results/q1_board512.DONE` | 汇总 md + git 提交 |
+| 板端 512 队列 `q1_board512_queue.sh` | 运行中：`q1bd8` ✅ 0.5650；`q1symv2` 进行中（预计 04:20）；厂商基线排在其后 | `acc_gsm8k_*_zs512.json` |
+| 板端汇总 `q1_postprocess.sh` | 等 `results/q1_board512.DONE`（三配置全部完成后） | 汇总 md + git 提交 |
 | sim 重跑 `q1_sim_queue.sh` | 等板端 DONE（避免抢核） | `acc_gsm8k_sim_g64_stop_*.json`（fp16/GPTQ/NAC-v2） |
 | sim 汇总 `q1_sim_postprocess.sh` | 等 `results/q1_sim.DONE` | 汇总 md + git 提交 |
-| WSL 构建 R4-e（grq） | Optimizing ~3/28，预计 05:15 | `local_w4a16_r4e.rkllm` |
+| WSL 构建 R4-e（grq） | Optimizing 中，预计 05:15 | `local_w4a16_r4e.rkllm` |
+
+**已完成的两条决定性测量**（2026-10-30 02:39 前）：
+- 本地重建 `plain_x86` @512 = 0.5350（vs 厂商 0.5550，p=0.69）；
+- 组量化构建 `q1bd8` @512 = 0.5650（vs 厂商，p=0.88；answer-is 同为 0.5650）。
 
 ## 5. 出分后要做的两件事（各 10 分钟）
 
