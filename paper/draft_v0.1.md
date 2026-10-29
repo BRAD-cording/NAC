@@ -32,6 +32,7 @@ Our study is organised around three axes that are usually conflated (Section 3):
 2. A controlled comparison of five calibration objectives under one W4A16 pipeline, showing that likelihood and multiple-choice metrics invert the long-form ranking (Section 6.1).
 3. A quantified account of two protocol artefacts — the generation cap and the extraction rule — that are large enough to reverse published conclusions (Section 6.2), with the vendor model as the control.
 4. A boundary characterisation of calibration effects along group size and task type (Section 6.3).
+5. A protocol checklist for edge quantization papers, in which every item corresponds to a measured failure in this study rather than to intuition (Section 7.1).
 
 We do **not** claim state of the art, that one calibration family dominates, or that any of these effects transfer to other SoCs without replication.
 
@@ -95,11 +96,15 @@ All methods produce per-group `(scale, zero_point)` for the deployment kernel's 
 
 ## 5 Experimental Setup
 
-Simulation applies `apply_qparams` layer by layer with float32 weights and the same dequantization formula as the kernel. All calibration uses seed 42 and a fixed 128-sequence WikiText-2 calibration set unless stated.
+**Calibration.** All objectives use the same calibration corpus: 128 WikiText-2 sequences of 512 tokens, of which 8 sequences (4096 tokens) are used for activation statistics and Hessian accumulation; seed 42; float32 on CPU. NAC's κ grid is {1.0, 0.95, 0.9, 0.85, 0.8, 0.7, 0.6, 0.5, 0.4}, searched per group. GPTQ and NAC-v2 use `percdamp = 0.01` and the same column ordering.
 
-Perplexity is reported at 64 sequences × 1024 tokens for all configurations except AWQ's probe (16 sequences), which is labelled in every table.
+**Simulation.** `apply_qparams` replaces each linear weight by `dequant(quantize(W))` layer by layer with float32 arithmetic, using the same `scale·(q − zp)` formula as the kernel and the same group size. No activation quantization is applied (W4A16). Generation is greedy (`top_k = 1`), with `keep_history = 0` so items are independent.
 
-Statistics: McNemar's test with continuity correction for paired binary outcomes, bootstrap 95% confidence intervals over items, and a tie criterion of p > 0.05 together with a difference smaller than the CI width. Pairing is by item index, verified by asserting that the gold-answer sequence is identical between the two runs.
+**Deployment.** RKLLM runtime 1.2.3, context 4096, embedding cache enabled (`embed_flash = 1`), 4×A72 cores enabled. All timed runs use fixed frequencies (CPU 2016/2208 MHz, NPU 950 MHz, DDR 2736 MHz) verified before each run. Model dtype and artifact md5 are recorded for every run.
+
+**Perplexity.** WikiText-2 held-out, 64 sequences × 1024 tokens for all configurations except AWQ's probe (16 sequences), labelled wherever it appears.
+
+**Statistics.** McNemar's test with continuity correction for paired binary outcomes; bootstrap 95% confidence intervals over items; tie criterion p > 0.05 together with a difference smaller than the CI width. Pairing is by item index, verified by asserting that the gold-answer sequence is identical between the two runs. `analysis/check_claims.py` re-derives every number in this paper from the archived JSON and fails if any of them drifts.
 
 ---
 
@@ -213,6 +218,23 @@ This is not an argument that the continuation behaviour is harmless. In deployme
 **Why the cap matters more than the method.** A 32-token cap truncates a chain of thought before its answer in essentially every GSM8K item. The resulting score measures the cap, not the model. Because the cap is a harness default, this failure mode is likely to be widespread; the control that exposes it is the vendor model, which must score well under the same harness if the harness is valid.
 
 **Implications for toolchains.** If a runtime's dequantization semantics differ from the calibration-side semantics, the difference is invisible in simulation and appears as a deployment-only degradation. Our data cannot yet distinguish such a semantic gap from build-path effects; we report the controlled comparison we can defend and mark the rest as open (Section 8).
+
+### 7.1 A protocol checklist
+
+Each item below is a mistake we made, found, and fixed. They are cheap to check and each one is capable of reversing a conclusion.
+
+| # | Requirement | Failure it prevents | Our case |
+|---|---|---|---|
+| 1 | Report the generation cap; set it from the task, not from the harness default | A cap that truncates reasoning scores the cap | 32-token cap zeroed the reference model |
+| 2 | Run the reference model under the same harness before trusting any comparison | A broken harness looks like a broken method | vendor 0.0000 at 32 tokens |
+| 3 | Enforce or report a stop rule (`\nQuestion:`, EOS rate) | Continuation is scored as an arithmetic error | 11–53% cross-question continuation |
+| 4 | Report two extraction rules, or one anchored on the answer sentence | Last-number extraction reads numbers out of the continuation | 4.1× → 1.3× |
+| 5 | Archive full generations and token counts, not prefixes | No item-level audit is possible; re-scoring is impossible | 200/300-character archives |
+| 6 | Label the quantization dtype of every arm (per-channel vs group size) | Calibration effects confound with granularity | `W4A16` vs `W4A16_G64` |
+| 7 | Verify that the treatment artifact differs from the control (md5) | A silently ignored treatment yields a null result | three "different" builds, one md5 |
+| 8 | Report the group size with every ranking claim | The sign of the effect can flip | g64 −7.43 pp, g128 +6.71 pp |
+
+We do not claim this list is complete, but every entry is backed by a measured failure in this study rather than by intuition.
 
 ---
 
