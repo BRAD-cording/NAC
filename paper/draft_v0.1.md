@@ -7,7 +7,7 @@
 
 ## Abstract
 
-Weight-only 4-bit quantization is the default way to deploy LLMs on edge NPUs, and calibration is almost always evaluated in a floating-point simulation of the quantizer. We present a controlled study of five calibration objectives (min-max, GPTQ, AWQ, and two activation-weighted variants we call NAC-v1 and NAC-v2) under one W4A16 pipeline, one 1.5B model, and one edge SoC (Rockchip RK3576). Three findings emerge. First, calibration objectives that are indistinguishable or better on perplexity and multiple-choice accuracy can differ by more than 4× on long-form chain-of-thought accuracy: GPTQ reaches 0.305 on GSM8K while min-max and NAC-v1 reach 0.075 and 0.070, despite NAC-v1 having the best perplexity of the three. That gap falls to about 1.3× when the metric anchors on the answer sentence instead of the last number, and the residual difference is behavioural: the activation-weighted methods continue into a new question after answering, which a last-number metric scores as an arithmetic error. Second, this ranking is not stable under the evaluation protocol: capping generation at 32 tokens drives *every* configuration, including the vendor-provided reference model, to 0.000–0.025, and the choice between last-number and answer-is extraction compresses the 4× gap to about 1.1×. Third, the effect of calibration is bounded by group size: the same NAC-v1 that loses 7.43 points to min-max at group size 64 gains 6.71 points at group size 128. We argue that edge quantization papers must report long-form generation, termination behaviour, and the exact extraction rule, and we provide a reproducible protocol and harness for doing so. We make no state-of-the-art claim.
+Weight-only 4-bit quantization is the default way to deploy LLMs on edge NPUs, and calibration is almost always evaluated in a floating-point simulation of the quantizer. We present a controlled study of five calibration objectives (min-max, GPTQ, AWQ, and two activation-weighted variants we call NAC-v1 and NAC-v2) under one W4A16 pipeline, one 1.5B model, and one edge SoC (Rockchip RK3576). Three findings emerge. First, calibration objectives that are indistinguishable or better on perplexity and multiple-choice accuracy can differ by more than 4× on long-form chain-of-thought accuracy: GPTQ reaches 0.305 on GSM8K while min-max and NAC-v1 reach 0.075 and 0.070, despite NAC-v1 having the best perplexity of the three. That gap falls to about 1.3× when the metric anchors on the answer sentence instead of the last number, and the residual difference is behavioural: the activation-weighted methods continue into a new question after answering, which a last-number metric scores as an arithmetic error. Second, this ranking is not stable under the evaluation protocol: capping generation at 32 tokens drives *every* configuration, including the vendor-provided reference model, to 0.000–0.025, and the choice between last-number and answer-is extraction compresses the 4× gap to about 1.1×. Third, the effect of calibration is bounded by group size: the same NAC-v1 that loses 7.43 points to min-max at group size 64 gains 6.71 points at group size 128. On the deployment stack — where the generation cap is immaterial — a local rebuild with the toolkit's default algorithm loses 6.1 points of MMLU to the vendor artifact (p = 3e-4), and that gap closes only when a different quantization algorithm is used (p = 0.18), which makes the vendor's algorithm an unreported variable. We argue that edge quantization papers must report long-form generation, termination behaviour, the extraction rule, and the dtypes of every arm, and we provide a reproducible protocol and harness for doing so. We make no state-of-the-art claim.
 
 **Keywords**: post-training quantization; edge NPU; W4A16; evaluation protocol; chain-of-thought; calibration
 
@@ -26,6 +26,8 @@ Our study is organised around three axes that are usually conflated (Section 3):
 **Finding 2 (protocol).** The same measurements are extremely sensitive to how generation is scored. With a 32-token cap — the default of the evaluation harness and of several published edge-deployment recipes — the vendor's own W4A16 model scores 0.0000 on GSM8K, and ten locally built variants score 0.000–0.025. Extending the cap to 512 tokens restores the vendor model to 0.5550. Separately, extracting the first "answer is" number instead of the last number in the generation raises every configuration and compresses the GPTQ advantage from 4.1× to about 1.1×. Neither artefact is visible in the accuracy scalar alone; both are visible in the length distribution and in the termination rate.
 
 **Finding 3 (boundary).** Calibration effects are conditional on group size. At g64, NAC-v1 loses 7.43 points of MMLU to min-max (p = 3.3e-9); at g128 it *wins* by 6.71 points (p = 7.9e-9). The sign of the effect, not just its size, depends on a hyperparameter that papers rarely ablate.
+
+**Finding 4 (build path).** On the NPU, where single-letter MMLU is insensitive to the cap, a local rebuild of the same model with the toolkit's default algorithm scores 0.4974 against the vendor artifact's 0.5583 (−6.09 pp, p = 3.0e-4). Switching the build algorithm to `gdq` closes the gap to a statistical tie (0.5387, p = 0.18). The vendor's algorithm is not documented, so "rebuild and compare" is not a controlled experiment unless the algorithm is fixed.
 
 **Contributions.**
 1. A three-axis evaluation protocol with a reproducible harness that archives full generations, token counts, and termination flags (Section 3, Appendix B).
@@ -203,11 +205,27 @@ The NAC-v1 deficit at g64 (−7.43 pp) becomes a gain at g128 (+6.71 pp). The ef
 
 **Figure 3.** MMLU accuracy at group size 64 versus 128. The ordering of the three calibration objectives is not preserved; NAC-v1 moves from last to second, and min-max moves from first to last.
 
-### 6.4 Termination behaviour as a first-class metric
-
-A last-number score conflates three failure modes: the model computes the wrong answer, the model does not answer, and the model answers but does not stop. Only the first is a calibration-quality signal. Our archives let us separate the third: among the first 300 characters of each generation, the fraction that opens a new question after the answer is 11% for GPTQ, 30% for NAC-v1, 37% for NAC-v2, 38% for min-max and 53% for AWQ. The rank of these rates is the inverse of the rank of the last-number score, which is what one expects if the metric is reading numbers out of the continuation.
+### 6.4 Termination behaviour as a first-class metricA last-number score conflates three failure modes: the model computes the wrong answer, the model does not answer, and the model answers but does not stop. Only the first is a calibration-quality signal. Our archives let us separate the third: among the first 300 characters of each generation, the fraction that opens a new question after the answer is 11% for GPTQ, 30% for NAC-v1, 37% for NAC-v2, 38% for min-max and 53% for AWQ. The rank of these rates is the inverse of the rank of the last-number score, which is what one expects if the metric is reading numbers out of the continuation.
 
 This is not an argument that the continuation behaviour is harmless. In deployment, a model that answers correctly and then continues into a hallucinated next question is a real failure — it wastes decode budget and can corrupt downstream parsing. It is an argument that the failure must be *reported as termination*, with an EOS rate or a stop-sequence rule, rather than folded into an accuracy number. The re-run (Section 6.2.1) records token counts and cap hits per item, which makes this separation exact rather than prefix-bounded.
+
+### 6.5 Deployment: the build path is a variable
+
+MMLU is answered with a single letter and is therefore insensitive to the generation cap (Section 6.2), so it can serve as a clean deployment-side probe. Fixing the model, the toolkit version (1.2.3) and the quantization dtype (`W4A16`), we rebuilt locally and varied only the build algorithm:
+
+| Build | Algorithm | MMLU (969) | vs vendor | McNemar |
+|---|---|---|---|---|
+| vendor | not disclosed | 0.5583 | — | — |
+| local, opt=1 | `normal` | 0.4974 | −6.09 pp | b=158 / c=99, p=3.0e-4 |
+| local, opt=3 | `normal` | 0.5191 | −3.92 pp | [[TBD]] |
+| local, opt=1, multi-domain calibration | `normal` | 0.4974 | −6.09 pp | [[TBD]] |
+| local, opt=1 | `gdq` | 0.5387 | −1.96 pp | b=98 / c=79, p=0.18 (tie) |
+
+Two readings. First, a local rebuild with the default algorithm is 6.1 points worse than the vendor artifact — significant, and reproduced across two independent builds with different calibration sets (both 0.4974). Second, the gap is statistically closed by a different quantization algorithm (`gdq`), which the vendor does not document. "Vendor quality" is therefore not reproducible from the documented default pipeline: the algorithm is a hidden variable, and any study that compares calibration methods on top of a locally rebuilt baseline inherits that uncertainty.
+
+The group-quantized artifacts (`W4A16_G64`) are excluded from this table: they differ in dtype, and their apparent advantage over the plain build (+6.40 pp, p=2.8e-5) confounds granularity with build path. We state this explicitly because an earlier version of this work compared them as if they were the same configuration.
+
+We do not report deployment-side GSM8K here: the 512-token re-measurement is in progress (Section 6.2.1), and the 32-token numbers in our records measure the cap.
 
 ---
 
