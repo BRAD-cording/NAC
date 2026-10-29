@@ -45,6 +45,10 @@ CLAIMS = [
     ("B3", "vendor GSM8K @512tok == 0.5550", "acc_gsm8k_qwen1.5b_w4a16_zs.json", "gsm8k_acc", 0.555, 1e-9),
     ("B4", "NAC 注入 GSM8K @32tok == 0.0050（伪影，非退化）", "acc_gsm8k_qwen1.5b_g64nac_zs.json", "gsm8k_acc", 0.005, 1e-9),
     ("B5", "E3 minmax 注入 GSM8K @32tok == 0.0050", "acc_gsm8k_qwen1.5b_g64mmctrl_zs.json", "gsm8k_acc", 0.005, 1e-9),
+    ("B6", "本地构建 GSM8K @512tok == 0.5350（与 @32 的 0.0150 对照）",
+     "acc_gsm8k_qwen1.5b_plain_x86_zs512.json", "gsm8k_acc", 0.535, 1e-9),
+    ("B7", "本地构建 @512 记录 max_new_tokens == 512",
+     "acc_gsm8k_qwen1.5b_plain_x86_zs512.json", "max_new_tokens", 512, 0),
     # --- sim 轴 MMLU ---
     ("S1", "sim fp16 MMLU 0.4634", "acc_mmlu_sim_g64.json", "acc_gen", 0.4634, 1e-9),
     ("S2", "sim minmax MMLU 0.4675", "acc_mmlu_sim_g64.full.json", "configs.minmax.acc_gen", 0.4675, 1e-9),

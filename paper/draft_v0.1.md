@@ -162,6 +162,15 @@ The strongest evidence that the cap, not the model, can determine the score come
 
 At 32 tokens the reference model scores zero. Its generations are not degenerate: they begin with a correct restatement of the problem and a correct first step, and stop mid-number — for the first item, `"…divide by 3.\n\nThe first measurement is 47 W"`. The harness's last-number extractor reads `47` and marks the item wrong. A second vendor model (Qwen2.5-3B, same harness, 512 tokens) scores 0.6700, so the harness is not degenerate by construction: it is the cap that is.
 
+The same manipulation applies to a locally rebuilt artifact, and it is the clearest single result in this paper:
+
+| Artifact | GSM8K @32 tok | GSM8K @512 tok |
+|---|---|---|
+| vendor W4A16 | 0.0000 | 0.5550 |
+| local rebuild (`normal`, opt=1, W4A16) | 0.0150 | **0.5350** |
+
+Nothing about the local model changes between the two rows except the cap. At 512 tokens it is statistically tied with the vendor artifact (paired McNemar: b = 30, c = 26, p = 0.69), and the 52-point difference between its two rows is an artefact of the harness. Any conclusion of the form "the local build loses long-form reasoning" drawn from a 32-token run is wrong.
+
 The same signature appears in every locally built variant we evaluated at 32 tokens (Table 2, Figure 2): median length 129–147 characters, 90th percentile ≤161, no generation reaches a concluding sentence, and the distribution of final characters is dominated by digits and operators. Under a 512-token cap the vendor model reaches 0.5550. We therefore treat all 32-token numbers in our own earlier records — and any published edge-deployment number produced with a similar default — as measuring the cap.
 
 ![Figure 2](figs/fig2_truncation.svg)
@@ -227,6 +236,8 @@ MMLU is answered with a single letter and is therefore insensitive to the genera
 | local, opt=1 | `gdq` | 0.5387 | −1.96 pp | b=98 / c=79, p=0.18 (tie) |
 
 Two readings. First, a local rebuild with the default algorithm is 6.1 points worse than the vendor artifact — significant, and reproduced across two independent builds with different calibration sets (both 0.4974). Second, the gap is statistically closed by a different quantization algorithm (`gdq`), which the vendor does not document. "Vendor quality" is therefore not reproducible from the documented default pipeline: the algorithm is a hidden variable, and any study that compares calibration methods on top of a locally rebuilt baseline inherits that uncertainty.
+
+The loss is task-specific, and we report it as such: at 512 tokens the same local build is statistically tied with the vendor on GSM8K (0.5350 vs 0.5550, p = 0.69). The build-path difference therefore shows up on the knowledge-oriented multiple-choice task and not on the arithmetic task, which rules out a generic "the local build is worse" explanation and makes the mechanism an open question (Section 8).
 
 ![Figure 4](figs/fig4_build_path.svg)
 
