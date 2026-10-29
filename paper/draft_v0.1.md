@@ -106,7 +106,7 @@ All methods produce per-group `(scale, zero_point)` for the deployment kernel's 
 
 **Perplexity.** WikiText-2 held-out, 64 sequences × 1024 tokens for all configurations except AWQ's probe (16 sequences), labelled wherever it appears.
 
-**Statistics.** McNemar's test with continuity correction for paired binary outcomes; bootstrap 95% confidence intervals over items; tie criterion p > 0.05 together with a difference smaller than the CI width. Pairing is by item index, verified by asserting that the gold-answer sequence is identical between the two runs. `analysis/check_claims.py` re-derives every number in this paper from the archived JSON and fails if any of them drifts.
+**Statistics.** McNemar's test with continuity correction for paired binary outcomes; bootstrap 95% confidence intervals over items; tie criterion p > 0.05 together with a difference smaller than the CI width. Pairing is by item index, verified by asserting that the gold-answer sequence is identical between the two runs. Full pairwise statistics, including odds ratios, are in Appendix C. `analysis/check_claims.py` re-derives every number in this paper from the archived JSON and fails if any of them drifts.
 
 ---
 
@@ -296,7 +296,38 @@ Under one W4A16 pipeline on one edge SoC, we find that calibration objectives th
 - `scripts/eval_gsm8k_sim.py`: simulation harness with the same protocol.
 - `scripts/q1_board512_queue.sh`: the 512-token re-measurement queue.
 - `results/env_snapshot.json`: software versions and artifact md5s.
+- `reproduce/MANIFEST.md`: every artifact with md5, dtype and role.
+- `reproduce/README.md`: per-table commands and an explicit list of gaps.
 - `analysis/`: independent re-scoring scripts used for the audit in this paper.
+
+## Appendix C — Pairwise comparisons
+
+McNemar's test with continuity correction on paired items; `OR = b/c` where `b` counts items the first configuration gets right and the second gets wrong. Differences and CIs are in percentage points; positive means the second configuration is better.
+
+| Comparison | n | acc(A) | acc(B) | Δ (pp) | OR | 95% CI (pp) | p |
+|---|---|---|---|---|---|---|---|
+| MMLU g64: NAC-v2 vs NAC-v1 | 969 | 0.393 | 0.447 | +5.37 | 2.13 | [+3.0, +7.7] | 2.1e-5 |
+| MMLU g64: NAC-v2 vs GPTQ | 969 | 0.452 | 0.447 | −0.52 | 0.92 | [−2.8, +1.7] | 0.72 |
+| MMLU g64: NAC-v2 vs min-max | 969 | 0.468 | 0.447 | −2.06 | 0.75 | [−4.4, +0.3] | 0.11 |
+| MMLU g64: NAC-v2 vs fp16 | 969 | 0.463 | 0.447 | −1.65 | 0.72 | [−3.7, +0.4] | 0.13 |
+| MMLU g64: AWQ vs GPTQ | 969 | 0.452 | 0.440 | −1.24 | 0.85 | [−3.8, +1.2] | 0.37 |
+| MMLU g64: AWQ vs NAC-v2 | 969 | 0.447 | 0.440 | −0.72 | 0.89 | [−2.9, +1.4] | 0.58 |
+| MMLU g64: AWQ vs min-max | 969 | 0.468 | 0.440 | −2.79 | 0.69 | [−5.3, −0.4] | 0.033 |
+| MMLU g64: AWQ vs fp16 | 969 | 0.463 | 0.440 | −2.37 | 0.66 | [−4.5, −0.2] | 0.038 |
+| MMLU g64: NAC-v1 vs min-max | 969 | 0.468 | 0.393 | −7.43 | 0.33 | [−9.9, −5.2] | 3.3e-9 |
+| GSM8K: GPTQ vs min-max | 200 | 0.075 | 0.305 | +23.00 | 7.57 | [+16.0, +30.0] | 6.3e-9 |
+| GSM8K: GPTQ vs NAC-v1 | 200 | 0.070 | 0.305 | +23.50 | 7.71 | [+16.5, +30.5] | 3.9e-9 |
+| GSM8K: NAC-v2 vs NAC-v1 | 200 | 0.070 | 0.150 | +8.00 | 2.60 | [+2.5, +14.0] | 0.012 |
+| GSM8K: NAC-v2 vs GPTQ | 200 | 0.305 | 0.150 | −15.50 | 0.33 | [−23.0, −8.0] | 1.2e-4 |
+| GSM8K: NAC-v2 vs min-max | 200 | 0.075 | 0.150 | +7.50 | 2.25 | [+1.5, +13.5] | 0.025 |
+| GSM8K: AWQ vs GPTQ | 64 | 0.312 | 0.000 | −31.25 | 0.00 | [−42.2, −20.3] | 2.2e-5 |
+| GSM8K: AWQ vs NAC-v2 | 64 | 0.141 | 0.000 | −14.06 | 0.00 | [−23.4, −6.2] | 0.0077 |
+| GSM8K: AWQ vs min-max | 64 | 0.047 | 0.000 | −4.69 | 0.00 | [−10.9, +0.0] | 0.25 |
+| MMLU g128: NAC-v1 vs min-max | 969 | 0.362 | 0.429 | +6.71 | 3.24 | [+4.5, +8.9] | 7.9e-9 |
+| MMLU g128: GPTQ vs min-max | 969 | 0.362 | 0.487 | +12.49 | 3.16 | [+9.5, +15.5] | 3.8e-15 |
+| MMLU g128: GPTQ vs NAC-v1 | 969 | 0.429 | 0.487 | +5.78 | 1.86 | [+3.0, +8.6] | 5.5e-5 |
+
+The AWQ rows use n = 64 and their odds ratios are zero by construction (no correct items), so only the CI is informative. Two rows are non-significant and are reported as ties rather than as trends: NAC-v2 vs GPTQ on MMLU (p = 0.72) and NAC-v2 vs min-max (p = 0.11).
 
 ## References
 
