@@ -48,17 +48,19 @@ def eval_config(model, tok, rows, bs, max_new, records, start, out_path, rec_pat
         prompts = [GSM8K_FEWSHOT + GSM8K_TMPL.format(q=r["question"]) for r in chunk]
         enc = tok(prompts, return_tensors="pt", padding=True)
         input_len = enc.input_ids.shape[1]
-        gen_kw = {}
-        if stop_strings:
-            # 2026-10-29：2-shot CoT 下所有方法都会在答完后续写下一题，
-            # 末数字抽取因此读到续写文本里的数字（见 draft §6.2）。停止串让"算错/不停"分离。
-            gen_kw = {"stop_strings": list(stop_strings), "tokenizer": tok}
         out = model.generate(
             **enc, max_new_tokens=max_new, do_sample=False, num_beams=1,
-            pad_token_id=tok.pad_token_id or tok.eos_token_id, **gen_kw)
+            pad_token_id=tok.pad_token_id or tok.eos_token_id)
         texts = tok.batch_decode(out[:, input_len:], skip_special_tokens=True)
         for j, row in enumerate(chunk):
-            text = texts[j].strip()
+            raw = texts[j].strip()
+            text, truncated = raw, False
+            if stop_strings:
+                # transformers 5.18 不支持 generate(stop_strings=...)，改为后处理截断：
+                # 2-shot CoT 下模型答完会续写下一题，截到第一个停止串可把"算错"与"不停"分开。
+                hits = [text.find(s) for s in stop_strings if text.find(s) >= 0]
+                if hits:
+                    text, truncated = text[: min(hits)].rstrip(), True
             gold = row["answer"].split("####")[-1].strip().replace(",", "")
             pred = extract_number(text)
             ok = pred is not None and abs(pred - float(gold)) < 1e-4
@@ -68,7 +70,8 @@ def eval_config(model, tok, rows, bs, max_new, records, start, out_path, rec_pat
             ok_ai = pred_ai is not None and abs(pred_ai - float(gold)) < 1e-4
             records.append({"i": done + j, "pred": str(pred), "gold": gold,
                             "ok": ok, "pred_answeris": str(pred_ai),
-                            "ok_answeris": ok_ai, "gen": text})
+                            "ok_answeris": ok_ai, "gen": text,
+                            "gen_raw_chars": len(raw), "stop_truncated": truncated})
             done += 1
         accs = [r["ok"] for r in records]
         accs_ai = [r["ok_answeris"] for r in records]
