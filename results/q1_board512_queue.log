@@ -1,0 +1,8 @@
+[2026-10-30 00:33:50] queue v2 start
+[2026-10-30 00:33:50] start q1bd8 model=models/nac_qwen1.5b_g64_nac.rkllm
+[2026-10-30 02:39:29] end q1bd8 rc=0
+[2026-10-30 02:39:29] start q1symv2 model=models/sym_minmax_g64_v2.rkllm
+[2026-10-30 04:41:35] end q1symv2 rc=0
+[2026-10-30 04:41:35] start q1vendor model=models/Qwen2.5-1.5B-Instruct_RK3576_w4a16.rkllm
+[2026-10-30 06:22:26] end q1vendor rc=0
+[2026-10-30 06:22:26] queue v2 ALL DONE

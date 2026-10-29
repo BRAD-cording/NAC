@@ -2,5 +2,9 @@
 
 | tag | model | md5 | n | acc(last-num) | acc(answer-is) | hit_cap | mean tok | med chars | cross-q |
 |---|---|---|---|---|---|---|---|---|---|
+| q1bd8 | nac_qwen1.5b_g64_nac.rkllm | `3bd8c0ba73f0…` | 200 | 0.565 | 0.565 | 0.015 | 248.0 | 762 | 0.00 |
+| q1symv2 | sym_minmax_g64_v2.rkllm | `d6ff154dc261…` | 200 | 0.56 | 0.56 | 0.010 | 248.7 | 780 | 0.00 |
+| q1vendor | Qwen2.5-1.5B-Instruct_RK3576_w4a16.rkllm | `90330bf182cd…` | 200 | 0.555 | 0.555 | 0.020 | 243.6 | 788 | 0.00 |
+| qwen1.5b_plain_x86 | local_w4a16_plain_x86.rkllm | `12aaf476a8f9…` | 200 | 0.535 | None | n/a | n/a | 600 | 0.00 |
 
 判据：`cross-q` 与 `hit_cap` 都低说明模型能在答案后停止；`acc` 与 `acc(answer-is)` 接近说明末数字抽取没有被续写污染。

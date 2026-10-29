@@ -1,0 +1,21 @@
+{
+  "model": "models/tiny_qwen2",
+  "group_size": 64,
+  "num_samples": 3,
+  "max_new_tokens": 24,
+  "protocol": "2-shot CoT generative(512tok), batched sim fp32",
+  "stop_strings": "\\nQuestion:",
+  "configs": {
+    "fp16": {
+      "num_evaluated": 3,
+      "acc": 0.0,
+      "acc_ci95": [
+        0.0,
+        0.0
+      ],
+      "acc_answeris": 0.0,
+      "none_rate": 1.0,
+      "elapsed_s": 6.0
+    }
+  }
+}
