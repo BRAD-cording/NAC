@@ -94,6 +94,15 @@
 ## 后续记录索引（2026-10-18 补）
 10-08 起板端工程记录（extra_qparams 注入链路、qemu 构建病理、qparams 禁落 /tmp、重启自愈编排、E2/E3/E4 自动链）统一并入 [TECHNICAL_REPORT.md](TECHNICAL_REPORT.md) §4 与进展日志，本文件保留 D1–D7 期踩坑正文，不再续写。
 
+## 2026-10-29 深夜：R4 bisect 判据被 32-token 协议击穿（项目级纠错）
+
+- **F2 基线重跑（vendor w4a16，GSM8K zs 200，max_new_tokens=32 默认协议）= 0.0000**（[acc_gsm8k_qwen1.5b_w4a16_zs32.json](../results/acc_gsm8k_qwen1.5b_w4a16_zs32.json)）。records 显示 200 条生成**全部连贯**（推理起点正确），长度中位 140 字符 ≈ 恰好 32 token 截断 → 分数为 0 纯因 32 token 装不下"推理+答案"（10-07 早有结论"GSM8K 32 会截断"，R4 系列未遵守）。
+- **R3/R4a/R4d records 复核同型**：三份 records 长度 p50≈138-145 字符（顶满 32 token）、短退化（<40 字符）0-1 条 → **R3-R4 族全部"崩坏分"（0.000-0.025）是截断伪影，不是模型退化**。B1/B3/B7/B2-gdq/B2-grq 的"证伪"全部对空判据——本地 plain 构建（R3/R4 族）在 512-token 下从未被真正测过。
+- **真崩坏仍只有一族**：10-16/10-23 注入构建（E3 时代，512-token 协议，生成长度中位 3 token、预测全小数）——与截断伪影模式截然不同，**extra_qparams 注入板端退化仍是真实问题**；R5（NAC-v2 int-zp 重注入）地位反而上升。
+- **二相行为之谜消解**：MMLU 答案（单字母）装得进 32 token、GSM8K 装不进 → "MMLU 活/GSM8K 崩"无任何模型学含义。
+- **处置**：r4e_pipeline.sh GSM8K 段已改 --max-new-tokens 512（R4-e 判据：≈0.5 → 健康、长度中位 3 → 真崩）；R3 plain@512 重评进行中（acc_gsm8k_qwen1.5b_plain_x86_zs512.json，判 bisect 是否全盘改写）；A 线 sim 重跑链照旧（sim 协议 2-shot 512-tok 不受影响）；audit 报告的"二相归因"开放项就此关闭。
+- R4-e 构建当日发生过重启（PID 88944→136430，22:52 新起 Optimizing 0/28，日志被覆盖无死因残留，dmesg 无 OOM；grq 内存紧 10/12Gi，watch），新 ETA 模型 ~10-29 深夜。
+
 ## 2026-10-26 R3 笔记本构建静默死亡与防复发（infra 踩坑）
 - **事故**：build 9（x86 plain build）于 10-25 23:59 前后死——Windows AC 睡眠超时 0x0e10（3600s），nohup 后台构建不算用户活动 → 笔记本睡眠 → WSL 整体重启，进程蒸发（dmesg 无 OOM、日志无 FAIL 标记，守望 shell 未触发通知）。日志停在 Optimizing 24/28 [5:01:42]，损失 ~5h。
 - **处置**：崩溃日志备份 `~/r3x86/build_x86.crash1026.log`；`start_build.sh` 重启（pid 117390，01:45 起跑，ETA：Optimizing ~6h + export ~45min ≈ 08:30 模型落盘，传输+板评 ~3h → 中午出分）；**远程 powercfg：AC 睡眠/休眠超时清零 + 合盖不动作**（原值 0x0e10，构建结束后恢复 `powercfg /change standby-timeout-ac 3600`）。

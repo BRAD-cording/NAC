@@ -28,9 +28,13 @@ grep -q "PASS" results/r4e_smoke.log \
 if [ -s "$GSM_JSON" ]; then
     echo "--- [C] GSM8K result exists, skip ---"
 else
-    echo "--- [C] GSM8K zs 200 start $(date '+%F %T') ---"
+    # 2026-10-29 重大修正：32-token 默认协议把 GSM8K 全体打到 0（截断伪影，
+    # vendor 基线同协议实测 0.0000、生成连贯仅被截断）。R4-e 判据必须在
+    # 512-token 下才可解释（恢复≈0.5 → 健康；长度中位 3 → 真崩坏）。
+    echo "--- [C] GSM8K zs 200 start (512-tok) $(date '+%F %T') ---"
     HF_HUB_OFFLINE=1 "$PY" -m src.eval.accuracy --model "$MODEL" \
         --task gsm8k --num-samples 200 --fewshot-num 0 \
+        --max-new-tokens 512 \
         --out "$GSM_JSON" > results/acc_r4e_gsmzs.log 2>&1
     echo "=== [C] GSM8K done $(date '+%F %T') ==="
 fi
