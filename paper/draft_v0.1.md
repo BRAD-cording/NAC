@@ -197,7 +197,7 @@ This is a measurement-validity problem rather than a modelling result, and it ha
 
 Re-scoring archived generations with the "answer is" rule raises every simulated configuration: GPTQ 0.280→0.385, NAC-v2 0.130→0.340, min-max 0.035→0.310, NAC-v1 0.095→0.300, AWQ 0.047→0.359. These are lower bounds: the archives truncate at 300 characters, so the true effect is at least this large. The GPTQ margin over NAC-v1 falls from 4.1× to 1.1×.
 
-The mechanism is visible in AWQ's case. Its generations are coherent and often contain the correct final number, but the model does not emit EOS; it continues into a new question, and last-number extraction reads a number from the continuation. Under answer-is extraction the same 64 items score 0.359 instead of 0.047. The underlying phenomenon — a calibration objective that damages the termination policy while preserving local fluency — is real and worth reporting, but it is not an accuracy collapse, and reporting it as one would be wrong.
+The mechanism is visible in AWQ's case. Its generations are coherent and often contain the correct final number, but the model does not emit EOS; it continues into a new question, and last-number extraction reads a number from the continuation. Under answer-is extraction the same 64 items score 0.359 instead of 0.047. The underlying phenomenon — a calibration objective that damages the termination policy while preserving local fluency — is real and worth reporting, but it is not an accuracy collapse, and reporting it as one would be wrong. (The GPTQ margin over NAC-v1 correspondingly falls from 4.1× to about 1.3×.)
 
 We therefore report both rules and treat any conclusion that flips between them as protocol-dependent rather than method-dependent. The re-run additionally truncates each generation at the first `\nQuestion:` before scoring (the installed transformers version does not support generation-time stop strings, so the truncation is applied to the decoded text), which removes the continuation component and lets arithmetic quality and termination behaviour be measured separately rather than as a product.
 
@@ -217,7 +217,9 @@ The NAC-v1 deficit at g64 (−7.43 pp) becomes a gain at g128 (+6.71 pp). The ef
 
 **Figure 3.** MMLU accuracy at group size 64 versus 128. The ordering of the three calibration objectives is not preserved; NAC-v1 moves from last to second, and min-max moves from first to last.
 
-### 6.4 Termination behaviour as a first-class metricA last-number score conflates three failure modes: the model computes the wrong answer, the model does not answer, and the model answers but does not stop. Only the first is a calibration-quality signal. Our archives let us separate the third: among the first 300 characters of each generation, the fraction that opens a new question after the answer is 11% for GPTQ, 30% for NAC-v1, 37% for NAC-v2, 38% for min-max and 53% for AWQ. The rank of these rates is the inverse of the rank of the last-number score, which is what one expects if the metric is reading numbers out of the continuation.
+### 6.4 Termination behaviour as a first-class metric
+
+A last-number score conflates three failure modes: the model computes the wrong answer, the model does not answer, and the model answers but does not stop. Only the first is a calibration-quality signal. Our archives let us separate the third: among the first 300 characters of each generation, the fraction that opens a new question after the answer is 11% for GPTQ, 30% for NAC-v1, 37% for NAC-v2, 38% for min-max and 53% for AWQ. The rank of these rates is the inverse of the rank of the last-number score, which is what one expects if the metric is reading numbers out of the continuation.
 
 This is not an argument that the continuation behaviour is harmless. In deployment, a model that answers correctly and then continues into a hallucinated next question is a real failure — it wastes decode budget and can corrupt downstream parsing. It is an argument that the failure must be *reported as termination*, with an EOS rate or a stop-sequence rule, rather than folded into an accuracy number. The re-run (Section 6.2.1) records token counts and cap hits per item, which makes this separation exact rather than prefix-bounded.
 
@@ -227,13 +229,13 @@ MMLU is answered with a single letter and is therefore insensitive to the genera
 
 **Table 4.** Deployment-side MMLU for the same model and dtype, rebuilt with different toolkit settings.
 
-| Build | Algorithm | MMLU (969) | vs vendor | McNemar |
+| Build | Algorithm | MMLU (969) | vs vendor | b/c · p |
 |---|---|---|---|---|
 | vendor | not disclosed | 0.5583 | — | — |
-| local, opt=1 | `normal` | 0.4974 | −6.09 pp | b=158 / c=99, p=3.0e-4 |
-| local, opt=3 | `normal` | 0.5191 | −3.92 pp | b=132 / c=94, p=0.014 |
-| local, opt=1, multi-domain calibration | `normal` | 0.4974 | −6.09 pp | b=150 / c=91, p=1.9e-4 |
-| local, opt=1 | `gdq` | 0.5387 | −1.96 pp | b=98 / c=79, p=0.18 (tie) |
+| local, opt=1 | `normal` | 0.4974 | −6.09 pp | 158/99 · 3.0e-4 |
+| local, opt=3 | `normal` | 0.5191 | −3.92 pp | 132/94 · 0.014 |
+| local, opt=1, multi-domain calibration | `normal` | 0.4974 | −6.09 pp | 150/91 · 1.9e-4 |
+| local, opt=1 | `gdq` | 0.5387 | −1.96 pp | 98/79 · 0.18 (tie) |
 
 Two readings. First, a local rebuild with the default algorithm is 6.1 points worse than the vendor artifact — significant, and reproduced across two independent builds with different calibration sets (both 0.4974; p = 3.0e-4 and 1.9e-4). Raising the optimization level recovers about a third of the gap (0.5191, p = 0.014). Second, the gap is statistically closed by a different quantization algorithm (`gdq`), which the vendor does not document. "Vendor quality" is therefore not reproducible from the documented default pipeline: the algorithm is a hidden variable, and any study that compares calibration methods on top of a locally rebuilt baseline inherits that uncertainty.
 

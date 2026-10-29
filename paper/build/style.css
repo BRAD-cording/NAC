@@ -68,11 +68,13 @@ pre {
 table {
   border-collapse: collapse;
   width: 100%;
-  font-size: 8.2pt;
+  font-size: 7.9pt;
   margin: 6pt 0 10pt 0;
-  page-break-inside: avoid;
+  page-break-inside: auto;
 }
-thead { background: #eef1f4; }
+thead { display: table-header-group; background: #eef1f4; }
+tr { page-break-inside: avoid; }
+th:first-child, td:first-child { width: 30%; }
 th, td {
   border: 0.4pt solid #b8c0c8;
   padding: 2.2pt 3.5pt;
@@ -81,7 +83,7 @@ th, td {
 }
 th { font-family: "DejaVu Sans", sans-serif; font-weight: bold; }
 
-img { max-width: 100%; height: auto; }
+img { max-width: 88%; height: auto; display: block; margin: 0 auto; }
 
 a { color: #1a4f8a; text-decoration: none; }
 
