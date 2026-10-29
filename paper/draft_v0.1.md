@@ -182,6 +182,7 @@ The same signature appears in every locally built variant we evaluated at 32 tok
 **Figure 2.** Length distribution of GSM8K generations under a 32-token cap, vendor model versus one locally built variant. Both distributions terminate against the same budget; neither reaches a concluding answer sentence.
 
 **Table 2.** Truncation signature of GSM8K runs. `tail-mid` is the fraction of generations whose last character is a digit or operator; `hasAns` is the fraction containing a concluding "answer is".
+
 | Run (all 32-token unless noted) | n | GSM8K | p50 len | p90 len | tail-mid | hasAns |
 |---|---|---|---|---|---|---|
 | vendor | 200 | 0.0000 | 140 | 160 | 0.32 | 0.00 |
