@@ -53,6 +53,10 @@ CLAIMS = [
      "acc_gsm8k_q1bd8_zs512.json", "gsm8k_acc", 0.565, 1e-9),
     ("B9", "g64 构建 @512 的 answer-is 指标同为 0.5650（无续写污染）",
      "acc_gsm8k_q1bd8_zs512.json", "gsm8k_acc_answeris", 0.565, 1e-9),
+    ("B10", "第三个产物（symv2）@512 == 0.5600",
+     "acc_gsm8k_q1symv2_zs512.json", "gsm8k_acc", 0.56, 1e-9),
+    ("B11", "第三个产物 answer-is 同为 0.5600",
+     "acc_gsm8k_q1symv2_zs512.json", "gsm8k_acc_answeris", 0.56, 1e-9),
     # --- sim 轴 MMLU ---
     ("S1", "sim fp16 MMLU 0.4634", "acc_mmlu_sim_g64.json", "acc_gen", 0.4634, 1e-9),
     ("S2", "sim minmax MMLU 0.4675", "acc_mmlu_sim_g64.full.json", "configs.minmax.acc_gen", 0.4675, 1e-9),
