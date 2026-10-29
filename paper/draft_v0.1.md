@@ -182,7 +182,7 @@ Re-scoring archived generations with the "answer is" rule raises every simulated
 
 The mechanism is visible in AWQ's case. Its generations are coherent and often contain the correct final number, but the model does not emit EOS; it continues into a new question, and last-number extraction reads a number from the continuation. Under answer-is extraction the same 64 items score 0.359 instead of 0.047. The underlying phenomenon — a calibration objective that damages the termination policy while preserving local fluency — is real and worth reporting, but it is not an accuracy collapse, and reporting it as one would be wrong.
 
-We therefore report both rules and treat any conclusion that flips between them as protocol-dependent rather than method-dependent.
+We therefore report both rules and treat any conclusion that flips between them as protocol-dependent rather than method-dependent. The re-run additionally enforces a stop sequence (`\nQuestion:`), which removes the continuation component and lets arithmetic quality and termination behaviour be measured separately rather than as a product.
 
 ### 6.3 Group size reverses the sign
 
