@@ -241,3 +241,16 @@ Under one W4A16 pipeline on one edge SoC, we find that calibration objectives th
 - `scripts/q1_board512_queue.sh`: the 512-token re-measurement queue.
 - `results/env_snapshot.json`: software versions and artifact md5s.
 - `analysis/`: independent re-scoring scripts used for the audit in this paper.
+
+## References
+
+1. E. Frantar, S. Ashkboos, T. Hoefler, D. Alistarh. GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers. ICLR 2023.
+2. J. Lin, J. Tang, H. Tang, S. Yang, W.-M. Chen, W.-C. Wang, G. Xiao, X. Dang, C. Gan, S. Han. AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration. MLSys 2024.
+3. G. Xiao, J. Lin, M. Seznec, H. Wu, J. Demouth, S. Han. SmoothQuant: Accurate and Efficient Post-Training Quantization for Large Language Models. ICML 2023.
+4. W. Shao, M. Chen, Z. Zhang, P. Xu, L. Zhao, Z. Li, K. Zhang, P. Gao, Y. Qiao, P. Luo. OmniQuant: Omnidirectionally Calibrated Quantization for Large Language Models. ICLR 2024.
+5. Accuracy is Not All You Need. Advances in Neural Information Processing Systems (NeurIPS), 2024.
+6. A Case Study of Selected PTQ Baselines for Reasoning LLMs on Ascend NPU. arXiv:2602.17693, 2026.
+7. J. Wei, X. Wang, D. Schuurmans, M. Bosma, B. Ichter, F. Xia, E. Chi, Q. Le, D. Zhou. Chain-of-Thought Prompting Elicits Reasoning in Large Language Models. NeurIPS 2022.
+8. K. Cobbe, V. Kosaraju, M. Bavarian, M. Chen, H. Jun, L. Kaiser, M. Plappert, J. Tworek, J. Hilton, R. Nakano, C. Hesse, J. Schulman. Training Verifiers to Solve Math Word Problems. arXiv:2110.14168, 2021.
+9. D. Hendrycks, C. Burns, S. Basart, A. Zou, M. Mazeika, D. Song, J. Steinhardt. Measuring Massive Multitask Language Understanding. ICLR 2021.
+10. Qwen Team. Qwen2.5 Technical Report. arXiv:2412.15115, 2024.
