@@ -96,7 +96,7 @@ def extract_answer_is(text: str) -> float | None:
 
 
 def eval_task(client: RKLLMClient, rows: list, kind: str, log_path: Path | None = None,
-              fewshot_num: int = 2):
+              fewshot_num: int = 2, max_new_tokens: int = 32):
     correct = 0
     records = []
     for i, row in enumerate(rows):
@@ -113,12 +113,29 @@ def eval_task(client: RKLLMClient, rows: list, kind: str, log_path: Path | None 
             print(f"[acc] #{i} run error: {e}")
             continue
         text = out["text"].strip()
-        pred = extract_choice(text) if kind == "mmlu" else extract_number(text)
+        if kind == "mmlu":
+            pred = extract_choice(text)
+            pred_as, ok_as = pred, (pred == gold)
+        else:
+            pred = extract_number(text)
+            pred_as = extract_answer_is(text)
         ok = (pred == gold) if kind == "mmlu" else (
             pred is not None and abs(pred - float(gold)) < 1e-4)
+        if kind != "mmlu":
+            ok_as = (pred_as is not None and abs(pred_as - float(gold)) < 1e-4)
         correct += int(ok)
+        n_tok = out.get("n_tokens") or 0
+        # 归档全文（>=4000 字符可覆盖 512-token 生成）与终止信息：
+        # 旧版 gen[:600] 导致事后无法复核抽取规则、无法区分"自然终止/截断"（F2/m1 教训）
         records.append({"i": i, "pred": str(pred), "gold": str(gold),
-                        "ok": ok, "gen": text[:600], "ttft_ms": out["ttft_ms"]})
+                        "ok": ok,
+                        "pred_ansis": str(pred_as) if kind != "mmlu" else None,
+                        "ok_ansis": bool(ok_as) if kind != "mmlu" else None,
+                        "gen": text[:4000], "gen_chars": len(text),
+                        "n_tokens": n_tok,
+                        "hit_cap": n_tok >= max_new_tokens,
+                        "decode_tps": out.get("decode_tps"),
+                        "ttft_ms": out["ttft_ms"]})
         if (i + 1) % 50 == 0:
             print(f"[acc] {kind} {i + 1}/{len(rows)} acc={correct / (i + 1):.4f}")
     if log_path:
@@ -140,22 +157,27 @@ def main():
     stem = Path(args.model).stem
     out_path = Path(args.out or f"results/acc_{args.task}_{stem}_{datetime.now():%Y%m%d_%H%M%S}.json")
     results = {"model": args.model, "task": args.task, "num_samples": args.num_samples,
-               "fewshot_num": args.fewshot_num, "max_new_tokens": args.max_new_tokens}
+               "fewshot_num": args.fewshot_num, "max_new_tokens": args.max_new_tokens,
+               "extractor": ["last_number", "answer_is"], "gen_archive_chars": 4000}
 
     with RKLLMClient(args.model, max_new_tokens=args.max_new_tokens) as client:
         if args.task in ("mmlu", "both"):
             rows = load_mmlu(args.num_samples)
             acc, recs = eval_task(client, rows, "mmlu",
                                   out_path.with_suffix(".records.json"),
-                                  fewshot_num=args.fewshot_num)
+                                  fewshot_num=args.fewshot_num,
+                                  max_new_tokens=args.max_new_tokens)
             results["mmlu_acc"] = round(acc, 4)
             print(f"[acc] MMLU acc = {acc:.4f}")
         if args.task in ("gsm8k", "both"):
             rows = load_gsm8k(min(args.num_samples, 200))
             acc, recs = eval_task(client, rows, "gsm8k",
                                   out_path.with_suffix(".records.json"),
-                                  fewshot_num=args.fewshot_num)
+                                  fewshot_num=args.fewshot_num,
+                                  max_new_tokens=args.max_new_tokens)
             results["gsm8k_acc"] = round(acc, 4)
+            results["gsm8k_acc_answeris"] = round(
+                sum(1 for r in recs if r.get("ok_ansis")) / max(1, len(recs)), 4)
             print(f"[acc] GSM8K acc = {acc:.4f}")
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
