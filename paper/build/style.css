@@ -90,3 +90,5 @@ a { color: #1a4f8a; text-decoration: none; }
 hr { border: none; border-top: 0.5pt solid #ccc; margin: 10pt 0; }
 
 strong { font-weight: bold; }
+
+h2[id^="appendix"] { page-break-before: always; }

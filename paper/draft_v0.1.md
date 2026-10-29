@@ -302,16 +302,16 @@ Under one W4A16 pipeline on one edge SoC, we find that calibration objectives th
 
 | Claim | Evidence file | Status |
 |---|---|---|
-| GPTQ 0.305 / min-max 0.075 / NAC-v1 0.070 (sim GSM8K, 512 tok, 2-shot) | `acc_gsm8k_sim_g64.full.json` + records | ✅ |
-| PPL 11.893 / 12.168 / 12.225 (64 seq) | `ppl_g64_64seq.json` | ✅ |
-| AWQ 0.000 at n=64, answer-is 0.359 | `acc_gsm8k_sim_g64_awq.json`, `extractor_recheck.json` | ✅ |
-| MMLU p-values (NAC vs min-max, etc.) | `stats_pairs.json` | ✅ |
-| g128 inversion (+6.71 pp, p=7.9e-9) | `acc_mmlu_sim_g128.full.json`, `stats_pairs.json` | ✅ |
-| Vendor 0.0000 @32 vs 0.5550 @512 | `acc_gsm8k_..._zs32.json`, `..._zs.json` | ✅ |
-| Local rebuild 0.0150 @32 vs 0.5350 @512 (p = 0.69 vs vendor) | `acc_gsm8k_qwen1.5b_w4a16plain_x86_zs512.json` | ✅ |
-| Group-quantized artifact 0.0050 @32 vs 0.5650 @512 (p = 0.88; answer-is identical) | `acc_gsm8k_q1bd8_zs512.json` | ✅ |
-| Deployment MMLU build-path deltas and p-values | `acc_mmlu_*_zs.records.json`, `stats_pairs.json` | ✅ |
-| fp16 GSM8K anchor | — | ⏳ |
+| GPTQ 0.305 / min-max 0.075 / NAC-v1 0.070 (sim GSM8K, 512 tok, 2-shot) | `acc_gsm8k_sim_g64.full.json` + records | verified |
+| PPL 11.893 / 12.168 / 12.225 (64 seq) | `ppl_g64_64seq.json` | verified |
+| AWQ 0.000 at n=64, answer-is 0.359 | `acc_gsm8k_sim_g64_awq.json`, `extractor_recheck.json` | verified |
+| MMLU p-values (NAC vs min-max, etc.) | `stats_pairs.json` | verified |
+| g128 inversion (+6.71 pp, p=7.9e-9) | `acc_mmlu_sim_g128.full.json`, `stats_pairs.json` | verified |
+| Vendor 0.0000 @32 vs 0.5550 @512 | `acc_gsm8k_..._zs32.json`, `..._zs.json` | verified |
+| Local rebuild 0.0150 @32 vs 0.5350 @512 (p = 0.69 vs vendor) | `acc_gsm8k_qwen1.5b_w4a16plain_x86_zs512.json` | verified |
+| Group-quantized artifact 0.0050 @32 vs 0.5650 @512 (p = 0.88; answer-is identical) | `acc_gsm8k_q1bd8_zs512.json` | verified |
+| Deployment MMLU build-path deltas and p-values | `acc_mmlu_*_zs.records.json`, `stats_pairs.json` | verified |
+| fp16 GSM8K anchor | — | pending |
 
 ## Appendix B — Reproducibility package
 
