@@ -1,0 +1,33 @@
+[sim-gsm8k] loading models/Qwen2.5-1.5B-Instruct-hf (fp32) ...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  25%|██▌       | 85/338 [00:00<00:00, 738.42it/s]Loading weights:  47%|████▋     | 159/338 [00:00<00:00, 325.28it/s]Loading weights:  60%|██████    | 203/338 [00:00<00:00, 300.75it/s]Loading weights:  71%|███████   | 239/338 [00:00<00:00, 264.94it/s]Loading weights:  80%|███████▉  | 269/338 [00:00<00:00, 239.36it/s]Loading weights:  87%|████████▋ | 295/338 [00:01<00:00, 232.45it/s]Loading weights:  95%|█████████▍| 320/338 [00:01<00:00, 234.38it/s]Loading weights: 100%|██████████| 338/338 [00:01<00:00, 278.34it/s]
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 1s [Retry 1/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 2s [Retry 2/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 4s [Retry 3/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 8s [Retry 4/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 8s [Retry 5/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Using the latest cached version of the dataset since openai/gsm8k couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'main' at /home/pi/.cache/huggingface/datasets/openai___gsm8k/main/0.0.0/740312add88f781978c0658806c59bc2815b9866 (last modified on Tue Oct  6 20:10:10 2026).
+[sim-gsm8k] 200 questions (board-protocol, 2-shot CoT) gs=64 bs=16
+[sim-gsm8k] ===== config: gptq =====
+[sim-gsm8k] 16/200 acc=0.6875 (188.69s/q, ETA 9.6h)
+[sim-gsm8k] 32/200 acc=0.4062 (192.89s/q, ETA 9.0h)
+[sim-gsm8k] 48/200 acc=0.4167 (196.78s/q, ETA 8.3h)
+[sim-gsm8k] 64/200 acc=0.4062 (196.75s/q, ETA 7.4h)
+[sim-gsm8k] 80/200 acc=0.4000 (195.72s/q, ETA 6.5h)
+[sim-gsm8k] 96/200 acc=0.4375 (195.17s/q, ETA 5.6h)
+[sim-gsm8k] 112/200 acc=0.4018 (195.45s/q, ETA 4.8h)
+[sim-gsm8k] 128/200 acc=0.4062 (195.94s/q, ETA 3.9h)
+[sim-gsm8k] 144/200 acc=0.3958 (196.33s/q, ETA 3.1h)
+[sim-gsm8k] 160/200 acc=0.4062 (195.71s/q, ETA 2.2h)
+[sim-gsm8k] 176/200 acc=0.4091 (195.21s/q, ETA 1.3h)
+[sim-gsm8k] 192/200 acc=0.4062 (195.47s/q, ETA 0.4h)
+[sim-gsm8k] 200/200 acc=0.3950 (199.13s/q, ETA 0.0h)
+[sim-gsm8k] gptq: {"num_evaluated": 200, "acc": 0.395, "acc_ci95": [0.33, 0.465], "acc_answeris": 0.475, "none_rate": 0.0, "elapsed_s": 39826.4}
+[sim-gsm8k] -> results/acc_gsm8k_sim_g64_stop_gptq.full.json

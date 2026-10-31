@@ -1,0 +1,9 @@
+# sim 重跑汇总（停止串/截断后）
+
+| config | n | acc (last-num) | acc (answer-is) | truncated | residual cross-q | median chars |
+|---|---|---|---|---|---|---|
+| fp16 | 200 | 0.5300 | 0.5400 | 0.86 | 0.00 | 896 |
+| gptq | 200 | 0.3950 | 0.4750 | 0.20 | 0.00 | 2356 |
+| nacv2 | 200 | 0.3950 | 0.4450 | 0.61 | 0.00 | 1656 |
+
+判据：`residual cross-q` 应接近 0（截断生效）；`acc` 与 `acc(answer-is)` 差距应显著小于旧数据（续写污染已移除）。

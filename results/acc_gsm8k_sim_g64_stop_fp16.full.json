@@ -1,0 +1,21 @@
+{
+  "model": "models/Qwen2.5-1.5B-Instruct-hf",
+  "group_size": 64,
+  "num_samples": 200,
+  "max_new_tokens": 512,
+  "protocol": "2-shot CoT generative(512tok), batched sim fp32",
+  "stop_strings": "\\nQuestion:",
+  "configs": {
+    "fp16": {
+      "num_evaluated": 200,
+      "acc": 0.53,
+      "acc_ci95": [
+        0.465,
+        0.6
+      ],
+      "acc_answeris": 0.54,
+      "none_rate": 0.0,
+      "elapsed_s": 40718.5
+    }
+  }
+}

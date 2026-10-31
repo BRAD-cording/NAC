@@ -1,0 +1,33 @@
+[sim-gsm8k] loading models/Qwen2.5-1.5B-Instruct-hf (fp32) ...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  21%|██        | 71/338 [00:00<00:00, 603.04it/s]Loading weights:  39%|███▉      | 132/338 [00:00<00:00, 291.38it/s]Loading weights:  50%|█████     | 169/338 [00:00<00:01, 147.53it/s]Loading weights:  57%|█████▋    | 193/338 [00:01<00:01, 114.10it/s]Loading weights:  62%|██████▏   | 210/338 [00:01<00:01, 73.75it/s] Loading weights:  68%|██████▊   | 231/338 [00:02<00:01, 69.39it/s]Loading weights:  71%|███████▏  | 241/338 [00:02<00:01, 60.03it/s]Loading weights:  74%|███████▎  | 249/338 [00:02<00:01, 55.01it/s]Loading weights:  76%|███████▌  | 256/338 [00:02<00:01, 52.08it/s]Loading weights:  79%|███████▉  | 267/338 [00:03<00:01, 57.18it/s]Loading weights:  83%|████████▎ | 279/338 [00:03<00:01, 46.91it/s]Loading weights:  86%|████████▌ | 291/338 [00:03<00:01, 40.22it/s]Loading weights:  90%|████████▉ | 303/338 [00:04<00:00, 36.03it/s]Loading weights:  91%|█████████ | 308/338 [00:04<00:00, 34.32it/s]Loading weights:  94%|█████████▍| 317/338 [00:04<00:00, 36.13it/s]Loading weights:  97%|█████████▋| 327/338 [00:04<00:00, 43.63it/s]Loading weights: 100%|██████████| 338/338 [00:04<00:00, 69.69it/s]
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 1s [Retry 1/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 2s [Retry 2/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 4s [Retry 3/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 8s [Retry 4/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 8s [Retry 5/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Using the latest cached version of the dataset since openai/gsm8k couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'main' at /home/pi/.cache/huggingface/datasets/openai___gsm8k/main/0.0.0/740312add88f781978c0658806c59bc2815b9866 (last modified on Tue Oct  6 20:10:10 2026).
+[sim-gsm8k] 200 questions (board-protocol, 2-shot CoT) gs=64 bs=16
+[sim-gsm8k] ===== config: fp16 =====
+[sim-gsm8k] 16/200 acc=0.7500 (198.84s/q, ETA 10.2h)
+[sim-gsm8k] 32/200 acc=0.6250 (201.39s/q, ETA 9.4h)
+[sim-gsm8k] 48/200 acc=0.5417 (198.5s/q, ETA 8.4h)
+[sim-gsm8k] 64/200 acc=0.4844 (199.38s/q, ETA 7.5h)
+[sim-gsm8k] 80/200 acc=0.4500 (200.7s/q, ETA 6.7h)
+[sim-gsm8k] 96/200 acc=0.4688 (200.06s/q, ETA 5.8h)
+[sim-gsm8k] 112/200 acc=0.4643 (200.65s/q, ETA 4.9h)
+[sim-gsm8k] 128/200 acc=0.4922 (201.11s/q, ETA 4.0h)
+[sim-gsm8k] 144/200 acc=0.4931 (201.52s/q, ETA 3.1h)
+[sim-gsm8k] 160/200 acc=0.5000 (200.12s/q, ETA 2.2h)
+[sim-gsm8k] 176/200 acc=0.5227 (199.57s/q, ETA 1.3h)
+[sim-gsm8k] 192/200 acc=0.5260 (200.04s/q, ETA 0.4h)
+[sim-gsm8k] 200/200 acc=0.5300 (203.59s/q, ETA 0.0h)
+[sim-gsm8k] fp16: {"num_evaluated": 200, "acc": 0.53, "acc_ci95": [0.465, 0.6], "acc_answeris": 0.54, "none_rate": 0.0, "elapsed_s": 40718.5}
+[sim-gsm8k] -> results/acc_gsm8k_sim_g64_stop_fp16.full.json
