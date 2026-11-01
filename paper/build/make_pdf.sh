@@ -10,20 +10,20 @@ TMP="$OUT/_body.md"
 SRC="draft_v0.1.md"
 
 # 去掉开头的"状态说明"引用块（不属于论文正文），保留其余内容
-awk 'BEGIN{skip=0} /^> \*\*状态说明/{skip=1} skip==1 && /^$/{skip=0; next} skip==0{print}' "$SRC" > "$TMP"
+tr -d '' < "$SRC" | awk 'BEGIN{skip=0} /^> \*\*状态说明/{skip=1} skip==1 && /^$/{skip=0; next} skip==0{print}' > "$TMP"
 
 cat > "$OUT/_meta.yaml" <<'YAML'
 title: "Calibration Objectives and Evaluation Protocols in 4-bit Edge LLM Deployment"
 subtitle: "A controlled measurement study on Rockchip RK3576 (draft v0.1, internal)"
 author: "NAC project — draft for internal review"
-date: "2026-10-30"
+date: "2026-11-01"
 lang: en
 YAML
 
 pandoc "$TMP" \
   --metadata-file="$OUT/_meta.yaml" \
   --from markdown+pipe_tables+tex_math_dollars \
-  --to html5 --standalone --embed-resources \
+  --to html5 --standalone --self-contained \
   --css "build/style.css" \
   --output "$OUT/draft.html"
 

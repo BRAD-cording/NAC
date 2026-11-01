@@ -8,3 +8,11 @@ results/*.qparams.*
 __pycache__/
 *.pyc
 data/*.cache/
+
+# intermediate build products (never commit)
+paper/build/_*.md
+paper/build/_*.yaml
+paper/build/draft.html
+paper/build/draft_v0.1.docx
+paper/build/draft_v0.1.pdf
+paper/build/*.docx

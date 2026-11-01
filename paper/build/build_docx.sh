@@ -37,7 +37,7 @@ PY
 pandoc "$OUT/_body.md" \
   --metadata title="Calibration Objectives and Evaluation Protocols in 4-bit Edge LLM Deployment" \
   --metadata subtitle="A controlled measurement study on Rockchip RK3576 — draft v0.1" \
-  --metadata date="2026-10-30" \
+  --metadata date="2026-11-01" \
   --from markdown+pipe_tables --to docx \
   --resource-path="$PWD" \
   -o "$OUT/draft_v0.1.docx"

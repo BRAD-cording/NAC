@@ -27,12 +27,12 @@ cat > "$OUT/_meta.yaml" <<'YAML'
 title: "Calibration Objectives and Evaluation Protocols in 4-bit Edge LLM Deployment"
 subtitle: "A controlled measurement study on Rockchip RK3576 — draft v0.1"
 author: "NAC project · internal draft for review"
-date: "2026-10-30"
+date: "2026-11-01"
 YAML
 
 pandoc "$OUT/_wp.md" \
   --metadata-file="$OUT/_meta.yaml" \
-  --from markdown+pipe_tables-implicit_figures --to html5 --standalone --embed-resources \
+  --from markdown+pipe_tables-implicit_figures --to html5 --standalone --self-contained \
   --css "build/style.css" \
   --output "$OUT/draft_wp.html"
 
