@@ -1,0 +1,33 @@
+[sim-gsm8k] loading models/Qwen2.5-1.5B-Instruct-hf (fp32) ...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:01<11:02,  1.97s/it]Loading weights:  38%|███▊      | 129/338 [00:02<00:02, 87.11it/s]Loading weights:  60%|██████    | 204/338 [00:02<00:01, 90.38it/s]Loading weights:  74%|███████▎  | 249/338 [00:03<00:00, 100.10it/s]Loading weights:  83%|████████▎ | 282/338 [00:03<00:00, 116.66it/s]Loading weights:  93%|█████████▎| 313/338 [00:03<00:00, 129.43it/s]Loading weights: 100%|██████████| 338/338 [00:03<00:00, 95.69it/s] 
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 1s [Retry 1/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 2s [Retry 2/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 4s [Retry 3/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 8s [Retry 4/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Retrying in 8s [Retry 5/5].
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/gsm8k.py
+Using the latest cached version of the dataset since openai/gsm8k couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'main' at /home/pi/.cache/huggingface/datasets/openai___gsm8k/main/0.0.0/740312add88f781978c0658806c59bc2815b9866 (last modified on Tue Oct  6 20:10:10 2026).
+[sim-gsm8k] 200 questions (board-protocol, 2-shot CoT) gs=64 bs=16
+[sim-gsm8k] ===== config: nac =====
+[sim-gsm8k] 16/200 acc=0.4375 (170.64s/q, ETA 8.7h)
+[sim-gsm8k] 32/200 acc=0.3438 (177.69s/q, ETA 8.3h)
+[sim-gsm8k] 48/200 acc=0.3125 (181.85s/q, ETA 7.7h)
+[sim-gsm8k] 64/200 acc=0.2656 (182.92s/q, ETA 6.9h)
+[sim-gsm8k] 80/200 acc=0.2875 (184.34s/q, ETA 6.1h)
+[sim-gsm8k] 96/200 acc=0.2917 (183.53s/q, ETA 5.3h)
+[sim-gsm8k] 112/200 acc=0.3125 (184.27s/q, ETA 4.5h)
+[sim-gsm8k] 128/200 acc=0.3203 (185.0s/q, ETA 3.7h)
+[sim-gsm8k] 144/200 acc=0.3125 (185.7s/q, ETA 2.9h)
+[sim-gsm8k] 160/200 acc=0.3312 (185.42s/q, ETA 2.1h)
+[sim-gsm8k] 176/200 acc=0.3580 (185.23s/q, ETA 1.2h)
+[sim-gsm8k] 192/200 acc=0.3698 (185.98s/q, ETA 0.4h)
+[sim-gsm8k] 200/200 acc=0.3650 (189.81s/q, ETA 0.0h)
+[sim-gsm8k] nac: {"num_evaluated": 200, "acc": 0.365, "acc_ci95": [0.295, 0.43], "acc_answeris": 0.445, "none_rate": 0.0, "elapsed_s": 37961.5}
+[sim-gsm8k] -> results/acc_gsm8k_sim_g64_stop_nac.full.json

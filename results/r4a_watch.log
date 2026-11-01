@@ -38,3 +38,12 @@ Fetching /C:/Users/Administrator/r4a_model.rkllm to /media/pi/DATA/rknn-llm/nac_
 Running as unit: r4d-eval.service
 [2026-10-28 19:26:18] r4d-eval STARTED
 [2026-10-29 00:06:37] r4a-wd start
+[2026-11-01 02:23:14] build DONE detected, transfer model
+-rwxrwxrwx 1 dministrator dministrator 1410933676 Nov  1 02:23 /mnt/c/Users/Administrator/r4a_model.rkllm
+Connected to 192.168.3.16.
+sftp> get r4a_model.rkllm /media/pi/DATA/rknn-llm/nac_paper/models/local_w4a16_r4e.rkllm
+Fetching /C:/Users/Administrator/r4a_model.rkllm to /media/pi/DATA/rknn-llm/nac_paper/models/local_w4a16_r4e.rkllm
+[2026-11-01 02:35:50] try1 md5 src=90049d0008d2e38f1606ddbe2ee38d24 dst=90049d0008d2e38f1606ddbe2ee38d24
+[2026-11-01 02:35:50] model transfer OK (1.4G)
+Running as unit: r4e-eval.service
+[2026-11-01 02:35:50] r4e-eval STARTED

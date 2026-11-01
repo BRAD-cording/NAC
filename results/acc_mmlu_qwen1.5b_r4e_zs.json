@@ -1,0 +1,13 @@
+{
+  "model": "models/local_w4a16_r4e.rkllm",
+  "task": "mmlu",
+  "num_samples": 969,
+  "fewshot_num": 0,
+  "max_new_tokens": 32,
+  "extractor": [
+    "last_number",
+    "answer_is"
+  ],
+  "gen_archive_chars": 4000,
+  "mmlu_acc": 0.5573
+}

@@ -6,3 +6,12 @@
 [2026-10-31 05:01:32] start nacv2
 [2026-10-31 15:44:16] end nacv2 rc=0
 [2026-10-31 15:44:16] sim queue ALL DONE
+[2026-10-31 18:39:22] board queue DONE, sim queue start
+[2026-10-31 18:39:22] skip fp16 (exists)
+[2026-10-31 18:39:22] skip gptq (exists)
+[2026-10-31 18:39:22] skip nacv2 (exists)
+[2026-10-31 18:39:22] start minmax
+[2026-11-01 06:37:40] end minmax rc=0
+[2026-11-01 06:37:40] start nac
+[2026-11-01 17:18:16] end nac rc=0
+[2026-11-01 17:18:16] sim queue ALL DONE
