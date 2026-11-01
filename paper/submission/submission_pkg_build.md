@@ -319,7 +319,7 @@ During the preparation of this work the authors used AI-assisted tooling to assi
 
 ## Data availability
 
-The data and scripts required to reproduce all results and figures in this paper are included with the manuscript as versioned artifacts; the reproducible package (corresponding to Appendix B) documents every artifact with its md5, dtype, and role, together with per-table commands and an explicit list of gaps.
+The data and scripts required to reproduce all results and figures in this paper are included with the manuscript as versioned artifacts; the reproducible package (corresponding to Appendix B) documents every artifact with its md5, dtype, and role, together with per-table commands and an explicit list of gaps. Code and data are available at: https://github.com/BRAD-cording/NAC
 
 ## Acknowledgements
 
@@ -389,7 +389,9 @@ McNemar's test with continuity correction on paired items; `OR = b/c` where `b` 
 
 The MMLU rows are from the archived multiple-choice pipeline. The three `GSM8K: AWQ vs …` rows are legacy (n = 64, untruncated protocol) and are kept only as a historical record: AWQ lacks a full 200-item contamination-free re-measurement (Section 6.1), so it is excluded from the truncated-protocol comparison above; its odds ratios are zero by construction (no correct items). Two MMLU rows are non-significant and are reported as ties rather than as trends: NAC-v2 vs GPTQ on MMLU (p = 0.72) and NAC-v2 vs min-max (p = 0.11).
 
-## References1. E. Frantar, S. Ashkboos, T. Hoefler, D. Alistarh, GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers, ICLR, 2023.
+## References
+
+1. E. Frantar, S. Ashkboos, T. Hoefler, D. Alistarh, GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers, ICLR, 2023.
 
 2. J. Lin, J. Tang, H. Tang, S. Yang, W.-M. Chen, W.-C. Wang, G. Xiao, X. Dang, C. Gan, S. Han, AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration, MLSys, 2024.
 
@@ -399,7 +401,7 @@ The MMLU rows are from the archived multiple-choice pipeline. The three `GSM8K: 
 
 5. A. Dutta, S. Krishnan, N. Kwatra, R. Ramjee, Accuracy Is Not All You Need, NeurIPS, 2024, arXiv:2407.09141.
 
-6. Y. Luo, F. Zhu, R. Zhou, M. Huang, J. Zhu, F. Fan, W. Shao, A Case Study of Selected PTQ Baselines for Reasoning LLMs on Ascend NPU, arXiv:2602.17693, 2026.
+6. Y. Luo, F. Zhu, R. Zhou, M. Huang, J. Zhu, F. Fan, W. Shao, A Case Study of Selected PTQ Baselines for Reasoning LLMs on Ascend NPU, arXiv:2602.17693, 2026 [preprint, not peer-reviewed].
 
 7. J. Wei, X. Wang, D. Schuurmans, M. Bosma, B. Ichter, F. Xia, E. Chi, Q. Le, D. Zhou, Chain-of-Thought Prompting Elicits Reasoning in Large Language Models, NeurIPS, 2022.
 
@@ -433,7 +435,7 @@ The MMLU rows are from the archived multiple-choice pipeline. The three `GSM8K: 
 
 22. V. Egiazarian, A. Panferov, D. Kuznedelev, E. Frantar, A. Babenko, D. Alistarh, Extreme Compression of Large Language Models via Additive Quantization, arXiv:2401.06118, 2024.
 
-23. H. Badri, A. Shaji, Half-Quadratic Quantization of Large Machine Learning Models, MobiUSM technical report, Nov 2023, https://dropbox.github.io/hqq_blog/.
+23. H. Badri, A. Shaji, Half-Quadratic Quantization of Large Machine Learning Models, Mobius Labs technical blog, Nov 2023 [online resource], https://dropbox.github.io/hqq_blog/.
 
 24. T. Dettmers, A. Pagnoni, A. Holtzman, L. Zettlemoyer, QLoRA: Efficient Finetuning of Quantized LLMs, NeurIPS, 2023, arXiv:2305.14314.
 

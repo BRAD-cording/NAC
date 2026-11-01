@@ -319,7 +319,7 @@ During the preparation of this work the authors used AI-assisted tooling to assi
 
 ## Data availability
 
-The data and scripts required to reproduce all results and figures in this paper are included with the manuscript as versioned artifacts; the reproducible package (corresponding to Appendix B) documents every artifact with its md5, dtype, and role, together with per-table commands and an explicit list of gaps.
+The data and scripts required to reproduce all results and figures in this paper are included with the manuscript as versioned artifacts; the reproducible package (corresponding to Appendix B) documents every artifact with its md5, dtype, and role, together with per-table commands and an explicit list of gaps. Code and data are available at: https://github.com/BRAD-cording/NAC
 
 ## Acknowledgements
 

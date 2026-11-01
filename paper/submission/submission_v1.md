@@ -25,13 +25,13 @@ E-mail address: zhang_yibo@ahsgs.uum.edu.my (YIBO ZHANG).
 
 ## Abstract
 
-Weight-only 4-bit quantization is the default way to deploy LLMs on edge NPUs, and its calibration is almost always evaluated in a floating-point simulation. We present a controlled study of five calibration objectives (min-max, GPTQ, AWQ, NAC-v1, NAC-v2) under one W4A16 pipeline, one 1.5B model and one edge SoC (Rockchip RK3576). Four findings emerge. First, under a chain-of-thought protocol that stops each generation at the next question and scores at 512 tokens, the four quantized calibration objectives are statistically indistinguishable on GSM8K arithmetic accuracy (all pairwise paired-McNemar p ≥ 0.31 under last-number extraction): whatever separates them on perplexity or multiple-choice accuracy does not survive as a robust difference on long-form reasoning on these data. Second, the protocol is decisive: a 32-token generation cap drives every configuration, including the vendor reference model, to 0.000–0.025, while the same local artifacts score 0.535–0.565 at 512 tokens — all statistically indistinguishable from the vendor (p = 0.69–1.00). Third, calibration effects are bounded by group size — NAC-v1 loses 7.43 points of MMLU to min-max at g64 and gains 6.71 at g128 — and, on the deployment stack, a local rebuild with the toolkit's default algorithm loses 6.1 points to the vendor artifact (p = 3e-4) until a different build algorithm is used (p = 0.18). We give a reproducible protocol, harness and checklist so that these confounds are visible. We make no state-of-the-art claim.
+Weight-only 4-bit quantization is the default way to deploy LLMs on edge NPUs, and its calibration is almost always evaluated in a floating-point simulation. We present a controlled study of five calibration objectives (min-max, GPTQ, AWQ, NAC-v1, NAC-v2) under one W4A16 pipeline, one 1.5B model and one edge SoC (Rockchip RK3576). Four findings emerge. First, under a chain-of-thought protocol that stops each generation at the next question and scores at 512 tokens, the four quantized calibration objectives are statistically indistinguishable on GSM8K arithmetic accuracy (all pairwise paired-McNemar p ≥ 0.31 under last-number extraction): whatever separates them on perplexity or multiple-choice accuracy does not survive as a robust difference on long-form reasoning on these data. Second, the protocol is decisive: a 32-token generation cap drives every configuration, including the vendor reference model, to 0.000–0.015, while the same local artifacts score 0.535–0.565 at 512 tokens — all statistically indistinguishable from the vendor (p = 0.69–1.00). Third, calibration effects are bounded by group size — NAC-v1 loses 7.43 points of MMLU to min-max at g64 and gains 6.71 at g128 — and, on the deployment stack, a local rebuild with the toolkit's default algorithm loses 6.1 points to the vendor artifact (p = 3e-4) until a different build algorithm is used (p = 0.18). We give a reproducible protocol, harness and checklist so that these confounds are visible. We make no state-of-the-art claim.
 
-**Keywords**: post-training quantization; edge NPU; W4A16; evaluation protocol; chain-of-thought; calibration
+**Keywords**: post-training quantization, edge NPU, W4A16, evaluation protocol, chain-of-thought, calibration
 
 ## 1 Introduction
 
-Deploying a 1.5B-parameter language model on a 16 GB edge SoC is routine: quantize the weights to 4 bits, calibrate on a small corpus, export to the vendor runtime. The calibration step is where most published methods compete, and it is evaluated almost universally in simulation — apply the quantizer's `dequant(quantize(W))` to each weight, run the model in fp32, and report perplexity and zero-shot accuracy. The implicit assumption is that simulation is a faithful proxy for deployment.
+Deploying a 1.5B-parameter language model on a 16 GB edge SoC is routine: quantize the weights to 4 bits, calibrate on a small corpus, export to the vendor runtime. The calibration step is where most published methods compete, and it is evaluated almost universally in simulation [1] — apply the quantizer's `dequant(quantize(W))` to each weight, run the model in fp32, and report perplexity and zero-shot accuracy. The implicit assumption is that simulation is a faithful proxy for deployment.
 
 This paper asks what that assumption costs. We do not propose a new quantizer; we hold the deployment stack fixed and vary the calibration objective, then measure what survives when the metric moves from next-token likelihood to multi-step generation.
 
@@ -39,7 +39,7 @@ Our study is organised around three axes that are usually conflated (Section 3):
 
 **Finding 1 (calibration objective).** Under a contamination-free protocol — each generation truncated at the first new question and scored at 512 tokens — the four quantized calibration objectives are statistically indistinguishable on GSM8K accuracy: fp16 leads (0.530, last-number) but min-max (0.410), GPTQ (0.395), NAC-v2 (0.395) and NAC-v1 (0.365) are statistically tied with each other (paired McNemar p = 0.31–0.90 on every pair under last-number, and p = 0.22–0.89 under answer-is; the largest gap is min-max over NAC-v1 at +4.5 pp, p = 0.31). This is not the ranking a perplexity comparison predicts — NAC-v1 has the *best* perplexity of the quantized set (11.893 versus 12.168 and 12.225) yet does not lead on arithmetic. The contrast is therefore: perplexity and long-form accuracy do not rank these methods consistently, but neither is a *reliable* discriminator here, because all four objectives are within statistical noise of each other. On these 200 items the only robust simulation-side effect we can separate from the protocol is fp16 above any of the quantized objectives.
 
-**Finding 2 (protocol).** The same measurements are extremely sensitive to how generation is scored. With a 32-token cap — the default of the evaluation harness and of several published edge-deployment recipes — the vendor's own W4A16 model scores 0.0000 on GSM8K, and ten locally built variants score 0.000–0.025. Extending the cap to 512 tokens restores the vendor model to 0.5550, and restores one of those local artifacts from 0.0150 to 0.5350 (statistically tied with the vendor, p = 0.69): the "long-form failure" was the cap. Second, once the generation is truncated at the next question, the choice between extracting the last number and the first "answer is" number moves each configuration by at most a few points (answer-is raises GPTQ and NAC-v1 by 8.0 pp, NAC-v2 by 5.0 pp, min-max by 1.0 pp) and never changes which objectives are statistically separable. An earlier apparent 4× spread between GPTQ and min-max/NAC-v1 (0.305 versus 0.075/0.070) was an artefact of scoring the continuation: it does not survive the stop-rule truncation of Section 6.2.2. The honest statement is that on these data the protocol, not the calibration objective, is what separates the measurements.
+**Finding 2 (protocol).** The same measurements are extremely sensitive to how generation is scored. With a 32-token cap — the default of the evaluation harness and of several published edge-deployment recipes — the vendor's own W4A16 model scores 0.0000 on GSM8K, and ten locally built variants score 0.000–0.015. Extending the cap to 512 tokens restores the vendor model to 0.5550, and restores one of those local artifacts from 0.0150 to 0.5350 (statistically tied with the vendor, p = 0.69): the "long-form failure" was the cap. Second, once the generation is truncated at the next question, the choice between extracting the last number and the first "answer is" number moves each configuration by at most a few points (answer-is raises GPTQ and NAC-v1 by 8.0 pp, NAC-v2 by 5.0 pp, min-max by 1.0 pp) and never changes which objectives are statistically separable. An earlier apparent 4× spread between GPTQ and min-max/NAC-v1 (0.305 versus 0.075/0.070) was an artefact of scoring the continuation: it does not survive the stop-rule truncation of Section 6.2.2. The honest statement is that on these data the protocol, not the calibration objective, is what separates the measurements.
 
 **Finding 3 (boundary).** Calibration effects are conditional on group size. At g64, NAC-v1 loses 7.43 points of MMLU to min-max (p = 3.3e-9); at g128 it *wins* by 6.71 points (p = 7.9e-9). The sign of the effect, not just its size, depends on a hyperparameter that papers rarely ablate.
 
@@ -57,11 +57,11 @@ We do **not** claim state of the art, that one calibration family dominates, or 
 
 ## 2 Related Work
 
-**Post-training quantization.** GPTQ [1] minimises layer-wise reconstruction error with a Hessian-based update in column order. AWQ [2] searches per-channel scales that protect salient activation channels and folds them into adjacent weights. SmoothQuant [3] migrates activation outliers into weights, and ZeroQuant [12] combines group-wise weight quantization with layer-wise distillation. OmniQuant [4] learns clipping and transformation parameters, and rotation-based methods such as QuaRot [14] remove outliers before quantization. All of these optimise a *simulated* objective, and all are evaluated primarily by perplexity plus zero-shot accuracy on classification-style tasks; the scaling behaviour of k-bit inference is itself the subject of [13].
+**Post-training quantization.** Weight-only quantization is the standard way to make LLMs fit on edge devices, and post-training quantization (PTQ) is its lightest-weight route because it needs neither re-training nor labelled data [2]. Among the objectives we compare, GPTQ [3] minimises layer-wise reconstruction error with a Hessian-based update in column order. AWQ [4] searches per-channel scales that protect salient activation channels and folds them into adjacent weights. SmoothQuant [5] migrates activation outliers into weights, and ZeroQuant [6] combines group-wise weight quantization with layer-wise distillation. OmniQuant [7] learns clipping and transformation parameters, and rotation-based methods such as QuaRot [8] remove outliers before quantization. Outside the reconstruction-objective family, sparse-and-additive schemes [9, 10] and calibration-free quantization [11] trade accuracy differently, and low-bit training data types [12] and non-uniform dense-&-sparse decomposition [13] further widen the deployment trade-off surface. All of these optimise a *simulated* objective, and all are evaluated primarily by perplexity plus zero-shot accuracy on classification-style tasks; the scaling behaviour of k-bit inference is itself the subject of [14].
 
-**Evaluation validity.** The observation that accuracy is insufficient to characterise compressed models is not new — [5] makes the general case for compression. What is missing is a *deployment-side* account: which protocol choices move the number, by how much, and in which direction. Our §6.2 is an attempt at that accounting on a concrete NPU.
+**Evaluation validity.** The observation that accuracy is insufficient to characterise compressed models is not new — [15] makes the general case for compression. What is missing is a *deployment-side* account: which protocol choices move the number, by how much, and in which direction. Our §6.2 is an attempt at that accounting on a concrete NPU.
 
-**Edge NPU deployment.** Vendor toolchains (rknn-llm, MNN, ExecuTorch, TFLite) expose integer-domain quantization parameters and their runtimes implement integer dequantization [11]. Public documentation of the exact asymmetry semantics is thin, and recent work on Ascend NPUs [6] reports that PTQ baselines behave differently on-device than in simulation. Our study is complementary: it fixes one SoC and one model and asks how much of the simulation-deployment gap is attributable to calibration versus measurement.
+**Edge NPU deployment.** Running LLMs on edge devices has become an active research area of its own [16], and vendor toolchains (rknn-llm, MNN, ExecuTorch, TFLite) expose integer-domain quantization parameters and their runtimes implement integer dequantization [17, 18]. Public documentation of the exact asymmetry semantics is thin, and recent work on Ascend NPUs [19] reports that PTQ baselines behave differently on-device than in simulation. Our study is complementary: it fixes one SoC and one model and asks how much of the simulation-deployment gap is attributable to calibration versus measurement.
 
 **Positioning.** This is a measurement paper. Its unit of contribution is a *reproducible discrimination* — a protocol under which two calibration objectives can be told apart — plus the boundary conditions under which that discrimination holds.
 
@@ -81,9 +81,9 @@ We do **not** claim state of the art, that one calibration family dominates, or 
 
 Hardware: NanoPi M5 (RK3576), 4×Cortex-A53 @2.016 GHz + 4×Cortex-A72 @2.208 GHz, 16 GB LPDDR5, 2-core NPU @950 MHz, fixed-frequency operation (CPU/NPU/DDR) for all timed runs. Runtime: librkllm 1.2.3.
 
-Models: Qwen2.5-1.5B-Instruct [10] (full matrix) and Qwen2.5-3B-Instruct (vendor-quantized reference point only).
+Models: Qwen2.5-1.5B-Instruct [20] (full matrix) and Qwen2.5-3B-Instruct (vendor-quantized reference point only).
 
-Tasks: MMLU [9] (969 items, zero-shot, 32-token cap, single-letter answer), GSM8K [8] (200 items, zero-shot for deployment and 2-shot CoT [7] for simulation, 512-token cap), WikiText-2 [15] held-out perplexity (64 sequences × 1024 tokens).
+Tasks: MMLU [21] (969 items, zero-shot, 32-token cap, single-letter answer), GSM8K [22] (200 items, zero-shot for deployment and 2-shot CoT [23] for simulation, 512-token cap), WikiText-2 [24] held-out perplexity (64 sequences × 1024 tokens).
 
 ### 3.3 What we archive
 
@@ -115,7 +115,7 @@ All methods produce per-group `(scale, zero_point)` for the deployment kernel's 
 
 **Perplexity.** WikiText-2 held-out, 64 sequences × 1024 tokens for all configurations except AWQ's probe (16 sequences), labelled wherever it appears.
 
-**Statistics.** McNemar's test with continuity correction for paired binary outcomes; bootstrap 95% confidence intervals over items; tie criterion p > 0.05 together with a difference smaller than the CI width. Pairing is by item index, verified by asserting that the gold-answer sequence is identical between the two runs. Full pairwise statistics, including odds ratios, are in Appendix C. `analysis/check_claims.py` re-derives every number in this paper from the archived JSON and fails if any of them drifts.
+**Statistics.** McNemar's test with continuity correction for paired binary outcomes [25]; bootstrap 95% confidence intervals over items; tie criterion p > 0.05 together with a difference smaller than the CI width. Pairing is by item index, verified by asserting that the gold-answer sequence is identical between the two runs. Full pairwise statistics, including odds ratios, are in Appendix C. `analysis/check_claims.py` re-derives every number in this paper from the archived JSON and fails if any of them drifts.
 
 ## 6 Results
 
@@ -134,9 +134,9 @@ All methods produce per-group `(scale, zero_point)` for the deployment kernel's 
 
 ¹ 16-sequence probe; all other perplexities are 64-sequence. GSM8K = last-number accuracy under the contamination-free 512-token protocol of Section 6.2 (stop at the first `\nQuestion:`); AWQ lacks a full 200-item re-measurement and is shown only as a perplexity outlier at n=64.
 
-Two orderings coexist in this table. By perplexity, NAC-v1 is best among the quantized methods and GPTQ is worst; by GSM8K under the contamination-free protocol, the four quantized methods are statistically tied (Figure 1). MMLU does not discriminate between them either, except for NAC-v1's 7.43-point simulated deficit to min-max (p = 3.3e-9); the deployment-side MMLU comparison (Section 6.5) shows only a build-path effect, not a calibration effect.
+Two orderings coexist in this table. By perplexity, NAC-v1 is best among the quantized methods and GPTQ is worst; by GSM8K under the contamination-free protocol, the four quantized methods are statistically tied (Figure 1). MMLU discriminates more finely than GSM8K does: two further pairwise effects are significant at the 5% level — AWQ is 2.79 points below min-max (p = 0.033) and 2.37 points below fp16 (p = 0.038) — in addition to NAC-v1's 7.43-point deficit to min-max (p = 3.3e-9), while the remaining MMLU pairs are statistical ties. Close to the 5% threshold and after multiple comparisons, these two effects are weak evidence rather than a robust finding. The deployment-side MMLU comparison (Section 6.5) shows only a build-path effect, not a calibration effect.
 
-![Figure 1](figs/fig1_ppl_vs_gsm8k.svg)
+![Figure 1](figs/fig1_ppl_vs_gsm8k.png)
 
 **Figure 1.** Perplexity versus GSM8K accuracy for the five calibration objectives. Perplexity is widely spread (NAC-v1 best) while the four quantized objectives are statistically tied under the contamination-free GSM8K protocol (Section 6.1); fp16 sits clearly above all of them on arithmetic while having the best perplexity at 11.075. AWQ's perplexity is a 16-sequence probe (open marker).
 
@@ -154,7 +154,7 @@ Under the full-archive protocol the last-number and answer-is extractors agree (
 
 The pattern is not a single-method accident. AWQ — an independent activation-weighted family with a different parameterisation — matches the same termination signature: best-in-class perplexity among the methods we could measure at 16 sequences (11.226), MMLU statistically tied with GPTQ and NAC-v2 (p = 0.369 and 0.579), and a termination signature (generations that on this harness often do not stop after answering; Section 6.4). Its GSM8K score was measured only at n = 64 under the earlier untruncated protocol, so it is not part of the 200-item contamination-free comparison; the re-measurement needed to place it in Table 1 was not completed for this submission. We therefore report AWQ's perplexity and MMLU, and its termination behaviour, but not a GSM8K accuracy number.
 
-**Interpretation.** Likelihood averages over token positions and is dominated by high-probability continuations; it is insensitive to the low-probability tail where EOS lives and where multi-step arithmetic errors accumulate. A calibration objective that minimises reconstruction error can therefore improve perplexity while degrading the termination policy.
+**Interpretation.** Likelihood averages over token positions and is dominated by high-probability continuations; it is insensitive to the low-probability tail where EOS lives and where multi-step arithmetic errors accumulate. A possible mechanism — consistent with our observations but not independently confirmed here — is that a calibration objective which minimises reconstruction error can improve perplexity while changing the model's tendency to terminate a generation.
 
 ### 6.2 Protocol artefacts
 
@@ -178,7 +178,7 @@ The same manipulation applies to a locally rebuilt artifact, and it is the clear
 | local group-quantized build (`W4A16_G64`, the artifact an earlier version of this work labelled a calibration collapse) | 0.0050 | **0.5650** |
 | second group-quantized build (alternate calibration, `W4A16_G64`) | 0.0050 | **0.5600** |
 
-Nothing about these models changes between the two columns except the cap. At 512 tokens all three are statistically indistinguishable from the vendor artifact (paired McNemar: p = 0.69, 0.88 and 1.00 respectively), and the 52–56-point differences within each row are artefacts of the harness. Any conclusion of the form "the local build loses long-form reasoning" drawn from a 32-token run is wrong.
+Nothing about these models changes between the two columns except the cap. At 512 tokens all three are statistically indistinguishable from the vendor artifact (paired McNemar: p = 0.69, 0.88 and 1.00 respectively), and the 52–56-point differences within each row are artefacts of the harness. A conclusion of the form "the local build loses long-form reasoning" cannot be drawn from a 32-token run: the data do not support it, and it is an artefact of the cap rather than of the model.
 
 The 512-token protocol is also clean on its own terms: across the three artifacts re-measured with the instrumented harness, the cap was hit in only 1.5–2.0% of items (median generation 235–248 tokens), and no generation opened a new question after its answer (cross-question rate 0.00). Under 32 tokens, the same artifacts hit the cap in essentially every item and never reach an answer sentence (Table 2).
 
@@ -186,7 +186,7 @@ For the third row the point is sharper. That artifact was, in an earlier version
 
 The same signature appears in every locally built variant we evaluated at 32 tokens (Table 2, Figure 2): median length 129–147 characters, 90th percentile ≤161, no generation reaches a concluding sentence, and the distribution of final characters is dominated by digits and operators. Under a 512-token cap the vendor model reaches 0.5550. We therefore treat all 32-token numbers in our own earlier records — and any published edge-deployment number produced with a similar default — as measuring the cap.
 
-![Figure 2](figs/fig2_truncation.svg)
+![Figure 2](figs/fig2_truncation.png)
 
 **Figure 2.** Length distribution of GSM8K generations under a 32-token cap, vendor model versus one locally built variant. Both distributions terminate against the same budget; neither reaches a concluding answer sentence.
 
@@ -227,7 +227,7 @@ We therefore report both rules and treat any conclusion that flips between them 
 
 The NAC-v1 deficit at g64 (−7.43 pp) becomes a gain at g128 (+6.71 pp). The effect is not a monotone function of "finer grouping is better": g128 is coarser, and the coarser setting favours the truncation-grid objective while the finer setting favours Hessian compensation (Figure 3). Any claim of the form "method X beats method Y" must therefore carry its group size.
 
-![Figure 3](figs/fig3_group_size.svg)
+![Figure 3](figs/fig3_group_size.png)
 
 **Figure 3.** MMLU accuracy at group size 64 versus 128. The ordering of the three calibration objectives is not preserved; NAC-v1 moves from last to second, and min-max moves from first to last.
 
@@ -255,7 +255,7 @@ Two readings. First, a local rebuild with the default algorithm is 6.1 points wo
 
 The loss is task-specific, and we report it as such: at 512 tokens the same local build is statistically tied with the vendor on GSM8K (0.5350 vs 0.5550, p = 0.69). The build-path difference therefore shows up on the knowledge-oriented multiple-choice task and not on the arithmetic task, which rules out a generic "the local build is worse" explanation and makes the mechanism an open question (Section 8).
 
-![Figure 4](figs/fig4_build_path.svg)
+![Figure 4](figs/fig4_build_path.png)
 
 **Figure 4.** Deployment-side MMLU for the same model and dtype, rebuilt with different toolkit settings. The dashed line is the vendor artifact. Only the `gdq` build recovers it within statistical noise.
 
@@ -319,7 +319,7 @@ During the preparation of this work the authors used AI-assisted tooling to assi
 
 ## Data availability
 
-The data and scripts required to reproduce all results and figures in this paper are included with the manuscript as versioned artifacts; the reproducible package (corresponding to Appendix B) documents every artifact with its md5, dtype, and role, together with per-table commands and an explicit list of gaps.
+The data and scripts required to reproduce all results and figures in this paper are included with the manuscript as versioned artifacts; the reproducible package (corresponding to Appendix B) documents every artifact with its md5, dtype, and role, together with per-table commands and an explicit list of gaps. Code and data are available at: https://github.com/BRAD-cording/NAC
 
 ## Acknowledgements
 
@@ -332,7 +332,7 @@ None declared. This research received no specific funding.
 | GSM8K truncated-protocol (last-number): fp16 0.530 / min-max 0.410 / GPTQ 0.395 / NAC-v1 0.365 / NAC-v2 0.395 (n=200 each) | `acc_gsm8k_sim_g64_stop_{fp16,minmax,gptq,nac,nacv2}.json` + records | verified |
 | GSM8K truncated-protocol (answer-is): fp16 0.540 / min-max 0.420 / GPTQ 0.475 / NAC-v1 0.445 / NAC-v2 0.445 | same files, `ok_answeris` | verified |
 | Pairwise McNemar: four quantized objectives all tied (p ≥ 0.22); fp16 above all (p ≤ 0.003) | `analysis/q1_matrix.py` output | verified |
-| PPL 11.893 / 12.168 / 12.225 (64 seq) | `ppl_g64_64seq.json` | verified |
+| PPL @g64 (64 seq): fp16 11.075 / NAC-v1 11.893 / NAC-v2 11.962 / GPTQ 12.168 / min-max 12.225 | `ppl_g64_64seq.json`, `ppl_g64_64seq_nacv2.json` | verified |
 | AWQ GSM8K measured at n=64 under untruncated protocol (0 last-number); no contamination-free re-measurement | `acc_gsm8k_sim_g64_awq.json` + records | verified (n=64 only) |
 | MMLU p-values (NAC vs min-max, etc.) | `stats_pairs.json` | verified |
 | g128 inversion (+6.71 pp, p=7.9e-9) | `acc_mmlu_sim_g128.full.json`, `stats_pairs.json` | verified |
@@ -361,15 +361,15 @@ McNemar's test with continuity correction on paired items; `OR = b/c` where `b` 
 
 | Comparison | n | acc(A) | acc(B) | Δ (pp) | OR | 95% CI (pp) | p |
 |---|---|---|---|---|---|---|---|
-| MMLU g64: NAC-v2 vs NAC-v1 | 969 | 0.393 | 0.447 | +5.37 | 2.13 | [+3.0, +7.7] | 2.1e-5 |
-| MMLU g64: NAC-v2 vs GPTQ | 969 | 0.452 | 0.447 | −0.52 | 0.92 | [−2.8, +1.7] | 0.72 |
-| MMLU g64: NAC-v2 vs min-max | 969 | 0.468 | 0.447 | −2.06 | 0.75 | [−4.4, +0.3] | 0.11 |
-| MMLU g64: NAC-v2 vs fp16 | 969 | 0.463 | 0.447 | −1.65 | 0.72 | [−3.7, +0.4] | 0.13 |
-| MMLU g64: AWQ vs GPTQ | 969 | 0.452 | 0.440 | −1.24 | 0.85 | [−3.8, +1.2] | 0.37 |
-| MMLU g64: AWQ vs NAC-v2 | 969 | 0.447 | 0.440 | −0.72 | 0.89 | [−2.9, +1.4] | 0.58 |
-| MMLU g64: AWQ vs min-max | 969 | 0.468 | 0.440 | −2.79 | 0.69 | [−5.3, −0.4] | 0.033 |
-| MMLU g64: AWQ vs fp16 | 969 | 0.463 | 0.440 | −2.37 | 0.66 | [−4.5, −0.2] | 0.038 |
-| MMLU g64: NAC-v1 vs min-max | 969 | 0.468 | 0.393 | −7.43 | 0.33 | [−9.9, −5.2] | 3.3e-9 |
+| MMLU g64: NAC-v1 vs NAC-v2 | 969 | 0.393 | 0.447 | +5.37 | 2.13 | [+3.0, +7.7] | 2.1e-5 |
+| MMLU g64: GPTQ vs NAC-v2 | 969 | 0.452 | 0.447 | −0.52 | 0.92 | [−2.8, +1.7] | 0.72 |
+| MMLU g64: min-max vs NAC-v2 | 969 | 0.468 | 0.447 | −2.06 | 0.75 | [−4.4, +0.3] | 0.11 |
+| MMLU g64: fp16 vs NAC-v2 | 969 | 0.463 | 0.447 | −1.65 | 0.72 | [−3.7, +0.4] | 0.13 |
+| MMLU g64: GPTQ vs AWQ | 969 | 0.452 | 0.440 | −1.24 | 0.85 | [−3.8, +1.2] | 0.37 |
+| MMLU g64: NAC-v2 vs AWQ | 969 | 0.447 | 0.440 | −0.72 | 0.89 | [−2.9, +1.4] | 0.58 |
+| MMLU g64: min-max vs AWQ | 969 | 0.468 | 0.440 | −2.79 | 0.69 | [−5.3, −0.4] | 0.033 |
+| MMLU g64: fp16 vs AWQ | 969 | 0.463 | 0.440 | −2.37 | 0.66 | [−4.5, −0.2] | 0.038 |
+| MMLU g64: min-max vs NAC-v1 | 969 | 0.468 | 0.393 | −7.43 | 0.33 | [−9.9, −5.2] | 3.3e-9 |
 | GSM8K (trunc, last-num): min-max vs GPTQ | 200 | 0.410 | 0.395 | −1.5 | 1.09 | [−9.5, +7.0] | 0.81 |
 | GSM8K (trunc, last-num): min-max vs NAC-v1 | 200 | 0.410 | 0.365 | −4.5 | 1.33 | [−12.5, +3.0] | 0.31 |
 | GSM8K (trunc, last-num): min-max vs NAC-v2 | 200 | 0.410 | 0.395 | −1.5 | 1.09 | [−10.0, +7.0] | 0.81 |
@@ -383,26 +383,60 @@ McNemar's test with continuity correction on paired items; `OR = b/c` where `b` 
 | GSM8K: AWQ vs GPTQ | 64 | 0.312 | 0.000 | −31.25 | 0.00 | [−42.2, −20.3] | 2.2e-5 |
 | GSM8K: AWQ vs NAC-v2 | 64 | 0.141 | 0.000 | −14.06 | 0.00 | [−23.4, −6.2] | 0.0077 |
 | GSM8K: AWQ vs min-max | 64 | 0.047 | 0.000 | −4.69 | 0.00 | [−10.9, +0.0] | 0.25 |
-| MMLU g128: NAC-v1 vs min-max | 969 | 0.362 | 0.429 | +6.71 | 3.24 | [+4.5, +8.9] | 7.9e-9 |
-| MMLU g128: GPTQ vs min-max | 969 | 0.362 | 0.487 | +12.49 | 3.16 | [+9.5, +15.5] | 3.8e-15 |
-| MMLU g128: GPTQ vs NAC-v1 | 969 | 0.429 | 0.487 | +5.78 | 1.86 | [+3.0, +8.6] | 5.5e-5 |
+| MMLU g128: min-max vs NAC-v1 | 969 | 0.362 | 0.429 | +6.71 | 3.24 | [+4.5, +8.9] | 7.9e-9 |
+| MMLU g128: min-max vs GPTQ | 969 | 0.362 | 0.487 | +12.49 | 3.16 | [+9.5, +15.5] | 3.8e-15 |
+| MMLU g128: NAC-v1 vs GPTQ | 969 | 0.429 | 0.487 | +5.78 | 1.86 | [+3.0, +8.6] | 5.5e-5 |
 
 The MMLU rows are from the archived multiple-choice pipeline. The three `GSM8K: AWQ vs …` rows are legacy (n = 64, untruncated protocol) and are kept only as a historical record: AWQ lacks a full 200-item contamination-free re-measurement (Section 6.1), so it is excluded from the truncated-protocol comparison above; its odds ratios are zero by construction (no correct items). Two MMLU rows are non-significant and are reported as ties rather than as trends: NAC-v2 vs GPTQ on MMLU (p = 0.72) and NAC-v2 vs min-max (p = 0.11).
 
 ## References
 
 1. E. Frantar, S. Ashkboos, T. Hoefler, D. Alistarh, GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers, ICLR, 2023.
+
 2. J. Lin, J. Tang, H. Tang, S. Yang, W.-M. Chen, W.-C. Wang, G. Xiao, X. Dang, C. Gan, S. Han, AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration, MLSys, 2024.
+
 3. G. Xiao, J. Lin, M. Seznec, H. Wu, J. Demouth, S. Han, SmoothQuant: Accurate and Efficient Post-Training Quantization for Large Language Models, ICML, 2023.
+
 4. W. Shao, M. Chen, Z. Zhang, P. Xu, L. Zhao, Z. Li, K. Zhang, P. Gao, Y. Qiao, P. Luo, OmniQuant: Omnidirectionally Calibrated Quantization for Large Language Models, ICLR, 2024.
+
 5. A. Dutta, S. Krishnan, N. Kwatra, R. Ramjee, Accuracy Is Not All You Need, NeurIPS, 2024, arXiv:2407.09141.
-6. Y. Luo, F. Zhu, R. Zhou, M. Huang, J. Zhu, F. Fan, W. Shao, A Case Study of Selected PTQ Baselines for Reasoning LLMs on Ascend NPU, arXiv:2602.17693, 2026.
+
+6. Y. Luo, F. Zhu, R. Zhou, M. Huang, J. Zhu, F. Fan, W. Shao, A Case Study of Selected PTQ Baselines for Reasoning LLMs on Ascend NPU, arXiv:2602.17693, 2026 [preprint, not peer-reviewed].
+
 7. J. Wei, X. Wang, D. Schuurmans, M. Bosma, B. Ichter, F. Xia, E. Chi, Q. Le, D. Zhou, Chain-of-Thought Prompting Elicits Reasoning in Large Language Models, NeurIPS, 2022.
+
 8. K. Cobbe, V. Kosaraju, M. Bavarian, M. Chen, H. Jun, L. Kaiser, M. Plappert, J. Tworek, J. Hilton, R. Nakano, C. Hesse, J. Schulman, Training Verifiers to Solve Math Word Problems, arXiv:2110.14168, 2021.
+
 9. D. Hendrycks, C. Burns, S. Basart, A. Zou, M. Mazeika, D. Song, J. Steinhardt, Measuring Massive Multitask Language Understanding, ICLR, 2021.
+
 10. Qwen Team, Qwen2.5 Technical Report, arXiv:2412.15115, 2024.
+
 11. T. Dettmers, M. Lewis, Y. Belkada, L. Zettlemoyer, LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale, NeurIPS, 2022.
+
 12. Z. Yao, R. Yazdani Aminabadi, M. Zhang, X. Wu, C. Li, Y. He, ZeroQuant: Efficient and Affordable Post-Training Quantization for Large-Scale Transformers, NeurIPS, 2022.
+
 13. T. Dettmers, L. Zettlemoyer, The case for 4-bit precision: k-bit Inference Scaling Laws, ICML, 2023.
+
 14. S. Ashkboos, A. Mohtashami, M. L. Croci, B. Li, M. Jaggi, D. Alistarh, T. Hoefler, J. Hensman, QuaRot: Outlier-Free 4-Bit Inference in Rotated LLMs, NeurIPS, 2024.
+
 15. S. Merity, C. Xiong, J. Bradbury, R. Socher, Pointer Sentinel Mixture Models, ICLR, 2017 (WikiText-2).
+
+16. M. Nagel, M. Fournarakis, R. A. Amjad, Y. Bondarenko, M. van Baalen, T. Blankevoort, A White Paper on Neural Network Quantization, arXiv:2106.08295, 2021.
+
+17. J. Xu, Z. Li, W. Chen, Q. Wang, X. Gao, Q. Cai, Z. Ling, On-Device Language Models: A Comprehensive Review, arXiv:2409.00088, 2024.
+
+18. Y. Chang, X. Wang, J. Wang, Y. Wu, L. Yang, K. Zhu, H. Chen, et al., A Survey on Evaluation of Large Language Models, ACM Transactions on Intelligent Systems and Technology (TIST), 2023, arXiv:2307.03109.
+
+19. B. Jacob, S. Kligys, B. Chen, M. Zhu, M. Tang, A. Howard, H. Adam, D. Kalenichenko, Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference, CVPR, 2018, arXiv:1712.05877.
+
+20. T. G. Dietterich, Approximate Statistical Tests for Comparing Supervised Classification Learning Algorithms, Neural Computation 10(7):1895-1923, 1998.
+
+21. T. Dettmers, R. Svirschevski, V. Egiazarian, D. Kuznedelev, E. Frantar, S. Ashkboos, A. Borzunov, T. Hoefler, D. Alistarh, SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression, arXiv:2306.03078, 2023.
+
+22. V. Egiazarian, A. Panferov, D. Kuznedelev, E. Frantar, A. Babenko, D. Alistarh, Extreme Compression of Large Language Models via Additive Quantization, arXiv:2401.06118, 2024.
+
+23. H. Badri, A. Shaji, Half-Quadratic Quantization of Large Machine Learning Models, Mobius Labs technical blog, Nov 2023 [online resource], https://dropbox.github.io/hqq_blog/.
+
+24. T. Dettmers, A. Pagnoni, A. Holtzman, L. Zettlemoyer, QLoRA: Efficient Finetuning of Quantized LLMs, NeurIPS, 2023, arXiv:2305.14314.
+
+25. S. Kim, C. Hooper, A. Gholami, Z. Dong, X. Li, S. Shen, M. Mahoney, K. Keutzer, SqueezeLLM: Dense-and-Sparse Quantization, ICML, 2024, arXiv:2306.07629.
