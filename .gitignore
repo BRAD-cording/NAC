@@ -16,3 +16,4 @@ paper/build/draft.html
 paper/build/draft_v0.1.docx
 paper/build/draft_v0.1.pdf
 paper/build/*.docx
+dist/
