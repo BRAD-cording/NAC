@@ -32,5 +32,7 @@ run fp16  results/nac_qwen1.5b_g64.qparams.pt
 run gptq  results/gptq_qwen1.5b_g64.qparams.pt
 run nacv2 results/nacv2_qwen1.5b_g64.qparams.pt
 
+run minmax results/nac_qwen1.5b_g64.qparams.pt
+run nac results/nac_qwen1.5b_g64.qparams.pt
 log "sim queue ALL DONE"
 touch results/q1_sim.DONE
