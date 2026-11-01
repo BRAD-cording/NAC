@@ -307,11 +307,11 @@ The authors declare that they have no known competing financial interests or per
 
 ## CRediT authorship contribution statement
 
-**YIBO ZHANG**: Conceptualization, Methodology, Software, Writing – original draft, Visualization. Corresponding author, responsible for the full content of the manuscript.
+**YIBO ZHANG**: Conceptualization, Methodology, Software, Writing – original draft, Writing – review & editing, Visualization. Corresponding author, responsible for the full content of the manuscript.
 
-**Muhammad Syafiq bin Mohd Pozi**: Supervision, Writing – review & editing.
+**Muhammad Syafiq bin Mohd Pozi**: Supervision.
 
-**Osman B Ghazali**: Supervision, Writing – review & editing.
+**Osman B Ghazali**: Supervision.
 
 ## Declaration of Generative AI and AI-assisted technologies in the writing process
 
